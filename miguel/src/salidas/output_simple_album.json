@@ -1,0 +1,1883 @@
+{
+    "ernm:NewReleaseMessage": {
+        "@AvsVersionId": "5",
+        "@LanguageAndScriptCode": "en",
+        "@xsi:schemaLocation": "http://ddex.net/xml/ern/43 http://ddex.net/xml/ern/43/release-notification.xsd",
+        "@xmlns:ernm": "http://ddex.net/xml/ern/43",
+        "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+        "MessageHeader": {
+            "MessageThreadId": "G010003914291X_AC4",
+            "MessageId": "322345111",
+            "MessageSender": {
+                "PartyId": "PADPIDA2007040502I",
+                "PartyName": {
+                    "FullName": "Sony Music Entertainment"
+                }
+            },
+            "MessageRecipient": {
+                "PartyId": "PADPIDA2014031XXXX",
+                "PartyName": {
+                    "FullName": "DDEX 4.3 commercial partner"
+                }
+            },
+            "MessageCreatedDateTime": "2024-06-14T18:44:55.656+02:00",
+            "MessageControlType": "TestMessage"
+        },
+        "PartyList": {
+            "Party": [
+                {
+                    "PartyReference": "P_SME_SENDER",
+                    "PartyName": {
+                        "FullName": "Sony Music Entertainment"
+                    },
+                    "PartyId": {
+                        "DPID": "PADPIDA2007040502I"
+                    }
+                },
+                {
+                    "PartyReference": "P_ARTIST_12910",
+                    "PartyName": {
+                        "FullName": "Kevin Mauricio Jim\u00e9nez Londo\u00f1o"
+                    }
+                },
+                {
+                    "PartyReference": "P_ARTIST_141900",
+                    "PartyName": {
+                        "FullName": "Manuel Fern\u00e1ndez"
+                    }
+                },
+                {
+                    "PartyReference": "P_ARTIST_2096653",
+                    "PartyName": {
+                        "FullName": "Alejandro Ramirez Su\u00e1rez"
+                    }
+                },
+                {
+                    "PartyReference": "P_ARTIST_2131991",
+                    "PartyName": {
+                        "FullName": "Bryan Lezcano"
+                    }
+                },
+                {
+                    "PartyReference": "P_ARTIST_2258333",
+                    "PartyName": {
+                        "FullName": "Kevin ADG & Chan El Genio \"The Rude Boyz\""
+                    }
+                },
+                {
+                    "PartyReference": "P_ARTIST_2265956",
+                    "PartyName": {
+                        "FullName": "C. Tangana"
+                    }
+                },
+                {
+                    "PartyReference": "P_ARTIST_2265957",
+                    "PartyName": {
+                        "FullName": "Ant\u00f3n \u00c1lvarez Alfaro"
+                    }
+                },
+                {
+                    "PartyReference": "P_ARTIST_2324724",
+                    "PartyName": {
+                        "FullName": "Cristian Quirante Catal\u00e1n"
+                    }
+                },
+                {
+                    "PartyReference": "P_ARTIST_2324827",
+                    "PartyName": {
+                        "FullName": "Daniel Cala Bernardez"
+                    }
+                },
+                {
+                    "PartyReference": "P_ARTIST_2369178",
+                    "PartyName": {
+                        "FullName": "Alex Tumay"
+                    }
+                },
+                {
+                    "PartyReference": "P_ARTIST_2385493",
+                    "PartyName": {
+                        "FullName": "Steve Lean"
+                    }
+                },
+                {
+                    "PartyReference": "P_ARTIST_2385494",
+                    "PartyName": {
+                        "FullName": "C. Tangana feat. Steve Lean"
+                    }
+                },
+                {
+                    "PartyReference": "P_ARTIST_2385986",
+                    "PartyName": {
+                        "FullName": "Alizzz"
+                    }
+                },
+                {
+                    "PartyReference": "P_ARTIST_2385987",
+                    "PartyName": {
+                        "FullName": "C. Tangana feat. Alizzz"
+                    }
+                },
+                {
+                    "PartyReference": "P_ARTIST_2385988",
+                    "PartyName": {
+                        "FullName": "Alex Ferrer Barber"
+                    }
+                },
+                {
+                    "PartyReference": "P_ARTIST_2386670",
+                    "PartyName": {
+                        "FullName": "Lost Twin"
+                    }
+                },
+                {
+                    "PartyReference": "P_ARTIST_2392237",
+                    "PartyName": {
+                        "FullName": "Esteban Correa"
+                    }
+                },
+                {
+                    "PartyReference": "P_ARTIST_2392341",
+                    "PartyName": {
+                        "FullName": "Sticky M.A."
+                    }
+                },
+                {
+                    "PartyReference": "P_ARTIST_2392342",
+                    "PartyName": {
+                        "FullName": "Danni Ble"
+                    }
+                },
+                {
+                    "PartyReference": "P_ARTIST_2392343",
+                    "PartyName": {
+                        "FullName": "Royce Rolo"
+                    }
+                },
+                {
+                    "PartyReference": "P_ARTIST_2392344",
+                    "PartyName": {
+                        "FullName": "C. Tangana feat. Sticky M.A., Danni Ble & Royce Rolo"
+                    }
+                },
+                {
+                    "PartyReference": "P_ARTIST_2392345",
+                    "PartyName": {
+                        "FullName": "Edgar Vigo"
+                    }
+                },
+                {
+                    "PartyReference": "P_ARTIST_2392347",
+                    "PartyName": {
+                        "FullName": "C. Tangana feat. Lost Twin"
+                    }
+                },
+                {
+                    "PartyReference": "P_ARTIST_2392348",
+                    "PartyName": {
+                        "FullName": "Carlos Rivera Pinto"
+                    }
+                },
+                {
+                    "PartyReference": "P_ARTIST_2392350",
+                    "PartyName": {
+                        "FullName": "C. Tangana feat. Take a Daytrip"
+                    }
+                },
+                {
+                    "PartyReference": "P_ARTIST_2392353",
+                    "PartyName": {
+                        "FullName": "C. Tangana feat. Danni Ble & Royce Rolo"
+                    }
+                },
+                {
+                    "PartyReference": "P_ARTIST_2392354",
+                    "PartyName": {
+                        "FullName": "The Rudeboyz"
+                    }
+                },
+                {
+                    "PartyReference": "P_ARTIST_2392355",
+                    "PartyName": {
+                        "FullName": "C. Tangana feat. The Rudeboyz"
+                    }
+                },
+                {
+                    "PartyReference": "P_ARTIST_2392356",
+                    "PartyName": {
+                        "FullName": "Enry-K"
+                    }
+                },
+                {
+                    "PartyReference": "P_ARTIST_2392357",
+                    "PartyName": {
+                        "FullName": "C. Tangana feat. Enry-K"
+                    }
+                },
+                {
+                    "PartyReference": "P_ARTIST_2392358",
+                    "PartyName": {
+                        "FullName": "Enrique Ruano de la Cruz"
+                    }
+                },
+                {
+                    "PartyReference": "P_ARTIST_2392359",
+                    "PartyName": {
+                        "FullName": "Saox"
+                    }
+                },
+                {
+                    "PartyReference": "P_ARTIST_2392360",
+                    "PartyName": {
+                        "FullName": "C. Tangana feat. Steve Lean & Saox"
+                    }
+                },
+                {
+                    "PartyReference": "P_ARTIST_2392361",
+                    "PartyName": {
+                        "FullName": "\u00c1lvaro Jerez Barranco"
+                    }
+                },
+                {
+                    "PartyReference": "P_ARTIST_2510925",
+                    "PartyName": {
+                        "FullName": "Take A Daytrip"
+                    }
+                },
+                {
+                    "PartyReference": "P_ARTIST_4846860",
+                    "PartyName": [
+                        {
+                            "FullName": "Denzel Baptiste"
+                        },
+                        {
+                            "@LanguageAndScriptCode": "ja-Jpan",
+                            "FullName": "Denzel Baptiste"
+                        },
+                        {
+                            "@LanguageAndScriptCode": "ja-Kana",
+                            "FullName": "\u30c7\u30f3\u30bc\u30eb\u30d0\u30d7\u30c6\u30a3\u30b9\u30c8"
+                        }
+                    ]
+                },
+                {
+                    "PartyReference": "P_ARTIST_4849892",
+                    "PartyName": [
+                        {
+                            "FullName": "David Biral"
+                        },
+                        {
+                            "@LanguageAndScriptCode": "ja-Jpan",
+                            "FullName": "David Biral"
+                        },
+                        {
+                            "@LanguageAndScriptCode": "ja-Kana",
+                            "FullName": "\u30c7\u30a4\u30d3\u30c3\u30c9\u30d3\u30e9\u30eb"
+                        }
+                    ]
+                },
+                {
+                    "PartyReference": "P_ARTIST_7818232",
+                    "PartyName": {
+                        "FullName": "Sky Rompiendo"
+                    }
+                },
+                {
+                    "PartyReference": "P_ARTIST_7818233",
+                    "PartyName": {
+                        "FullName": "C. Tangana feat. Sky Rompiendo"
+                    }
+                },
+                {
+                    "PartyReference": "P_LABEL_SONY_MUSIC_ENTERTAINMENT",
+                    "PartyName": {
+                        "FullName": "Sony Music Entertainment"
+                    }
+                }
+            ]
+        },
+        "ResourceList": {
+            "SoundRecording": [
+                {
+                    "ResourceReference": "A1",
+                    "Type": "MusicalWorkSoundRecording",
+                    "SoundRecordingEdition": {
+                        "Type": "NonImmersiveEdition",
+                        "ResourceId": {
+                            "ISRC": "ES5021800052"
+                        },
+                        "PLine": {
+                            "Year": "2018",
+                            "PLineText": "(P) 2018 Sony Music Entertainment Espa\u00f1a, S.L."
+                        },
+                        "TechnicalDetails": {
+                            "TechnicalResourceDetailsReference": "T1",
+                            "DeliveryFile": {
+                                "Type": "AudioFile",
+                                "AudioCodecType": "MP3",
+                                "BitRate": {
+                                    "@UnitOfMeasure": "kbps",
+                                    "#text": "192"
+                                },
+                                "NumberOfChannels": "2",
+                                "SamplingRate": {
+                                    "@UnitOfMeasure": "kHz",
+                                    "#text": "44.1"
+                                },
+                                "BitsPerSample": "16",
+                                "File": {
+                                    "URI": "resources/A10301A0003914291X_T-1036712743349_SoundRecording_001-001.mp3",
+                                    "HashSum": {
+                                        "Algorithm": "MD5",
+                                        "HashSumValue": "a8e63a7321b7347427a007d75da91f56"
+                                    },
+                                    "FileSize": "2173711"
+                                },
+                                "IsProvidedInDelivery": "true"
+                            },
+                            "IsClip": "false"
+                        }
+                    },
+                    "DisplayTitleText": {
+                        "@LanguageAndScriptCode": "en",
+                        "#text": "Still Rapping"
+                    },
+                    "DisplayTitle": {
+                        "@LanguageAndScriptCode": "en",
+                        "TitleText": "Still Rapping"
+                    },
+                    "DisplayArtistName": "C. Tangana feat. Steve Lean",
+                    "DisplayArtist": [
+                        {
+                            "@SequenceNumber": "1",
+                            "ArtistPartyReference": "P_ARTIST_2265956",
+                            "DisplayArtistRole": "MainArtist",
+                            "ArtisticRole": "AssociatedPerformer"
+                        },
+                        {
+                            "@SequenceNumber": "2",
+                            "ArtistPartyReference": "P_ARTIST_2385493",
+                            "DisplayArtistRole": "FeaturedArtist",
+                            "ArtisticRole": [
+                                "AssociatedPerformer",
+                                {
+                                    "@Namespace": "DPID:PADPIDA2007040502I",
+                                    "@UserDefinedValue": "Producer",
+                                    "#text": "UserDefined"
+                                }
+                            ]
+                        }
+                    ],
+                    "Contributor": [
+                        {
+                            "@SequenceNumber": "1",
+                            "ContributorPartyReference": "P_ARTIST_2385494",
+                            "Role": "AssociatedPerformer"
+                        },
+                        {
+                            "@SequenceNumber": "2",
+                            "ContributorPartyReference": "P_ARTIST_2265957",
+                            "Role": [
+                                "Composer",
+                                "Lyricist"
+                            ]
+                        },
+                        {
+                            "@SequenceNumber": "3",
+                            "ContributorPartyReference": "P_ARTIST_2369178",
+                            "Role": [
+                                {
+                                    "@Namespace": "DPID:PADPIDA2007040502I",
+                                    "@UserDefinedValue": "Mastering Engineer",
+                                    "#text": "UserDefined"
+                                },
+                                {
+                                    "@Namespace": "DPID:PADPIDA2007040502I",
+                                    "@UserDefinedValue": "Mixing Engineer",
+                                    "#text": "UserDefined"
+                                }
+                            ]
+                        },
+                        {
+                            "@SequenceNumber": "4",
+                            "ContributorPartyReference": "P_ARTIST_2392237",
+                            "Role": "Composer"
+                        }
+                    ],
+                    "Duration": "PT0H1M31S",
+                    "ParentalWarningType": "ExplicitContentEdited",
+                    "LanguageOfPerformance": "es"
+                },
+                {
+                    "ResourceReference": "A2",
+                    "Type": "MusicalWorkSoundRecording",
+                    "SoundRecordingEdition": {
+                        "Type": "NonImmersiveEdition",
+                        "ResourceId": {
+                            "ISRC": "ES5021800168"
+                        },
+                        "PLine": {
+                            "Year": "2018",
+                            "PLineText": "(P) 2018 Sony Music Entertainment Espa\u00f1a, S.L."
+                        },
+                        "TechnicalDetails": {
+                            "TechnicalResourceDetailsReference": "T2",
+                            "DeliveryFile": {
+                                "Type": "AudioFile",
+                                "AudioCodecType": "MP3",
+                                "BitRate": {
+                                    "@UnitOfMeasure": "kbps",
+                                    "#text": "192"
+                                },
+                                "NumberOfChannels": "2",
+                                "SamplingRate": {
+                                    "@UnitOfMeasure": "kHz",
+                                    "#text": "44.1"
+                                },
+                                "BitsPerSample": "16",
+                                "File": {
+                                    "URI": "resources/A10301A0003914291X_T-1036712743350_SoundRecording_001-002.mp3",
+                                    "HashSum": {
+                                        "Algorithm": "MD5",
+                                        "HashSumValue": "990a08a0f7407ad6cdc869ef06a443c4"
+                                    },
+                                    "FileSize": "4809891"
+                                },
+                                "IsProvidedInDelivery": "true"
+                            },
+                            "IsClip": "false"
+                        }
+                    },
+                    "DisplayTitleText": {
+                        "@LanguageAndScriptCode": "es",
+                        "#text": "Baile de la Lluvia"
+                    },
+                    "DisplayTitle": {
+                        "@LanguageAndScriptCode": "es",
+                        "TitleText": "Baile de la Lluvia"
+                    },
+                    "DisplayArtistName": "C. Tangana feat. Take a Daytrip",
+                    "DisplayArtist": [
+                        {
+                            "@SequenceNumber": "1",
+                            "ArtistPartyReference": "P_ARTIST_2265956",
+                            "DisplayArtistRole": "MainArtist",
+                            "ArtisticRole": "AssociatedPerformer"
+                        },
+                        {
+                            "@SequenceNumber": "2",
+                            "ArtistPartyReference": "P_ARTIST_2510925",
+                            "DisplayArtistRole": "FeaturedArtist",
+                            "ArtisticRole": [
+                                "AssociatedPerformer",
+                                {
+                                    "@Namespace": "DPID:PADPIDA2007040502I",
+                                    "@UserDefinedValue": "Producer",
+                                    "#text": "UserDefined"
+                                }
+                            ]
+                        }
+                    ],
+                    "Contributor": [
+                        {
+                            "@SequenceNumber": "1",
+                            "ContributorPartyReference": "P_ARTIST_2392350",
+                            "Role": "AssociatedPerformer"
+                        },
+                        {
+                            "@SequenceNumber": "2",
+                            "ContributorPartyReference": "P_ARTIST_2265957",
+                            "Role": [
+                                "Composer",
+                                "Lyricist"
+                            ]
+                        },
+                        {
+                            "@SequenceNumber": "3",
+                            "ContributorPartyReference": "P_ARTIST_4846860",
+                            "Role": "Composer"
+                        },
+                        {
+                            "@SequenceNumber": "4",
+                            "ContributorPartyReference": "P_ARTIST_2386670",
+                            "Role": {
+                                "@Namespace": "DPID:PADPIDA2007040502I",
+                                "@UserDefinedValue": "Producer",
+                                "#text": "UserDefined"
+                            }
+                        },
+                        {
+                            "@SequenceNumber": "5",
+                            "ContributorPartyReference": "P_ARTIST_2385988",
+                            "Role": [
+                                {
+                                    "@Namespace": "DPID:PADPIDA2007040502I",
+                                    "@UserDefinedValue": "Mastering Engineer",
+                                    "#text": "UserDefined"
+                                },
+                                {
+                                    "@Namespace": "DPID:PADPIDA2007040502I",
+                                    "@UserDefinedValue": "Mixing Engineer",
+                                    "#text": "UserDefined"
+                                }
+                            ]
+                        },
+                        {
+                            "@SequenceNumber": "6",
+                            "ContributorPartyReference": "P_ARTIST_4849892",
+                            "Role": "Composer"
+                        }
+                    ],
+                    "Duration": "PT0H3M14S",
+                    "ParentalWarningType": "ExplicitContentEdited",
+                    "LanguageOfPerformance": "es"
+                },
+                {
+                    "ResourceReference": "A3",
+                    "Type": "MusicalWorkSoundRecording",
+                    "SoundRecordingEdition": {
+                        "Type": "NonImmersiveEdition",
+                        "ResourceId": {
+                            "ISRC": "ES5021800169"
+                        },
+                        "PLine": {
+                            "Year": "2018",
+                            "PLineText": "(P) 2018 Sony Music Entertainment Espa\u00f1a, S.L."
+                        },
+                        "TechnicalDetails": {
+                            "TechnicalResourceDetailsReference": "T3",
+                            "DeliveryFile": {
+                                "Type": "AudioFile",
+                                "AudioCodecType": "MP3",
+                                "BitRate": {
+                                    "@UnitOfMeasure": "kbps",
+                                    "#text": "192"
+                                },
+                                "NumberOfChannels": "2",
+                                "SamplingRate": {
+                                    "@UnitOfMeasure": "kHz",
+                                    "#text": "44.1"
+                                },
+                                "BitsPerSample": "16",
+                                "File": {
+                                    "URI": "resources/A10301A0003914291X_T-1036712743351_SoundRecording_001-003.mp3",
+                                    "HashSum": {
+                                        "Algorithm": "MD5",
+                                        "HashSumValue": "ebb3bee926cb674273d549eaf405622e"
+                                    },
+                                    "FileSize": "3579560"
+                                },
+                                "IsProvidedInDelivery": "true"
+                            },
+                            "IsClip": "false"
+                        }
+                    },
+                    "DisplayTitleText": {
+                        "@LanguageAndScriptCode": "es",
+                        "#text": "Cuando Me Miras"
+                    },
+                    "DisplayTitle": {
+                        "@LanguageAndScriptCode": "es",
+                        "TitleText": "Cuando Me Miras"
+                    },
+                    "DisplayArtistName": "C. Tangana feat. Enry-K",
+                    "DisplayArtist": [
+                        {
+                            "@SequenceNumber": "1",
+                            "ArtistPartyReference": "P_ARTIST_2265956",
+                            "DisplayArtistRole": "MainArtist",
+                            "ArtisticRole": "AssociatedPerformer"
+                        },
+                        {
+                            "@SequenceNumber": "2",
+                            "ArtistPartyReference": "P_ARTIST_2392356",
+                            "DisplayArtistRole": "FeaturedArtist",
+                            "ArtisticRole": [
+                                "AssociatedPerformer",
+                                {
+                                    "@Namespace": "DPID:PADPIDA2007040502I",
+                                    "@UserDefinedValue": "Producer",
+                                    "#text": "UserDefined"
+                                }
+                            ]
+                        }
+                    ],
+                    "Contributor": [
+                        {
+                            "@SequenceNumber": "1",
+                            "ContributorPartyReference": "P_ARTIST_2392357",
+                            "Role": "AssociatedPerformer"
+                        },
+                        {
+                            "@SequenceNumber": "2",
+                            "ContributorPartyReference": "P_ARTIST_2265957",
+                            "Role": [
+                                "Composer",
+                                "Lyricist"
+                            ]
+                        },
+                        {
+                            "@SequenceNumber": "3",
+                            "ContributorPartyReference": "P_ARTIST_2392358",
+                            "Role": "Composer"
+                        },
+                        {
+                            "@SequenceNumber": "4",
+                            "ContributorPartyReference": "P_ARTIST_2386670",
+                            "Role": {
+                                "@Namespace": "DPID:PADPIDA2007040502I",
+                                "@UserDefinedValue": "Producer",
+                                "#text": "UserDefined"
+                            }
+                        },
+                        {
+                            "@SequenceNumber": "5",
+                            "ContributorPartyReference": "P_ARTIST_2385988",
+                            "Role": [
+                                {
+                                    "@Namespace": "DPID:PADPIDA2007040502I",
+                                    "@UserDefinedValue": "Mastering Engineer",
+                                    "#text": "UserDefined"
+                                },
+                                {
+                                    "@Namespace": "DPID:PADPIDA2007040502I",
+                                    "@UserDefinedValue": "Mixing Engineer",
+                                    "#text": "UserDefined"
+                                }
+                            ]
+                        }
+                    ],
+                    "Duration": "PT0H2M23S",
+                    "ParentalWarningType": "ExplicitContentEdited",
+                    "LanguageOfPerformance": "es"
+                },
+                {
+                    "ResourceReference": "A4",
+                    "Type": "MusicalWorkSoundRecording",
+                    "SoundRecordingEdition": {
+                        "Type": "NonImmersiveEdition",
+                        "ResourceId": {
+                            "ISRC": "ES5021800170"
+                        },
+                        "PLine": {
+                            "Year": "2018",
+                            "PLineText": "(P) 2018 Sony Music Entertainment Espa\u00f1a, S.L."
+                        },
+                        "TechnicalDetails": {
+                            "TechnicalResourceDetailsReference": "T4",
+                            "DeliveryFile": {
+                                "Type": "AudioFile",
+                                "AudioCodecType": "MP3",
+                                "BitRate": {
+                                    "@UnitOfMeasure": "kbps",
+                                    "#text": "192"
+                                },
+                                "NumberOfChannels": "2",
+                                "SamplingRate": {
+                                    "@UnitOfMeasure": "kHz",
+                                    "#text": "44.1"
+                                },
+                                "BitsPerSample": "16",
+                                "File": {
+                                    "URI": "resources/A10301A0003914291X_T-1036712743352_SoundRecording_001-004.mp3",
+                                    "HashSum": {
+                                        "Algorithm": "MD5",
+                                        "HashSumValue": "cb672a30f62671479b5fd43cfcd9d8d9"
+                                    },
+                                    "FileSize": "3411695"
+                                },
+                                "IsProvidedInDelivery": "true"
+                            },
+                            "IsClip": "false"
+                        }
+                    },
+                    "DisplayTitleText": {
+                        "@LanguageAndScriptCode": "es",
+                        "#text": "Na de Na"
+                    },
+                    "DisplayTitle": {
+                        "@LanguageAndScriptCode": "es",
+                        "TitleText": "Na de Na"
+                    },
+                    "DisplayArtistName": "C. Tangana feat. Danni Ble & Royce Rolo",
+                    "DisplayArtist": [
+                        {
+                            "@SequenceNumber": "1",
+                            "ArtistPartyReference": "P_ARTIST_2265956",
+                            "DisplayArtistRole": "MainArtist",
+                            "ArtisticRole": "AssociatedPerformer"
+                        },
+                        {
+                            "@SequenceNumber": "2",
+                            "ArtistPartyReference": "P_ARTIST_2392342",
+                            "DisplayArtistRole": "FeaturedArtist",
+                            "ArtisticRole": [
+                                "AssociatedPerformer",
+                                {
+                                    "@Namespace": "DPID:PADPIDA2007040502I",
+                                    "@UserDefinedValue": "Producer",
+                                    "#text": "UserDefined"
+                                }
+                            ]
+                        },
+                        {
+                            "@SequenceNumber": "3",
+                            "ArtistPartyReference": "P_ARTIST_2392343",
+                            "DisplayArtistRole": "FeaturedArtist",
+                            "ArtisticRole": [
+                                "AssociatedPerformer",
+                                {
+                                    "@Namespace": "DPID:PADPIDA2007040502I",
+                                    "@UserDefinedValue": "Producer",
+                                    "#text": "UserDefined"
+                                }
+                            ]
+                        }
+                    ],
+                    "Contributor": [
+                        {
+                            "@SequenceNumber": "1",
+                            "ContributorPartyReference": "P_ARTIST_2392353",
+                            "Role": "AssociatedPerformer"
+                        },
+                        {
+                            "@SequenceNumber": "2",
+                            "ContributorPartyReference": "P_ARTIST_2265957",
+                            "Role": [
+                                "Composer",
+                                "Lyricist"
+                            ]
+                        },
+                        {
+                            "@SequenceNumber": "3",
+                            "ContributorPartyReference": "P_ARTIST_2392345",
+                            "Role": "Composer"
+                        },
+                        {
+                            "@SequenceNumber": "4",
+                            "ContributorPartyReference": "P_ARTIST_2385988",
+                            "Role": [
+                                {
+                                    "@Namespace": "DPID:PADPIDA2007040502I",
+                                    "@UserDefinedValue": "Mastering Engineer",
+                                    "#text": "UserDefined"
+                                },
+                                {
+                                    "@Namespace": "DPID:PADPIDA2007040502I",
+                                    "@UserDefinedValue": "Mixing Engineer",
+                                    "#text": "UserDefined"
+                                }
+                            ]
+                        },
+                        {
+                            "@SequenceNumber": "5",
+                            "ContributorPartyReference": "P_ARTIST_2324827",
+                            "Role": "Composer"
+                        }
+                    ],
+                    "Duration": "PT0H2M20S",
+                    "ParentalWarningType": "Explicit",
+                    "LanguageOfPerformance": "es"
+                },
+                {
+                    "ResourceReference": "A5",
+                    "Type": "MusicalWorkSoundRecording",
+                    "SoundRecordingEdition": {
+                        "Type": "NonImmersiveEdition",
+                        "ResourceId": {
+                            "ISRC": "ES5021800171"
+                        },
+                        "PLine": {
+                            "Year": "2018",
+                            "PLineText": "(P) 2018 Sony Music Entertainment Espa\u00f1a, S.L."
+                        },
+                        "TechnicalDetails": {
+                            "TechnicalResourceDetailsReference": "T5",
+                            "DeliveryFile": {
+                                "Type": "AudioFile",
+                                "AudioCodecType": "MP3",
+                                "BitRate": {
+                                    "@UnitOfMeasure": "kbps",
+                                    "#text": "192"
+                                },
+                                "NumberOfChannels": "2",
+                                "SamplingRate": {
+                                    "@UnitOfMeasure": "kHz",
+                                    "#text": "44.1"
+                                },
+                                "BitsPerSample": "16",
+                                "File": {
+                                    "URI": "resources/A10301A0003914291X_T-1036712743353_SoundRecording_001-005.mp3",
+                                    "HashSum": {
+                                        "Algorithm": "MD5",
+                                        "HashSumValue": "1f5fa0e802369e99ed648cb58f510fdf"
+                                    },
+                                    "FileSize": "3290875"
+                                },
+                                "IsProvidedInDelivery": "true"
+                            },
+                            "IsClip": "false"
+                        }
+                    },
+                    "DisplayTitleText": {
+                        "@LanguageAndScriptCode": "es",
+                        "#text": "Huele a Nuevo"
+                    },
+                    "DisplayTitle": {
+                        "@LanguageAndScriptCode": "es",
+                        "TitleText": "Huele a Nuevo"
+                    },
+                    "DisplayArtistName": "C. Tangana feat. Sticky M.A., Danni Ble & Royce Rolo",
+                    "DisplayArtist": [
+                        {
+                            "@SequenceNumber": "1",
+                            "ArtistPartyReference": "P_ARTIST_2265956",
+                            "DisplayArtistRole": "MainArtist",
+                            "ArtisticRole": "AssociatedPerformer"
+                        },
+                        {
+                            "@SequenceNumber": "2",
+                            "ArtistPartyReference": "P_ARTIST_2392341",
+                            "DisplayArtistRole": "FeaturedArtist",
+                            "ArtisticRole": "AssociatedPerformer"
+                        },
+                        {
+                            "@SequenceNumber": "3",
+                            "ArtistPartyReference": "P_ARTIST_2392342",
+                            "DisplayArtistRole": "FeaturedArtist",
+                            "ArtisticRole": [
+                                "AssociatedPerformer",
+                                {
+                                    "@Namespace": "DPID:PADPIDA2007040502I",
+                                    "@UserDefinedValue": "Producer",
+                                    "#text": "UserDefined"
+                                }
+                            ]
+                        },
+                        {
+                            "@SequenceNumber": "4",
+                            "ArtistPartyReference": "P_ARTIST_2392343",
+                            "DisplayArtistRole": "FeaturedArtist",
+                            "ArtisticRole": [
+                                "AssociatedPerformer",
+                                {
+                                    "@Namespace": "DPID:PADPIDA2007040502I",
+                                    "@UserDefinedValue": "Producer",
+                                    "#text": "UserDefined"
+                                }
+                            ]
+                        }
+                    ],
+                    "Contributor": [
+                        {
+                            "@SequenceNumber": "1",
+                            "ContributorPartyReference": "P_ARTIST_2392344",
+                            "Role": "AssociatedPerformer"
+                        },
+                        {
+                            "@SequenceNumber": "2",
+                            "ContributorPartyReference": "P_ARTIST_2265957",
+                            "Role": [
+                                "Composer",
+                                "Lyricist"
+                            ]
+                        },
+                        {
+                            "@SequenceNumber": "3",
+                            "ContributorPartyReference": "P_ARTIST_2392345",
+                            "Role": "Composer"
+                        },
+                        {
+                            "@SequenceNumber": "4",
+                            "ContributorPartyReference": "P_ARTIST_2385988",
+                            "Role": [
+                                {
+                                    "@Namespace": "DPID:PADPIDA2007040502I",
+                                    "@UserDefinedValue": "Mastering Engineer",
+                                    "#text": "UserDefined"
+                                },
+                                {
+                                    "@Namespace": "DPID:PADPIDA2007040502I",
+                                    "@UserDefinedValue": "Mixing Engineer",
+                                    "#text": "UserDefined"
+                                }
+                            ]
+                        },
+                        {
+                            "@SequenceNumber": "5",
+                            "ContributorPartyReference": "P_ARTIST_2324827",
+                            "Role": "Composer"
+                        },
+                        {
+                            "@SequenceNumber": "6",
+                            "ContributorPartyReference": "P_ARTIST_141900",
+                            "Role": [
+                                "Composer",
+                                "Lyricist"
+                            ]
+                        }
+                    ],
+                    "Duration": "PT0H2M14S",
+                    "ParentalWarningType": "ExplicitContentEdited",
+                    "LanguageOfPerformance": "es"
+                },
+                {
+                    "ResourceReference": "A6",
+                    "Type": "MusicalWorkSoundRecording",
+                    "SoundRecordingEdition": {
+                        "Type": "NonImmersiveEdition",
+                        "ResourceId": {
+                            "ISRC": "ES5021800172"
+                        },
+                        "PLine": {
+                            "Year": "2018",
+                            "PLineText": "(P) 2018 Sony Music Entertainment Espa\u00f1a, S.L."
+                        },
+                        "TechnicalDetails": {
+                            "TechnicalResourceDetailsReference": "T6",
+                            "DeliveryFile": {
+                                "Type": "AudioFile",
+                                "AudioCodecType": "MP3",
+                                "BitRate": {
+                                    "@UnitOfMeasure": "kbps",
+                                    "#text": "192"
+                                },
+                                "NumberOfChannels": "2",
+                                "SamplingRate": {
+                                    "@UnitOfMeasure": "kHz",
+                                    "#text": "44.1"
+                                },
+                                "BitsPerSample": "16",
+                                "File": {
+                                    "URI": "resources/A10301A0003914291X_T-1036712743354_SoundRecording_001-006.mp3",
+                                    "HashSum": {
+                                        "Algorithm": "MD5",
+                                        "HashSumValue": "d9f7572c2ef3e0625d46a27cbdb93bec"
+                                    },
+                                    "FileSize": "3258420"
+                                },
+                                "IsProvidedInDelivery": "true"
+                            },
+                            "IsClip": "false"
+                        }
+                    },
+                    "DisplayTitleText": {
+                        "@LanguageAndScriptCode": "es",
+                        "#text": "Sangre"
+                    },
+                    "DisplayTitle": {
+                        "@LanguageAndScriptCode": "es",
+                        "TitleText": "Sangre"
+                    },
+                    "DisplayArtistName": "C. Tangana feat. Steve Lean & Saox",
+                    "DisplayArtist": [
+                        {
+                            "@SequenceNumber": "1",
+                            "ArtistPartyReference": "P_ARTIST_2265956",
+                            "DisplayArtistRole": "MainArtist",
+                            "ArtisticRole": "AssociatedPerformer"
+                        },
+                        {
+                            "@SequenceNumber": "2",
+                            "ArtistPartyReference": "P_ARTIST_2385493",
+                            "DisplayArtistRole": "FeaturedArtist",
+                            "ArtisticRole": [
+                                "AssociatedPerformer",
+                                {
+                                    "@Namespace": "DPID:PADPIDA2007040502I",
+                                    "@UserDefinedValue": "Producer",
+                                    "#text": "UserDefined"
+                                }
+                            ]
+                        },
+                        {
+                            "@SequenceNumber": "3",
+                            "ArtistPartyReference": "P_ARTIST_2392359",
+                            "DisplayArtistRole": "FeaturedArtist",
+                            "ArtisticRole": [
+                                "AssociatedPerformer",
+                                {
+                                    "@Namespace": "DPID:PADPIDA2007040502I",
+                                    "@UserDefinedValue": "Producer",
+                                    "#text": "UserDefined"
+                                }
+                            ]
+                        }
+                    ],
+                    "Contributor": [
+                        {
+                            "@SequenceNumber": "1",
+                            "ContributorPartyReference": "P_ARTIST_2392360",
+                            "Role": "AssociatedPerformer"
+                        },
+                        {
+                            "@SequenceNumber": "2",
+                            "ContributorPartyReference": "P_ARTIST_2265957",
+                            "Role": [
+                                "Composer",
+                                "Lyricist"
+                            ]
+                        },
+                        {
+                            "@SequenceNumber": "3",
+                            "ContributorPartyReference": "P_ARTIST_2392237",
+                            "Role": "Composer"
+                        },
+                        {
+                            "@SequenceNumber": "4",
+                            "ContributorPartyReference": "P_ARTIST_2386670",
+                            "Role": {
+                                "@Namespace": "DPID:PADPIDA2007040502I",
+                                "@UserDefinedValue": "Producer",
+                                "#text": "UserDefined"
+                            }
+                        },
+                        {
+                            "@SequenceNumber": "5",
+                            "ContributorPartyReference": "P_ARTIST_2392361",
+                            "Role": "Composer"
+                        },
+                        {
+                            "@SequenceNumber": "6",
+                            "ContributorPartyReference": "P_ARTIST_2385988",
+                            "Role": [
+                                {
+                                    "@Namespace": "DPID:PADPIDA2007040502I",
+                                    "@UserDefinedValue": "Mastering Engineer",
+                                    "#text": "UserDefined"
+                                },
+                                {
+                                    "@Namespace": "DPID:PADPIDA2007040502I",
+                                    "@UserDefinedValue": "Mixing Engineer",
+                                    "#text": "UserDefined"
+                                }
+                            ]
+                        }
+                    ],
+                    "Duration": "PT0H2M12S",
+                    "ParentalWarningType": "Explicit",
+                    "LanguageOfPerformance": "es"
+                },
+                {
+                    "ResourceReference": "A7",
+                    "Type": "MusicalWorkSoundRecording",
+                    "SoundRecordingEdition": {
+                        "Type": "NonImmersiveEdition",
+                        "ResourceId": {
+                            "ISRC": "ES5021800135"
+                        },
+                        "PLine": {
+                            "Year": "2018",
+                            "PLineText": "(P) 2018 Sony Music Entertainment Espa\u00f1a, S.L."
+                        },
+                        "TechnicalDetails": {
+                            "TechnicalResourceDetailsReference": "T7",
+                            "DeliveryFile": {
+                                "Type": "AudioFile",
+                                "AudioCodecType": "MP3",
+                                "BitRate": {
+                                    "@UnitOfMeasure": "kbps",
+                                    "#text": "192"
+                                },
+                                "NumberOfChannels": "2",
+                                "SamplingRate": {
+                                    "@UnitOfMeasure": "kHz",
+                                    "#text": "44.1"
+                                },
+                                "BitsPerSample": "16",
+                                "File": {
+                                    "URI": "resources/A10301A0003914291X_T-1036712743355_SoundRecording_001-007.mp3",
+                                    "HashSum": {
+                                        "Algorithm": "MD5",
+                                        "HashSumValue": "5782c9d637a11cd71e7b2c9b1c7064f8"
+                                    },
+                                    "FileSize": "3548402"
+                                },
+                                "IsProvidedInDelivery": "true"
+                            },
+                            "IsClip": "false"
+                        }
+                    },
+                    "DisplayTitleText": {
+                        "@LanguageAndScriptCode": "es",
+                        "#text": "Llorando en la Limo"
+                    },
+                    "DisplayTitle": {
+                        "@LanguageAndScriptCode": "es",
+                        "TitleText": "Llorando en la Limo"
+                    },
+                    "DisplayArtistName": "C. Tangana feat. Alizzz",
+                    "DisplayArtist": [
+                        {
+                            "@SequenceNumber": "1",
+                            "ArtistPartyReference": "P_ARTIST_2265956",
+                            "DisplayArtistRole": "MainArtist",
+                            "ArtisticRole": "AssociatedPerformer"
+                        },
+                        {
+                            "@SequenceNumber": "2",
+                            "ArtistPartyReference": "P_ARTIST_2385986",
+                            "DisplayArtistRole": "FeaturedArtist",
+                            "ArtisticRole": [
+                                "AssociatedPerformer",
+                                {
+                                    "@Namespace": "DPID:PADPIDA2007040502I",
+                                    "@UserDefinedValue": "Producer",
+                                    "#text": "UserDefined"
+                                }
+                            ]
+                        }
+                    ],
+                    "Contributor": [
+                        {
+                            "@SequenceNumber": "1",
+                            "ContributorPartyReference": "P_ARTIST_2385987",
+                            "Role": "AssociatedPerformer"
+                        },
+                        {
+                            "@SequenceNumber": "2",
+                            "ContributorPartyReference": "P_ARTIST_2265957",
+                            "Role": [
+                                "Composer",
+                                "Lyricist"
+                            ]
+                        },
+                        {
+                            "@SequenceNumber": "3",
+                            "ContributorPartyReference": "P_ARTIST_2385988",
+                            "Role": [
+                                {
+                                    "@Namespace": "DPID:PADPIDA2007040502I",
+                                    "@UserDefinedValue": "Mastering Engineer",
+                                    "#text": "UserDefined"
+                                },
+                                {
+                                    "@Namespace": "DPID:PADPIDA2007040502I",
+                                    "@UserDefinedValue": "Mixing Engineer",
+                                    "#text": "UserDefined"
+                                }
+                            ]
+                        },
+                        {
+                            "@SequenceNumber": "4",
+                            "ContributorPartyReference": "P_ARTIST_2324724",
+                            "Role": "Composer"
+                        }
+                    ],
+                    "Duration": "PT0H2M19S",
+                    "ParentalWarningType": "Explicit",
+                    "LanguageOfPerformance": "es"
+                },
+                {
+                    "ResourceReference": "A8",
+                    "Type": "MusicalWorkSoundRecording",
+                    "SoundRecordingEdition": {
+                        "Type": "NonImmersiveEdition",
+                        "ResourceId": {
+                            "ISRC": "ES5021800173"
+                        },
+                        "PLine": {
+                            "Year": "2018",
+                            "PLineText": "(P) 2018 Sony Music Entertainment Espa\u00f1a, S.L."
+                        },
+                        "TechnicalDetails": {
+                            "TechnicalResourceDetailsReference": "T8",
+                            "DeliveryFile": {
+                                "Type": "AudioFile",
+                                "AudioCodecType": "MP3",
+                                "BitRate": {
+                                    "@UnitOfMeasure": "kbps",
+                                    "#text": "192"
+                                },
+                                "NumberOfChannels": "2",
+                                "SamplingRate": {
+                                    "@UnitOfMeasure": "kHz",
+                                    "#text": "44.1"
+                                },
+                                "BitsPerSample": "16",
+                                "File": {
+                                    "URI": "resources/A10301A0003914291X_T-1036712743356_SoundRecording_001-008.mp3",
+                                    "HashSum": {
+                                        "Algorithm": "MD5",
+                                        "HashSumValue": "4b6ad07077c14972df1fe3dccdf66fee"
+                                    },
+                                    "FileSize": "3080124"
+                                },
+                                "IsProvidedInDelivery": "true"
+                            },
+                            "IsClip": "false"
+                        }
+                    },
+                    "DisplayTitleText": {
+                        "@LanguageAndScriptCode": "fr",
+                        "#text": "Cabernet Sauvignon"
+                    },
+                    "DisplayTitle": {
+                        "@LanguageAndScriptCode": "fr",
+                        "TitleText": "Cabernet Sauvignon"
+                    },
+                    "DisplayArtistName": "C. Tangana feat. Lost Twin",
+                    "DisplayArtist": [
+                        {
+                            "@SequenceNumber": "1",
+                            "ArtistPartyReference": "P_ARTIST_2265956",
+                            "DisplayArtistRole": "MainArtist",
+                            "ArtisticRole": "AssociatedPerformer"
+                        },
+                        {
+                            "@SequenceNumber": "2",
+                            "ArtistPartyReference": "P_ARTIST_2386670",
+                            "DisplayArtistRole": "FeaturedArtist",
+                            "ArtisticRole": [
+                                "AssociatedPerformer",
+                                {
+                                    "@Namespace": "DPID:PADPIDA2007040502I",
+                                    "@UserDefinedValue": "Producer",
+                                    "#text": "UserDefined"
+                                }
+                            ]
+                        }
+                    ],
+                    "Contributor": [
+                        {
+                            "@SequenceNumber": "1",
+                            "ContributorPartyReference": "P_ARTIST_2392347",
+                            "Role": "AssociatedPerformer"
+                        },
+                        {
+                            "@SequenceNumber": "2",
+                            "ContributorPartyReference": "P_ARTIST_2265957",
+                            "Role": [
+                                "Composer",
+                                "Lyricist"
+                            ]
+                        },
+                        {
+                            "@SequenceNumber": "3",
+                            "ContributorPartyReference": "P_ARTIST_2385988",
+                            "Role": [
+                                {
+                                    "@Namespace": "DPID:PADPIDA2007040502I",
+                                    "@UserDefinedValue": "Mastering Engineer",
+                                    "#text": "UserDefined"
+                                },
+                                {
+                                    "@Namespace": "DPID:PADPIDA2007040502I",
+                                    "@UserDefinedValue": "Mixing Engineer",
+                                    "#text": "UserDefined"
+                                }
+                            ]
+                        },
+                        {
+                            "@SequenceNumber": "4",
+                            "ContributorPartyReference": "P_ARTIST_2392348",
+                            "Role": "Composer"
+                        }
+                    ],
+                    "Duration": "PT0H2M6S",
+                    "ParentalWarningType": "Explicit",
+                    "LanguageOfPerformance": "es"
+                },
+                {
+                    "ResourceReference": "A9",
+                    "Type": "MusicalWorkSoundRecording",
+                    "SoundRecordingEdition": {
+                        "Type": "NonImmersiveEdition",
+                        "ResourceId": {
+                            "ISRC": "ES5021800174"
+                        },
+                        "PLine": {
+                            "Year": "2018",
+                            "PLineText": "(P) 2018 Sony Music Entertainment Espa\u00f1a, S.L."
+                        },
+                        "TechnicalDetails": {
+                            "TechnicalResourceDetailsReference": "T9",
+                            "DeliveryFile": {
+                                "Type": "AudioFile",
+                                "AudioCodecType": "MP3",
+                                "BitRate": {
+                                    "@UnitOfMeasure": "kbps",
+                                    "#text": "192"
+                                },
+                                "NumberOfChannels": "2",
+                                "SamplingRate": {
+                                    "@UnitOfMeasure": "kHz",
+                                    "#text": "44.1"
+                                },
+                                "BitsPerSample": "16",
+                                "File": {
+                                    "URI": "resources/A10301A0003914291X_T-1036712743357_SoundRecording_001-009.mp3",
+                                    "HashSum": {
+                                        "Algorithm": "MD5",
+                                        "HashSumValue": "ea9916c7869c8862c6a8e15c08bd9599"
+                                    },
+                                    "FileSize": "3405399"
+                                },
+                                "IsProvidedInDelivery": "true"
+                            },
+                            "IsClip": "false"
+                        }
+                    },
+                    "DisplayTitleText": {
+                        "@LanguageAndScriptCode": "en",
+                        "#text": "Pussy Call"
+                    },
+                    "DisplayTitle": {
+                        "@LanguageAndScriptCode": "en",
+                        "TitleText": "Pussy Call"
+                    },
+                    "DisplayArtistName": "C. Tangana feat. The Rudeboyz",
+                    "DisplayArtist": [
+                        {
+                            "@SequenceNumber": "1",
+                            "ArtistPartyReference": "P_ARTIST_2265956",
+                            "DisplayArtistRole": "MainArtist",
+                            "ArtisticRole": "AssociatedPerformer"
+                        },
+                        {
+                            "@SequenceNumber": "2",
+                            "ArtistPartyReference": "P_ARTIST_2392354",
+                            "DisplayArtistRole": "FeaturedArtist",
+                            "ArtisticRole": "AssociatedPerformer"
+                        }
+                    ],
+                    "Contributor": [
+                        {
+                            "@SequenceNumber": "1",
+                            "ContributorPartyReference": "P_ARTIST_2392355",
+                            "Role": "AssociatedPerformer"
+                        },
+                        {
+                            "@SequenceNumber": "2",
+                            "ContributorPartyReference": "P_ARTIST_2265957",
+                            "Role": [
+                                "Composer",
+                                "Lyricist"
+                            ]
+                        },
+                        {
+                            "@SequenceNumber": "3",
+                            "ContributorPartyReference": "P_ARTIST_2258333",
+                            "Role": {
+                                "@Namespace": "DPID:PADPIDA2007040502I",
+                                "@UserDefinedValue": "Producer",
+                                "#text": "UserDefined"
+                            }
+                        },
+                        {
+                            "@SequenceNumber": "4",
+                            "ContributorPartyReference": "P_ARTIST_2385988",
+                            "Role": [
+                                {
+                                    "@Namespace": "DPID:PADPIDA2007040502I",
+                                    "@UserDefinedValue": "Mastering Engineer",
+                                    "#text": "UserDefined"
+                                },
+                                {
+                                    "@Namespace": "DPID:PADPIDA2007040502I",
+                                    "@UserDefinedValue": "Mixing Engineer",
+                                    "#text": "UserDefined"
+                                }
+                            ]
+                        },
+                        {
+                            "@SequenceNumber": "5",
+                            "ContributorPartyReference": "P_ARTIST_12910",
+                            "Role": "Composer"
+                        },
+                        {
+                            "@SequenceNumber": "6",
+                            "ContributorPartyReference": "P_ARTIST_2131991",
+                            "Role": "Composer"
+                        }
+                    ],
+                    "Duration": "PT0H2M18S",
+                    "ParentalWarningType": "Explicit",
+                    "LanguageOfPerformance": "es"
+                },
+                {
+                    "ResourceReference": "A10",
+                    "Type": "MusicalWorkSoundRecording",
+                    "SoundRecordingEdition": {
+                        "Type": "NonImmersiveEdition",
+                        "ResourceId": {
+                            "ISRC": "ES5021800195"
+                        },
+                        "PLine": {
+                            "Year": "2018",
+                            "PLineText": "(P) 2018 Sony Music Entertainment Espa\u00f1a, S.L."
+                        },
+                        "TechnicalDetails": {
+                            "TechnicalResourceDetailsReference": "T10",
+                            "DeliveryFile": {
+                                "Type": "AudioFile",
+                                "AudioCodecType": "MP3",
+                                "BitRate": {
+                                    "@UnitOfMeasure": "kbps",
+                                    "#text": "192"
+                                },
+                                "NumberOfChannels": "2",
+                                "SamplingRate": {
+                                    "@UnitOfMeasure": "kHz",
+                                    "#text": "44.1"
+                                },
+                                "BitsPerSample": "16",
+                                "File": {
+                                    "URI": "resources/A10301A0003914291X_T-1036712743358_SoundRecording_001-010.mp3",
+                                    "HashSum": {
+                                        "Algorithm": "MD5",
+                                        "HashSumValue": "33a8de0ef6d6d5594ea76dfa64441e62"
+                                    },
+                                    "FileSize": "3984266"
+                                },
+                                "IsProvidedInDelivery": "true"
+                            },
+                            "IsClip": "false"
+                        }
+                    },
+                    "DisplayTitleText": {
+                        "@LanguageAndScriptCode": "es",
+                        "#text": "Siempre Quise Todo"
+                    },
+                    "DisplayTitle": {
+                        "@LanguageAndScriptCode": "es",
+                        "TitleText": "Siempre Quise Todo"
+                    },
+                    "DisplayArtistName": "C. Tangana feat. Sky",
+                    "DisplayArtist": [
+                        {
+                            "@SequenceNumber": "1",
+                            "ArtistPartyReference": "P_ARTIST_2265956",
+                            "DisplayArtistRole": "MainArtist",
+                            "ArtisticRole": "AssociatedPerformer"
+                        },
+                        {
+                            "@SequenceNumber": "2",
+                            "ArtistPartyReference": "P_ARTIST_7818232",
+                            "DisplayArtistRole": "FeaturedArtist",
+                            "ArtisticRole": [
+                                "AssociatedPerformer",
+                                {
+                                    "@Namespace": "DPID:PADPIDA2007040502I",
+                                    "@UserDefinedValue": "Producer",
+                                    "#text": "UserDefined"
+                                }
+                            ]
+                        }
+                    ],
+                    "Contributor": [
+                        {
+                            "@SequenceNumber": "1",
+                            "ContributorPartyReference": "P_ARTIST_7818233",
+                            "Role": "AssociatedPerformer"
+                        },
+                        {
+                            "@SequenceNumber": "2",
+                            "ContributorPartyReference": "P_ARTIST_2265957",
+                            "Role": [
+                                "Composer",
+                                "Lyricist"
+                            ]
+                        },
+                        {
+                            "@SequenceNumber": "3",
+                            "ContributorPartyReference": "P_ARTIST_2096653",
+                            "Role": "Composer"
+                        },
+                        {
+                            "@SequenceNumber": "4",
+                            "ContributorPartyReference": "P_ARTIST_2385988",
+                            "Role": [
+                                {
+                                    "@Namespace": "DPID:PADPIDA2007040502I",
+                                    "@UserDefinedValue": "Mastering Engineer",
+                                    "#text": "UserDefined"
+                                },
+                                {
+                                    "@Namespace": "DPID:PADPIDA2007040502I",
+                                    "@UserDefinedValue": "Mixing Engineer",
+                                    "#text": "UserDefined"
+                                }
+                            ]
+                        }
+                    ],
+                    "Duration": "PT0H2M42S",
+                    "ParentalWarningType": "Explicit",
+                    "LanguageOfPerformance": "es"
+                }
+            ],
+            "Image": {
+                "ResourceReference": "A11",
+                "Type": "FrontCoverImage",
+                "ResourceId": {
+                    "ProprietaryId": {
+                        "@Namespace": "DPID:PADPIDA2007040502I",
+                        "#text": "G010003914291X"
+                    }
+                },
+                "FirstPublicationDate": {
+                    "FulfillmentDate": "2018-04-19"
+                },
+                "TechnicalDetails": {
+                    "TechnicalResourceDetailsReference": "T11",
+                    "ImageCodecType": "JPEG",
+                    "ImageHeight": "1400",
+                    "ImageWidth": "1400",
+                    "ImageResolution": "72",
+                    "File": {
+                        "URI": "resources/A10301A0003914291X_T-1020412743254_Image.jpg",
+                        "HashSum": {
+                            "Algorithm": "MD5",
+                            "HashSumValue": "ebb6f2918b391a4f5316e562db186870"
+                        },
+                        "FileSize": "3988654"
+                    },
+                    "IsProvidedInDelivery": "true"
+                }
+            }
+        },
+        "ReleaseList": {
+            "Release": {
+                "ReleaseReference": "R0",
+                "ReleaseType": "Album",
+                "ReleaseId": {
+                    "GRid": "A10301A0003914291X",
+                    "ICPN": "886447056493",
+                    "CatalogNumber": {
+                        "@Namespace": "DPID:PADPIDA2007040502I",
+                        "#text": "G010003914291X"
+                    }
+                },
+                "DisplayTitleText": {
+                    "@LanguageAndScriptCode": "es",
+                    "#text": "Avida Dollars"
+                },
+                "DisplayTitle": {
+                    "@LanguageAndScriptCode": "es",
+                    "TitleText": "Avida Dollars"
+                },
+                "DisplayArtistName": "C. Tangana",
+                "DisplayArtist": {
+                    "@SequenceNumber": "1",
+                    "ArtistPartyReference": "P_ARTIST_2265956",
+                    "DisplayArtistRole": "MainArtist"
+                },
+                "ReleaseLabelReference": {
+                    "@LabelType": "DisplayLabel",
+                    "#text": "P_LABEL_SONY_MUSIC_ENTERTAINMENT"
+                },
+                "PLine": {
+                    "Year": "2018",
+                    "PLineText": "(P) 2018 Sony Music Entertainment Espa\u00f1a, S.L."
+                },
+                "Duration": "PT0H23M19S",
+                "Genre": {
+                    "@ApplicableTerritoryCode": "US",
+                    "GenreText": "Latin Pop"
+                },
+                "OriginalReleaseDate": "2018-04-19",
+                "ParentalWarningType": "Explicit",
+                "ResourceGroup": {
+                    "AdditionalTitle": {
+                        "@TitleType": "GroupingTitle",
+                        "TitleText": "Disc 1"
+                    },
+                    "SequenceNumber": "1",
+                    "ResourceGroupContentItem": [
+                        {
+                            "SequenceNumber": "1",
+                            "ReleaseResourceReference": "A1"
+                        },
+                        {
+                            "SequenceNumber": "2",
+                            "ReleaseResourceReference": "A2"
+                        },
+                        {
+                            "SequenceNumber": "3",
+                            "ReleaseResourceReference": "A3"
+                        },
+                        {
+                            "SequenceNumber": "4",
+                            "ReleaseResourceReference": "A4"
+                        },
+                        {
+                            "SequenceNumber": "5",
+                            "ReleaseResourceReference": "A5"
+                        },
+                        {
+                            "SequenceNumber": "6",
+                            "ReleaseResourceReference": "A6"
+                        },
+                        {
+                            "SequenceNumber": "7",
+                            "ReleaseResourceReference": "A7"
+                        },
+                        {
+                            "SequenceNumber": "8",
+                            "ReleaseResourceReference": "A8"
+                        },
+                        {
+                            "SequenceNumber": "9",
+                            "ReleaseResourceReference": "A9"
+                        },
+                        {
+                            "SequenceNumber": "10",
+                            "ReleaseResourceReference": "A10"
+                        }
+                    ],
+                    "LinkedReleaseResourceReference": {
+                        "@LinkDescription": "CoverArt",
+                        "#text": "A11"
+                    }
+                }
+            },
+            "TrackRelease": [
+                {
+                    "ReleaseReference": "R1",
+                    "ReleaseId": {
+                        "GRid": "A10328E0008674694U",
+                        "ProprietaryId": {
+                            "@Namespace": "ISRC",
+                            "#text": "ES5021800052"
+                        }
+                    },
+                    "ReleaseResourceReference": "A1",
+                    "ReleaseLabelReference": {
+                        "@LabelType": "DisplayLabel",
+                        "#text": "P_LABEL_SONY_MUSIC_ENTERTAINMENT"
+                    },
+                    "Genre": {
+                        "@ApplicableTerritoryCode": "US",
+                        "GenreText": "Latin Pop"
+                    }
+                },
+                {
+                    "ReleaseReference": "R2",
+                    "ReleaseId": {
+                        "GRid": "A10328E0008674695S",
+                        "ProprietaryId": {
+                            "@Namespace": "ISRC",
+                            "#text": "ES5021800168"
+                        }
+                    },
+                    "ReleaseResourceReference": "A2",
+                    "ReleaseLabelReference": {
+                        "@LabelType": "DisplayLabel",
+                        "#text": "P_LABEL_SONY_MUSIC_ENTERTAINMENT"
+                    },
+                    "Genre": {
+                        "@ApplicableTerritoryCode": "US",
+                        "GenreText": "Latin Pop"
+                    }
+                },
+                {
+                    "ReleaseReference": "R3",
+                    "ReleaseId": {
+                        "GRid": "A10328E0008674696Q",
+                        "ProprietaryId": {
+                            "@Namespace": "ISRC",
+                            "#text": "ES5021800169"
+                        }
+                    },
+                    "ReleaseResourceReference": "A3",
+                    "ReleaseLabelReference": {
+                        "@LabelType": "DisplayLabel",
+                        "#text": "P_LABEL_SONY_MUSIC_ENTERTAINMENT"
+                    },
+                    "Genre": {
+                        "@ApplicableTerritoryCode": "US",
+                        "GenreText": "Latin Pop"
+                    }
+                },
+                {
+                    "ReleaseReference": "R4",
+                    "ReleaseId": {
+                        "GRid": "A10328E0008674697O",
+                        "ProprietaryId": {
+                            "@Namespace": "ISRC",
+                            "#text": "ES5021800170"
+                        }
+                    },
+                    "ReleaseResourceReference": "A4",
+                    "ReleaseLabelReference": {
+                        "@LabelType": "DisplayLabel",
+                        "#text": "P_LABEL_SONY_MUSIC_ENTERTAINMENT"
+                    },
+                    "Genre": {
+                        "@ApplicableTerritoryCode": "US",
+                        "GenreText": "Latin Pop"
+                    }
+                },
+                {
+                    "ReleaseReference": "R5",
+                    "ReleaseId": {
+                        "GRid": "A10328E0008674698M",
+                        "ProprietaryId": {
+                            "@Namespace": "ISRC",
+                            "#text": "ES5021800171"
+                        }
+                    },
+                    "ReleaseResourceReference": "A5",
+                    "ReleaseLabelReference": {
+                        "@LabelType": "DisplayLabel",
+                        "#text": "P_LABEL_SONY_MUSIC_ENTERTAINMENT"
+                    },
+                    "Genre": {
+                        "@ApplicableTerritoryCode": "US",
+                        "GenreText": "Latin Pop"
+                    }
+                },
+                {
+                    "ReleaseReference": "R6",
+                    "ReleaseId": {
+                        "GRid": "A10328E0008674699K",
+                        "ProprietaryId": {
+                            "@Namespace": "ISRC",
+                            "#text": "ES5021800172"
+                        }
+                    },
+                    "ReleaseResourceReference": "A6",
+                    "ReleaseLabelReference": {
+                        "@LabelType": "DisplayLabel",
+                        "#text": "P_LABEL_SONY_MUSIC_ENTERTAINMENT"
+                    },
+                    "Genre": {
+                        "@ApplicableTerritoryCode": "US",
+                        "GenreText": "Latin Pop"
+                    }
+                },
+                {
+                    "ReleaseReference": "R7",
+                    "ReleaseId": {
+                        "GRid": "A10328E0008674700X",
+                        "ProprietaryId": {
+                            "@Namespace": "ISRC",
+                            "#text": "ES5021800135"
+                        }
+                    },
+                    "ReleaseResourceReference": "A7",
+                    "ReleaseLabelReference": {
+                        "@LabelType": "DisplayLabel",
+                        "#text": "P_LABEL_SONY_MUSIC_ENTERTAINMENT"
+                    },
+                    "Genre": {
+                        "@ApplicableTerritoryCode": "US",
+                        "GenreText": "Latin Pop"
+                    }
+                },
+                {
+                    "ReleaseReference": "R8",
+                    "ReleaseId": {
+                        "GRid": "A10328E0008674701V",
+                        "ProprietaryId": {
+                            "@Namespace": "ISRC",
+                            "#text": "ES5021800173"
+                        }
+                    },
+                    "ReleaseResourceReference": "A8",
+                    "ReleaseLabelReference": {
+                        "@LabelType": "DisplayLabel",
+                        "#text": "P_LABEL_SONY_MUSIC_ENTERTAINMENT"
+                    },
+                    "Genre": {
+                        "@ApplicableTerritoryCode": "US",
+                        "GenreText": "Latin Pop"
+                    }
+                },
+                {
+                    "ReleaseReference": "R9",
+                    "ReleaseId": {
+                        "GRid": "A10328E0008674702T",
+                        "ProprietaryId": {
+                            "@Namespace": "ISRC",
+                            "#text": "ES5021800174"
+                        }
+                    },
+                    "ReleaseResourceReference": "A9",
+                    "ReleaseLabelReference": {
+                        "@LabelType": "DisplayLabel",
+                        "#text": "P_LABEL_SONY_MUSIC_ENTERTAINMENT"
+                    },
+                    "Genre": {
+                        "@ApplicableTerritoryCode": "US",
+                        "GenreText": "Latin Pop"
+                    }
+                },
+                {
+                    "ReleaseReference": "R10",
+                    "ReleaseId": {
+                        "GRid": "A10328E0008674703R",
+                        "ProprietaryId": {
+                            "@Namespace": "ISRC",
+                            "#text": "ES5021800195"
+                        }
+                    },
+                    "ReleaseResourceReference": "A10",
+                    "ReleaseLabelReference": {
+                        "@LabelType": "DisplayLabel",
+                        "#text": "P_LABEL_SONY_MUSIC_ENTERTAINMENT"
+                    },
+                    "Genre": {
+                        "@ApplicableTerritoryCode": "US",
+                        "GenreText": "Latin Pop"
+                    }
+                }
+            ]
+        },
+        "DealList": {
+            "ReleaseDeal": {
+                "DealReleaseReference": [
+                    "R1",
+                    "R2",
+                    "R3",
+                    "R4",
+                    "R5",
+                    "R6",
+                    "R7",
+                    "R8",
+                    "R9",
+                    "R10"
+                ],
+                "Deal": [
+                    {
+                        "DealTerms": {
+                            "TerritoryCode": [
+                                "DE",
+                                "GB",
+                                "JP",
+                                "US"
+                            ],
+                            "ValidityPeriod": {
+                                "StartDateTime": "2024-06-28T07:45:00Z"
+                            },
+                            "CommercialModelType": "SubscriptionModel",
+                            "UseType": [
+                                "ConditionalDownload",
+                                "NonInteractiveStream",
+                                "OnDemandStream"
+                            ]
+                        }
+                    },
+                    {
+                        "DealTerms": {
+                            "TerritoryCode": [
+                                "DE",
+                                "GB",
+                                "JP",
+                                "US"
+                            ],
+                            "ValidityPeriod": {
+                                "StartDateTime": "2024-06-28T07:45:00Z"
+                            },
+                            "CommercialModelType": "AdvertisementSupportedModel",
+                            "UseType": [
+                                "NonInteractiveStream",
+                                "OnDemandStream"
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+ICPN: "ernm:NewReleaseMessage/ReleaseList/Release/ReleaseId/ICPN"
+GRid: "ernm:NewReleaseMessage/ReleaseList/Release/ReleaseId/GRid"
+Release: "ernm:NewReleaseMessage/ReleaseList/Release"
+TrackRelease: "ernm:NewReleaseMessage/ReleaseList/TrackRelease"
+SoundRecording: "ernm:NewReleaseMessage/ResourceList/SoundRecording"
+
+PartyList: "ernm:NewReleaseMessage/PartyList/Party"
+DisplayArtist: "ernm:NewReleaseMessage/ReleaseList/Release/DisplayArtist"
+
+Contributor: "ernm:NewReleaseMessage/ResourceList/SoundRecording/Contributor"
+

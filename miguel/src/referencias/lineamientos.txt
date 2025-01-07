@@ -1,0 +1,17 @@
+
+
+- En el xml el UPC se llama ICPN y es el codigo que identifica internacionalmente a un lanzamiento de un album
+
+- El ISRC (en base y xml) es la identificacion internacional de una cancion
+
+- La combinacion de un ISRC y un UPC es lo que define un track reproducible y por lo cual luego se le paga a los artistas de los albumes 
+
+- Programar 1 Mapper por tabla de entidad
+
+- Programar 1 Mapper por tabla de relacion relacion
+
+- Dentro de lo posible usar las mismas logicas de procesamiento en todos los mappers
+
+- El artist_mapper recibe como parametro el id del album, porque es uno y no es necesario volver a programar el artist_mapper 
+
+- Vas a ver que en el track_mapper ahi se insertan los tracks_artists y los albums_tracks, pero la idea es que eso no se haga ahi, sino que haya mappers propios para esas relaciones.
