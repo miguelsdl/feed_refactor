@@ -1,7 +1,6 @@
 import logging
 import json 
 from sqlalchemy import text
-
 import connections
 import xml_mapper
 
@@ -286,8 +285,8 @@ def upsert_album(db_mongo, db_pool, json_dict, ddex_map):
  
     album_upserted = upsert_album_in_db(db_pool, album_from_xml)
 
-    if album_upserted:
-        upsert_album_in_mongo(db_mongo, album_upserted, ICPN)
+    # if album_upserted:
+    #     upsert_album_in_mongo(db_mongo, album_upserted, ICPN)
 
     return album_upserted
 

@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ernm:NewReleaseMessage AvsVersionId="5" LanguageAndScriptCode="en" xsi:schemaLocation="http://ddex.net/xml/ern/43 http://ddex.net/xml/ern/43/release-notification.xsd" xmlns:ernm="http://ddex.net/xml/ern/43" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <MessageHeader>
+        <MessageThreadId>SICC19061B00Z_KUC</MessageThreadId>
+        <MessageId>332932354</MessageId>
+        <MessageSender>
+            <PartyId>PADPIDA2007040502I</PartyId>
+            <PartyName>
+                <FullName>Sony Music Entertainment</FullName>
+            </PartyName>
+        </MessageSender>
+        <MessageRecipient>
+            <PartyId>PADPIDA2012073006T</PartyId>
+            <PartyName>
+                <FullName>KuackMedia 4.3 SD</FullName>
+            </PartyName>
+        </MessageRecipient>
+        <MessageCreatedDateTime>2024-10-23T08:53:16.319Z</MessageCreatedDateTime>
+        <MessageControlType>TestMessage</MessageControlType>
+    </MessageHeader>
+    <PartyList>
+        <Party>
+            <PartyReference>P_SME_SENDER</PartyReference>
+            <PartyName>
+                <FullName>Sony Music Entertainment</FullName>
+            </PartyName>
+            <PartyId>
+                <DPID>PADPIDA2007040502I</DPID>
+            </PartyId>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_2734037</PartyReference>
+            <PartyName>
+                <FullName>Teiko Maehashi</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="ja-Jpan">
+                <FullName>前橋　汀子</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="ja-Kana">
+                <FullName>マエハシテイコ</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_6973807</PartyReference>
+            <PartyName>
+                <FullName>Kazuyoshi Akiyama</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="ja-Jpan">
+                <FullName>秋山　和慶</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="ja-Kana">
+                <FullName>アキヤマカズヨシ</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_6973808</PartyReference>
+            <PartyName>
+                <FullName>Orchestra Ensemble Kanazawa</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="ja-Jpan">
+                <FullName>オーケストラ・アンサンブル金沢</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="ja-Kana">
+                <FullName>オーケストラアンサンブルカナザワ</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_8420705</PartyReference>
+            <PartyName>
+                <FullName>Ludwig van Beethoven</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="ja-Jpan">
+                <FullName>Ludwig Van Beethoven</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="ja-Kana">
+                <FullName>ルートヴィヒ・ヴァン・ベートーヴェン</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_LABEL_SONY_MUSIC_LABELS_INC</PartyReference>
+            <PartyName>
+                <FullName>Sony Music Labels Inc.</FullName>
+            </PartyName>
+        </Party>
+    </PartyList>
+    <ResourceList>
+        <SoundRecording>
+            <ResourceReference>A1</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>JPU902201598</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2022</Year>
+                    <PLineText>(P) 2022 Sony Music Labels Inc.</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T1</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/a69181b7841/20122/70113033.20122.mp3?oauth_consumer_key=kuc&amp;tag=9987c0e95a80bdadb2defbef351eedfd&amp;oauth_timestamp=1738313596&amp;oauth_signature=2SRVK4tzs1YZK3wWjJb2I7GjcO4%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>9987c0e95a80bdadb2defbef351eedfd</HashSumValue>
+                            </HashSum>
+                            <FileSize>58877350</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T1P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>48000</StartPoint>
+                            <EndPoint>78000</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="en">Concerto for Violin and Orchestra in D Major, Op.61 - I. Allegro ma non troppo</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="en">
+                <TitleText>Concerto for Violin and Orchestra in D Major, Op.61 - I. Allegro ma non troppo</TitleText>
+            </DisplayTitle>
+            <DisplayTitle LanguageAndScriptCode="ja-Jpan">
+                <TitleText>ヴァイオリン協奏曲ニ長調 作品61 - I. Allegro ma non troppo</TitleText>
+            </DisplayTitle>
+            <DisplayTitle LanguageAndScriptCode="ja-Kana">
+                <TitleText>ヴァイオリンキョウソウキョクニチョウチョウダイイチガクショウ</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>Teiko Maehashi</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2734037</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+                <ArtisticRole Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Violin">UserDefined</ArtisticRole>
+            </DisplayArtist>
+            <DisplayArtist SequenceNumber="2">
+                <ArtistPartyReference>P_ARTIST_8420705</ArtistPartyReference>
+                <DisplayArtistRole>Composer</DisplayArtistRole>
+            </DisplayArtist>
+            <DisplayArtist SequenceNumber="3">
+                <ArtistPartyReference>P_ARTIST_6973807</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>Conductor</ArtisticRole>
+            </DisplayArtist>
+            <DisplayArtist SequenceNumber="4">
+                <ArtistPartyReference>P_ARTIST_6973808</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>Orchestra</ArtisticRole>
+            </DisplayArtist>
+            <Duration>PT0H24M31S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A2</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>JPU902201599</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2022</Year>
+                    <PLineText>(P) 2022 Sony Music Labels Inc.</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T2</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/2d3591b7841/20122/70113037.20122.mp3?oauth_consumer_key=kuc&amp;tag=a26802f502af506fee3b3de4d8fc6e8d&amp;oauth_timestamp=1738313596&amp;oauth_signature=nZrUkMubggzyODrDG69PvFV7xfk%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>a26802f502af506fee3b3de4d8fc6e8d</HashSumValue>
+                            </HashSum>
+                            <FileSize>22364424</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T2P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>48000</StartPoint>
+                            <EndPoint>78000</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="en">Concerto for Violin and Orchestra in D Major, Op.61 - II. Larghetto</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="en">
+                <TitleText>Concerto for Violin and Orchestra in D Major, Op.61 - II. Larghetto</TitleText>
+            </DisplayTitle>
+            <DisplayTitle LanguageAndScriptCode="ja-Jpan">
+                <TitleText>ヴァイオリン協奏曲ニ長調 作品61 - II. Larghetto</TitleText>
+            </DisplayTitle>
+            <DisplayTitle LanguageAndScriptCode="ja-Kana">
+                <TitleText>ヴァイオリンキョウソウキョクニチョウチョウダイニガクショウ</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>Teiko Maehashi</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2734037</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+                <ArtisticRole Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Violin">UserDefined</ArtisticRole>
+            </DisplayArtist>
+            <DisplayArtist SequenceNumber="2">
+                <ArtistPartyReference>P_ARTIST_8420705</ArtistPartyReference>
+                <DisplayArtistRole>Composer</DisplayArtistRole>
+            </DisplayArtist>
+            <DisplayArtist SequenceNumber="3">
+                <ArtistPartyReference>P_ARTIST_6973807</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>Conductor</ArtisticRole>
+            </DisplayArtist>
+            <DisplayArtist SequenceNumber="4">
+                <ArtistPartyReference>P_ARTIST_6973808</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>Orchestra</ArtisticRole>
+            </DisplayArtist>
+            <Duration>PT0H9M19S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A3</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>JPU902201600</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2022</Year>
+                    <PLineText>(P) 2022 Sony Music Labels Inc.</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T3</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/a3e8a1b7841/20122/70113041.20122.mp3?oauth_consumer_key=kuc&amp;tag=485cfa69649893beffe6274e26d7e779&amp;oauth_timestamp=1738313596&amp;oauth_signature=NjV92eB2bdzFRcCyxvd%2FGG4bkTY%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>485cfa69649893beffe6274e26d7e779</HashSumValue>
+                            </HashSum>
+                            <FileSize>26002755</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T3P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>48000</StartPoint>
+                            <EndPoint>78000</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="en">Concerto for Violin and Orchestra in D Major, Op.61 - III. Rondo</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="en">
+                <TitleText>Concerto for Violin and Orchestra in D Major, Op.61 - III. Rondo</TitleText>
+            </DisplayTitle>
+            <DisplayTitle LanguageAndScriptCode="ja-Jpan">
+                <TitleText>ヴァイオリン協奏曲ニ長調 作品61 - III. Rondo</TitleText>
+            </DisplayTitle>
+            <DisplayTitle LanguageAndScriptCode="ja-Kana">
+                <TitleText>ヴァイオリンキョウソウキョクニチョウチョウダイサンガクショウ</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>Teiko Maehashi</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2734037</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+                <ArtisticRole Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Violin">UserDefined</ArtisticRole>
+            </DisplayArtist>
+            <DisplayArtist SequenceNumber="2">
+                <ArtistPartyReference>P_ARTIST_8420705</ArtistPartyReference>
+                <DisplayArtistRole>Composer</DisplayArtistRole>
+            </DisplayArtist>
+            <DisplayArtist SequenceNumber="3">
+                <ArtistPartyReference>P_ARTIST_6973807</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>Conductor</ArtisticRole>
+            </DisplayArtist>
+            <DisplayArtist SequenceNumber="4">
+                <ArtistPartyReference>P_ARTIST_6973808</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>Orchestra</ArtisticRole>
+            </DisplayArtist>
+            <Duration>PT0H10M50S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A4</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>JPU902201601</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2022</Year>
+                    <PLineText>(P) 2022 Sony Music Labels Inc.</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T4</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/2a8cb1b7841/20122/70113045.20122.mp3?oauth_consumer_key=kuc&amp;tag=8d75ab3055dcaee34158a95333b4b7d0&amp;oauth_timestamp=1738313596&amp;oauth_signature=yKKKRZLlEAFuEnbDGhm9MRkycDs%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>8d75ab3055dcaee34158a95333b4b7d0</HashSumValue>
+                            </HashSum>
+                            <FileSize>21216039</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T4P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>48000</StartPoint>
+                            <EndPoint>78000</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="en">Romance in F Major, Op.50</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="en">
+                <TitleText>Romance in F Major, Op.50</TitleText>
+            </DisplayTitle>
+            <DisplayTitle LanguageAndScriptCode="ja-Jpan">
+                <TitleText>ロマンス第2番 ヘ長調 作品50</TitleText>
+            </DisplayTitle>
+            <DisplayTitle LanguageAndScriptCode="ja-Kana">
+                <TitleText>ロマンスダイニバンヘチョウチョウ</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>Teiko Maehashi</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2734037</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+                <ArtisticRole Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Violin">UserDefined</ArtisticRole>
+            </DisplayArtist>
+            <DisplayArtist SequenceNumber="2">
+                <ArtistPartyReference>P_ARTIST_8420705</ArtistPartyReference>
+                <DisplayArtistRole>Composer</DisplayArtistRole>
+            </DisplayArtist>
+            <DisplayArtist SequenceNumber="3">
+                <ArtistPartyReference>P_ARTIST_6973807</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>Conductor</ArtisticRole>
+            </DisplayArtist>
+            <DisplayArtist SequenceNumber="4">
+                <ArtistPartyReference>P_ARTIST_6973808</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>Orchestra</ArtisticRole>
+            </DisplayArtist>
+            <Duration>PT0H8M50S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+        </SoundRecording>
+        <Image>
+            <ResourceReference>A5</ResourceReference>
+            <Type>FrontCoverImage</Type>
+            <ResourceId>
+                <ProprietaryId Namespace="DPID:PADPIDA2007040502I">SICC19061B00Z</ProprietaryId>
+            </ResourceId>
+            <FirstPublicationDate>
+                <FulfillmentDate>2022-06-08</FulfillmentDate>
+            </FirstPublicationDate>
+            <TechnicalDetails>
+                <TechnicalResourceDetailsReference>T5</TechnicalResourceDetailsReference>
+                <ImageCodecType>JPEG</ImageCodecType>
+                <ImageHeight>1400</ImageHeight>
+                <ImageWidth>1400</ImageWidth>
+                <ImageResolution>300</ImageResolution>
+                <File>
+                    <URI>https://mgsrv-aws.smecde.com/rd/8c3a1cb8841/20126/70112988.20126.jpg?oauth_consumer_key=kuc&amp;tag=6160f7adaa56cc5b2da34e75a3e62d56&amp;oauth_timestamp=1738313596&amp;oauth_signature=52RQxpFOWC9RPqPpaBRMy7oOOj0%3D</URI>
+                    <HashSum>
+                        <Algorithm>MD5</Algorithm>
+                        <HashSumValue>6160f7adaa56cc5b2da34e75a3e62d56</HashSumValue>
+                    </HashSum>
+                    <FileSize>171022</FileSize>
+                </File>
+                <IsProvidedInDelivery>false</IsProvidedInDelivery>
+            </TechnicalDetails>
+        </Image>
+    </ResourceList>
+    <ReleaseList>
+        <Release>
+            <ReleaseReference>R0</ReleaseReference>
+            <ReleaseType>Album</ReleaseType>
+            <ReleaseId>
+                <GRid>A10301A0004825862V</GRid>
+                <ICPN>4547366567304</ICPN>
+                <CatalogNumber Namespace="DPID:PADPIDA2007040502I">SICC19061B00Z</CatalogNumber>
+            </ReleaseId>
+            <DisplayTitleText LanguageAndScriptCode="en">Beethoven:Concerto for Violin and Orchestra in D Major, Op.61 / Romance in F Major, Op.50</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="en">
+                <TitleText>Beethoven:Concerto for Violin and Orchestra in D Major, Op.61 / Romance in F Major, Op.50</TitleText>
+            </DisplayTitle>
+            <DisplayTitle LanguageAndScriptCode="ja-Jpan">
+                <TitleText>ベートーヴェン：ヴァイオリン協奏曲ニ長調、ロマンス第2番ヘ長調</TitleText>
+            </DisplayTitle>
+            <DisplayTitle LanguageAndScriptCode="ja-Kana">
+                <TitleText>ベートーヴェンヴァイオリンキョウソウキョクニチョウチョウロマンスダイニバンヘチョウチョウ</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>Teiko Maehashi</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2734037</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+            </DisplayArtist>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_SONY_MUSIC_LABELS_INC</ReleaseLabelReference>
+            <PLine>
+                <Year>2022</Year>
+                <PLineText>(P) 2022 Sony Music Labels Inc.</PLineText>
+            </PLine>
+            <Duration>PT0H53M30S</Duration>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Classical</GenreText>
+            </Genre>
+            <OriginalReleaseDate>2022-06-08</OriginalReleaseDate>
+            <ParentalWarningType>NotExplicit</ParentalWarningType>
+            <ResourceGroup>
+                <AdditionalTitle TitleType="GroupingTitle">
+                    <TitleText>Disc 1</TitleText>
+                </AdditionalTitle>
+                <SequenceNumber>1</SequenceNumber>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>1</SequenceNumber>
+                    <ReleaseResourceReference>A1</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>2</SequenceNumber>
+                    <ReleaseResourceReference>A2</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>3</SequenceNumber>
+                    <ReleaseResourceReference>A3</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>4</SequenceNumber>
+                    <ReleaseResourceReference>A4</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <LinkedReleaseResourceReference LinkDescription="CoverArt">A5</LinkedReleaseResourceReference>
+            </ResourceGroup>
+        </Release>
+        <TrackRelease>
+            <ReleaseReference>R1</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E0010366489A</GRid>
+                <ProprietaryId Namespace="ISRC">JPU902201598</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A1</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_SONY_MUSIC_LABELS_INC</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Classical</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R2</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E0010366490O</GRid>
+                <ProprietaryId Namespace="ISRC">JPU902201599</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A2</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_SONY_MUSIC_LABELS_INC</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Classical</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R3</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E0010366491M</GRid>
+                <ProprietaryId Namespace="ISRC">JPU902201600</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A3</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_SONY_MUSIC_LABELS_INC</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Classical</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R4</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E0010366492K</GRid>
+                <ProprietaryId Namespace="ISRC">JPU902201601</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A4</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_SONY_MUSIC_LABELS_INC</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Classical</GenreText>
+            </Genre>
+        </TrackRelease>
+    </ReleaseList>
+    <DealList>
+        <ReleaseDeal>
+            <DealReleaseReference>R1</DealReleaseReference>
+            <DealReleaseReference>R2</DealReleaseReference>
+            <DealReleaseReference>R3</DealReleaseReference>
+            <DealReleaseReference>R4</DealReleaseReference>
+            <Deal>
+                <DealTerms>
+                    <TerritoryCode>AG</TerritoryCode>
+                    <TerritoryCode>AI</TerritoryCode>
+                    <TerritoryCode>AW</TerritoryCode>
+                    <TerritoryCode>BB</TerritoryCode>
+                    <TerritoryCode>BM</TerritoryCode>
+                    <TerritoryCode>BO</TerritoryCode>
+                    <TerritoryCode>BQ</TerritoryCode>
+                    <TerritoryCode>BR</TerritoryCode>
+                    <TerritoryCode>BZ</TerritoryCode>
+                    <TerritoryCode>CL</TerritoryCode>
+                    <TerritoryCode>CO</TerritoryCode>
+                    <TerritoryCode>CR</TerritoryCode>
+                    <TerritoryCode>CW</TerritoryCode>
+                    <TerritoryCode>DM</TerritoryCode>
+                    <TerritoryCode>DO</TerritoryCode>
+                    <TerritoryCode>EC</TerritoryCode>
+                    <TerritoryCode>ES</TerritoryCode>
+                    <TerritoryCode>GD</TerritoryCode>
+                    <TerritoryCode>GF</TerritoryCode>
+                    <TerritoryCode>GP</TerritoryCode>
+                    <TerritoryCode>GY</TerritoryCode>
+                    <TerritoryCode>HT</TerritoryCode>
+                    <TerritoryCode>JM</TerritoryCode>
+                    <TerritoryCode>KN</TerritoryCode>
+                    <TerritoryCode>KY</TerritoryCode>
+                    <TerritoryCode>LC</TerritoryCode>
+                    <TerritoryCode>MQ</TerritoryCode>
+                    <TerritoryCode>MS</TerritoryCode>
+                    <TerritoryCode>PA</TerritoryCode>
+                    <TerritoryCode>PE</TerritoryCode>
+                    <TerritoryCode>SR</TerritoryCode>
+                    <TerritoryCode>SV</TerritoryCode>
+                    <TerritoryCode>TC</TerritoryCode>
+                    <TerritoryCode>TT</TerritoryCode>
+                    <TerritoryCode>VC</TerritoryCode>
+                    <TerritoryCode>VG</TerritoryCode>
+                    <TerritoryCode>VU</TerritoryCode>
+                    <TerritoryCode>ZM</TerritoryCode>
+                    <ValidityPeriod>
+                        <StartDateTime>2022-06-08T00:00:00</StartDateTime>
+                    </ValidityPeriod>
+                    <CommercialModelType>SubscriptionModel</CommercialModelType>
+                    <UseType>ConditionalDownload</UseType>
+                    <UseType>NonInteractiveStream</UseType>
+                    <UseType>OnDemandStream</UseType>
+                </DealTerms>
+            </Deal>
+            <Deal>
+                <DealTerms>
+                    <TerritoryCode>AG</TerritoryCode>
+                    <TerritoryCode>AI</TerritoryCode>
+                    <TerritoryCode>AW</TerritoryCode>
+                    <TerritoryCode>BB</TerritoryCode>
+                    <TerritoryCode>BM</TerritoryCode>
+                    <TerritoryCode>BO</TerritoryCode>
+                    <TerritoryCode>BQ</TerritoryCode>
+                    <TerritoryCode>BR</TerritoryCode>
+                    <TerritoryCode>BZ</TerritoryCode>
+                    <TerritoryCode>CL</TerritoryCode>
+                    <TerritoryCode>CO</TerritoryCode>
+                    <TerritoryCode>CR</TerritoryCode>
+                    <TerritoryCode>CW</TerritoryCode>
+                    <TerritoryCode>DM</TerritoryCode>
+                    <TerritoryCode>DO</TerritoryCode>
+                    <TerritoryCode>EC</TerritoryCode>
+                    <TerritoryCode>ES</TerritoryCode>
+                    <TerritoryCode>GD</TerritoryCode>
+                    <TerritoryCode>GF</TerritoryCode>
+                    <TerritoryCode>GP</TerritoryCode>
+                    <TerritoryCode>GY</TerritoryCode>
+                    <TerritoryCode>HT</TerritoryCode>
+                    <TerritoryCode>JM</TerritoryCode>
+                    <TerritoryCode>KN</TerritoryCode>
+                    <TerritoryCode>KY</TerritoryCode>
+                    <TerritoryCode>LC</TerritoryCode>
+                    <TerritoryCode>MQ</TerritoryCode>
+                    <TerritoryCode>MS</TerritoryCode>
+                    <TerritoryCode>PA</TerritoryCode>
+                    <TerritoryCode>PE</TerritoryCode>
+                    <TerritoryCode>SR</TerritoryCode>
+                    <TerritoryCode>SV</TerritoryCode>
+                    <TerritoryCode>TC</TerritoryCode>
+                    <TerritoryCode>TT</TerritoryCode>
+                    <TerritoryCode>VC</TerritoryCode>
+                    <TerritoryCode>VG</TerritoryCode>
+                    <TerritoryCode>VU</TerritoryCode>
+                    <TerritoryCode>ZM</TerritoryCode>
+                    <ValidityPeriod>
+                        <StartDateTime>2022-06-08T00:00:00</StartDateTime>
+                    </ValidityPeriod>
+                    <CommercialModelType>AdvertisementSupportedModel</CommercialModelType>
+                    <UseType>NonInteractiveStream</UseType>
+                    <UseType>OnDemandStream</UseType>
+                </DealTerms>
+            </Deal>
+        </ReleaseDeal>
+    </DealList>
+</ernm:NewReleaseMessage>

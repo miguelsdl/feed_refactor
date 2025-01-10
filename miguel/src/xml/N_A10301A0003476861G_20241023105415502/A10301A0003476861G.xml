@@ -1,0 +1,1915 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ernm:NewReleaseMessage AvsVersionId="5" LanguageAndScriptCode="en" xsi:schemaLocation="http://ddex.net/xml/ern/43 http://ddex.net/xml/ern/43/release-notification.xsd" xmlns:ernm="http://ddex.net/xml/ern/43" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <MessageHeader>
+        <MessageThreadId>G010003476861G_KUC</MessageThreadId>
+        <MessageId>332932372</MessageId>
+        <MessageSender>
+            <PartyId>PADPIDA2007040502I</PartyId>
+            <PartyName>
+                <FullName>Sony Music Entertainment</FullName>
+            </PartyName>
+        </MessageSender>
+        <MessageRecipient>
+            <PartyId>PADPIDA2012073006T</PartyId>
+            <PartyName>
+                <FullName>KuackMedia 4.3 SD</FullName>
+            </PartyName>
+        </MessageRecipient>
+        <MessageCreatedDateTime>2024-10-23T08:54:18.088Z</MessageCreatedDateTime>
+        <MessageControlType>TestMessage</MessageControlType>
+    </MessageHeader>
+    <PartyList>
+        <Party>
+            <PartyReference>P_SME_SENDER</PartyReference>
+            <PartyName>
+                <FullName>Sony Music Entertainment</FullName>
+            </PartyName>
+            <PartyId>
+                <DPID>PADPIDA2007040502I</DPID>
+            </PartyId>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_2510</PartyReference>
+            <PartyName>
+                <FullName>Olga Scheps</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="zh-Hant">
+                <FullName>歐爾嘉許普絲</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_1727105</PartyReference>
+            <PartyName>
+                <FullName>Phillip Schulz</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_2079050</PartyReference>
+            <PartyName>
+                <FullName>Jason Charles Beck</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_2770501</PartyReference>
+            <PartyName>
+                <FullName>Erik Satie</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="ja-Jpan">
+                <FullName>Erik Satie</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_LABEL_RCA_RED_SEAL</PartyReference>
+            <PartyName>
+                <FullName>RCA Red Seal</FullName>
+            </PartyName>
+        </Party>
+    </PartyList>
+    <ResourceList>
+        <SoundRecording>
+            <ResourceReference>A1</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>DEE861600236</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2016</Year>
+                    <PLineText>(P) 2016 Sony Music Entertainment Germany GmbH</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T1</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/6af8542f8b/20122/39476127.20122.mp3?oauth_consumer_key=kuc&amp;tag=77c8179db13fb39f933ba17247748792&amp;oauth_timestamp=1738313658&amp;oauth_signature=Cxvg2BTSOiHt9%2FiB7%2BWEurFuPCk%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>77c8179db13fb39f933ba17247748792</HashSumValue>
+                            </HashSum>
+                            <FileSize>7511120</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T1P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>48000</StartPoint>
+                            <EndPoint>78000</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="fr">Gnossienne No. 1: Lent</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="fr">
+                <TitleText>Gnossienne No. 1: Lent</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>Olga Scheps</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2510</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Piano">UserDefined</ArtisticRole>
+            </DisplayArtist>
+            <DisplayArtist SequenceNumber="2">
+                <ArtistPartyReference>P_ARTIST_2770501</ArtistPartyReference>
+                <DisplayArtistRole>Composer</DisplayArtistRole>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_1727105</ContributorPartyReference>
+                <Role>Engineer</Role>
+            </Contributor>
+            <Duration>PT0H3M7S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A2</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>DEE861600237</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2016</Year>
+                    <PLineText>(P) 2016 Sony Music Entertainment Germany GmbH</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T2</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/adc2642f8b/20122/39476129.20122.mp3?oauth_consumer_key=kuc&amp;tag=9466b776449115e095306f5ad9981256&amp;oauth_timestamp=1738313658&amp;oauth_signature=6AW0DglsdNZnDKPJjf6BL1s1gVA%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>9466b776449115e095306f5ad9981256</HashSumValue>
+                            </HashSum>
+                            <FileSize>4852873</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T2P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>48000</StartPoint>
+                            <EndPoint>78000</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="fr">Gnossienne No. 2: Avec étonnement</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="fr">
+                <TitleText>Gnossienne No. 2: Avec étonnement</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>Olga Scheps</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2510</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Piano">UserDefined</ArtisticRole>
+            </DisplayArtist>
+            <DisplayArtist SequenceNumber="2">
+                <ArtistPartyReference>P_ARTIST_2770501</ArtistPartyReference>
+                <DisplayArtistRole>Composer</DisplayArtistRole>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_1727105</ContributorPartyReference>
+                <Role>Engineer</Role>
+            </Contributor>
+            <Duration>PT0H2M1S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A3</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>DEE861600238</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2016</Year>
+                    <PLineText>(P) 2016 Sony Music Entertainment Germany GmbH</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T3</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/e0ac642f8b/20122/39476131.20122.mp3?oauth_consumer_key=kuc&amp;tag=cdc061d4564d8b43ba404f8f115a640a&amp;oauth_timestamp=1738313658&amp;oauth_signature=cUxXY7S6qvvD3h00HjLsEbjdKcQ%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>cdc061d4564d8b43ba404f8f115a640a</HashSumValue>
+                            </HashSum>
+                            <FileSize>6075392</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T3P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>48000</StartPoint>
+                            <EndPoint>78000</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="fr">Gnossienne No. 3: Lent</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="fr">
+                <TitleText>Gnossienne No. 3: Lent</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>Olga Scheps</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2510</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Piano">UserDefined</ArtisticRole>
+            </DisplayArtist>
+            <DisplayArtist SequenceNumber="2">
+                <ArtistPartyReference>P_ARTIST_2770501</ArtistPartyReference>
+                <DisplayArtistRole>Composer</DisplayArtistRole>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_1727105</ContributorPartyReference>
+                <Role>Engineer</Role>
+            </Contributor>
+            <Duration>PT0H2M31S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A4</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>DEE861600239</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2016</Year>
+                    <PLineText>(P) 2016 Sony Music Entertainment Germany GmbH</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T4</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/2476742f8b/20122/39476133.20122.mp3?oauth_consumer_key=kuc&amp;tag=3d7b7dbd8691432c05d7f2bde797430c&amp;oauth_timestamp=1738313658&amp;oauth_signature=ERxE8p4sn5KGAC3QDuyF0D991pU%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>3d7b7dbd8691432c05d7f2bde797430c</HashSumValue>
+                            </HashSum>
+                            <FileSize>6759801</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T4P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>48000</StartPoint>
+                            <EndPoint>78000</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="fr">Gnossienne No. 4: Lent</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="fr">
+                <TitleText>Gnossienne No. 4: Lent</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>Olga Scheps</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2510</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Piano">UserDefined</ArtisticRole>
+            </DisplayArtist>
+            <DisplayArtist SequenceNumber="2">
+                <ArtistPartyReference>P_ARTIST_2770501</ArtistPartyReference>
+                <DisplayArtistRole>Composer</DisplayArtistRole>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_1727105</ContributorPartyReference>
+                <Role>Engineer</Role>
+            </Contributor>
+            <Duration>PT0H2M48S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A5</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>DEE861600240</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2016</Year>
+                    <PLineText>(P) 2016 Sony Music Entertainment Germany GmbH</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T5</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/6740842f8b/20122/39476135.20122.mp3?oauth_consumer_key=kuc&amp;tag=f12ef9d440e506a871d7153d2d94c73a&amp;oauth_timestamp=1738313658&amp;oauth_signature=OLGStMIrt%2BdJMlu16yK%2FxSjD1KE%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>f12ef9d440e506a871d7153d2d94c73a</HashSumValue>
+                            </HashSum>
+                            <FileSize>8682415</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T5P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>48000</StartPoint>
+                            <EndPoint>78000</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="fr">Gnossienne No. 5: Modéré</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="fr">
+                <TitleText>Gnossienne No. 5: Modéré</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>Olga Scheps</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2510</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Piano">UserDefined</ArtisticRole>
+            </DisplayArtist>
+            <DisplayArtist SequenceNumber="2">
+                <ArtistPartyReference>P_ARTIST_2770501</ArtistPartyReference>
+                <DisplayArtistRole>Composer</DisplayArtistRole>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_1727105</ContributorPartyReference>
+                <Role>Engineer</Role>
+            </Contributor>
+            <Duration>PT0H3M36S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A6</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>DEE861600241</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2016</Year>
+                    <PLineText>(P) 2016 Sony Music Entertainment Germany GmbH</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T6</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/aa1a842f8b/20122/39476137.20122.mp3?oauth_consumer_key=kuc&amp;tag=a434a6e19df32a8a7b3060a88f0677cc&amp;oauth_timestamp=1738313658&amp;oauth_signature=ujdNtXfJ3GOHlcXaREYur48t%2BdM%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>a434a6e19df32a8a7b3060a88f0677cc</HashSumValue>
+                            </HashSum>
+                            <FileSize>6038865</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T6P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>48000</StartPoint>
+                            <EndPoint>78000</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="fr">Gnossienne No. 6: Avec conviction et avec une tristesse rigoureuse</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="fr">
+                <TitleText>Gnossienne No. 6: Avec conviction et avec une tristesse rigoureuse</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>Olga Scheps</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2510</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Piano">UserDefined</ArtisticRole>
+            </DisplayArtist>
+            <DisplayArtist SequenceNumber="2">
+                <ArtistPartyReference>P_ARTIST_2770501</ArtistPartyReference>
+                <DisplayArtistRole>Composer</DisplayArtistRole>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_1727105</ContributorPartyReference>
+                <Role>Engineer</Role>
+            </Contributor>
+            <Duration>PT0H2M30S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A7</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>DEE861600242</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2016</Year>
+                    <PLineText>(P) 2016 Sony Music Entertainment Germany GmbH</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T7</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/ede3942f8b/20122/39476139.20122.mp3?oauth_consumer_key=kuc&amp;tag=ff79c484897c99efc859dc06104fc191&amp;oauth_timestamp=1738313658&amp;oauth_signature=mFZNFaJBBLQKDb2ohpJztlF33M0%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>ff79c484897c99efc859dc06104fc191</HashSumValue>
+                            </HashSum>
+                            <FileSize>1856129</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T7P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>16307</StartPoint>
+                            <EndPoint>46307</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="fr">Cinq Grimaces pour le songe d'une nuit d'été: I. Préambule</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="fr">
+                <TitleText>Cinq Grimaces pour le songe d'une nuit d'été: I. Préambule</TitleText>
+            </DisplayTitle>
+            <AdditionalTitle LanguageAndScriptCode="fr" TitleType="GroupingTitle">
+                <TitleText>Cinq Grimaces pour le songe d'une nuit d'été</TitleText>
+            </AdditionalTitle>
+            <AdditionalTitle LanguageAndScriptCode="fr" TitleType="FormalTitle">
+                <TitleText>I. Préambule</TitleText>
+            </AdditionalTitle>
+            <DisplayArtistName>Olga Scheps</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2510</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Piano">UserDefined</ArtisticRole>
+            </DisplayArtist>
+            <DisplayArtist SequenceNumber="2">
+                <ArtistPartyReference>P_ARTIST_2770501</ArtistPartyReference>
+                <DisplayArtistRole>Composer</DisplayArtistRole>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_1727105</ContributorPartyReference>
+                <Role>Engineer</Role>
+            </Contributor>
+            <Duration>PT0H0M46S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A8</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>DEE861600243</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2016</Year>
+                    <PLineText>(P) 2016 Sony Music Entertainment Germany GmbH</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T8</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/21cd942f8b/20122/39476141.20122.mp3?oauth_consumer_key=kuc&amp;tag=2546d7d01cb41357059b04ad97809d38&amp;oauth_timestamp=1738313658&amp;oauth_signature=Bh7CWm86nM07meUIffMViTT83Q0%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>2546d7d01cb41357059b04ad97809d38</HashSumValue>
+                            </HashSum>
+                            <FileSize>1722386</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T8P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>12973</StartPoint>
+                            <EndPoint>42973</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="fr">Cinq Grimaces pour le songe d'une nuit d'été: II. Coquecigrue</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="fr">
+                <TitleText>Cinq Grimaces pour le songe d'une nuit d'été: II. Coquecigrue</TitleText>
+            </DisplayTitle>
+            <AdditionalTitle LanguageAndScriptCode="fr" TitleType="GroupingTitle">
+                <TitleText>Cinq Grimaces pour le songe d'une nuit d'été</TitleText>
+            </AdditionalTitle>
+            <AdditionalTitle LanguageAndScriptCode="fr" TitleType="FormalTitle">
+                <TitleText>II. Coquecigrue</TitleText>
+            </AdditionalTitle>
+            <DisplayArtistName>Olga Scheps</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2510</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Piano">UserDefined</ArtisticRole>
+            </DisplayArtist>
+            <DisplayArtist SequenceNumber="2">
+                <ArtistPartyReference>P_ARTIST_2770501</ArtistPartyReference>
+                <DisplayArtistRole>Composer</DisplayArtistRole>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_1727105</ContributorPartyReference>
+                <Role>Engineer</Role>
+            </Contributor>
+            <Duration>PT0H0M42S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A9</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>DEE861600244</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2016</Year>
+                    <PLineText>(P) 2016 Sony Music Entertainment Germany GmbH</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T9</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/6497a42f8b/20122/39476143.20122.mp3?oauth_consumer_key=kuc&amp;tag=83f186a2027e20c287799db404be9492&amp;oauth_timestamp=1738313658&amp;oauth_signature=OtYNXDYrkEjOebEiOFttg%2Bj7iZw%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>83f186a2027e20c287799db404be9492</HashSumValue>
+                            </HashSum>
+                            <FileSize>1344128</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T9P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>3520</StartPoint>
+                            <EndPoint>33520</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="fr">Cinq Grimaces pour le songe d'une nuit d'été: III. Chasse</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="fr">
+                <TitleText>Cinq Grimaces pour le songe d'une nuit d'été: III. Chasse</TitleText>
+            </DisplayTitle>
+            <AdditionalTitle LanguageAndScriptCode="fr" TitleType="GroupingTitle">
+                <TitleText>Cinq Grimaces pour le songe d'une nuit d'été</TitleText>
+            </AdditionalTitle>
+            <AdditionalTitle LanguageAndScriptCode="fr" TitleType="FormalTitle">
+                <TitleText>III. Chasse</TitleText>
+            </AdditionalTitle>
+            <DisplayArtistName>Olga Scheps</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2510</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Piano">UserDefined</ArtisticRole>
+            </DisplayArtist>
+            <DisplayArtist SequenceNumber="2">
+                <ArtistPartyReference>P_ARTIST_2770501</ArtistPartyReference>
+                <DisplayArtistRole>Composer</DisplayArtistRole>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_1727105</ContributorPartyReference>
+                <Role>Engineer</Role>
+            </Contributor>
+            <Duration>PT0H0M33S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A10</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>DEE861600245</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2016</Year>
+                    <PLineText>(P) 2016 Sony Music Entertainment Germany GmbH</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T10</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/a761b42f8b/20122/39476145.20122.mp3?oauth_consumer_key=kuc&amp;tag=691a78e98c03a6840893851e23c2eca1&amp;oauth_timestamp=1738313658&amp;oauth_signature=y8VrAEM9NQNIEO%2B9PuIZ3RxVon8%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>691a78e98c03a6840893851e23c2eca1</HashSumValue>
+                            </HashSum>
+                            <FileSize>899008</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T10P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>0</StartPoint>
+                            <EndPoint>22400</EndPoint>
+                            <DurationUsed>P0DT0H0M22.400S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="fr">Cinq Grimaces pour le songe d'une nuit d'été: IV. Fanfaronnade</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="fr">
+                <TitleText>Cinq Grimaces pour le songe d'une nuit d'été: IV. Fanfaronnade</TitleText>
+            </DisplayTitle>
+            <AdditionalTitle LanguageAndScriptCode="fr" TitleType="GroupingTitle">
+                <TitleText>Cinq Grimaces pour le songe d'une nuit d'été</TitleText>
+            </AdditionalTitle>
+            <AdditionalTitle LanguageAndScriptCode="fr" TitleType="FormalTitle">
+                <TitleText>IV. Fanfaronnade</TitleText>
+            </AdditionalTitle>
+            <DisplayArtistName>Olga Scheps</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2510</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Piano">UserDefined</ArtisticRole>
+            </DisplayArtist>
+            <DisplayArtist SequenceNumber="2">
+                <ArtistPartyReference>P_ARTIST_2770501</ArtistPartyReference>
+                <DisplayArtistRole>Composer</DisplayArtistRole>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_1727105</ContributorPartyReference>
+                <Role>Engineer</Role>
+            </Contributor>
+            <Duration>PT0H0M22S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A11</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>DEE861600246</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2016</Year>
+                    <PLineText>(P) 2016 Sony Music Entertainment Germany GmbH</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T11</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/ea3bb42f8b/20122/39476147.20122.mp3?oauth_consumer_key=kuc&amp;tag=b3a738257148f69b0fa956c65df6f252&amp;oauth_timestamp=1738313658&amp;oauth_signature=5Upbsq%2Fnn16F7y4SwmFtHa7c14A%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>b3a738257148f69b0fa956c65df6f252</HashSumValue>
+                            </HashSum>
+                            <FileSize>2457994</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T11P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>31360</StartPoint>
+                            <EndPoint>61360</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="fr">Cinq Grimaces pour le songe d'une nuit d'été: V. Pour sortir</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="fr">
+                <TitleText>Cinq Grimaces pour le songe d'une nuit d'été: V. Pour sortir</TitleText>
+            </DisplayTitle>
+            <AdditionalTitle LanguageAndScriptCode="fr" TitleType="GroupingTitle">
+                <TitleText>Cinq Grimaces pour le songe d'une nuit d'été</TitleText>
+            </AdditionalTitle>
+            <AdditionalTitle LanguageAndScriptCode="fr" TitleType="FormalTitle">
+                <TitleText>V. Pour sortir</TitleText>
+            </AdditionalTitle>
+            <DisplayArtistName>Olga Scheps</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2510</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Piano">UserDefined</ArtisticRole>
+            </DisplayArtist>
+            <DisplayArtist SequenceNumber="2">
+                <ArtistPartyReference>P_ARTIST_2770501</ArtistPartyReference>
+                <DisplayArtistRole>Composer</DisplayArtistRole>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_1727105</ContributorPartyReference>
+                <Role>Engineer</Role>
+            </Contributor>
+            <Duration>PT0H1M1S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A12</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>DEE861600233</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2016</Year>
+                    <PLineText>(P) 2016 Sony Music Entertainment Germany GmbH</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T12</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/2e05c42f8b/20122/39476149.20122.mp3?oauth_consumer_key=kuc&amp;tag=719ebc3dc8b4a59d471987aa9a239e45&amp;oauth_timestamp=1738313658&amp;oauth_signature=r2ArcXx4F5KLHPd9bFuJow10%2Bi4%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>719ebc3dc8b4a59d471987aa9a239e45</HashSumValue>
+                            </HashSum>
+                            <FileSize>7596792</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T12P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>48000</StartPoint>
+                            <EndPoint>78000</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="fr">Gymnopédie No. 1: Lent et douloureux</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="fr">
+                <TitleText>Gymnopédie No. 1: Lent et douloureux</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>Olga Scheps</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2510</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Piano">UserDefined</ArtisticRole>
+            </DisplayArtist>
+            <DisplayArtist SequenceNumber="2">
+                <ArtistPartyReference>P_ARTIST_2770501</ArtistPartyReference>
+                <DisplayArtistRole>Composer</DisplayArtistRole>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_1727105</ContributorPartyReference>
+                <Role>Engineer</Role>
+            </Contributor>
+            <Duration>PT0H3M9S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A13</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>DEE861600234</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2016</Year>
+                    <PLineText>(P) 2016 Sony Music Entertainment Germany GmbH</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T13</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/61eec42f8b/20122/39476151.20122.mp3?oauth_consumer_key=kuc&amp;tag=8fe9f6eb7a3fc29f1236371d0066cc62&amp;oauth_timestamp=1738313658&amp;oauth_signature=qOG0euMcD4mX2i4xFlVau9oAGWk%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>8fe9f6eb7a3fc29f1236371d0066cc62</HashSumValue>
+                            </HashSum>
+                            <FileSize>7765003</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T13P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>48000</StartPoint>
+                            <EndPoint>78000</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="fr">Gymnopédie No. 2: Lent et triste</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="fr">
+                <TitleText>Gymnopédie No. 2: Lent et triste</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>Olga Scheps</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2510</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Piano">UserDefined</ArtisticRole>
+            </DisplayArtist>
+            <DisplayArtist SequenceNumber="2">
+                <ArtistPartyReference>P_ARTIST_2770501</ArtistPartyReference>
+                <DisplayArtistRole>Composer</DisplayArtistRole>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_1727105</ContributorPartyReference>
+                <Role>Engineer</Role>
+            </Contributor>
+            <Duration>PT0H3M14S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A14</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>DEE861600235</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2016</Year>
+                    <PLineText>(P) 2016 Sony Music Entertainment Germany GmbH</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T14</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/a4b8d42f8b/20122/39476153.20122.mp3?oauth_consumer_key=kuc&amp;tag=92d02e62a8a75bcb2e64f1777e0a76f5&amp;oauth_timestamp=1738313658&amp;oauth_signature=Jw%2FiUIXsC7fSOvZaEL%2BlUMBZqjs%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>92d02e62a8a75bcb2e64f1777e0a76f5</HashSumValue>
+                            </HashSum>
+                            <FileSize>6001215</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T14P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>48000</StartPoint>
+                            <EndPoint>78000</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="fr">Gymnopédie No. 3: Lent et grave</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="fr">
+                <TitleText>Gymnopédie No. 3: Lent et grave</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>Olga Scheps</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2510</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Piano">UserDefined</ArtisticRole>
+            </DisplayArtist>
+            <DisplayArtist SequenceNumber="2">
+                <ArtistPartyReference>P_ARTIST_2770501</ArtistPartyReference>
+                <DisplayArtistRole>Composer</DisplayArtistRole>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_1727105</ContributorPartyReference>
+                <Role>Engineer</Role>
+            </Contributor>
+            <Duration>PT0H2M29S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A15</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>DEE861600232</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2016</Year>
+                    <PLineText>(P) 2016 Sony Music Entertainment Germany GmbH</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T15</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/e782e42f8b/20122/39476155.20122.mp3?oauth_consumer_key=kuc&amp;tag=c0f75246698df3f89124397446a13f2e&amp;oauth_timestamp=1738313658&amp;oauth_signature=BpMFz5y2yTmUNUUlIIo7LFD2dbg%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>c0f75246698df3f89124397446a13f2e</HashSumValue>
+                            </HashSum>
+                            <FileSize>13414745</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T15P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>48000</StartPoint>
+                            <EndPoint>78000</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="fr">Je te veux</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="fr">
+                <TitleText>Je te veux</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>Olga Scheps</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2510</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Piano">UserDefined</ArtisticRole>
+            </DisplayArtist>
+            <DisplayArtist SequenceNumber="2">
+                <ArtistPartyReference>P_ARTIST_2770501</ArtistPartyReference>
+                <DisplayArtistRole>Composer</DisplayArtistRole>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_1727105</ContributorPartyReference>
+                <Role>Engineer</Role>
+            </Contributor>
+            <Duration>PT0H5M35S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A16</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>DEE861600248</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2016</Year>
+                    <PLineText>(P) 2016 Sony Music Entertainment Germany GmbH</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T16</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/2b5ce42f8b/20122/39476157.20122.mp3?oauth_consumer_key=kuc&amp;tag=eded31d5b9342ab5d6fd741b729919ca&amp;oauth_timestamp=1738313658&amp;oauth_signature=Uji6clir8bSZl%2BvBwBE8O7DFSIY%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>eded31d5b9342ab5d6fd741b729919ca</HashSumValue>
+                            </HashSum>
+                            <FileSize>14649830</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T16P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>48000</StartPoint>
+                            <EndPoint>78000</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="fr">Sarabande No. 1 in F Minor</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="fr">
+                <TitleText>Sarabande No. 1 in F Minor</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>Olga Scheps</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2510</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Piano">UserDefined</ArtisticRole>
+            </DisplayArtist>
+            <DisplayArtist SequenceNumber="2">
+                <ArtistPartyReference>P_ARTIST_2770501</ArtistPartyReference>
+                <DisplayArtistRole>Composer</DisplayArtistRole>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_1727105</ContributorPartyReference>
+                <Role>Engineer</Role>
+            </Contributor>
+            <Duration>PT0H6M6S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A17</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>DEE861600249</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2016</Year>
+                    <PLineText>(P) 2016 Sony Music Entertainment Germany GmbH</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T17</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/6e26f42f8b/20122/39476159.20122.mp3?oauth_consumer_key=kuc&amp;tag=cfa1c48f4ce7ebdeaf1d87e38fb40750&amp;oauth_timestamp=1738313658&amp;oauth_signature=apAul%2FHganduvcMxwmMWVcOdukY%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>cfa1c48f4ce7ebdeaf1d87e38fb40750</HashSumValue>
+                            </HashSum>
+                            <FileSize>16737562</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T17P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>48000</StartPoint>
+                            <EndPoint>78000</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="fr">Sarabande No. 2 in D- Sharp Minor, "à Maurice Ravel"</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="fr">
+                <TitleText>Sarabande No. 2 in D- Sharp Minor, "à Maurice Ravel"</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>Olga Scheps</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2510</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Piano">UserDefined</ArtisticRole>
+            </DisplayArtist>
+            <DisplayArtist SequenceNumber="2">
+                <ArtistPartyReference>P_ARTIST_2770501</ArtistPartyReference>
+                <DisplayArtistRole>Composer</DisplayArtistRole>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_1727105</ContributorPartyReference>
+                <Role>Engineer</Role>
+            </Contributor>
+            <Duration>PT0H6M58S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A18</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>DEE861600250</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2016</Year>
+                    <PLineText>(P) 2016 Sony Music Entertainment Germany GmbH</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T18</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/a100052f8b/20122/39476161.20122.mp3?oauth_consumer_key=kuc&amp;tag=eb564fbae1bc4fd610372098fbe7bebe&amp;oauth_timestamp=1738313658&amp;oauth_signature=XjRqRNQQ%2Fc0riooOQv7lfKUkOR4%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>eb564fbae1bc4fd610372098fbe7bebe</HashSumValue>
+                            </HashSum>
+                            <FileSize>16558864</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T18P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>48000</StartPoint>
+                            <EndPoint>78000</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="fr">Sarabande No. 3 in B-Flat Minor</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="fr">
+                <TitleText>Sarabande No. 3 in B-Flat Minor</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>Olga Scheps</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2510</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Piano">UserDefined</ArtisticRole>
+            </DisplayArtist>
+            <DisplayArtist SequenceNumber="2">
+                <ArtistPartyReference>P_ARTIST_2770501</ArtistPartyReference>
+                <DisplayArtistRole>Composer</DisplayArtistRole>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_1727105</ContributorPartyReference>
+                <Role>Engineer</Role>
+            </Contributor>
+            <Duration>PT0H6M53S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A19</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>DEE861600247</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2016</Year>
+                    <PLineText>(P) 2016 Sony Music Entertainment Germany GmbH</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T19</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/e4d9052f8b/20122/39476163.20122.mp3?oauth_consumer_key=kuc&amp;tag=d2c0cc2f351155f5b1bb54094b459726&amp;oauth_timestamp=1738313658&amp;oauth_signature=h8aVOYVFo3v4EjVFAUwXn2eRwOY%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>d2c0cc2f351155f5b1bb54094b459726</HashSumValue>
+                            </HashSum>
+                            <FileSize>10998957</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T19P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>48000</StartPoint>
+                            <EndPoint>78000</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="fr">Tendrement - Valse chantée</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="fr">
+                <TitleText>Tendrement - Valse chantée</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>Olga Scheps</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2510</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Piano">UserDefined</ArtisticRole>
+            </DisplayArtist>
+            <DisplayArtist SequenceNumber="2">
+                <ArtistPartyReference>P_ARTIST_2770501</ArtistPartyReference>
+                <DisplayArtistRole>Composer</DisplayArtistRole>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_1727105</ContributorPartyReference>
+                <Role>Engineer</Role>
+            </Contributor>
+            <Duration>PT0H4M34S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A20</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>DEE861600251</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2016</Year>
+                    <PLineText>(P) 2016 Sony Music Entertainment Germany GmbH</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T20</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/28a3152f8b/20122/39476165.20122.mp3?oauth_consumer_key=kuc&amp;tag=3b225eaa6bbf80d4afb9e1d5074bd39e&amp;oauth_timestamp=1738313658&amp;oauth_signature=1rMYEsWyBr2Zp2AabsSloJZ49OI%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>3b225eaa6bbf80d4afb9e1d5074bd39e</HashSumValue>
+                            </HashSum>
+                            <FileSize>9459809</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T20P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>48000</StartPoint>
+                            <EndPoint>78000</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="en">Gentle Threat</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="en">
+                <TitleText>Gentle Threat</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>Olga Scheps</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2510</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Piano">UserDefined</ArtisticRole>
+            </DisplayArtist>
+            <DisplayArtist SequenceNumber="2">
+                <ArtistPartyReference>P_ARTIST_2079050</ArtistPartyReference>
+                <DisplayArtistRole>Composer</DisplayArtistRole>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_1727105</ContributorPartyReference>
+                <Role>Engineer</Role>
+            </Contributor>
+            <Duration>PT0H3M56S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+        </SoundRecording>
+        <Image>
+            <ResourceReference>A21</ResourceReference>
+            <Type>FrontCoverImage</Type>
+            <ResourceId>
+                <ProprietaryId Namespace="DPID:PADPIDA2007040502I">G010003476861G</ProprietaryId>
+            </ResourceId>
+            <FirstPublicationDate>
+                <FulfillmentDate>2016-05-06</FulfillmentDate>
+            </FirstPublicationDate>
+            <TechnicalDetails>
+                <TechnicalResourceDetailsReference>T21</TechnicalResourceDetailsReference>
+                <ImageCodecType>JPEG</ImageCodecType>
+                <ImageHeight>1400</ImageHeight>
+                <ImageWidth>1400</ImageWidth>
+                <ImageResolution>300</ImageResolution>
+                <File>
+                    <URI>https://mgsrv-aws.smecde.com/rd/000/039/696/807/20126/39696807.20126.jpg?oauth_consumer_key=kuc&amp;tag=5bd5509f6887a77fe50e61ee7d0140b9&amp;oauth_timestamp=1738313658&amp;oauth_signature=QoIgghtqCLfVODZTxeJoKH3lWcs%3D</URI>
+                    <HashSum>
+                        <Algorithm>MD5</Algorithm>
+                        <HashSumValue>5bd5509f6887a77fe50e61ee7d0140b9</HashSumValue>
+                    </HashSum>
+                    <FileSize>1702396</FileSize>
+                </File>
+                <IsProvidedInDelivery>false</IsProvidedInDelivery>
+            </TechnicalDetails>
+        </Image>
+    </ResourceList>
+    <ReleaseList>
+        <Release>
+            <ReleaseReference>R0</ReleaseReference>
+            <ReleaseType>ClassicalAlbum</ReleaseType>
+            <ReleaseId>
+                <GRid>A10301A0003476861G</GRid>
+                <ICPN>886445714562</ICPN>
+                <CatalogNumber Namespace="DPID:PADPIDA2007040502I">G010003476861G</CatalogNumber>
+            </ReleaseId>
+            <DisplayTitleText LanguageAndScriptCode="fr">Satie</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="fr">
+                <TitleText>Satie</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>Olga Scheps</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2510</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+            </DisplayArtist>
+            <DisplayArtist SequenceNumber="2">
+                <ArtistPartyReference>P_ARTIST_2770501</ArtistPartyReference>
+                <DisplayArtistRole>Composer</DisplayArtistRole>
+            </DisplayArtist>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_RCA_RED_SEAL</ReleaseLabelReference>
+            <PLine>
+                <Year>2016</Year>
+                <PLineText>(P) 2016 Sony Music Entertainment Germany GmbH</PLineText>
+            </PLine>
+            <Duration>PT1H2M51S</Duration>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Classical</GenreText>
+            </Genre>
+            <OriginalReleaseDate>2016-05-06</OriginalReleaseDate>
+            <ParentalWarningType>NotExplicit</ParentalWarningType>
+            <ResourceGroup>
+                <AdditionalTitle TitleType="GroupingTitle">
+                    <TitleText>Disc 1</TitleText>
+                </AdditionalTitle>
+                <SequenceNumber>1</SequenceNumber>
+                <ResourceGroup ResourceGroupType="MultiWorkPart">
+                    <AdditionalTitle LanguageAndScriptCode="fr" TitleType="GroupingTitle">
+                        <TitleText>Cinq Grimaces pour le songe d'une nuit d'été</TitleText>
+                    </AdditionalTitle>
+                    <SequenceNumber>1</SequenceNumber>
+                    <ResourceGroupContentItem>
+                        <SequenceNumber>7</SequenceNumber>
+                        <ReleaseResourceReference>A7</ReleaseResourceReference>
+                    </ResourceGroupContentItem>
+                    <ResourceGroupContentItem>
+                        <SequenceNumber>8</SequenceNumber>
+                        <ReleaseResourceReference>A8</ReleaseResourceReference>
+                    </ResourceGroupContentItem>
+                    <ResourceGroupContentItem>
+                        <SequenceNumber>9</SequenceNumber>
+                        <ReleaseResourceReference>A9</ReleaseResourceReference>
+                    </ResourceGroupContentItem>
+                    <ResourceGroupContentItem>
+                        <SequenceNumber>10</SequenceNumber>
+                        <ReleaseResourceReference>A10</ReleaseResourceReference>
+                    </ResourceGroupContentItem>
+                    <ResourceGroupContentItem>
+                        <SequenceNumber>11</SequenceNumber>
+                        <ReleaseResourceReference>A11</ReleaseResourceReference>
+                    </ResourceGroupContentItem>
+                </ResourceGroup>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>1</SequenceNumber>
+                    <ReleaseResourceReference>A1</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>2</SequenceNumber>
+                    <ReleaseResourceReference>A2</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>3</SequenceNumber>
+                    <ReleaseResourceReference>A3</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>4</SequenceNumber>
+                    <ReleaseResourceReference>A4</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>5</SequenceNumber>
+                    <ReleaseResourceReference>A5</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>6</SequenceNumber>
+                    <ReleaseResourceReference>A6</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>12</SequenceNumber>
+                    <ReleaseResourceReference>A12</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>13</SequenceNumber>
+                    <ReleaseResourceReference>A13</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>14</SequenceNumber>
+                    <ReleaseResourceReference>A14</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>15</SequenceNumber>
+                    <ReleaseResourceReference>A15</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>16</SequenceNumber>
+                    <ReleaseResourceReference>A16</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>17</SequenceNumber>
+                    <ReleaseResourceReference>A17</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>18</SequenceNumber>
+                    <ReleaseResourceReference>A18</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>19</SequenceNumber>
+                    <ReleaseResourceReference>A19</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>20</SequenceNumber>
+                    <ReleaseResourceReference>A20</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <LinkedReleaseResourceReference LinkDescription="CoverArt">A21</LinkedReleaseResourceReference>
+            </ResourceGroup>
+        </Release>
+        <TrackRelease>
+            <ReleaseReference>R1</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E0007821452E</GRid>
+                <ProprietaryId Namespace="ISRC">DEE861600236</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A1</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_RCA_RED_SEAL</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Classical</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R2</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E0007821453C</GRid>
+                <ProprietaryId Namespace="ISRC">DEE861600237</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A2</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_RCA_RED_SEAL</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Classical</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R3</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E0007821454A</GRid>
+                <ProprietaryId Namespace="ISRC">DEE861600238</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A3</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_RCA_RED_SEAL</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Classical</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R4</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E00078214558</GRid>
+                <ProprietaryId Namespace="ISRC">DEE861600239</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A4</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_RCA_RED_SEAL</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Classical</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R5</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E00078214566</GRid>
+                <ProprietaryId Namespace="ISRC">DEE861600240</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A5</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_RCA_RED_SEAL</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Classical</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R6</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E00078214574</GRid>
+                <ProprietaryId Namespace="ISRC">DEE861600241</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A6</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_RCA_RED_SEAL</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Classical</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R7</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E0007821459Z</GRid>
+                <ProprietaryId Namespace="ISRC">DEE861600242</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A7</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_RCA_RED_SEAL</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Classical</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R8</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E0007821460E</GRid>
+                <ProprietaryId Namespace="ISRC">DEE861600243</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A8</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_RCA_RED_SEAL</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Classical</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R9</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E0007821461C</GRid>
+                <ProprietaryId Namespace="ISRC">DEE861600244</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A9</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_RCA_RED_SEAL</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Classical</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R10</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E0007821462A</GRid>
+                <ProprietaryId Namespace="ISRC">DEE861600245</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A10</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_RCA_RED_SEAL</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Classical</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R11</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E00078214638</GRid>
+                <ProprietaryId Namespace="ISRC">DEE861600246</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A11</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_RCA_RED_SEAL</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Classical</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R12</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E00078214646</GRid>
+                <ProprietaryId Namespace="ISRC">DEE861600233</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A12</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_RCA_RED_SEAL</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Classical</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R13</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E00078214654</GRid>
+                <ProprietaryId Namespace="ISRC">DEE861600234</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A13</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_RCA_RED_SEAL</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Classical</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R14</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E00078214662</GRid>
+                <ProprietaryId Namespace="ISRC">DEE861600235</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A14</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_RCA_RED_SEAL</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Classical</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R15</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E0007821467Z</GRid>
+                <ProprietaryId Namespace="ISRC">DEE861600232</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A15</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_RCA_RED_SEAL</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Classical</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R16</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E0007821468X</GRid>
+                <ProprietaryId Namespace="ISRC">DEE861600248</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A16</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_RCA_RED_SEAL</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Classical</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R17</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E0007821469V</GRid>
+                <ProprietaryId Namespace="ISRC">DEE861600249</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A17</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_RCA_RED_SEAL</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Classical</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R18</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E0007821470A</GRid>
+                <ProprietaryId Namespace="ISRC">DEE861600250</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A18</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_RCA_RED_SEAL</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Classical</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R19</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E00078214718</GRid>
+                <ProprietaryId Namespace="ISRC">DEE861600247</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A19</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_RCA_RED_SEAL</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Classical</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R20</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E00078214726</GRid>
+                <ProprietaryId Namespace="ISRC">DEE861600251</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A20</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_RCA_RED_SEAL</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Classical</GenreText>
+            </Genre>
+        </TrackRelease>
+    </ReleaseList>
+    <DealList>
+        <ReleaseDeal>
+            <DealReleaseReference>R1</DealReleaseReference>
+            <DealReleaseReference>R2</DealReleaseReference>
+            <DealReleaseReference>R3</DealReleaseReference>
+            <DealReleaseReference>R4</DealReleaseReference>
+            <DealReleaseReference>R5</DealReleaseReference>
+            <DealReleaseReference>R6</DealReleaseReference>
+            <DealReleaseReference>R7</DealReleaseReference>
+            <DealReleaseReference>R8</DealReleaseReference>
+            <DealReleaseReference>R9</DealReleaseReference>
+            <DealReleaseReference>R10</DealReleaseReference>
+            <DealReleaseReference>R11</DealReleaseReference>
+            <DealReleaseReference>R12</DealReleaseReference>
+            <DealReleaseReference>R13</DealReleaseReference>
+            <DealReleaseReference>R14</DealReleaseReference>
+            <DealReleaseReference>R15</DealReleaseReference>
+            <DealReleaseReference>R16</DealReleaseReference>
+            <DealReleaseReference>R17</DealReleaseReference>
+            <DealReleaseReference>R18</DealReleaseReference>
+            <DealReleaseReference>R19</DealReleaseReference>
+            <DealReleaseReference>R20</DealReleaseReference>
+            <Deal>
+                <DealTerms>
+                    <TerritoryCode>AG</TerritoryCode>
+                    <TerritoryCode>AI</TerritoryCode>
+                    <TerritoryCode>AW</TerritoryCode>
+                    <TerritoryCode>BB</TerritoryCode>
+                    <TerritoryCode>BM</TerritoryCode>
+                    <TerritoryCode>BO</TerritoryCode>
+                    <TerritoryCode>BQ</TerritoryCode>
+                    <TerritoryCode>BR</TerritoryCode>
+                    <TerritoryCode>BZ</TerritoryCode>
+                    <TerritoryCode>CL</TerritoryCode>
+                    <TerritoryCode>CO</TerritoryCode>
+                    <TerritoryCode>CR</TerritoryCode>
+                    <TerritoryCode>CW</TerritoryCode>
+                    <TerritoryCode>DM</TerritoryCode>
+                    <TerritoryCode>DO</TerritoryCode>
+                    <TerritoryCode>EC</TerritoryCode>
+                    <TerritoryCode>ES</TerritoryCode>
+                    <TerritoryCode>GD</TerritoryCode>
+                    <TerritoryCode>GF</TerritoryCode>
+                    <TerritoryCode>GP</TerritoryCode>
+                    <TerritoryCode>GY</TerritoryCode>
+                    <TerritoryCode>HT</TerritoryCode>
+                    <TerritoryCode>JM</TerritoryCode>
+                    <TerritoryCode>KN</TerritoryCode>
+                    <TerritoryCode>KY</TerritoryCode>
+                    <TerritoryCode>LC</TerritoryCode>
+                    <TerritoryCode>MQ</TerritoryCode>
+                    <TerritoryCode>MS</TerritoryCode>
+                    <TerritoryCode>PA</TerritoryCode>
+                    <TerritoryCode>PE</TerritoryCode>
+                    <TerritoryCode>SR</TerritoryCode>
+                    <TerritoryCode>SV</TerritoryCode>
+                    <TerritoryCode>TC</TerritoryCode>
+                    <TerritoryCode>TT</TerritoryCode>
+                    <TerritoryCode>VC</TerritoryCode>
+                    <TerritoryCode>VG</TerritoryCode>
+                    <TerritoryCode>VU</TerritoryCode>
+                    <TerritoryCode>ZM</TerritoryCode>
+                    <ValidityPeriod>
+                        <StartDateTime>2016-05-06T00:00:00</StartDateTime>
+                    </ValidityPeriod>
+                    <CommercialModelType>SubscriptionModel</CommercialModelType>
+                    <UseType>ConditionalDownload</UseType>
+                    <UseType>NonInteractiveStream</UseType>
+                    <UseType>OnDemandStream</UseType>
+                </DealTerms>
+            </Deal>
+            <Deal>
+                <DealTerms>
+                    <TerritoryCode>AG</TerritoryCode>
+                    <TerritoryCode>AI</TerritoryCode>
+                    <TerritoryCode>AW</TerritoryCode>
+                    <TerritoryCode>BB</TerritoryCode>
+                    <TerritoryCode>BM</TerritoryCode>
+                    <TerritoryCode>BO</TerritoryCode>
+                    <TerritoryCode>BQ</TerritoryCode>
+                    <TerritoryCode>BR</TerritoryCode>
+                    <TerritoryCode>BZ</TerritoryCode>
+                    <TerritoryCode>CL</TerritoryCode>
+                    <TerritoryCode>CO</TerritoryCode>
+                    <TerritoryCode>CR</TerritoryCode>
+                    <TerritoryCode>CW</TerritoryCode>
+                    <TerritoryCode>DM</TerritoryCode>
+                    <TerritoryCode>DO</TerritoryCode>
+                    <TerritoryCode>EC</TerritoryCode>
+                    <TerritoryCode>ES</TerritoryCode>
+                    <TerritoryCode>GD</TerritoryCode>
+                    <TerritoryCode>GF</TerritoryCode>
+                    <TerritoryCode>GP</TerritoryCode>
+                    <TerritoryCode>GY</TerritoryCode>
+                    <TerritoryCode>HT</TerritoryCode>
+                    <TerritoryCode>JM</TerritoryCode>
+                    <TerritoryCode>KN</TerritoryCode>
+                    <TerritoryCode>KY</TerritoryCode>
+                    <TerritoryCode>LC</TerritoryCode>
+                    <TerritoryCode>MQ</TerritoryCode>
+                    <TerritoryCode>MS</TerritoryCode>
+                    <TerritoryCode>PA</TerritoryCode>
+                    <TerritoryCode>PE</TerritoryCode>
+                    <TerritoryCode>SR</TerritoryCode>
+                    <TerritoryCode>SV</TerritoryCode>
+                    <TerritoryCode>TC</TerritoryCode>
+                    <TerritoryCode>TT</TerritoryCode>
+                    <TerritoryCode>VC</TerritoryCode>
+                    <TerritoryCode>VG</TerritoryCode>
+                    <TerritoryCode>VU</TerritoryCode>
+                    <TerritoryCode>ZM</TerritoryCode>
+                    <ValidityPeriod>
+                        <StartDateTime>2016-05-06T00:00:00</StartDateTime>
+                    </ValidityPeriod>
+                    <CommercialModelType>AdvertisementSupportedModel</CommercialModelType>
+                    <UseType>NonInteractiveStream</UseType>
+                    <UseType>OnDemandStream</UseType>
+                </DealTerms>
+            </Deal>
+        </ReleaseDeal>
+    </DealList>
+</ernm:NewReleaseMessage>

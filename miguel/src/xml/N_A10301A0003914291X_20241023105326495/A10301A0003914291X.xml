@@ -1,0 +1,1560 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ernm:NewReleaseMessage AvsVersionId="5" LanguageAndScriptCode="en" xsi:schemaLocation="http://ddex.net/xml/ern/43 http://ddex.net/xml/ern/43/release-notification.xsd" xmlns:ernm="http://ddex.net/xml/ern/43" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <MessageHeader>
+        <MessageThreadId>G010003914291X_KUC</MessageThreadId>
+        <MessageId>332932367</MessageId>
+        <MessageSender>
+            <PartyId>PADPIDA2007040502I</PartyId>
+            <PartyName>
+                <FullName>Sony Music Entertainment</FullName>
+            </PartyName>
+        </MessageSender>
+        <MessageRecipient>
+            <PartyId>PADPIDA2012073006T</PartyId>
+            <PartyName>
+                <FullName>KuackMedia 4.3 SD</FullName>
+            </PartyName>
+        </MessageRecipient>
+        <MessageCreatedDateTime>2024-10-23T08:53:27.771Z</MessageCreatedDateTime>
+        <MessageControlType>TestMessage</MessageControlType>
+    </MessageHeader>
+    <PartyList>
+        <Party>
+            <PartyReference>P_SME_SENDER</PartyReference>
+            <PartyName>
+                <FullName>Sony Music Entertainment</FullName>
+            </PartyName>
+            <PartyId>
+                <DPID>PADPIDA2007040502I</DPID>
+            </PartyId>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_12910</PartyReference>
+            <PartyName>
+                <FullName>Kevin Mauricio Jiménez Londoño</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_141900</PartyReference>
+            <PartyName>
+                <FullName>Manuel Fernández</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_2096653</PartyReference>
+            <PartyName>
+                <FullName>Alejandro Ramirez Suárez</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_2131991</PartyReference>
+            <PartyName>
+                <FullName>Bryan Lezcano</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_2258333</PartyReference>
+            <PartyName>
+                <FullName>Kevin ADG &amp; Chan El Genio "The Rude Boyz"</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_2265956</PartyReference>
+            <PartyName>
+                <FullName>C. Tangana</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_2265957</PartyReference>
+            <PartyName>
+                <FullName>Antón Álvarez Alfaro</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_2324724</PartyReference>
+            <PartyName>
+                <FullName>Cristian Quirante Catalán</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_2324827</PartyReference>
+            <PartyName>
+                <FullName>Daniel Cala Bernardez</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_2369178</PartyReference>
+            <PartyName>
+                <FullName>Alex Tumay</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_2385493</PartyReference>
+            <PartyName>
+                <FullName>Steve Lean</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_2385494</PartyReference>
+            <PartyName>
+                <FullName>C. Tangana feat. Steve Lean</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_2385986</PartyReference>
+            <PartyName>
+                <FullName>Alizzz</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_2385987</PartyReference>
+            <PartyName>
+                <FullName>C. Tangana feat. Alizzz</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_2385988</PartyReference>
+            <PartyName>
+                <FullName>Alex Ferrer Barber</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_2386670</PartyReference>
+            <PartyName>
+                <FullName>Lost Twin</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_2392237</PartyReference>
+            <PartyName>
+                <FullName>Esteban Correa</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_2392341</PartyReference>
+            <PartyName>
+                <FullName>Sticky M.A.</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_2392342</PartyReference>
+            <PartyName>
+                <FullName>Danni Ble</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_2392343</PartyReference>
+            <PartyName>
+                <FullName>Royce Rolo</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_2392344</PartyReference>
+            <PartyName>
+                <FullName>C. Tangana feat. Sticky M.A., Danni Ble &amp; Royce Rolo</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_2392345</PartyReference>
+            <PartyName>
+                <FullName>Edgar Vigo</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_2392347</PartyReference>
+            <PartyName>
+                <FullName>C. Tangana feat. Lost Twin</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_2392348</PartyReference>
+            <PartyName>
+                <FullName>Carlos Rivera Pinto</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_2392350</PartyReference>
+            <PartyName>
+                <FullName>C. Tangana feat. Take a Daytrip</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_2392353</PartyReference>
+            <PartyName>
+                <FullName>C. Tangana feat. Danni Ble &amp; Royce Rolo</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_2392354</PartyReference>
+            <PartyName>
+                <FullName>The Rudeboyz</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_2392355</PartyReference>
+            <PartyName>
+                <FullName>C. Tangana feat. The Rudeboyz</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_2392356</PartyReference>
+            <PartyName>
+                <FullName>Enry-K</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_2392357</PartyReference>
+            <PartyName>
+                <FullName>C. Tangana feat. Enry-K</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_2392358</PartyReference>
+            <PartyName>
+                <FullName>Enrique Ruano de la Cruz</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_2392359</PartyReference>
+            <PartyName>
+                <FullName>Saox</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_2392360</PartyReference>
+            <PartyName>
+                <FullName>C. Tangana feat. Steve Lean &amp; Saox</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_2392361</PartyReference>
+            <PartyName>
+                <FullName>Álvaro Jerez Barranco</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_2510925</PartyReference>
+            <PartyName>
+                <FullName>Take A Daytrip</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_4846860</PartyReference>
+            <PartyName>
+                <FullName>Denzel Baptiste</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="ja-Jpan">
+                <FullName>Denzel Baptiste</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="ja-Kana">
+                <FullName>デンゼルバプティスト</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_4849892</PartyReference>
+            <PartyName>
+                <FullName>David Biral</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="ja-Jpan">
+                <FullName>David Biral</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="ja-Kana">
+                <FullName>デイビッドビラル</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_7818232</PartyReference>
+            <PartyName>
+                <FullName>Sky Rompiendo</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_7818233</PartyReference>
+            <PartyName>
+                <FullName>C. Tangana feat. Sky Rompiendo</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_LABEL_SONY_MUSIC_ENTERTAINMENT</PartyReference>
+            <PartyName>
+                <FullName>Sony Music Entertainment</FullName>
+            </PartyName>
+        </Party>
+    </PartyList>
+    <ResourceList>
+        <SoundRecording>
+            <ResourceReference>A1</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>ES5021800052</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2018</Year>
+                    <PLineText>(P) 2018 Sony Music Entertainment España, S.L.</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T1</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/648768a1ef/20122/54237487.20122.mp3?oauth_consumer_key=kuc&amp;tag=4c3731a5288b202effff0d978065bb6d&amp;oauth_timestamp=1738313607&amp;oauth_signature=C4nWnOWjLOi6jXC%2BNVQc1NEEr0I%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>4c3731a5288b202effff0d978065bb6d</HashSumValue>
+                            </HashSum>
+                            <FileSize>3598998</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T1P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>48000</StartPoint>
+                            <EndPoint>78000</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="en">Still Rapping</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="en">
+                <TitleText>Still Rapping</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>C. Tangana feat. Steve Lean</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2265956</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+            </DisplayArtist>
+            <DisplayArtist SequenceNumber="2">
+                <ArtistPartyReference>P_ARTIST_2385493</ArtistPartyReference>
+                <DisplayArtistRole>FeaturedArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+                <ArtisticRole Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Producer">UserDefined</ArtisticRole>
+                <TitleDisplayInformation>
+                    <IsDisplayedInTitle>false</IsDisplayedInTitle>
+                    <Prefix> feat. </Prefix>
+                </TitleDisplayInformation>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_2385494</ContributorPartyReference>
+                <Role>AssociatedPerformer</Role>
+            </Contributor>
+            <Contributor SequenceNumber="2">
+                <ContributorPartyReference>P_ARTIST_2265957</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="3">
+                <ContributorPartyReference>P_ARTIST_2369178</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Mastering Engineer">UserDefined</Role>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Mixing Engineer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="4">
+                <ContributorPartyReference>P_ARTIST_2392237</ContributorPartyReference>
+                <Role>Composer</Role>
+            </Contributor>
+            <Duration>PT0H1M31S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+            <LanguageOfPerformance>es</LanguageOfPerformance>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A2</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>ES5021800168</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2018</Year>
+                    <PLineText>(P) 2018 Sony Music Entertainment España, S.L.</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T2</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/414678a1ef/20122/54237490.20122.mp3?oauth_consumer_key=kuc&amp;tag=ed3043d88f002dea71a229c4f9dd6b49&amp;oauth_timestamp=1738313607&amp;oauth_signature=RwJIs9Rl1NWD8diBy676FC7LFNA%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>ed3043d88f002dea71a229c4f9dd6b49</HashSumValue>
+                            </HashSum>
+                            <FileSize>7771286</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T2P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>48000</StartPoint>
+                            <EndPoint>78000</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="es">Baile de la Lluvia</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="es">
+                <TitleText>Baile de la Lluvia</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>C. Tangana feat. Take a Daytrip</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2265956</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+            </DisplayArtist>
+            <DisplayArtist SequenceNumber="2">
+                <ArtistPartyReference>P_ARTIST_2510925</ArtistPartyReference>
+                <DisplayArtistRole>FeaturedArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+                <ArtisticRole Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Producer">UserDefined</ArtisticRole>
+                <TitleDisplayInformation>
+                    <IsDisplayedInTitle>false</IsDisplayedInTitle>
+                    <Prefix> feat. </Prefix>
+                </TitleDisplayInformation>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_2392350</ContributorPartyReference>
+                <Role>AssociatedPerformer</Role>
+            </Contributor>
+            <Contributor SequenceNumber="2">
+                <ContributorPartyReference>P_ARTIST_2265957</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="3">
+                <ContributorPartyReference>P_ARTIST_4846860</ContributorPartyReference>
+                <Role>Composer</Role>
+            </Contributor>
+            <Contributor SequenceNumber="4">
+                <ContributorPartyReference>P_ARTIST_2386670</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Producer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="5">
+                <ContributorPartyReference>P_ARTIST_2385988</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Mastering Engineer">UserDefined</Role>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Mixing Engineer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="6">
+                <ContributorPartyReference>P_ARTIST_4849892</ContributorPartyReference>
+                <Role>Composer</Role>
+            </Contributor>
+            <Duration>PT0H3M14S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+            <LanguageOfPerformance>es</LanguageOfPerformance>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A3</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>ES5021800169</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2018</Year>
+                    <PLineText>(P) 2018 Sony Music Entertainment España, S.L.</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T3</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/2ef488a1ef/20122/54237493.20122.mp3?oauth_consumer_key=kuc&amp;tag=8fcc93fe23fcde7162c628b03478736f&amp;oauth_timestamp=1738313607&amp;oauth_signature=8u%2FvS0pK40yL0MuDGOD%2BttwmOGc%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>8fcc93fe23fcde7162c628b03478736f</HashSumValue>
+                            </HashSum>
+                            <FileSize>5728499</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T3P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>48000</StartPoint>
+                            <EndPoint>78000</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="es">Cuando Me Miras</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="es">
+                <TitleText>Cuando Me Miras</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>C. Tangana feat. Enry-K</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2265956</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+            </DisplayArtist>
+            <DisplayArtist SequenceNumber="2">
+                <ArtistPartyReference>P_ARTIST_2392356</ArtistPartyReference>
+                <DisplayArtistRole>FeaturedArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+                <ArtisticRole Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Producer">UserDefined</ArtisticRole>
+                <TitleDisplayInformation>
+                    <IsDisplayedInTitle>false</IsDisplayedInTitle>
+                    <Prefix> feat. </Prefix>
+                </TitleDisplayInformation>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_2392357</ContributorPartyReference>
+                <Role>AssociatedPerformer</Role>
+            </Contributor>
+            <Contributor SequenceNumber="2">
+                <ContributorPartyReference>P_ARTIST_2265957</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="3">
+                <ContributorPartyReference>P_ARTIST_2392358</ContributorPartyReference>
+                <Role>Composer</Role>
+            </Contributor>
+            <Contributor SequenceNumber="4">
+                <ContributorPartyReference>P_ARTIST_2386670</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Producer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="5">
+                <ContributorPartyReference>P_ARTIST_2385988</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Mastering Engineer">UserDefined</Role>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Mixing Engineer">UserDefined</Role>
+            </Contributor>
+            <Duration>PT0H2M23S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+            <LanguageOfPerformance>es</LanguageOfPerformance>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A4</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>ES5021800170</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2018</Year>
+                    <PLineText>(P) 2018 Sony Music Entertainment España, S.L.</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T4</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/0bb398a1ef/20122/54237496.20122.mp3?oauth_consumer_key=kuc&amp;tag=27a2e889a33924d80a6c20fe6c871a1e&amp;oauth_timestamp=1738313607&amp;oauth_signature=OjKb78bEteTc6m6gVX%2By0VMZC74%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>27a2e889a33924d80a6c20fe6c871a1e</HashSumValue>
+                            </HashSum>
+                            <FileSize>5630288</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T4P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>48000</StartPoint>
+                            <EndPoint>78000</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="es">Na de Na</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="es">
+                <TitleText>Na de Na</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>C. Tangana feat. Danni Ble &amp; Royce Rolo</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2265956</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+            </DisplayArtist>
+            <DisplayArtist SequenceNumber="2">
+                <ArtistPartyReference>P_ARTIST_2392342</ArtistPartyReference>
+                <DisplayArtistRole>FeaturedArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+                <ArtisticRole Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Producer">UserDefined</ArtisticRole>
+                <TitleDisplayInformation>
+                    <IsDisplayedInTitle>false</IsDisplayedInTitle>
+                    <Prefix> feat. </Prefix>
+                </TitleDisplayInformation>
+            </DisplayArtist>
+            <DisplayArtist SequenceNumber="3">
+                <ArtistPartyReference>P_ARTIST_2392343</ArtistPartyReference>
+                <DisplayArtistRole>FeaturedArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+                <ArtisticRole Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Producer">UserDefined</ArtisticRole>
+                <TitleDisplayInformation>
+                    <IsDisplayedInTitle>false</IsDisplayedInTitle>
+                    <Prefix> feat. </Prefix>
+                </TitleDisplayInformation>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_2392353</ContributorPartyReference>
+                <Role>AssociatedPerformer</Role>
+            </Contributor>
+            <Contributor SequenceNumber="2">
+                <ContributorPartyReference>P_ARTIST_2265957</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="3">
+                <ContributorPartyReference>P_ARTIST_2392345</ContributorPartyReference>
+                <Role>Composer</Role>
+            </Contributor>
+            <Contributor SequenceNumber="4">
+                <ContributorPartyReference>P_ARTIST_2385988</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Mastering Engineer">UserDefined</Role>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Mixing Engineer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="5">
+                <ContributorPartyReference>P_ARTIST_2324827</ContributorPartyReference>
+                <Role>Composer</Role>
+            </Contributor>
+            <Duration>PT0H2M20S</Duration>
+            <ParentalWarningType>Explicit</ParentalWarningType>
+            <LanguageOfPerformance>es</LanguageOfPerformance>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A5</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>ES5021800171</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2018</Year>
+                    <PLineText>(P) 2018 Sony Music Entertainment España, S.L.</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T5</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/e772a8a1ef/20122/54237499.20122.mp3?oauth_consumer_key=kuc&amp;tag=297001b86ac650defe1f6ba90994ce14&amp;oauth_timestamp=1738313607&amp;oauth_signature=THsR2%2FA0bt3HB8CE9PyQ64Wpm4g%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>297001b86ac650defe1f6ba90994ce14</HashSumValue>
+                            </HashSum>
+                            <FileSize>5369081</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T5P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>48000</StartPoint>
+                            <EndPoint>78000</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="es">Huele a Nuevo</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="es">
+                <TitleText>Huele a Nuevo</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>C. Tangana feat. Sticky M.A., Danni Ble &amp; Royce Rolo</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2265956</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+            </DisplayArtist>
+            <DisplayArtist SequenceNumber="2">
+                <ArtistPartyReference>P_ARTIST_2392341</ArtistPartyReference>
+                <DisplayArtistRole>FeaturedArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+                <TitleDisplayInformation>
+                    <IsDisplayedInTitle>false</IsDisplayedInTitle>
+                    <Prefix> feat. </Prefix>
+                </TitleDisplayInformation>
+            </DisplayArtist>
+            <DisplayArtist SequenceNumber="3">
+                <ArtistPartyReference>P_ARTIST_2392342</ArtistPartyReference>
+                <DisplayArtistRole>FeaturedArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+                <ArtisticRole Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Producer">UserDefined</ArtisticRole>
+                <TitleDisplayInformation>
+                    <IsDisplayedInTitle>false</IsDisplayedInTitle>
+                    <Prefix> feat. </Prefix>
+                </TitleDisplayInformation>
+            </DisplayArtist>
+            <DisplayArtist SequenceNumber="4">
+                <ArtistPartyReference>P_ARTIST_2392343</ArtistPartyReference>
+                <DisplayArtistRole>FeaturedArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+                <ArtisticRole Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Producer">UserDefined</ArtisticRole>
+                <TitleDisplayInformation>
+                    <IsDisplayedInTitle>false</IsDisplayedInTitle>
+                    <Prefix> feat. </Prefix>
+                </TitleDisplayInformation>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_2392344</ContributorPartyReference>
+                <Role>AssociatedPerformer</Role>
+            </Contributor>
+            <Contributor SequenceNumber="2">
+                <ContributorPartyReference>P_ARTIST_2265957</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="3">
+                <ContributorPartyReference>P_ARTIST_2392345</ContributorPartyReference>
+                <Role>Composer</Role>
+            </Contributor>
+            <Contributor SequenceNumber="4">
+                <ContributorPartyReference>P_ARTIST_2385988</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Mastering Engineer">UserDefined</Role>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Mixing Engineer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="5">
+                <ContributorPartyReference>P_ARTIST_2324827</ContributorPartyReference>
+                <Role>Composer</Role>
+            </Contributor>
+            <Contributor SequenceNumber="6">
+                <ContributorPartyReference>P_ARTIST_141900</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Duration>PT0H2M14S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+            <LanguageOfPerformance>es</LanguageOfPerformance>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A6</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>ES5021800172</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2018</Year>
+                    <PLineText>(P) 2018 Sony Music Entertainment España, S.L.</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T6</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/c431b8a1ef/20122/54237502.20122.mp3?oauth_consumer_key=kuc&amp;tag=4f6ae2cac0a063221f056f1e8ec9207c&amp;oauth_timestamp=1738313607&amp;oauth_signature=%2BFzZUrIVtD1RFMqb3pRMwAbODAc%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>4f6ae2cac0a063221f056f1e8ec9207c</HashSumValue>
+                            </HashSum>
+                            <FileSize>5291734</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T6P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>48000</StartPoint>
+                            <EndPoint>78000</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="es">Sangre</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="es">
+                <TitleText>Sangre</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>C. Tangana feat. Steve Lean &amp; Saox</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2265956</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+            </DisplayArtist>
+            <DisplayArtist SequenceNumber="2">
+                <ArtistPartyReference>P_ARTIST_2385493</ArtistPartyReference>
+                <DisplayArtistRole>FeaturedArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+                <ArtisticRole Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Producer">UserDefined</ArtisticRole>
+                <TitleDisplayInformation>
+                    <IsDisplayedInTitle>false</IsDisplayedInTitle>
+                    <Prefix> feat. </Prefix>
+                </TitleDisplayInformation>
+            </DisplayArtist>
+            <DisplayArtist SequenceNumber="3">
+                <ArtistPartyReference>P_ARTIST_2392359</ArtistPartyReference>
+                <DisplayArtistRole>FeaturedArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+                <ArtisticRole Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Producer">UserDefined</ArtisticRole>
+                <TitleDisplayInformation>
+                    <IsDisplayedInTitle>false</IsDisplayedInTitle>
+                    <Prefix> feat. </Prefix>
+                </TitleDisplayInformation>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_2392360</ContributorPartyReference>
+                <Role>AssociatedPerformer</Role>
+            </Contributor>
+            <Contributor SequenceNumber="2">
+                <ContributorPartyReference>P_ARTIST_2265957</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="3">
+                <ContributorPartyReference>P_ARTIST_2392237</ContributorPartyReference>
+                <Role>Composer</Role>
+            </Contributor>
+            <Contributor SequenceNumber="4">
+                <ContributorPartyReference>P_ARTIST_2386670</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Producer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="5">
+                <ContributorPartyReference>P_ARTIST_2392361</ContributorPartyReference>
+                <Role>Composer</Role>
+            </Contributor>
+            <Contributor SequenceNumber="6">
+                <ContributorPartyReference>P_ARTIST_2385988</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Mastering Engineer">UserDefined</Role>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Mixing Engineer">UserDefined</Role>
+            </Contributor>
+            <Duration>PT0H2M12S</Duration>
+            <ParentalWarningType>Explicit</ParentalWarningType>
+            <LanguageOfPerformance>es</LanguageOfPerformance>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A7</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>ES5021800135</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2018</Year>
+                    <PLineText>(P) 2018 Sony Music Entertainment España, S.L.</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T7</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/a1ffb8a1ef/20122/54237505.20122.mp3?oauth_consumer_key=kuc&amp;tag=d70481f64271ce959ad24b7b52022773&amp;oauth_timestamp=1738313607&amp;oauth_signature=LD8gakjDnvXp%2B971O2kKd%2BHkkuo%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>d70481f64271ce959ad24b7b52022773</HashSumValue>
+                            </HashSum>
+                            <FileSize>5578038</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T7P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>48000</StartPoint>
+                            <EndPoint>78000</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="es">Llorando en la Limo</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="es">
+                <TitleText>Llorando en la Limo</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>C. Tangana feat. Alizzz</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2265956</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+            </DisplayArtist>
+            <DisplayArtist SequenceNumber="2">
+                <ArtistPartyReference>P_ARTIST_2385986</ArtistPartyReference>
+                <DisplayArtistRole>FeaturedArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+                <ArtisticRole Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Producer">UserDefined</ArtisticRole>
+                <TitleDisplayInformation>
+                    <IsDisplayedInTitle>false</IsDisplayedInTitle>
+                    <Prefix> feat. </Prefix>
+                </TitleDisplayInformation>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_2385987</ContributorPartyReference>
+                <Role>AssociatedPerformer</Role>
+            </Contributor>
+            <Contributor SequenceNumber="2">
+                <ContributorPartyReference>P_ARTIST_2265957</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="3">
+                <ContributorPartyReference>P_ARTIST_2385988</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Mastering Engineer">UserDefined</Role>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Mixing Engineer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="4">
+                <ContributorPartyReference>P_ARTIST_2324724</ContributorPartyReference>
+                <Role>Composer</Role>
+            </Contributor>
+            <Duration>PT0H2M19S</Duration>
+            <ParentalWarningType>Explicit</ParentalWarningType>
+            <LanguageOfPerformance>es</LanguageOfPerformance>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A8</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>ES5021800173</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2018</Year>
+                    <PLineText>(P) 2018 Sony Music Entertainment España, S.L.</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T8</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/8eaec8a1ef/20122/54237508.20122.mp3?oauth_consumer_key=kuc&amp;tag=6a1ffa87a86f0d92aa50707fa8153ed3&amp;oauth_timestamp=1738313607&amp;oauth_signature=KjtBmQS2PGpChOfeBwvUVZ28jDw%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>6a1ffa87a86f0d92aa50707fa8153ed3</HashSumValue>
+                            </HashSum>
+                            <FileSize>5063950</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T8P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>48000</StartPoint>
+                            <EndPoint>78000</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="fr">Cabernet Sauvignon</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="fr">
+                <TitleText>Cabernet Sauvignon</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>C. Tangana feat. Lost Twin</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2265956</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+            </DisplayArtist>
+            <DisplayArtist SequenceNumber="2">
+                <ArtistPartyReference>P_ARTIST_2386670</ArtistPartyReference>
+                <DisplayArtistRole>FeaturedArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+                <ArtisticRole Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Producer">UserDefined</ArtisticRole>
+                <TitleDisplayInformation>
+                    <IsDisplayedInTitle>false</IsDisplayedInTitle>
+                    <Prefix> feat. </Prefix>
+                </TitleDisplayInformation>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_2392347</ContributorPartyReference>
+                <Role>AssociatedPerformer</Role>
+            </Contributor>
+            <Contributor SequenceNumber="2">
+                <ContributorPartyReference>P_ARTIST_2265957</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="3">
+                <ContributorPartyReference>P_ARTIST_2385988</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Mastering Engineer">UserDefined</Role>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Mixing Engineer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="4">
+                <ContributorPartyReference>P_ARTIST_2392348</ContributorPartyReference>
+                <Role>Composer</Role>
+            </Contributor>
+            <Duration>PT0H2M6S</Duration>
+            <ParentalWarningType>Explicit</ParentalWarningType>
+            <LanguageOfPerformance>es</LanguageOfPerformance>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A9</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>ES5021800174</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2018</Year>
+                    <PLineText>(P) 2018 Sony Music Entertainment España, S.L.</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T9</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/6b6dd8a1ef/20122/54237511.20122.mp3?oauth_consumer_key=kuc&amp;tag=f215d065dcb33649289e57cbd8c20990&amp;oauth_timestamp=1738313607&amp;oauth_signature=%2FnJb7z2eh9pj%2BiUgR7OGLub3peE%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>f215d065dcb33649289e57cbd8c20990</HashSumValue>
+                            </HashSum>
+                            <FileSize>5559227</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T9P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>48000</StartPoint>
+                            <EndPoint>78000</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="en">Pussy Call</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="en">
+                <TitleText>Pussy Call</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>C. Tangana feat. The Rudeboyz</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2265956</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+            </DisplayArtist>
+            <DisplayArtist SequenceNumber="2">
+                <ArtistPartyReference>P_ARTIST_2392354</ArtistPartyReference>
+                <DisplayArtistRole>FeaturedArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+                <TitleDisplayInformation>
+                    <IsDisplayedInTitle>false</IsDisplayedInTitle>
+                    <Prefix> feat. </Prefix>
+                </TitleDisplayInformation>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_2392355</ContributorPartyReference>
+                <Role>AssociatedPerformer</Role>
+            </Contributor>
+            <Contributor SequenceNumber="2">
+                <ContributorPartyReference>P_ARTIST_2265957</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="3">
+                <ContributorPartyReference>P_ARTIST_2258333</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Producer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="4">
+                <ContributorPartyReference>P_ARTIST_2385988</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Mastering Engineer">UserDefined</Role>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Mixing Engineer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="5">
+                <ContributorPartyReference>P_ARTIST_12910</ContributorPartyReference>
+                <Role>Composer</Role>
+            </Contributor>
+            <Contributor SequenceNumber="6">
+                <ContributorPartyReference>P_ARTIST_2131991</ContributorPartyReference>
+                <Role>Composer</Role>
+            </Contributor>
+            <Duration>PT0H2M18S</Duration>
+            <ParentalWarningType>Explicit</ParentalWarningType>
+            <LanguageOfPerformance>es</LanguageOfPerformance>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A10</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>ES5021800195</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2018</Year>
+                    <PLineText>(P) 2018 Sony Music Entertainment España, S.L.</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T10</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/482ce8a1ef/20122/54237514.20122.mp3?oauth_consumer_key=kuc&amp;tag=429e79361e99563e32e7a8b8de2fcf70&amp;oauth_timestamp=1738313607&amp;oauth_signature=MW%2FWPUzwk3WzN%2BOOR883xBj%2FGHM%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>429e79361e99563e32e7a8b8de2fcf70</HashSumValue>
+                            </HashSum>
+                            <FileSize>6490231</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T10P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>48000</StartPoint>
+                            <EndPoint>78000</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="es">Siempre Quise Todo</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="es">
+                <TitleText>Siempre Quise Todo</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>C. Tangana feat. Sky</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2265956</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+            </DisplayArtist>
+            <DisplayArtist SequenceNumber="2">
+                <ArtistPartyReference>P_ARTIST_7818232</ArtistPartyReference>
+                <DisplayArtistRole>FeaturedArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+                <ArtisticRole Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Producer">UserDefined</ArtisticRole>
+                <TitleDisplayInformation>
+                    <IsDisplayedInTitle>false</IsDisplayedInTitle>
+                    <Prefix> feat. </Prefix>
+                </TitleDisplayInformation>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_7818233</ContributorPartyReference>
+                <Role>AssociatedPerformer</Role>
+            </Contributor>
+            <Contributor SequenceNumber="2">
+                <ContributorPartyReference>P_ARTIST_2265957</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="3">
+                <ContributorPartyReference>P_ARTIST_2096653</ContributorPartyReference>
+                <Role>Composer</Role>
+            </Contributor>
+            <Contributor SequenceNumber="4">
+                <ContributorPartyReference>P_ARTIST_2385988</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Mastering Engineer">UserDefined</Role>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Mixing Engineer">UserDefined</Role>
+            </Contributor>
+            <Duration>PT0H2M42S</Duration>
+            <ParentalWarningType>Explicit</ParentalWarningType>
+            <LanguageOfPerformance>es</LanguageOfPerformance>
+        </SoundRecording>
+        <Image>
+            <ResourceReference>A11</ResourceReference>
+            <Type>FrontCoverImage</Type>
+            <ResourceId>
+                <ProprietaryId Namespace="DPID:PADPIDA2007040502I">G010003914291X</ProprietaryId>
+            </ResourceId>
+            <FirstPublicationDate>
+                <FulfillmentDate>2018-04-19</FulfillmentDate>
+            </FirstPublicationDate>
+            <TechnicalDetails>
+                <TechnicalResourceDetailsReference>T11</TechnicalResourceDetailsReference>
+                <ImageCodecType>JPEG</ImageCodecType>
+                <ImageHeight>1400</ImageHeight>
+                <ImageWidth>1400</ImageWidth>
+                <ImageResolution>300</ImageResolution>
+                <File>
+                    <URI>https://mgsrv-aws.smecde.com/rd/67c43e62ef/20126/54237013.20126.jpg?oauth_consumer_key=kuc&amp;tag=b41fb3ea0927112c32207d46c2fc4857&amp;oauth_timestamp=1738313607&amp;oauth_signature=nj6nI%2BhYtsqFZmQsUzp2LdLCHkg%3D</URI>
+                    <HashSum>
+                        <Algorithm>MD5</Algorithm>
+                        <HashSumValue>b41fb3ea0927112c32207d46c2fc4857</HashSumValue>
+                    </HashSum>
+                    <FileSize>3986871</FileSize>
+                </File>
+                <IsProvidedInDelivery>false</IsProvidedInDelivery>
+            </TechnicalDetails>
+        </Image>
+    </ResourceList>
+    <ReleaseList>
+        <Release>
+            <ReleaseReference>R0</ReleaseReference>
+            <ReleaseType>Album</ReleaseType>
+            <ReleaseId>
+                <GRid>A10301A0003914291X</GRid>
+                <ICPN>886447056493</ICPN>
+                <CatalogNumber Namespace="DPID:PADPIDA2007040502I">G010003914291X</CatalogNumber>
+            </ReleaseId>
+            <DisplayTitleText LanguageAndScriptCode="es">Avida Dollars</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="es">
+                <TitleText>Avida Dollars</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>C. Tangana</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2265956</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+            </DisplayArtist>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_SONY_MUSIC_ENTERTAINMENT</ReleaseLabelReference>
+            <PLine>
+                <Year>2018</Year>
+                <PLineText>(P) 2018 Sony Music Entertainment España, S.L.</PLineText>
+            </PLine>
+            <Duration>PT0H23M19S</Duration>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Hip-Hop/Rap</GenreText>
+            </Genre>
+            <OriginalReleaseDate>2018-04-19</OriginalReleaseDate>
+            <ParentalWarningType>Explicit</ParentalWarningType>
+            <ResourceGroup>
+                <AdditionalTitle TitleType="GroupingTitle">
+                    <TitleText>Disc 1</TitleText>
+                </AdditionalTitle>
+                <SequenceNumber>1</SequenceNumber>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>1</SequenceNumber>
+                    <ReleaseResourceReference>A1</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>2</SequenceNumber>
+                    <ReleaseResourceReference>A2</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>3</SequenceNumber>
+                    <ReleaseResourceReference>A3</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>4</SequenceNumber>
+                    <ReleaseResourceReference>A4</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>5</SequenceNumber>
+                    <ReleaseResourceReference>A5</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>6</SequenceNumber>
+                    <ReleaseResourceReference>A6</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>7</SequenceNumber>
+                    <ReleaseResourceReference>A7</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>8</SequenceNumber>
+                    <ReleaseResourceReference>A8</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>9</SequenceNumber>
+                    <ReleaseResourceReference>A9</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>10</SequenceNumber>
+                    <ReleaseResourceReference>A10</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <LinkedReleaseResourceReference LinkDescription="CoverArt">A11</LinkedReleaseResourceReference>
+            </ResourceGroup>
+        </Release>
+        <TrackRelease>
+            <ReleaseReference>R1</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E0008674694U</GRid>
+                <ProprietaryId Namespace="ISRC">ES5021800052</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A1</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_SONY_MUSIC_ENTERTAINMENT</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Hip-Hop/Rap</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R2</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E0008674695S</GRid>
+                <ProprietaryId Namespace="ISRC">ES5021800168</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A2</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_SONY_MUSIC_ENTERTAINMENT</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Hip-Hop/Rap</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R3</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E0008674696Q</GRid>
+                <ProprietaryId Namespace="ISRC">ES5021800169</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A3</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_SONY_MUSIC_ENTERTAINMENT</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Hip-Hop/Rap</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R4</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E0008674697O</GRid>
+                <ProprietaryId Namespace="ISRC">ES5021800170</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A4</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_SONY_MUSIC_ENTERTAINMENT</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Hip-Hop/Rap</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R5</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E0008674698M</GRid>
+                <ProprietaryId Namespace="ISRC">ES5021800171</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A5</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_SONY_MUSIC_ENTERTAINMENT</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Hip-Hop/Rap</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R6</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E0008674699K</GRid>
+                <ProprietaryId Namespace="ISRC">ES5021800172</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A6</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_SONY_MUSIC_ENTERTAINMENT</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Hip-Hop/Rap</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R7</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E0008674700X</GRid>
+                <ProprietaryId Namespace="ISRC">ES5021800135</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A7</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_SONY_MUSIC_ENTERTAINMENT</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Hip-Hop/Rap</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R8</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E0008674701V</GRid>
+                <ProprietaryId Namespace="ISRC">ES5021800173</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A8</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_SONY_MUSIC_ENTERTAINMENT</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Hip-Hop/Rap</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R9</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E0008674702T</GRid>
+                <ProprietaryId Namespace="ISRC">ES5021800174</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A9</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_SONY_MUSIC_ENTERTAINMENT</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Hip-Hop/Rap</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R10</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E0008674703R</GRid>
+                <ProprietaryId Namespace="ISRC">ES5021800195</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A10</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_SONY_MUSIC_ENTERTAINMENT</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Hip-Hop/Rap</GenreText>
+            </Genre>
+        </TrackRelease>
+    </ReleaseList>
+    <DealList>
+        <ReleaseDeal>
+            <DealReleaseReference>R1</DealReleaseReference>
+            <DealReleaseReference>R2</DealReleaseReference>
+            <DealReleaseReference>R3</DealReleaseReference>
+            <DealReleaseReference>R4</DealReleaseReference>
+            <DealReleaseReference>R5</DealReleaseReference>
+            <DealReleaseReference>R6</DealReleaseReference>
+            <DealReleaseReference>R7</DealReleaseReference>
+            <DealReleaseReference>R8</DealReleaseReference>
+            <DealReleaseReference>R9</DealReleaseReference>
+            <DealReleaseReference>R10</DealReleaseReference>
+            <Deal>
+                <DealTerms>
+                    <TerritoryCode>AG</TerritoryCode>
+                    <TerritoryCode>AI</TerritoryCode>
+                    <TerritoryCode>AW</TerritoryCode>
+                    <TerritoryCode>BB</TerritoryCode>
+                    <TerritoryCode>BM</TerritoryCode>
+                    <TerritoryCode>BO</TerritoryCode>
+                    <TerritoryCode>BQ</TerritoryCode>
+                    <TerritoryCode>BR</TerritoryCode>
+                    <TerritoryCode>BZ</TerritoryCode>
+                    <TerritoryCode>CL</TerritoryCode>
+                    <TerritoryCode>CO</TerritoryCode>
+                    <TerritoryCode>CR</TerritoryCode>
+                    <TerritoryCode>CW</TerritoryCode>
+                    <TerritoryCode>DM</TerritoryCode>
+                    <TerritoryCode>DO</TerritoryCode>
+                    <TerritoryCode>EC</TerritoryCode>
+                    <TerritoryCode>ES</TerritoryCode>
+                    <TerritoryCode>GD</TerritoryCode>
+                    <TerritoryCode>GF</TerritoryCode>
+                    <TerritoryCode>GP</TerritoryCode>
+                    <TerritoryCode>GY</TerritoryCode>
+                    <TerritoryCode>HT</TerritoryCode>
+                    <TerritoryCode>JM</TerritoryCode>
+                    <TerritoryCode>KN</TerritoryCode>
+                    <TerritoryCode>KY</TerritoryCode>
+                    <TerritoryCode>LC</TerritoryCode>
+                    <TerritoryCode>MQ</TerritoryCode>
+                    <TerritoryCode>MS</TerritoryCode>
+                    <TerritoryCode>PA</TerritoryCode>
+                    <TerritoryCode>PE</TerritoryCode>
+                    <TerritoryCode>SR</TerritoryCode>
+                    <TerritoryCode>SV</TerritoryCode>
+                    <TerritoryCode>TC</TerritoryCode>
+                    <TerritoryCode>TT</TerritoryCode>
+                    <TerritoryCode>VC</TerritoryCode>
+                    <TerritoryCode>VG</TerritoryCode>
+                    <TerritoryCode>VU</TerritoryCode>
+                    <TerritoryCode>ZM</TerritoryCode>
+                    <ValidityPeriod>
+                        <StartDateTime>2018-04-19T00:00:00</StartDateTime>
+                    </ValidityPeriod>
+                    <CommercialModelType>SubscriptionModel</CommercialModelType>
+                    <UseType>ConditionalDownload</UseType>
+                    <UseType>NonInteractiveStream</UseType>
+                    <UseType>OnDemandStream</UseType>
+                </DealTerms>
+            </Deal>
+            <Deal>
+                <DealTerms>
+                    <TerritoryCode>AG</TerritoryCode>
+                    <TerritoryCode>AI</TerritoryCode>
+                    <TerritoryCode>AW</TerritoryCode>
+                    <TerritoryCode>BB</TerritoryCode>
+                    <TerritoryCode>BM</TerritoryCode>
+                    <TerritoryCode>BO</TerritoryCode>
+                    <TerritoryCode>BQ</TerritoryCode>
+                    <TerritoryCode>BR</TerritoryCode>
+                    <TerritoryCode>BZ</TerritoryCode>
+                    <TerritoryCode>CL</TerritoryCode>
+                    <TerritoryCode>CO</TerritoryCode>
+                    <TerritoryCode>CR</TerritoryCode>
+                    <TerritoryCode>CW</TerritoryCode>
+                    <TerritoryCode>DM</TerritoryCode>
+                    <TerritoryCode>DO</TerritoryCode>
+                    <TerritoryCode>EC</TerritoryCode>
+                    <TerritoryCode>ES</TerritoryCode>
+                    <TerritoryCode>GD</TerritoryCode>
+                    <TerritoryCode>GF</TerritoryCode>
+                    <TerritoryCode>GP</TerritoryCode>
+                    <TerritoryCode>GY</TerritoryCode>
+                    <TerritoryCode>HT</TerritoryCode>
+                    <TerritoryCode>JM</TerritoryCode>
+                    <TerritoryCode>KN</TerritoryCode>
+                    <TerritoryCode>KY</TerritoryCode>
+                    <TerritoryCode>LC</TerritoryCode>
+                    <TerritoryCode>MQ</TerritoryCode>
+                    <TerritoryCode>MS</TerritoryCode>
+                    <TerritoryCode>PA</TerritoryCode>
+                    <TerritoryCode>PE</TerritoryCode>
+                    <TerritoryCode>SR</TerritoryCode>
+                    <TerritoryCode>SV</TerritoryCode>
+                    <TerritoryCode>TC</TerritoryCode>
+                    <TerritoryCode>TT</TerritoryCode>
+                    <TerritoryCode>VC</TerritoryCode>
+                    <TerritoryCode>VG</TerritoryCode>
+                    <TerritoryCode>VU</TerritoryCode>
+                    <TerritoryCode>ZM</TerritoryCode>
+                    <ValidityPeriod>
+                        <StartDateTime>2018-04-19T00:00:00</StartDateTime>
+                    </ValidityPeriod>
+                    <CommercialModelType>AdvertisementSupportedModel</CommercialModelType>
+                    <UseType>NonInteractiveStream</UseType>
+                    <UseType>OnDemandStream</UseType>
+                </DealTerms>
+            </Deal>
+        </ReleaseDeal>
+    </DealList>
+</ernm:NewReleaseMessage>

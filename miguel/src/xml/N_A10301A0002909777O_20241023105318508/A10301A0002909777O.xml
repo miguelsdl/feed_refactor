@@ -1,0 +1,1108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ernm:NewReleaseMessage AvsVersionId="5" LanguageAndScriptCode="en" xsi:schemaLocation="http://ddex.net/xml/ern/43 http://ddex.net/xml/ern/43/release-notification.xsd" xmlns:ernm="http://ddex.net/xml/ern/43" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <MessageHeader>
+        <MessageThreadId>G010002909777O_KUC</MessageThreadId>
+        <MessageId>332932356</MessageId>
+        <MessageSender>
+            <PartyId>PADPIDA2007040502I</PartyId>
+            <PartyName>
+                <FullName>Sony Music Entertainment</FullName>
+            </PartyName>
+        </MessageSender>
+        <MessageRecipient>
+            <PartyId>PADPIDA2012073006T</PartyId>
+            <PartyName>
+                <FullName>KuackMedia 4.3 SD</FullName>
+            </PartyName>
+        </MessageRecipient>
+        <MessageCreatedDateTime>2024-10-23T08:53:19.730Z</MessageCreatedDateTime>
+        <MessageControlType>TestMessage</MessageControlType>
+    </MessageHeader>
+    <PartyList>
+        <Party>
+            <PartyReference>P_SME_SENDER</PartyReference>
+            <PartyName>
+                <FullName>Sony Music Entertainment</FullName>
+            </PartyName>
+            <PartyId>
+                <DPID>PADPIDA2007040502I</DPID>
+            </PartyId>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_55728</PartyReference>
+            <PartyName>
+                <FullName>The Tourist</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_55729</PartyReference>
+            <PartyName>
+                <FullName>Sang Min Sung</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_55730</PartyReference>
+            <PartyName>
+                <FullName>Tuna Music</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_55731</PartyReference>
+            <PartyName>
+                <FullName>Joo Young Kim</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_55732</PartyReference>
+            <PartyName>
+                <FullName>Peter Dal Woo Kim</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_LABEL_TUNA_MUSIC</PartyReference>
+            <PartyName>
+                <FullName>Tuna Music</FullName>
+            </PartyName>
+        </Party>
+    </PartyList>
+    <ResourceList>
+        <SoundRecording>
+            <ResourceReference>A1</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>KRA031205909</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2012</Year>
+                    <PLineText>(P) 2012 Tuna Music</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T1</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/2618ccdf96/20122/22623477.20122.mp3?oauth_consumer_key=kuc&amp;tag=a2e2dc66a32ae0c193f6217cae1dac81&amp;oauth_timestamp=1738313599&amp;oauth_signature=xVgUG99t9TnIpktrqSWLp3bzUfM%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>a2e2dc66a32ae0c193f6217cae1dac81</HashSumValue>
+                            </HashSum>
+                            <FileSize>10052246</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T1P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>48000</StartPoint>
+                            <EndPoint>78000</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="en">The Night Train</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="en">
+                <TitleText>The Night Train</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>The Tourist</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_55728</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_55729</ContributorPartyReference>
+                <Role>Arranger</Role>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="2">
+                <ContributorPartyReference>P_ARTIST_55730</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Producer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="3">
+                <ContributorPartyReference>P_ARTIST_55731</ContributorPartyReference>
+                <Role>Arranger</Role>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="4">
+                <ContributorPartyReference>P_ARTIST_55732</ContributorPartyReference>
+                <Role>Arranger</Role>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Duration>PT0H4M11S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+            <LanguageOfPerformance>ko</LanguageOfPerformance>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A2</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>KRA031205910</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2012</Year>
+                    <PLineText>(P) 2012 Tuna Music</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T2</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/69e1dcdf96/20122/22623479.20122.mp3?oauth_consumer_key=kuc&amp;tag=ee5fe8ab272b5070017e16a1381c3c5b&amp;oauth_timestamp=1738313599&amp;oauth_signature=19Qx11Q2AjqwuD8DmKOY00WSkHE%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>ee5fe8ab272b5070017e16a1381c3c5b</HashSumValue>
+                            </HashSum>
+                            <FileSize>10794119</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T2P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>48000</StartPoint>
+                            <EndPoint>78000</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="en">Olle Trail</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="en">
+                <TitleText>Olle Trail</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>The Tourist</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_55728</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_55729</ContributorPartyReference>
+                <Role>Arranger</Role>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="2">
+                <ContributorPartyReference>P_ARTIST_55730</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Producer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="3">
+                <ContributorPartyReference>P_ARTIST_55731</ContributorPartyReference>
+                <Role>Arranger</Role>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="4">
+                <ContributorPartyReference>P_ARTIST_55732</ContributorPartyReference>
+                <Role>Arranger</Role>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Duration>PT0H4M29S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+            <LanguageOfPerformance>ko</LanguageOfPerformance>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A3</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>KRA031205911</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2012</Year>
+                    <PLineText>(P) 2012 Tuna Music</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T3</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/acbbdcdf96/20122/22623481.20122.mp3?oauth_consumer_key=kuc&amp;tag=f7b5f8b3f3e73f6a89a0f8472c148ea0&amp;oauth_timestamp=1738313599&amp;oauth_signature=eaQKA4NR8oLKRlr7X3ihshAh7Jw%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>f7b5f8b3f3e73f6a89a0f8472c148ea0</HashSumValue>
+                            </HashSum>
+                            <FileSize>8374136</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T3P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>48000</StartPoint>
+                            <EndPoint>78000</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="en">Floral Rain</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="en">
+                <TitleText>Floral Rain</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>The Tourist</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_55728</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_55729</ContributorPartyReference>
+                <Role>Arranger</Role>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="2">
+                <ContributorPartyReference>P_ARTIST_55730</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Producer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="3">
+                <ContributorPartyReference>P_ARTIST_55731</ContributorPartyReference>
+                <Role>Arranger</Role>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="4">
+                <ContributorPartyReference>P_ARTIST_55732</ContributorPartyReference>
+                <Role>Arranger</Role>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Duration>PT0H3M29S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+            <LanguageOfPerformance>ko</LanguageOfPerformance>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A4</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>KRA031205912</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2012</Year>
+                    <PLineText>(P) 2012 Tuna Music</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T4</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/ef85ecdf96/20122/22623483.20122.mp3?oauth_consumer_key=kuc&amp;tag=61159efe9778c0287662df7d3355d176&amp;oauth_timestamp=1738313599&amp;oauth_signature=04LbXOHJLBRMRD664b90%2B1nNctw%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>61159efe9778c0287662df7d3355d176</HashSumValue>
+                            </HashSum>
+                            <FileSize>8781648</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T4P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>48000</StartPoint>
+                            <EndPoint>78000</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="en">Sunset Cruise</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="en">
+                <TitleText>Sunset Cruise</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>The Tourist</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_55728</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_55729</ContributorPartyReference>
+                <Role>Arranger</Role>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="2">
+                <ContributorPartyReference>P_ARTIST_55730</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Producer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="3">
+                <ContributorPartyReference>P_ARTIST_55731</ContributorPartyReference>
+                <Role>Arranger</Role>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="4">
+                <ContributorPartyReference>P_ARTIST_55732</ContributorPartyReference>
+                <Role>Arranger</Role>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Duration>PT0H3M39S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+            <LanguageOfPerformance>ko</LanguageOfPerformance>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A5</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>KRA031205913</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2012</Year>
+                    <PLineText>(P) 2012 Tuna Music</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T5</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/236fecdf96/20122/22623485.20122.mp3?oauth_consumer_key=kuc&amp;tag=c7e9c734417b600d3370e501844562b0&amp;oauth_timestamp=1738313599&amp;oauth_signature=K5BNoh6kWVEh4sITy8XtX3A%2FfQ8%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>c7e9c734417b600d3370e501844562b0</HashSumValue>
+                            </HashSum>
+                            <FileSize>10657235</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T5P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>48000</StartPoint>
+                            <EndPoint>78000</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="ko-Latn">Annyeong</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="ko-Latn">
+                <TitleText>Annyeong</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>The Tourist</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_55728</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_55729</ContributorPartyReference>
+                <Role>Arranger</Role>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="2">
+                <ContributorPartyReference>P_ARTIST_55730</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Producer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="3">
+                <ContributorPartyReference>P_ARTIST_55731</ContributorPartyReference>
+                <Role>Arranger</Role>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="4">
+                <ContributorPartyReference>P_ARTIST_55732</ContributorPartyReference>
+                <Role>Arranger</Role>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Duration>PT0H4M26S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+            <LanguageOfPerformance>ko</LanguageOfPerformance>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A6</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>KRA031205914</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2012</Year>
+                    <PLineText>(P) 2012 Tuna Music</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T6</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/6639fcdf96/20122/22623487.20122.mp3?oauth_consumer_key=kuc&amp;tag=49e290fc314984808efbeee46343f73e&amp;oauth_timestamp=1738313599&amp;oauth_signature=Bnv0LZMfAwJGPW027qOoO%2FTfmcM%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>49e290fc314984808efbeee46343f73e</HashSumValue>
+                            </HashSum>
+                            <FileSize>8725229</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T6P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>48000</StartPoint>
+                            <EndPoint>78000</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="en">October Nightscape</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="en">
+                <TitleText>October Nightscape</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>The Tourist</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_55728</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_55729</ContributorPartyReference>
+                <Role>Arranger</Role>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="2">
+                <ContributorPartyReference>P_ARTIST_55730</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Producer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="3">
+                <ContributorPartyReference>P_ARTIST_55731</ContributorPartyReference>
+                <Role>Arranger</Role>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="4">
+                <ContributorPartyReference>P_ARTIST_55732</ContributorPartyReference>
+                <Role>Arranger</Role>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Duration>PT0H3M38S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+            <LanguageOfPerformance>ko</LanguageOfPerformance>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A7</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>KRA031205915</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2012</Year>
+                    <PLineText>(P) 2012 Tuna Music</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T7</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/a9030ddf96/20122/22623489.20122.mp3?oauth_consumer_key=kuc&amp;tag=b960f8f2300689926c1d5f795a46d000&amp;oauth_timestamp=1738313599&amp;oauth_signature=D2BJ9dwzlYTTW7Pmd4Cq%2FdQNFF0%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>b960f8f2300689926c1d5f795a46d000</HashSumValue>
+                            </HashSum>
+                            <FileSize>9601899</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T7P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>48000</StartPoint>
+                            <EndPoint>78000</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="en">A Letter from Paris</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="en">
+                <TitleText>A Letter from Paris</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>The Tourist</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_55728</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_55729</ContributorPartyReference>
+                <Role>Arranger</Role>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="2">
+                <ContributorPartyReference>P_ARTIST_55730</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Producer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="3">
+                <ContributorPartyReference>P_ARTIST_55731</ContributorPartyReference>
+                <Role>Arranger</Role>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="4">
+                <ContributorPartyReference>P_ARTIST_55732</ContributorPartyReference>
+                <Role>Arranger</Role>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Duration>PT0H3M59S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+            <LanguageOfPerformance>ko</LanguageOfPerformance>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A8</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>KRA031205916</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2012</Year>
+                    <PLineText>(P) 2012 Tuna Music</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T8</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/ecdc0ddf96/20122/22623491.20122.mp3?oauth_consumer_key=kuc&amp;tag=4a4b462534c88982473dba1bf0736b18&amp;oauth_timestamp=1738313599&amp;oauth_signature=t%2BjdWw8geJ4U8V0gQoutOngEnl0%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>4a4b462534c88982473dba1bf0736b18</HashSumValue>
+                            </HashSum>
+                            <FileSize>9854756</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T8P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>48000</StartPoint>
+                            <EndPoint>78000</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="en">Ocean Drive</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="en">
+                <TitleText>Ocean Drive</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>The Tourist</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_55728</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_55729</ContributorPartyReference>
+                <Role>Arranger</Role>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="2">
+                <ContributorPartyReference>P_ARTIST_55730</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Producer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="3">
+                <ContributorPartyReference>P_ARTIST_55731</ContributorPartyReference>
+                <Role>Arranger</Role>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="4">
+                <ContributorPartyReference>P_ARTIST_55732</ContributorPartyReference>
+                <Role>Arranger</Role>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Duration>PT0H4M6S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+            <LanguageOfPerformance>ko</LanguageOfPerformance>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A9</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>KRA031205917</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2012</Year>
+                    <PLineText>(P) 2012 Tuna Music</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T9</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/20b61ddf96/20122/22623493.20122.mp3?oauth_consumer_key=kuc&amp;tag=110feecc45e8af520751612a84d0c574&amp;oauth_timestamp=1738313599&amp;oauth_signature=JmKYvbL3bJGmBMs4NU%2FfYMt%2BNFM%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>110feecc45e8af520751612a84d0c574</HashSumValue>
+                            </HashSum>
+                            <FileSize>11565275</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T9P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>48000</StartPoint>
+                            <EndPoint>78000</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="en">The Tourist in the Lonely Planet</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="en">
+                <TitleText>The Tourist in the Lonely Planet</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>The Tourist</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_55728</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_55729</ContributorPartyReference>
+                <Role>Arranger</Role>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="2">
+                <ContributorPartyReference>P_ARTIST_55730</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Producer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="3">
+                <ContributorPartyReference>P_ARTIST_55731</ContributorPartyReference>
+                <Role>Arranger</Role>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="4">
+                <ContributorPartyReference>P_ARTIST_55732</ContributorPartyReference>
+                <Role>Arranger</Role>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Duration>PT0H4M49S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+            <LanguageOfPerformance>ko</LanguageOfPerformance>
+        </SoundRecording>
+        <Image>
+            <ResourceReference>A10</ResourceReference>
+            <Type>FrontCoverImage</Type>
+            <ResourceId>
+                <ProprietaryId Namespace="DPID:PADPIDA2007040502I">G010002909777O</ProprietaryId>
+            </ResourceId>
+            <FirstPublicationDate>
+                <FulfillmentDate>2012-11-12</FulfillmentDate>
+            </FirstPublicationDate>
+            <TechnicalDetails>
+                <TechnicalResourceDetailsReference>T10</TechnicalResourceDetailsReference>
+                <ImageCodecType>JPEG</ImageCodecType>
+                <ImageHeight>1400</ImageHeight>
+                <ImageWidth>1400</ImageWidth>
+                <ImageResolution>300</ImageResolution>
+                <File>
+                    <URI>https://mgsrv-aws.smecde.com/rd/000/022/623/449/20126/22623449.20126.jpg?oauth_consumer_key=kuc&amp;tag=fee5d71c089b9df757b2c62144c6a24d&amp;oauth_timestamp=1738313599&amp;oauth_signature=1h5q67WfHgc5qP5e6G9g0kNNFqw%3D</URI>
+                    <HashSum>
+                        <Algorithm>MD5</Algorithm>
+                        <HashSumValue>fee5d71c089b9df757b2c62144c6a24d</HashSumValue>
+                    </HashSum>
+                    <FileSize>2291165</FileSize>
+                </File>
+                <IsProvidedInDelivery>false</IsProvidedInDelivery>
+            </TechnicalDetails>
+        </Image>
+    </ResourceList>
+    <ReleaseList>
+        <Release>
+            <ReleaseReference>R0</ReleaseReference>
+            <ReleaseType>Album</ReleaseType>
+            <ReleaseId>
+                <GRid>A10301A0002909777O</GRid>
+                <ICPN>886443761193</ICPN>
+                <CatalogNumber Namespace="DPID:PADPIDA2007040502I">G010002909777O</CatalogNumber>
+            </ReleaseId>
+            <DisplayTitleText LanguageAndScriptCode="en">The Tourist</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="en">
+                <TitleText>The Tourist</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>The Tourist</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_55728</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+            </DisplayArtist>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_TUNA_MUSIC</ReleaseLabelReference>
+            <PLine>
+                <Year>2012</Year>
+                <PLineText>(P) 2012 Sony Music Entertainment Korea</PLineText>
+            </PLine>
+            <Duration>PT0H36M46S</Duration>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Pop</GenreText>
+            </Genre>
+            <OriginalReleaseDate>2012-11-12</OriginalReleaseDate>
+            <ParentalWarningType>NotExplicit</ParentalWarningType>
+            <ResourceGroup>
+                <AdditionalTitle TitleType="GroupingTitle">
+                    <TitleText>Disc 1</TitleText>
+                </AdditionalTitle>
+                <SequenceNumber>1</SequenceNumber>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>1</SequenceNumber>
+                    <ReleaseResourceReference>A1</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>2</SequenceNumber>
+                    <ReleaseResourceReference>A2</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>3</SequenceNumber>
+                    <ReleaseResourceReference>A3</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>4</SequenceNumber>
+                    <ReleaseResourceReference>A4</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>5</SequenceNumber>
+                    <ReleaseResourceReference>A5</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>6</SequenceNumber>
+                    <ReleaseResourceReference>A6</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>7</SequenceNumber>
+                    <ReleaseResourceReference>A7</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>8</SequenceNumber>
+                    <ReleaseResourceReference>A8</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>9</SequenceNumber>
+                    <ReleaseResourceReference>A9</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <LinkedReleaseResourceReference LinkDescription="CoverArt">A10</LinkedReleaseResourceReference>
+            </ResourceGroup>
+        </Release>
+        <TrackRelease>
+            <ReleaseReference>R1</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E0006265974N</GRid>
+                <ProprietaryId Namespace="ISRC">KRA031205909</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A1</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_TUNA_MUSIC</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Pop</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R2</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E0006265975L</GRid>
+                <ProprietaryId Namespace="ISRC">KRA031205910</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A2</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_TUNA_MUSIC</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Pop</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R3</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E0006265976J</GRid>
+                <ProprietaryId Namespace="ISRC">KRA031205911</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A3</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_TUNA_MUSIC</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Pop</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R4</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E0006265977H</GRid>
+                <ProprietaryId Namespace="ISRC">KRA031205912</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A4</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_TUNA_MUSIC</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Pop</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R5</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E0006265978F</GRid>
+                <ProprietaryId Namespace="ISRC">KRA031205913</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A5</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_TUNA_MUSIC</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Pop</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R6</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E0006265979D</GRid>
+                <ProprietaryId Namespace="ISRC">KRA031205914</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A6</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_TUNA_MUSIC</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Pop</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R7</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E0006265980R</GRid>
+                <ProprietaryId Namespace="ISRC">KRA031205915</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A7</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_TUNA_MUSIC</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Pop</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R8</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E0006265981P</GRid>
+                <ProprietaryId Namespace="ISRC">KRA031205916</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A8</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_TUNA_MUSIC</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Pop</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R9</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E0006265982N</GRid>
+                <ProprietaryId Namespace="ISRC">KRA031205917</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A9</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_TUNA_MUSIC</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Pop</GenreText>
+            </Genre>
+        </TrackRelease>
+    </ReleaseList>
+    <DealList>
+        <ReleaseDeal>
+            <DealReleaseReference>R1</DealReleaseReference>
+            <DealReleaseReference>R2</DealReleaseReference>
+            <DealReleaseReference>R3</DealReleaseReference>
+            <DealReleaseReference>R4</DealReleaseReference>
+            <DealReleaseReference>R5</DealReleaseReference>
+            <DealReleaseReference>R6</DealReleaseReference>
+            <DealReleaseReference>R7</DealReleaseReference>
+            <DealReleaseReference>R8</DealReleaseReference>
+            <DealReleaseReference>R9</DealReleaseReference>
+            <Deal>
+                <DealTerms>
+                    <TerritoryCode>AG</TerritoryCode>
+                    <TerritoryCode>AI</TerritoryCode>
+                    <TerritoryCode>AW</TerritoryCode>
+                    <TerritoryCode>BB</TerritoryCode>
+                    <TerritoryCode>BM</TerritoryCode>
+                    <TerritoryCode>BO</TerritoryCode>
+                    <TerritoryCode>BQ</TerritoryCode>
+                    <TerritoryCode>BR</TerritoryCode>
+                    <TerritoryCode>BZ</TerritoryCode>
+                    <TerritoryCode>CL</TerritoryCode>
+                    <TerritoryCode>CO</TerritoryCode>
+                    <TerritoryCode>CR</TerritoryCode>
+                    <TerritoryCode>CW</TerritoryCode>
+                    <TerritoryCode>DM</TerritoryCode>
+                    <TerritoryCode>DO</TerritoryCode>
+                    <TerritoryCode>EC</TerritoryCode>
+                    <TerritoryCode>ES</TerritoryCode>
+                    <TerritoryCode>GD</TerritoryCode>
+                    <TerritoryCode>GF</TerritoryCode>
+                    <TerritoryCode>GP</TerritoryCode>
+                    <TerritoryCode>GY</TerritoryCode>
+                    <TerritoryCode>HT</TerritoryCode>
+                    <TerritoryCode>JM</TerritoryCode>
+                    <TerritoryCode>KN</TerritoryCode>
+                    <TerritoryCode>KY</TerritoryCode>
+                    <TerritoryCode>LC</TerritoryCode>
+                    <TerritoryCode>MQ</TerritoryCode>
+                    <TerritoryCode>MS</TerritoryCode>
+                    <TerritoryCode>PA</TerritoryCode>
+                    <TerritoryCode>PE</TerritoryCode>
+                    <TerritoryCode>SR</TerritoryCode>
+                    <TerritoryCode>SV</TerritoryCode>
+                    <TerritoryCode>TC</TerritoryCode>
+                    <TerritoryCode>TT</TerritoryCode>
+                    <TerritoryCode>VC</TerritoryCode>
+                    <TerritoryCode>VG</TerritoryCode>
+                    <TerritoryCode>VU</TerritoryCode>
+                    <TerritoryCode>ZM</TerritoryCode>
+                    <ValidityPeriod>
+                        <StartDateTime>2012-11-12T00:00:00</StartDateTime>
+                    </ValidityPeriod>
+                    <CommercialModelType>SubscriptionModel</CommercialModelType>
+                    <UseType>ConditionalDownload</UseType>
+                    <UseType>NonInteractiveStream</UseType>
+                    <UseType>OnDemandStream</UseType>
+                </DealTerms>
+            </Deal>
+            <Deal>
+                <DealTerms>
+                    <TerritoryCode>AG</TerritoryCode>
+                    <TerritoryCode>AI</TerritoryCode>
+                    <TerritoryCode>AW</TerritoryCode>
+                    <TerritoryCode>BB</TerritoryCode>
+                    <TerritoryCode>BM</TerritoryCode>
+                    <TerritoryCode>BO</TerritoryCode>
+                    <TerritoryCode>BQ</TerritoryCode>
+                    <TerritoryCode>BR</TerritoryCode>
+                    <TerritoryCode>BZ</TerritoryCode>
+                    <TerritoryCode>CL</TerritoryCode>
+                    <TerritoryCode>CO</TerritoryCode>
+                    <TerritoryCode>CR</TerritoryCode>
+                    <TerritoryCode>CW</TerritoryCode>
+                    <TerritoryCode>DM</TerritoryCode>
+                    <TerritoryCode>DO</TerritoryCode>
+                    <TerritoryCode>EC</TerritoryCode>
+                    <TerritoryCode>ES</TerritoryCode>
+                    <TerritoryCode>GD</TerritoryCode>
+                    <TerritoryCode>GF</TerritoryCode>
+                    <TerritoryCode>GP</TerritoryCode>
+                    <TerritoryCode>GY</TerritoryCode>
+                    <TerritoryCode>HT</TerritoryCode>
+                    <TerritoryCode>JM</TerritoryCode>
+                    <TerritoryCode>KN</TerritoryCode>
+                    <TerritoryCode>KY</TerritoryCode>
+                    <TerritoryCode>LC</TerritoryCode>
+                    <TerritoryCode>MQ</TerritoryCode>
+                    <TerritoryCode>MS</TerritoryCode>
+                    <TerritoryCode>PA</TerritoryCode>
+                    <TerritoryCode>PE</TerritoryCode>
+                    <TerritoryCode>SR</TerritoryCode>
+                    <TerritoryCode>SV</TerritoryCode>
+                    <TerritoryCode>TC</TerritoryCode>
+                    <TerritoryCode>TT</TerritoryCode>
+                    <TerritoryCode>VC</TerritoryCode>
+                    <TerritoryCode>VG</TerritoryCode>
+                    <TerritoryCode>VU</TerritoryCode>
+                    <TerritoryCode>ZM</TerritoryCode>
+                    <ValidityPeriod>
+                        <StartDateTime>2012-11-12T00:00:00</StartDateTime>
+                    </ValidityPeriod>
+                    <CommercialModelType>AdvertisementSupportedModel</CommercialModelType>
+                    <UseType>NonInteractiveStream</UseType>
+                    <UseType>OnDemandStream</UseType>
+                </DealTerms>
+            </Deal>
+        </ReleaseDeal>
+    </DealList>
+</ernm:NewReleaseMessage>

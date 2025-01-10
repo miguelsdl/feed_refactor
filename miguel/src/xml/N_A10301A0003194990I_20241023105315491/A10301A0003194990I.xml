@@ -1,0 +1,1128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ernm:NewReleaseMessage AvsVersionId="5" LanguageAndScriptCode="en" xsi:schemaLocation="http://ddex.net/xml/ern/43 http://ddex.net/xml/ern/43/release-notification.xsd" xmlns:ernm="http://ddex.net/xml/ern/43" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <MessageHeader>
+        <MessageThreadId>G010003194990I_KUC</MessageThreadId>
+        <MessageId>332932355</MessageId>
+        <MessageSender>
+            <PartyId>PADPIDA2007040502I</PartyId>
+            <PartyName>
+                <FullName>Sony Music Entertainment</FullName>
+            </PartyName>
+        </MessageSender>
+        <MessageRecipient>
+            <PartyId>PADPIDA2012073006T</PartyId>
+            <PartyName>
+                <FullName>KuackMedia 4.3 SD</FullName>
+            </PartyName>
+        </MessageRecipient>
+        <MessageCreatedDateTime>2024-10-23T08:53:16.780Z</MessageCreatedDateTime>
+        <MessageControlType>TestMessage</MessageControlType>
+    </MessageHeader>
+    <PartyList>
+        <Party>
+            <PartyReference>P_SME_SENDER</PartyReference>
+            <PartyName>
+                <FullName>Sony Music Entertainment</FullName>
+            </PartyName>
+            <PartyId>
+                <DPID>PADPIDA2007040502I</DPID>
+            </PartyId>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_22568</PartyReference>
+            <PartyName>
+                <FullName>Carlos Santana</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="zh-Hant">
+                <FullName>卡洛斯山塔納</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_22569</PartyReference>
+            <PartyName>
+                <FullName>Fred Catero</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_24002</PartyReference>
+            <PartyName>
+                <FullName>Peter Green</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_25362</PartyReference>
+            <PartyName>
+                <FullName>C. Santana</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_25392</PartyReference>
+            <PartyName>
+                <FullName>Brent Dangerfield</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_196981</PartyReference>
+            <PartyName>
+                <FullName>G. Rolie</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_196982</PartyReference>
+            <PartyName>
+                <FullName>J. Areas</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_242194</PartyReference>
+            <PartyName>
+                <FullName>T. Puente</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_327546</PartyReference>
+            <PartyName>
+                <FullName>M. Brown</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_327547</PartyReference>
+            <PartyName>
+                <FullName>T. Moss</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_327548</PartyReference>
+            <PartyName>
+                <FullName>Michael Olatunji</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_327549</PartyReference>
+            <PartyName>
+                <FullName>S. Henry</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_2742151</PartyReference>
+            <PartyName>
+                <FullName>Santana</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="ja-Jpan">
+                <FullName>Santana</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="ja-Kana">
+                <FullName>サンタナ</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="zh-Hant">
+                <FullName>山塔那</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_LABEL_COLUMBIALEGACY</PartyReference>
+            <PartyName>
+                <FullName>Columbia/Legacy</FullName>
+            </PartyName>
+        </Party>
+    </PartyList>
+    <ResourceList>
+        <SoundRecording>
+            <ResourceReference>A1</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>USSM16900851</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>1969</Year>
+                    <PLineText>Originally released 1969. All rights reserved by Columbia Records, a division of Sony Music Entertainment</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T1</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/2f20c074bf/20122/53634269.20122.mp3?oauth_consumer_key=kuc&amp;tag=4e149f7aff787049bafe314916370112&amp;oauth_timestamp=1738313596&amp;oauth_signature=X%2B1pM1f8m5kgMJtPEqzIZPe14V4%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>4e149f7aff787049bafe314916370112</HashSumValue>
+                            </HashSum>
+                            <FileSize>7177820</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T1P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>48000</StartPoint>
+                            <EndPoint>78000</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="en">Evil Ways</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="en">
+                <TitleText>Evil Ways</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>Santana</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2742151</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+                <ArtisticRole Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Producer">UserDefined</ArtisticRole>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_25392</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Producer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="2">
+                <ContributorPartyReference>P_ARTIST_327549</ContributorPartyReference>
+                <Role>Composer</Role>
+            </Contributor>
+            <Duration>PT0H3M0S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+            <LanguageOfPerformance>en</LanguageOfPerformance>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A2</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>USSM16900764</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>1969</Year>
+                    <PLineText>Originally released 1969. All rights reserved by Columbia Records, a division of Sony Music Entertainment</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T2</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/620ac074bf/20122/53634271.20122.mp3?oauth_consumer_key=kuc&amp;tag=655fa2be4013fb3fc12a2accdf96567c&amp;oauth_timestamp=1738313596&amp;oauth_signature=3fbPX9rsz8NmRLSEMWfbb6Ws63s%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>655fa2be4013fb3fc12a2accdf96567c</HashSumValue>
+                            </HashSum>
+                            <FileSize>6561326</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T2P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>48000</StartPoint>
+                            <EndPoint>78000</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="en">Jingo (Single Version)</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="en">
+                <TitleText>Jingo</TitleText>
+                <SubTitle SubTitleType="Version">Single Version</SubTitle>
+            </DisplayTitle>
+            <DisplayArtistName>Santana</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2742151</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+                <ArtisticRole Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Producer">UserDefined</ArtisticRole>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_25392</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Producer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="2">
+                <ContributorPartyReference>P_ARTIST_327548</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Duration>PT0H2M44S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+            <LanguageOfPerformance>en</LanguageOfPerformance>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A3</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>USSM17000810</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>1970</Year>
+                    <PLineText>Originally released 1970. All rights reserved by Columbia Records, a division of Sony Music Entertainment</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T3</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/a5d3d074bf/20122/53634273.20122.mp3?oauth_consumer_key=kuc&amp;tag=302a5f7a82083c10a7fcabc09b39ac6a&amp;oauth_timestamp=1738313596&amp;oauth_signature=m7ePLypKS59Hj1EJRHX7CW6JpZA%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>302a5f7a82083c10a7fcabc09b39ac6a</HashSumValue>
+                            </HashSum>
+                            <FileSize>10071159</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T3P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>48000</StartPoint>
+                            <EndPoint>78000</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="en">Hope You're Feeling Better</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="en">
+                <TitleText>Hope You're Feeling Better</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>Santana</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2742151</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+                <ArtisticRole Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Producer">UserDefined</ArtisticRole>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_22569</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Producer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="2">
+                <ContributorPartyReference>P_ARTIST_196981</ContributorPartyReference>
+                <Role>Composer</Role>
+            </Contributor>
+            <Duration>PT0H4M8S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+            <LanguageOfPerformance>en</LanguageOfPerformance>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A4</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>USSM17000811</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>1970</Year>
+                    <PLineText>Originally released 1970. All rights reserved by Columbia Records, a division of Sony Music Entertainment</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T4</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/e8add074bf/20122/53634275.20122.mp3?oauth_consumer_key=kuc&amp;tag=9ac97dcfb3ea98d9cf784aadc8bb527c&amp;oauth_timestamp=1738313596&amp;oauth_signature=6CmMVr%2FLIFpRSo9Zf6z9iK%2Faoxk%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>9ac97dcfb3ea98d9cf784aadc8bb527c</HashSumValue>
+                            </HashSum>
+                            <FileSize>11425332</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T4P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>48000</StartPoint>
+                            <EndPoint>78000</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="es">Samba Pa Ti</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="es">
+                <TitleText>Samba Pa Ti</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>Santana</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2742151</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+                <ArtisticRole Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Producer">UserDefined</ArtisticRole>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_22568</ContributorPartyReference>
+                <Role>Composer</Role>
+            </Contributor>
+            <Contributor SequenceNumber="2">
+                <ContributorPartyReference>P_ARTIST_22569</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Producer">UserDefined</Role>
+            </Contributor>
+            <Duration>PT0H4M45S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A5</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>USSM16900992</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>1969</Year>
+                    <PLineText>Originally released 1969. All rights reserved by Columbia Records, a division of Sony Music Entertainment</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T5</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/2c77e074bf/20122/53634277.20122.mp3?oauth_consumer_key=kuc&amp;tag=1017bb1f4f070afb60a6c13788d79872&amp;oauth_timestamp=1738313596&amp;oauth_signature=iax9lkqCWfuBizouOtibMAJWHZo%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>1017bb1f4f070afb60a6c13788d79872</HashSumValue>
+                            </HashSum>
+                            <FileSize>6142327</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T5P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>48000</StartPoint>
+                            <EndPoint>78000</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="en">Persuasion</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="en">
+                <TitleText>Persuasion</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>Santana</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2742151</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+                <ArtisticRole>Composer</ArtisticRole>
+                <ArtisticRole Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Producer">UserDefined</ArtisticRole>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_25392</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Producer">UserDefined</Role>
+            </Contributor>
+            <Duration>PT0H2M34S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A6</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>USSM17000643</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>1970</Year>
+                    <PLineText>Originally released 1970. All rights reserved by Columbia Records, a division of Sony Music Entertainment</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T6</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/6f41f074bf/20122/53634279.20122.mp3?oauth_consumer_key=kuc&amp;tag=8216f1374c0b912f5958f901c38eae86&amp;oauth_timestamp=1738313596&amp;oauth_signature=GyplgQF5InXpBjeRarGrpfK7Zl0%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>8216f1374c0b912f5958f901c38eae86</HashSumValue>
+                            </HashSum>
+                            <FileSize>7862236</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T6P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>48000</StartPoint>
+                            <EndPoint>78000</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="en">Black Magic Woman (Single Version)</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="en">
+                <TitleText>Black Magic Woman</TitleText>
+                <SubTitle SubTitleType="Version">Single Version</SubTitle>
+            </DisplayTitle>
+            <DisplayArtistName>Santana</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2742151</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_24002</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Duration>PT0H3M20S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+            <LanguageOfPerformance>en</LanguageOfPerformance>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A7</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>USSM17000812</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>1970</Year>
+                    <PLineText>Originally released 1970. All rights reserved by Columbia Records, a division of Sony Music Entertainment</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T7</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/a22bf074bf/20122/53634281.20122.mp3?oauth_consumer_key=kuc&amp;tag=9325a6f93574d343275aa13615bc0978&amp;oauth_timestamp=1738313596&amp;oauth_signature=Z9nAZHh1Ze30VVhF7DTn0SpDwzc%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>9325a6f93574d343275aa13615bc0978</HashSumValue>
+                            </HashSum>
+                            <FileSize>10296842</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T7P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>48000</StartPoint>
+                            <EndPoint>78000</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="es">Oye Como Va</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="es">
+                <TitleText>Oye Como Va</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>Santana</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2742151</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+                <ArtisticRole Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Producer">UserDefined</ArtisticRole>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_22569</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Producer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="2">
+                <ContributorPartyReference>P_ARTIST_242194</ContributorPartyReference>
+                <Role>Composer</Role>
+            </Contributor>
+            <Duration>PT0H4M19S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+            <LanguageOfPerformance>es</LanguageOfPerformance>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A8</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>USSM17100769</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>1971</Year>
+                    <PLineText>Originally released 1971 All rights reserved by Columbia Records, a division of Sony Music Entertainment</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T8</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/e5f40174bf/20122/53634283.20122.mp3?oauth_consumer_key=kuc&amp;tag=03f6444d62ad54e2d2f2645b7a2ccd02&amp;oauth_timestamp=1738313596&amp;oauth_signature=aAgPCmSVvTMJt029c6OI%2F1dau08%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>03f6444d62ad54e2d2f2645b7a2ccd02</HashSumValue>
+                            </HashSum>
+                            <FileSize>7835078</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T8P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>48000</StartPoint>
+                            <EndPoint>78000</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="en">Everything's Coming Our Way</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="en">
+                <TitleText>Everything's Coming Our Way</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>Santana</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2742151</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+                <ArtisticRole Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Producer">UserDefined</ArtisticRole>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_25362</ContributorPartyReference>
+                <Role>Composer</Role>
+            </Contributor>
+            <Duration>PT0H3M16S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A9</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>USSM17000813</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>1971</Year>
+                    <PLineText>Originally released 1971 All rights reserved by Columbia Records, a division of Sony Music Entertainment</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T9</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/29ce0174bf/20122/53634285.20122.mp3?oauth_consumer_key=kuc&amp;tag=63bf8cd59803c5f6ce71f0a52130cb2b&amp;oauth_timestamp=1738313596&amp;oauth_signature=TaaKADDORZnICcOcGUnWHfzD4gA%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>63bf8cd59803c5f6ce71f0a52130cb2b</HashSumValue>
+                            </HashSum>
+                            <FileSize>6810015</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T9P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>48000</StartPoint>
+                            <EndPoint>78000</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="es">Se a Cabo</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="es">
+                <TitleText>Se a Cabo</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>Santana</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2742151</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+                <ArtisticRole Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Producer">UserDefined</ArtisticRole>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_22569</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Producer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="2">
+                <ContributorPartyReference>P_ARTIST_196982</ContributorPartyReference>
+                <Role>Composer</Role>
+            </Contributor>
+            <Duration>PT0H2M51S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+            <LanguageOfPerformance>es</LanguageOfPerformance>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A10</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>USSM17100754</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>1971</Year>
+                    <PLineText>Originally released 1971 All rights reserved by Columbia Records, a division of Sony Music Entertainment</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T10</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/6c981174bf/20122/53634287.20122.mp3?oauth_consumer_key=kuc&amp;tag=de81fb2e9ae37dd6fc91d27ebdfe8462&amp;oauth_timestamp=1738313596&amp;oauth_signature=0dlc3reSjMGW5bcluYj4tAFXoeE%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>de81fb2e9ae37dd6fc91d27ebdfe8462</HashSumValue>
+                            </HashSum>
+                            <FileSize>8416037</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T10P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>48000</StartPoint>
+                            <EndPoint>78000</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="en">Everybody's Everything</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="en">
+                <TitleText>Everybody's Everything</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>Santana</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2742151</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+                <ArtisticRole Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Producer">UserDefined</ArtisticRole>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_25362</ContributorPartyReference>
+                <Role>Composer</Role>
+            </Contributor>
+            <Contributor SequenceNumber="2">
+                <ContributorPartyReference>P_ARTIST_327546</ContributorPartyReference>
+                <Role>Composer</Role>
+            </Contributor>
+            <Contributor SequenceNumber="3">
+                <ContributorPartyReference>P_ARTIST_327547</ContributorPartyReference>
+                <Role>Composer</Role>
+            </Contributor>
+            <Duration>PT0H3M31S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+            <LanguageOfPerformance>en</LanguageOfPerformance>
+        </SoundRecording>
+        <Image>
+            <ResourceReference>A11</ResourceReference>
+            <Type>FrontCoverImage</Type>
+            <ResourceId>
+                <ProprietaryId Namespace="DPID:PADPIDA2007040502I">G010003194990I</ProprietaryId>
+            </ResourceId>
+            <FirstPublicationDate>
+                <FulfillmentDate>2014-07-09</FulfillmentDate>
+            </FirstPublicationDate>
+            <TechnicalDetails>
+                <TechnicalResourceDetailsReference>T11</TechnicalResourceDetailsReference>
+                <ImageCodecType>JPEG</ImageCodecType>
+                <ImageHeight>1400</ImageHeight>
+                <ImageWidth>1400</ImageWidth>
+                <ImageResolution>300</ImageResolution>
+                <File>
+                    <URI>https://mgsrv-aws.smecde.com/rd/0b4afc3737/20126/24637992.20126.jpg?oauth_consumer_key=kuc&amp;tag=cff0d01a7cca8f1dc6f2a7568f5fc165&amp;oauth_timestamp=1738313597&amp;oauth_signature=YfGacHCWn4w3pSZBEt8XX6mIL%2BU%3D</URI>
+                    <HashSum>
+                        <Algorithm>MD5</Algorithm>
+                        <HashSumValue>cff0d01a7cca8f1dc6f2a7568f5fc165</HashSumValue>
+                    </HashSum>
+                    <FileSize>3759507</FileSize>
+                </File>
+                <IsProvidedInDelivery>false</IsProvidedInDelivery>
+            </TechnicalDetails>
+        </Image>
+    </ResourceList>
+    <ReleaseList>
+        <Release>
+            <ReleaseReference>R0</ReleaseReference>
+            <ReleaseType>Album</ReleaseType>
+            <ReleaseId>
+                <GRid>A10301A0003194990I</GRid>
+                <ICPN>886444739788</ICPN>
+                <CatalogNumber Namespace="DPID:PADPIDA2007040502I">G010003194990I</CatalogNumber>
+            </ReleaseId>
+            <DisplayTitleText LanguageAndScriptCode="en">Santana's Greatest Hits</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="en">
+                <TitleText>Santana's Greatest Hits</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>Santana</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2742151</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+            </DisplayArtist>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_COLUMBIALEGACY</ReleaseLabelReference>
+            <PLine>
+                <Year>1974</Year>
+                <PLineText>Originally released 1969, 1970, 1971. All rights reserved by Columbia Records, a division of Sony Music Entertainment/ (P) 1974 Sony Music Entertainment</PLineText>
+            </PLine>
+            <Duration>PT0H34M28S</Duration>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Pop</GenreText>
+            </Genre>
+            <OriginalReleaseDate>2014-07-09</OriginalReleaseDate>
+            <ParentalWarningType>NotExplicit</ParentalWarningType>
+            <ResourceGroup>
+                <AdditionalTitle TitleType="GroupingTitle">
+                    <TitleText>Disc 1</TitleText>
+                </AdditionalTitle>
+                <SequenceNumber>1</SequenceNumber>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>1</SequenceNumber>
+                    <ReleaseResourceReference>A1</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>2</SequenceNumber>
+                    <ReleaseResourceReference>A2</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>3</SequenceNumber>
+                    <ReleaseResourceReference>A3</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>4</SequenceNumber>
+                    <ReleaseResourceReference>A4</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>5</SequenceNumber>
+                    <ReleaseResourceReference>A5</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>6</SequenceNumber>
+                    <ReleaseResourceReference>A6</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>7</SequenceNumber>
+                    <ReleaseResourceReference>A7</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>8</SequenceNumber>
+                    <ReleaseResourceReference>A8</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>9</SequenceNumber>
+                    <ReleaseResourceReference>A9</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>10</SequenceNumber>
+                    <ReleaseResourceReference>A10</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <LinkedReleaseResourceReference LinkDescription="CoverArt">A11</LinkedReleaseResourceReference>
+            </ResourceGroup>
+        </Release>
+        <TrackRelease>
+            <ReleaseReference>R1</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E0007018884C</GRid>
+                <ProprietaryId Namespace="ISRC">USSM16900851</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A1</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_COLUMBIALEGACY</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Pop</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R2</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E0007018885A</GRid>
+                <ProprietaryId Namespace="ISRC">USSM16900764</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A2</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_COLUMBIALEGACY</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Pop</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R3</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E00070188868</GRid>
+                <ProprietaryId Namespace="ISRC">USSM17000810</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A3</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_COLUMBIALEGACY</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Pop</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R4</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E00070188876</GRid>
+                <ProprietaryId Namespace="ISRC">USSM17000811</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A4</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_COLUMBIALEGACY</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Pop</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R5</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E00070188884</GRid>
+                <ProprietaryId Namespace="ISRC">USSM16900992</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A5</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_COLUMBIALEGACY</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Pop</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R6</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E00070188892</GRid>
+                <ProprietaryId Namespace="ISRC">USSM17000643</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A6</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_COLUMBIALEGACY</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Pop</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R7</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E0007018890G</GRid>
+                <ProprietaryId Namespace="ISRC">USSM17000812</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A7</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_COLUMBIALEGACY</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Pop</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R8</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E0007018891E</GRid>
+                <ProprietaryId Namespace="ISRC">USSM17100769</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A8</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_COLUMBIALEGACY</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Pop</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R9</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E0007018892C</GRid>
+                <ProprietaryId Namespace="ISRC">USSM17000813</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A9</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_COLUMBIALEGACY</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Pop</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R10</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E0007018893A</GRid>
+                <ProprietaryId Namespace="ISRC">USSM17100754</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A10</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_COLUMBIALEGACY</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Pop</GenreText>
+            </Genre>
+        </TrackRelease>
+    </ReleaseList>
+    <DealList>
+        <ReleaseDeal>
+            <DealReleaseReference>R1</DealReleaseReference>
+            <DealReleaseReference>R2</DealReleaseReference>
+            <DealReleaseReference>R3</DealReleaseReference>
+            <DealReleaseReference>R4</DealReleaseReference>
+            <DealReleaseReference>R5</DealReleaseReference>
+            <DealReleaseReference>R6</DealReleaseReference>
+            <DealReleaseReference>R7</DealReleaseReference>
+            <DealReleaseReference>R8</DealReleaseReference>
+            <DealReleaseReference>R9</DealReleaseReference>
+            <DealReleaseReference>R10</DealReleaseReference>
+            <Deal>
+                <DealTerms>
+                    <TerritoryCode>AG</TerritoryCode>
+                    <TerritoryCode>AI</TerritoryCode>
+                    <TerritoryCode>AW</TerritoryCode>
+                    <TerritoryCode>BB</TerritoryCode>
+                    <TerritoryCode>BM</TerritoryCode>
+                    <TerritoryCode>BO</TerritoryCode>
+                    <TerritoryCode>BQ</TerritoryCode>
+                    <TerritoryCode>BR</TerritoryCode>
+                    <TerritoryCode>BZ</TerritoryCode>
+                    <TerritoryCode>CL</TerritoryCode>
+                    <TerritoryCode>CO</TerritoryCode>
+                    <TerritoryCode>CR</TerritoryCode>
+                    <TerritoryCode>CW</TerritoryCode>
+                    <TerritoryCode>DM</TerritoryCode>
+                    <TerritoryCode>DO</TerritoryCode>
+                    <TerritoryCode>EC</TerritoryCode>
+                    <TerritoryCode>ES</TerritoryCode>
+                    <TerritoryCode>GD</TerritoryCode>
+                    <TerritoryCode>GF</TerritoryCode>
+                    <TerritoryCode>GP</TerritoryCode>
+                    <TerritoryCode>GY</TerritoryCode>
+                    <TerritoryCode>HT</TerritoryCode>
+                    <TerritoryCode>JM</TerritoryCode>
+                    <TerritoryCode>KN</TerritoryCode>
+                    <TerritoryCode>KY</TerritoryCode>
+                    <TerritoryCode>LC</TerritoryCode>
+                    <TerritoryCode>MQ</TerritoryCode>
+                    <TerritoryCode>MS</TerritoryCode>
+                    <TerritoryCode>PA</TerritoryCode>
+                    <TerritoryCode>PE</TerritoryCode>
+                    <TerritoryCode>SR</TerritoryCode>
+                    <TerritoryCode>SV</TerritoryCode>
+                    <TerritoryCode>TC</TerritoryCode>
+                    <TerritoryCode>TT</TerritoryCode>
+                    <TerritoryCode>VC</TerritoryCode>
+                    <TerritoryCode>VG</TerritoryCode>
+                    <TerritoryCode>VU</TerritoryCode>
+                    <TerritoryCode>ZM</TerritoryCode>
+                    <ValidityPeriod>
+                        <StartDateTime>2014-07-09T00:00:00</StartDateTime>
+                    </ValidityPeriod>
+                    <CommercialModelType>SubscriptionModel</CommercialModelType>
+                    <UseType>ConditionalDownload</UseType>
+                    <UseType>NonInteractiveStream</UseType>
+                    <UseType>OnDemandStream</UseType>
+                </DealTerms>
+            </Deal>
+            <Deal>
+                <DealTerms>
+                    <TerritoryCode>AG</TerritoryCode>
+                    <TerritoryCode>AI</TerritoryCode>
+                    <TerritoryCode>AW</TerritoryCode>
+                    <TerritoryCode>BB</TerritoryCode>
+                    <TerritoryCode>BM</TerritoryCode>
+                    <TerritoryCode>BO</TerritoryCode>
+                    <TerritoryCode>BQ</TerritoryCode>
+                    <TerritoryCode>BR</TerritoryCode>
+                    <TerritoryCode>BZ</TerritoryCode>
+                    <TerritoryCode>CL</TerritoryCode>
+                    <TerritoryCode>CO</TerritoryCode>
+                    <TerritoryCode>CR</TerritoryCode>
+                    <TerritoryCode>CW</TerritoryCode>
+                    <TerritoryCode>DM</TerritoryCode>
+                    <TerritoryCode>DO</TerritoryCode>
+                    <TerritoryCode>EC</TerritoryCode>
+                    <TerritoryCode>ES</TerritoryCode>
+                    <TerritoryCode>GD</TerritoryCode>
+                    <TerritoryCode>GF</TerritoryCode>
+                    <TerritoryCode>GP</TerritoryCode>
+                    <TerritoryCode>GY</TerritoryCode>
+                    <TerritoryCode>HT</TerritoryCode>
+                    <TerritoryCode>JM</TerritoryCode>
+                    <TerritoryCode>KN</TerritoryCode>
+                    <TerritoryCode>KY</TerritoryCode>
+                    <TerritoryCode>LC</TerritoryCode>
+                    <TerritoryCode>MQ</TerritoryCode>
+                    <TerritoryCode>MS</TerritoryCode>
+                    <TerritoryCode>PA</TerritoryCode>
+                    <TerritoryCode>PE</TerritoryCode>
+                    <TerritoryCode>SR</TerritoryCode>
+                    <TerritoryCode>SV</TerritoryCode>
+                    <TerritoryCode>TC</TerritoryCode>
+                    <TerritoryCode>TT</TerritoryCode>
+                    <TerritoryCode>VC</TerritoryCode>
+                    <TerritoryCode>VG</TerritoryCode>
+                    <TerritoryCode>VU</TerritoryCode>
+                    <TerritoryCode>ZM</TerritoryCode>
+                    <ValidityPeriod>
+                        <StartDateTime>2014-07-09T00:00:00</StartDateTime>
+                    </ValidityPeriod>
+                    <CommercialModelType>AdvertisementSupportedModel</CommercialModelType>
+                    <UseType>NonInteractiveStream</UseType>
+                    <UseType>OnDemandStream</UseType>
+                </DealTerms>
+            </Deal>
+        </ReleaseDeal>
+    </DealList>
+</ernm:NewReleaseMessage>

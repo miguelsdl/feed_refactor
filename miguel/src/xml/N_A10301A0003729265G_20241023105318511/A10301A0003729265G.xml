@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ernm:NewReleaseMessage AvsVersionId="5" LanguageAndScriptCode="en" xsi:schemaLocation="http://ddex.net/xml/ern/43 http://ddex.net/xml/ern/43/release-notification.xsd" xmlns:ernm="http://ddex.net/xml/ern/43" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <MessageHeader>
+        <MessageThreadId>G010003729265G_KUC</MessageThreadId>
+        <MessageId>332932359</MessageId>
+        <MessageSender>
+            <PartyId>PADPIDA2007040502I</PartyId>
+            <PartyName>
+                <FullName>Sony Music Entertainment</FullName>
+            </PartyName>
+        </MessageSender>
+        <MessageRecipient>
+            <PartyId>PADPIDA2012073006T</PartyId>
+            <PartyName>
+                <FullName>KuackMedia 4.3 SD</FullName>
+            </PartyName>
+        </MessageRecipient>
+        <MessageCreatedDateTime>2024-10-23T08:53:19.040Z</MessageCreatedDateTime>
+        <MessageControlType>TestMessage</MessageControlType>
+    </MessageHeader>
+    <PartyList>
+        <Party>
+            <PartyReference>P_SME_SENDER</PartyReference>
+            <PartyName>
+                <FullName>Sony Music Entertainment</FullName>
+            </PartyName>
+            <PartyId>
+                <DPID>PADPIDA2007040502I</DPID>
+            </PartyId>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_2147462</PartyReference>
+            <PartyName>
+                <FullName>K.I.D</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_2147465</PartyReference>
+            <PartyName>
+                <FullName>Mike Crossey</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_2147466</PartyReference>
+            <PartyName>
+                <FullName>Chris Perry</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_2147467</PartyReference>
+            <PartyName>
+                <FullName>Jonathan Gilmore</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_2187531</PartyReference>
+            <PartyName>
+                <FullName>Bobby Lo</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_2238049</PartyReference>
+            <PartyName>
+                <FullName>Kara Lane</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_2259990</PartyReference>
+            <PartyName>
+                <FullName>Elizabeth Harris</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_2262968</PartyReference>
+            <PartyName>
+                <FullName>CupcakKe</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_2262969</PartyReference>
+            <PartyName>
+                <FullName>K.I.D feat. CupcakKe</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_8849356</PartyReference>
+            <PartyName>
+                <FullName>Chris Gehringer</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="ja-Jpan">
+                <FullName>Chris Gehringer</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="ja-Kana">
+                <FullName>クリスゲーリンジャー</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_LABEL_COLUMBIA</PartyReference>
+            <PartyName>
+                <FullName>Columbia</FullName>
+            </PartyName>
+        </Party>
+    </PartyList>
+    <ResourceList>
+        <SoundRecording>
+            <ResourceReference>A1</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>USSM11704344</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2017</Year>
+                    <PLineText>(P) 2017 K.I.D Mississauga Inc., under exclusive license to Columbia Records, a Division of Sony Music Entertainment</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T1</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/e72e57d6dd/20122/47262907.20122.mp3?oauth_consumer_key=kuc&amp;tag=23a7001fb07280032c695079a5adb13f&amp;oauth_timestamp=1738313599&amp;oauth_signature=vjjqH7UfUL3Y8IdZ8DI3TRNEIME%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>23a7001fb07280032c695079a5adb13f</HashSumValue>
+                            </HashSum>
+                            <FileSize>7567565</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T1P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>48000</StartPoint>
+                            <EndPoint>78000</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="en">Boy</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="en">
+                <TitleText>Boy</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>K.I.D feat. CupcakKe</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2147462</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+            </DisplayArtist>
+            <DisplayArtist SequenceNumber="2">
+                <ArtistPartyReference>P_ARTIST_2262968</ArtistPartyReference>
+                <DisplayArtistRole>FeaturedArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+                <ArtisticRole Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Vocal">UserDefined</ArtisticRole>
+                <TitleDisplayInformation>
+                    <IsDisplayedInTitle>false</IsDisplayedInTitle>
+                    <Prefix> feat. </Prefix>
+                </TitleDisplayInformation>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_2262969</ContributorPartyReference>
+                <Role>AssociatedPerformer</Role>
+            </Contributor>
+            <Contributor SequenceNumber="2">
+                <ContributorPartyReference>P_ARTIST_2187531</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Background Vocal">UserDefined</Role>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Synthesizer">UserDefined</Role>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="3">
+                <ContributorPartyReference>P_ARTIST_2259990</ContributorPartyReference>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="4">
+                <ContributorPartyReference>P_ARTIST_2238049</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Background Vocal">UserDefined</Role>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Vocal">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="5">
+                <ContributorPartyReference>P_ARTIST_2147466</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Synthesizer">UserDefined</Role>
+                <Role>Composer</Role>
+            </Contributor>
+            <Contributor SequenceNumber="6">
+                <ContributorPartyReference>P_ARTIST_2147465</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Bass">UserDefined</Role>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Drums">UserDefined</Role>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Synthesizer">UserDefined</Role>
+                <Role>Composer</Role>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Mixing Engineer">UserDefined</Role>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Producer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="7">
+                <ContributorPartyReference>P_ARTIST_2147467</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Drums">UserDefined</Role>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Guitar">UserDefined</Role>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Synthesizer">UserDefined</Role>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Recording Engineer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="8">
+                <ContributorPartyReference>P_ARTIST_8849356</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Mastering Engineer">UserDefined</Role>
+            </Contributor>
+            <Duration>PT0H3M8S</Duration>
+            <ParentalWarningType>Explicit</ParentalWarningType>
+            <LanguageOfPerformance>en</LanguageOfPerformance>
+        </SoundRecording>
+        <Image>
+            <ResourceReference>A2</ResourceReference>
+            <Type>FrontCoverImage</Type>
+            <ResourceId>
+                <ProprietaryId Namespace="DPID:PADPIDA2007040502I">G010003729265G</ProprietaryId>
+            </ResourceId>
+            <FirstPublicationDate>
+                <FulfillmentDate>2017-04-28</FulfillmentDate>
+            </FirstPublicationDate>
+            <TechnicalDetails>
+                <TechnicalResourceDetailsReference>T2</TechnicalResourceDetailsReference>
+                <ImageCodecType>JPEG</ImageCodecType>
+                <ImageHeight>1400</ImageHeight>
+                <ImageWidth>1400</ImageWidth>
+                <ImageResolution>300</ImageResolution>
+                <File>
+                    <URI>https://mgsrv-aws.smecde.com/rd/abdebfa7dd/20126/47264787.20126.jpg?oauth_consumer_key=kuc&amp;tag=ab27e7d8ead16bae179a0e0b6075271a&amp;oauth_timestamp=1738313599&amp;oauth_signature=pPtvqC54lYcPQmEDMrtGCsOQIMo%3D</URI>
+                    <HashSum>
+                        <Algorithm>MD5</Algorithm>
+                        <HashSumValue>ab27e7d8ead16bae179a0e0b6075271a</HashSumValue>
+                    </HashSum>
+                    <FileSize>1352221</FileSize>
+                </File>
+                <IsProvidedInDelivery>false</IsProvidedInDelivery>
+            </TechnicalDetails>
+        </Image>
+    </ResourceList>
+    <ReleaseList>
+        <Release>
+            <ReleaseReference>R0</ReleaseReference>
+            <ReleaseType>Single</ReleaseType>
+            <ReleaseId>
+                <GRid>A10301A0003729265G</GRid>
+                <ICPN>886446491790</ICPN>
+                <CatalogNumber Namespace="DPID:PADPIDA2007040502I">G010003729265G</CatalogNumber>
+            </ReleaseId>
+            <DisplayTitleText LanguageAndScriptCode="en">Boy</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="en">
+                <TitleText>Boy</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>K.I.D feat. CupcakKe</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2147462</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+            </DisplayArtist>
+            <DisplayArtist SequenceNumber="2">
+                <ArtistPartyReference>P_ARTIST_2262968</ArtistPartyReference>
+                <DisplayArtistRole>FeaturedArtist</DisplayArtistRole>
+                <TitleDisplayInformation>
+                    <IsDisplayedInTitle>false</IsDisplayedInTitle>
+                    <Prefix> feat. </Prefix>
+                </TitleDisplayInformation>
+            </DisplayArtist>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_COLUMBIA</ReleaseLabelReference>
+            <PLine>
+                <Year>2017</Year>
+                <PLineText>(P) 2017 K.I.D Mississauga Inc., under exclusive license to Columbia Records, a Division of Sony Music Entertainment</PLineText>
+            </PLine>
+            <Duration>PT0H3M8S</Duration>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Alternative</GenreText>
+            </Genre>
+            <OriginalReleaseDate>2017-04-28</OriginalReleaseDate>
+            <ParentalWarningType>Explicit</ParentalWarningType>
+            <ResourceGroup>
+                <AdditionalTitle TitleType="GroupingTitle">
+                    <TitleText>Disc 1</TitleText>
+                </AdditionalTitle>
+                <SequenceNumber>1</SequenceNumber>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>1</SequenceNumber>
+                    <ReleaseResourceReference>A1</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <LinkedReleaseResourceReference LinkDescription="CoverArt">A2</LinkedReleaseResourceReference>
+            </ResourceGroup>
+        </Release>
+        <TrackRelease>
+            <ReleaseReference>R1</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E0008294392R</GRid>
+                <ProprietaryId Namespace="ISRC">USSM11704344</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A1</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_COLUMBIA</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Alternative</GenreText>
+            </Genre>
+        </TrackRelease>
+    </ReleaseList>
+    <DealList>
+        <ReleaseDeal>
+            <DealReleaseReference>R1</DealReleaseReference>
+            <Deal>
+                <DealTerms>
+                    <TerritoryCode>AG</TerritoryCode>
+                    <TerritoryCode>AI</TerritoryCode>
+                    <TerritoryCode>AW</TerritoryCode>
+                    <TerritoryCode>BB</TerritoryCode>
+                    <TerritoryCode>BM</TerritoryCode>
+                    <TerritoryCode>BO</TerritoryCode>
+                    <TerritoryCode>BQ</TerritoryCode>
+                    <TerritoryCode>BR</TerritoryCode>
+                    <TerritoryCode>BZ</TerritoryCode>
+                    <TerritoryCode>CL</TerritoryCode>
+                    <TerritoryCode>CO</TerritoryCode>
+                    <TerritoryCode>CR</TerritoryCode>
+                    <TerritoryCode>CW</TerritoryCode>
+                    <TerritoryCode>DM</TerritoryCode>
+                    <TerritoryCode>DO</TerritoryCode>
+                    <TerritoryCode>EC</TerritoryCode>
+                    <TerritoryCode>ES</TerritoryCode>
+                    <TerritoryCode>GD</TerritoryCode>
+                    <TerritoryCode>GF</TerritoryCode>
+                    <TerritoryCode>GP</TerritoryCode>
+                    <TerritoryCode>GY</TerritoryCode>
+                    <TerritoryCode>HT</TerritoryCode>
+                    <TerritoryCode>JM</TerritoryCode>
+                    <TerritoryCode>KN</TerritoryCode>
+                    <TerritoryCode>KY</TerritoryCode>
+                    <TerritoryCode>LC</TerritoryCode>
+                    <TerritoryCode>MQ</TerritoryCode>
+                    <TerritoryCode>MS</TerritoryCode>
+                    <TerritoryCode>PA</TerritoryCode>
+                    <TerritoryCode>PE</TerritoryCode>
+                    <TerritoryCode>SR</TerritoryCode>
+                    <TerritoryCode>SV</TerritoryCode>
+                    <TerritoryCode>TC</TerritoryCode>
+                    <TerritoryCode>TT</TerritoryCode>
+                    <TerritoryCode>VC</TerritoryCode>
+                    <TerritoryCode>VG</TerritoryCode>
+                    <TerritoryCode>VU</TerritoryCode>
+                    <TerritoryCode>ZM</TerritoryCode>
+                    <ValidityPeriod>
+                        <StartDateTime>2024-11-06T00:00:00</StartDateTime>
+                    </ValidityPeriod>
+                    <CommercialModelType>SubscriptionModel</CommercialModelType>
+                    <UseType>ConditionalDownload</UseType>
+                    <UseType>NonInteractiveStream</UseType>
+                    <UseType>OnDemandStream</UseType>
+                </DealTerms>
+            </Deal>
+            <Deal>
+                <DealTerms>
+                    <TerritoryCode>AG</TerritoryCode>
+                    <TerritoryCode>AI</TerritoryCode>
+                    <TerritoryCode>AW</TerritoryCode>
+                    <TerritoryCode>BB</TerritoryCode>
+                    <TerritoryCode>BM</TerritoryCode>
+                    <TerritoryCode>BO</TerritoryCode>
+                    <TerritoryCode>BQ</TerritoryCode>
+                    <TerritoryCode>BR</TerritoryCode>
+                    <TerritoryCode>BZ</TerritoryCode>
+                    <TerritoryCode>CL</TerritoryCode>
+                    <TerritoryCode>CO</TerritoryCode>
+                    <TerritoryCode>CR</TerritoryCode>
+                    <TerritoryCode>CW</TerritoryCode>
+                    <TerritoryCode>DM</TerritoryCode>
+                    <TerritoryCode>DO</TerritoryCode>
+                    <TerritoryCode>EC</TerritoryCode>
+                    <TerritoryCode>ES</TerritoryCode>
+                    <TerritoryCode>GD</TerritoryCode>
+                    <TerritoryCode>GF</TerritoryCode>
+                    <TerritoryCode>GP</TerritoryCode>
+                    <TerritoryCode>GY</TerritoryCode>
+                    <TerritoryCode>HT</TerritoryCode>
+                    <TerritoryCode>JM</TerritoryCode>
+                    <TerritoryCode>KN</TerritoryCode>
+                    <TerritoryCode>KY</TerritoryCode>
+                    <TerritoryCode>LC</TerritoryCode>
+                    <TerritoryCode>MQ</TerritoryCode>
+                    <TerritoryCode>MS</TerritoryCode>
+                    <TerritoryCode>PA</TerritoryCode>
+                    <TerritoryCode>PE</TerritoryCode>
+                    <TerritoryCode>SR</TerritoryCode>
+                    <TerritoryCode>SV</TerritoryCode>
+                    <TerritoryCode>TC</TerritoryCode>
+                    <TerritoryCode>TT</TerritoryCode>
+                    <TerritoryCode>VC</TerritoryCode>
+                    <TerritoryCode>VG</TerritoryCode>
+                    <TerritoryCode>VU</TerritoryCode>
+                    <TerritoryCode>ZM</TerritoryCode>
+                    <ValidityPeriod>
+                        <StartDateTime>2024-11-06T00:00:00</StartDateTime>
+                    </ValidityPeriod>
+                    <CommercialModelType>AdvertisementSupportedModel</CommercialModelType>
+                    <UseType>NonInteractiveStream</UseType>
+                    <UseType>OnDemandStream</UseType>
+                </DealTerms>
+            </Deal>
+        </ReleaseDeal>
+    </DealList>
+</ernm:NewReleaseMessage>

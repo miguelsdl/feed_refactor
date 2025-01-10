@@ -1,0 +1,2376 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ernm:NewReleaseMessage AvsVersionId="5" LanguageAndScriptCode="en" xsi:schemaLocation="http://ddex.net/xml/ern/43 http://ddex.net/xml/ern/43/release-notification.xsd" xmlns:ernm="http://ddex.net/xml/ern/43" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <MessageHeader>
+        <MessageThreadId>G0100007845431_KUC</MessageThreadId>
+        <MessageId>332932418</MessageId>
+        <MessageSender>
+            <PartyId>PADPIDA2007040502I</PartyId>
+            <PartyName>
+                <FullName>Sony Music Entertainment</FullName>
+            </PartyName>
+        </MessageSender>
+        <MessageRecipient>
+            <PartyId>PADPIDA2012073006T</PartyId>
+            <PartyName>
+                <FullName>KuackMedia 4.3 SD</FullName>
+            </PartyName>
+        </MessageRecipient>
+        <MessageCreatedDateTime>2024-10-23T08:54:35.733Z</MessageCreatedDateTime>
+        <MessageControlType>TestMessage</MessageControlType>
+    </MessageHeader>
+    <PartyList>
+        <Party>
+            <PartyReference>P_SME_SENDER</PartyReference>
+            <PartyName>
+                <FullName>Sony Music Entertainment</FullName>
+            </PartyName>
+            <PartyId>
+                <DPID>PADPIDA2007040502I</DPID>
+            </PartyId>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_3078</PartyReference>
+            <PartyName>
+                <FullName>Vlado Meller</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_3751</PartyReference>
+            <PartyName>
+                <FullName>Curtis Jackson</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_3790</PartyReference>
+            <PartyName>
+                <FullName>Dwayne Carter</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_20094</PartyReference>
+            <PartyName>
+                <FullName>Ronnie Jackson</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_22208</PartyReference>
+            <PartyName>
+                <FullName>Bernie Herms</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_28346</PartyReference>
+            <PartyName>
+                <FullName>Jermaine Dupri</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_28348</PartyReference>
+            <PartyName>
+                <FullName>Tadd Mingo</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_31360</PartyReference>
+            <PartyName>
+                <FullName>Abel Garibaldi</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_42892</PartyReference>
+            <PartyName>
+                <FullName>Spoken Word</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_57619</PartyReference>
+            <PartyName>
+                <FullName>Timothy Mosley</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_60364</PartyReference>
+            <PartyName>
+                <FullName>Anita Poree</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_60365</PartyReference>
+            <PartyName>
+                <FullName>Leonard Caston</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_70332</PartyReference>
+            <PartyName>
+                <FullName>No-ID</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_70336</PartyReference>
+            <PartyName>
+                <FullName>John Horesco IV</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_75178</PartyReference>
+            <PartyName>
+                <FullName>Shad Moss</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_87063</PartyReference>
+            <PartyName>
+                <FullName>Bow Wow feat. T-Pain &amp; Johntà Austin</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="zh-Hant">
+                <FullName>寶娃</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_87066</PartyReference>
+            <PartyName>
+                <FullName>Jaron Alston</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_87067</PartyReference>
+            <PartyName>
+                <FullName>LRoc</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_87068</PartyReference>
+            <PartyName>
+                <FullName>Rowdy Rik</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_87069</PartyReference>
+            <PartyName>
+                <FullName>Josh Houghkirk</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_87072</PartyReference>
+            <PartyName>
+                <FullName>Lil Ronnie</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_87073</PartyReference>
+            <PartyName>
+                <FullName>Mack Woodward</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_87075</PartyReference>
+            <PartyName>
+                <FullName>Wyatt Oates</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_87077</PartyReference>
+            <PartyName>
+                <FullName>James Phillips</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_87078</PartyReference>
+            <PartyName>
+                <FullName>Chad Butler</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_87080</PartyReference>
+            <PartyName>
+                <FullName>Charleston Davis</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_87081</PartyReference>
+            <PartyName>
+                <FullName>Kyambo Joshua</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_87084</PartyReference>
+            <PartyName>
+                <FullName>Nitti</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_87085</PartyReference>
+            <PartyName>
+                <FullName>Chadron Moore</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_87086</PartyReference>
+            <PartyName>
+                <FullName>Rodriguez Smith</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_87087</PartyReference>
+            <PartyName>
+                <FullName>Da Brat</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="zh-Hant">
+                <FullName>小傢伙</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_87088</PartyReference>
+            <PartyName>
+                <FullName>Teraike Crawford</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_87089</PartyReference>
+            <PartyName>
+                <FullName>Phillip Pitts</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_87090</PartyReference>
+            <PartyName>
+                <FullName>Free Agentz</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_87091</PartyReference>
+            <PartyName>
+                <FullName>Rufus Morgan</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_87092</PartyReference>
+            <PartyName>
+                <FullName>Tad Mingo</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_87093</PartyReference>
+            <PartyName>
+                <FullName>Ian Hackney</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_87095</PartyReference>
+            <PartyName>
+                <FullName>DURO</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_87096</PartyReference>
+            <PartyName>
+                <FullName>Ben Arrindellat</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_87097</PartyReference>
+            <PartyName>
+                <FullName>Jeff Meeks</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_87099</PartyReference>
+            <PartyName>
+                <FullName>Anthony Waters</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_87100</PartyReference>
+            <PartyName>
+                <FullName>Bow Wow feat. Chris Brown and Johntá Austin</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="zh-Hant">
+                <FullName>寶娃</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_87103</PartyReference>
+            <PartyName>
+                <FullName>Shawntae Harris</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_87104</PartyReference>
+            <PartyName>
+                <FullName>Timmy Gatling</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_87105</PartyReference>
+            <PartyName>
+                <FullName>Alton "Wokie" Stewart</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_498039</PartyReference>
+            <PartyName>
+                <FullName>Pimp C</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_662369</PartyReference>
+            <PartyName>
+                <FullName>J-Kwon</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="zh-Hant">
+                <FullName>杰棍</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_699464</PartyReference>
+            <PartyName>
+                <FullName>Lil Scrappy</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_1153803</PartyReference>
+            <PartyName>
+                <FullName>Bow Wow Bow Wow feat. J-Kwon and Jermaine Dupri</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="zh-Hant">
+                <FullName>寶娃</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_1380621</PartyReference>
+            <PartyName>
+                <FullName>Young Capone</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_1380622</PartyReference>
+            <PartyName>
+                <FullName>Cocaine J</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_1380624</PartyReference>
+            <PartyName>
+                <FullName>Short Dawg</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_2333948</PartyReference>
+            <PartyName>
+                <FullName>Bow Wow feat. Lil Wayne, Pimp C, Lil Scrappy &amp; Short Dawg</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="zh-Hant">
+                <FullName>寶娃</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_2333949</PartyReference>
+            <PartyName>
+                <FullName>Bow Wow feat. Young Capone &amp; Cocaine J</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="zh-Hant">
+                <FullName>寶娃</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_2333950</PartyReference>
+            <PartyName>
+                <FullName>Bow Wow feat. Da Brat</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="zh-Hant">
+                <FullName>寶娃</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_2730286</PartyReference>
+            <PartyName>
+                <FullName>Chris Brown</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="ja-Jpan">
+                <FullName>Chris Brown</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="ja-Kana">
+                <FullName>クリスブラウン</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="zh-Hant">
+                <FullName>克里斯小子</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_2737763</PartyReference>
+            <PartyName>
+                <FullName>Bow Wow</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="ja-Jpan">
+                <FullName>Bow Wow</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="ja-Kana">
+                <FullName>バウワウ</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="zh-Hant">
+                <FullName>寶娃</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_2756247</PartyReference>
+            <PartyName>
+                <FullName>T-Pain</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="ja-Jpan">
+                <FullName>T-PAIN</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="ja-Kana">
+                <FullName>ティーペイン</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="zh-Hant">
+                <FullName>提潘</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_2756248</PartyReference>
+            <PartyName>
+                <FullName>Lil Wayne</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="ja-Jpan">
+                <FullName>Lil Wayne</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="ja-Kana">
+                <FullName>リルウェイン</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_2761310</PartyReference>
+            <PartyName>
+                <FullName>Shawn Carter</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="ja-Jpan">
+                <FullName>Shawn Carter</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_2780215</PartyReference>
+            <PartyName>
+                <FullName>Bryan Michael Cox</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="ja-Jpan">
+                <FullName>Bryan Michael Cox</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_3158690</PartyReference>
+            <PartyName>
+                <FullName>Rick James</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="ja-Jpan">
+                <FullName>Rick James</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="ja-Kana">
+                <FullName>リックジェームス</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_4856392</PartyReference>
+            <PartyName>
+                <FullName>Johntá Austin</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="ja-Jpan">
+                <FullName>Johnta Austin</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="ja-Kana">
+                <FullName>ジョンタオースティン</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_7417381</PartyReference>
+            <PartyName>
+                <FullName>R.Kelly</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="ja-Jpan">
+                <FullName>R.Kelly</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="ja-Kana">
+                <FullName>アールケリー</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="zh-Hant">
+                <FullName>勞凱利</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_8313283</PartyReference>
+            <PartyName>
+                <FullName>Phil Tan</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="ja-Jpan">
+                <FullName>Phil Tan</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="ja-Kana">
+                <FullName>フィルタン</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_LABEL_SONY_URBAN_MUSICCOLUMBIA</PartyReference>
+            <PartyName>
+                <FullName>Sony Urban Music/Columbia</FullName>
+            </PartyName>
+        </Party>
+    </PartyList>
+    <ResourceList>
+        <SoundRecording>
+            <ResourceReference>A1</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>USSM10606965</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2006</Year>
+                    <PLineText>(P) 2006 SONY BMG MUSIC ENTERTAINMENT</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T1</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/890659a202/20122/6865788.20122.mp3?oauth_consumer_key=kuc&amp;tag=c81e734e45a3e8aeb32612bb545b1c02&amp;oauth_timestamp=1738313675&amp;oauth_signature=2tfx6VJcc0L1H2z8EzZOAFkqSrA%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>c81e734e45a3e8aeb32612bb545b1c02</HashSumValue>
+                            </HashSum>
+                            <FileSize>860336</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T1P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>0</StartPoint>
+                            <EndPoint>21427</EndPoint>
+                            <DurationUsed>P0DT0H0M21.427S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="en">Intro (Album Version)</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="en">
+                <TitleText>Intro</TitleText>
+                <SubTitle SubTitleType="Version">Album Version</SubTitle>
+            </DisplayTitle>
+            <DisplayArtistName>Bow Wow;Bow Wow Bow Wow feat. J-Kwon and Jermaine Dupri</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2737763</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+            </DisplayArtist>
+            <DisplayArtist SequenceNumber="2">
+                <ArtistPartyReference>P_ARTIST_662369</ArtistPartyReference>
+                <DisplayArtistRole>FeaturedArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+                <TitleDisplayInformation>
+                    <IsDisplayedInTitle>false</IsDisplayedInTitle>
+                    <Prefix> feat. </Prefix>
+                </TitleDisplayInformation>
+            </DisplayArtist>
+            <DisplayArtist SequenceNumber="3">
+                <ArtistPartyReference>P_ARTIST_28346</ArtistPartyReference>
+                <DisplayArtistRole>Composer</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+                <ArtisticRole Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="FeaturedArtist">UserDefined</ArtisticRole>
+                <ArtisticRole>Lyricist</ArtisticRole>
+                <ArtisticRole Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Producer">UserDefined</ArtisticRole>
+                <TitleDisplayInformation>
+                    <IsDisplayedInTitle>false</IsDisplayedInTitle>
+                    <Prefix> feat. </Prefix>
+                </TitleDisplayInformation>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_1153803</ContributorPartyReference>
+                <Role>AssociatedPerformer</Role>
+            </Contributor>
+            <Contributor SequenceNumber="2">
+                <ContributorPartyReference>P_ARTIST_22208</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Producer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="3">
+                <ContributorPartyReference>P_ARTIST_42892</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="4">
+                <ContributorPartyReference>P_ARTIST_87067</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Co-Producer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="5">
+                <ContributorPartyReference>P_ARTIST_87077</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="6">
+                <ContributorPartyReference>P_ARTIST_28348</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Assistant Engineer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="7">
+                <ContributorPartyReference>P_ARTIST_70336</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Assistant Engineer">UserDefined</Role>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Recording Engineer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="8">
+                <ContributorPartyReference>P_ARTIST_8313283</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Mixing Engineer">UserDefined</Role>
+            </Contributor>
+            <Duration>PT0H0M21S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A2</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>USSM10606873</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2006</Year>
+                    <PLineText>(P) 2006 SONY BMG MUSIC ENTERTAINMENT</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T2</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/66c469a202/20122/6865791.20122.mp3?oauth_consumer_key=kuc&amp;tag=0baec7434ea14b44dd5f0f76256cdb56&amp;oauth_timestamp=1738313675&amp;oauth_signature=FSy3%2Fc9KUvF6iN2NRZh2ohck2zI%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>0baec7434ea14b44dd5f0f76256cdb56</HashSumValue>
+                            </HashSum>
+                            <FileSize>6350191</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T2P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>48000</StartPoint>
+                            <EndPoint>78000</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="en">Price Of Fame (Album Version)</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="en">
+                <TitleText>Price Of Fame</TitleText>
+                <SubTitle SubTitleType="Version">Album Version</SubTitle>
+            </DisplayTitle>
+            <DisplayArtistName>Bow Wow</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2737763</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+                <ArtisticRole Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Producer">UserDefined</ArtisticRole>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_87072</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Producer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="2">
+                <ContributorPartyReference>P_ARTIST_75178</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="3">
+                <ContributorPartyReference>P_ARTIST_20094</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="4">
+                <ContributorPartyReference>P_ARTIST_87073</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Assistant Engineer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="5">
+                <ContributorPartyReference>P_ARTIST_8313283</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Mixing Engineer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="6">
+                <ContributorPartyReference>P_ARTIST_28346</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Mixing Engineer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="7">
+                <ContributorPartyReference>P_ARTIST_87069</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Mixing Engineer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="8">
+                <ContributorPartyReference>P_ARTIST_87075</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Recording Engineer">UserDefined</Role>
+            </Contributor>
+            <Duration>PT0H2M39S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A3</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>USSM10606875</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2006</Year>
+                    <PLineText>(P) 2006 SONY BMG MUSIC ENTERTAINMENT</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T3</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/a99e69a202/20122/6865793.20122.mp3?oauth_consumer_key=kuc&amp;tag=601190ee2ae1137e115aac4d66abe02a&amp;oauth_timestamp=1738313675&amp;oauth_signature=M%2F%2BTM7P9tcvZtmgVTBTxgOMO3bk%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>601190ee2ae1137e115aac4d66abe02a</HashSumValue>
+                            </HashSum>
+                            <FileSize>13155657</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T3P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>48000</StartPoint>
+                            <EndPoint>78000</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="en">4 Corners (Album Version)</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="en">
+                <TitleText>4 Corners</TitleText>
+                <SubTitle SubTitleType="Version">Album Version</SubTitle>
+            </DisplayTitle>
+            <DisplayArtistName>Bow Wow feat. Lil Wayne, Pimp C, Lil Scrappy &amp; Short Dawg</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2737763</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+            </DisplayArtist>
+            <DisplayArtist SequenceNumber="2">
+                <ArtistPartyReference>P_ARTIST_2756248</ArtistPartyReference>
+                <DisplayArtistRole>FeaturedArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+                <TitleDisplayInformation>
+                    <IsDisplayedInTitle>false</IsDisplayedInTitle>
+                    <Prefix> feat. </Prefix>
+                </TitleDisplayInformation>
+            </DisplayArtist>
+            <DisplayArtist SequenceNumber="3">
+                <ArtistPartyReference>P_ARTIST_498039</ArtistPartyReference>
+                <DisplayArtistRole>FeaturedArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+                <TitleDisplayInformation>
+                    <IsDisplayedInTitle>false</IsDisplayedInTitle>
+                    <Prefix> feat. </Prefix>
+                </TitleDisplayInformation>
+            </DisplayArtist>
+            <DisplayArtist SequenceNumber="4">
+                <ArtistPartyReference>P_ARTIST_699464</ArtistPartyReference>
+                <DisplayArtistRole>Composer</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+                <ArtisticRole Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="FeaturedArtist">UserDefined</ArtisticRole>
+                <ArtisticRole>Lyricist</ArtisticRole>
+                <TitleDisplayInformation>
+                    <IsDisplayedInTitle>false</IsDisplayedInTitle>
+                    <Prefix> feat. </Prefix>
+                </TitleDisplayInformation>
+            </DisplayArtist>
+            <DisplayArtist SequenceNumber="5">
+                <ArtistPartyReference>P_ARTIST_1380624</ArtistPartyReference>
+                <DisplayArtistRole>FeaturedArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+                <TitleDisplayInformation>
+                    <IsDisplayedInTitle>false</IsDisplayedInTitle>
+                    <Prefix> feat. </Prefix>
+                </TitleDisplayInformation>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_2333948</ContributorPartyReference>
+                <Role>AssociatedPerformer</Role>
+            </Contributor>
+            <Contributor SequenceNumber="2">
+                <ContributorPartyReference>P_ARTIST_28346</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Mixing Engineer">UserDefined</Role>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Producer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="3">
+                <ContributorPartyReference>P_ARTIST_87077</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="4">
+                <ContributorPartyReference>P_ARTIST_3790</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="5">
+                <ContributorPartyReference>P_ARTIST_87078</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="6">
+                <ContributorPartyReference>P_ARTIST_70332</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Co-Producer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="7">
+                <ContributorPartyReference>P_ARTIST_87080</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="8">
+                <ContributorPartyReference>P_ARTIST_87067</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Co-Producer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="9">
+                <ContributorPartyReference>P_ARTIST_2761310</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="10">
+                <ContributorPartyReference>P_ARTIST_87081</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="11">
+                <ContributorPartyReference>P_ARTIST_87068</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Assistant Engineer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="12">
+                <ContributorPartyReference>P_ARTIST_57619</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="13">
+                <ContributorPartyReference>P_ARTIST_60365</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="14">
+                <ContributorPartyReference>P_ARTIST_8313283</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Mixing Engineer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="15">
+                <ContributorPartyReference>P_ARTIST_60364</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="16">
+                <ContributorPartyReference>P_ARTIST_87069</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Mixing Engineer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="17">
+                <ContributorPartyReference>P_ARTIST_3078</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Mastering Engineer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="18">
+                <ContributorPartyReference>P_ARTIST_70336</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Recording Engineer">UserDefined</Role>
+            </Contributor>
+            <Duration>PT0H5M28S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A4</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>USSM10606876</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2006</Year>
+                    <PLineText>(P) 2006 SONY BMG MUSIC ENTERTAINMENT</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T4</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/ec6879a202/20122/6865795.20122.mp3?oauth_consumer_key=kuc&amp;tag=e77513eaf667dd5eec50591dbe4b742e&amp;oauth_timestamp=1738313675&amp;oauth_signature=TmR4mVa43LDd7Q4u57iRlMdRtX4%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>e77513eaf667dd5eec50591dbe4b742e</HashSumValue>
+                            </HashSum>
+                            <FileSize>9534026</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T4P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>48000</StartPoint>
+                            <EndPoint>78000</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="en">Outta My System (Album Version)</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="en">
+                <TitleText>Outta My System</TitleText>
+                <SubTitle SubTitleType="Version">Album Version</SubTitle>
+            </DisplayTitle>
+            <DisplayArtistName>Bow Wow feat. T-Pain &amp; Johntà Austin</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2737763</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+            </DisplayArtist>
+            <DisplayArtist SequenceNumber="2">
+                <ArtistPartyReference>P_ARTIST_2756247</ArtistPartyReference>
+                <DisplayArtistRole>FeaturedArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+                <TitleDisplayInformation>
+                    <IsDisplayedInTitle>false</IsDisplayedInTitle>
+                    <Prefix> feat. </Prefix>
+                </TitleDisplayInformation>
+            </DisplayArtist>
+            <DisplayArtist SequenceNumber="3">
+                <ArtistPartyReference>P_ARTIST_4856392</ArtistPartyReference>
+                <DisplayArtistRole>FeaturedArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+                <TitleDisplayInformation>
+                    <IsDisplayedInTitle>false</IsDisplayedInTitle>
+                    <Prefix> feat. </Prefix>
+                </TitleDisplayInformation>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_87063</ContributorPartyReference>
+                <Role>AssociatedPerformer</Role>
+            </Contributor>
+            <Contributor SequenceNumber="2">
+                <ContributorPartyReference>P_ARTIST_28346</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Mixing Engineer">UserDefined</Role>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Producer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="3">
+                <ContributorPartyReference>P_ARTIST_87066</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="4">
+                <ContributorPartyReference>P_ARTIST_70332</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Co-Producer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="5">
+                <ContributorPartyReference>P_ARTIST_3158690</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="6">
+                <ContributorPartyReference>P_ARTIST_87067</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Co-Producer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="7">
+                <ContributorPartyReference>P_ARTIST_87068</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Assistant Engineer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="8">
+                <ContributorPartyReference>P_ARTIST_8313283</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Mixing Engineer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="9">
+                <ContributorPartyReference>P_ARTIST_87069</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Mixing Engineer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="10">
+                <ContributorPartyReference>P_ARTIST_3078</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Mastering Engineer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="11">
+                <ContributorPartyReference>P_ARTIST_70336</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Recording Engineer">UserDefined</Role>
+            </Contributor>
+            <Duration>PT0H3M59S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+            <LanguageOfPerformance>en</LanguageOfPerformance>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A5</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>USSM10606877</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2006</Year>
+                    <PLineText>(P) 2006 SONY BMG MUSIC ENTERTAINMENT</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T5</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/204289a202/20122/6865797.20122.mp3?oauth_consumer_key=kuc&amp;tag=16d82dcb79b0b4cfa212376615fe5858&amp;oauth_timestamp=1738313675&amp;oauth_signature=KXE4Aj2GPwpaKIV1OwCOP8MPttQ%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>16d82dcb79b0b4cfa212376615fe5858</HashSumValue>
+                            </HashSum>
+                            <FileSize>9353229</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T5P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>48000</StartPoint>
+                            <EndPoint>78000</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="en">How You Move It (Album Version)</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="en">
+                <TitleText>How You Move It</TitleText>
+                <SubTitle SubTitleType="Version">Album Version</SubTitle>
+            </DisplayTitle>
+            <DisplayArtistName>Bow Wow</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2737763</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_28346</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Mixing Engineer">UserDefined</Role>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Producer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="2">
+                <ContributorPartyReference>P_ARTIST_87087</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Vocal">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="3">
+                <ContributorPartyReference>P_ARTIST_87067</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Co-Producer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="4">
+                <ContributorPartyReference>P_ARTIST_87077</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="5">
+                <ContributorPartyReference>P_ARTIST_87068</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Assistant Engineer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="6">
+                <ContributorPartyReference>P_ARTIST_87088</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="7">
+                <ContributorPartyReference>P_ARTIST_8313283</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Mixing Engineer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="8">
+                <ContributorPartyReference>P_ARTIST_3751</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="9">
+                <ContributorPartyReference>P_ARTIST_87089</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="10">
+                <ContributorPartyReference>P_ARTIST_87069</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Mixing Engineer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="11">
+                <ContributorPartyReference>P_ARTIST_3078</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Mastering Engineer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="12">
+                <ContributorPartyReference>P_ARTIST_70336</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Recording Engineer">UserDefined</Role>
+            </Contributor>
+            <Duration>PT0H3M53S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A6</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>USSM10600952</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2006</Year>
+                    <PLineText>(P) 2006 SONY BMG MUSIC ENTERTAINMENT</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T6</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/631c89a202/20122/6865799.20122.mp3?oauth_consumer_key=kuc&amp;tag=e7ee1837af519f710a0667a3404aa597&amp;oauth_timestamp=1738313675&amp;oauth_signature=bWnO4ttn3DBnleaJERcrwxyMhYk%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>e7ee1837af519f710a0667a3404aa597</HashSumValue>
+                            </HashSum>
+                            <FileSize>10726263</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T6P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>48000</StartPoint>
+                            <EndPoint>78000</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="en">Shortie Like Mine</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="en">
+                <TitleText>Shortie Like Mine</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>Bow Wow feat. Chris Brown and Johntá Austin</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2737763</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+            </DisplayArtist>
+            <DisplayArtist SequenceNumber="2">
+                <ArtistPartyReference>P_ARTIST_2730286</ArtistPartyReference>
+                <DisplayArtistRole>FeaturedArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+                <TitleDisplayInformation>
+                    <IsDisplayedInTitle>false</IsDisplayedInTitle>
+                    <Prefix> feat. </Prefix>
+                </TitleDisplayInformation>
+            </DisplayArtist>
+            <DisplayArtist SequenceNumber="3">
+                <ArtistPartyReference>P_ARTIST_4856392</ArtistPartyReference>
+                <DisplayArtistRole>Composer</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+                <ArtisticRole Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="FeaturedArtist">UserDefined</ArtisticRole>
+                <ArtisticRole>Lyricist</ArtisticRole>
+                <TitleDisplayInformation>
+                    <IsDisplayedInTitle>false</IsDisplayedInTitle>
+                    <Prefix> feat. </Prefix>
+                </TitleDisplayInformation>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_87100</ContributorPartyReference>
+                <Role>AssociatedPerformer</Role>
+            </Contributor>
+            <Contributor SequenceNumber="2">
+                <ContributorPartyReference>P_ARTIST_28346</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Mixing Engineer">UserDefined</Role>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Producer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="3">
+                <ContributorPartyReference>P_ARTIST_87103</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="4">
+                <ContributorPartyReference>P_ARTIST_2780215</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Co-Producer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="5">
+                <ContributorPartyReference>P_ARTIST_70336</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Recording Engineer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="6">
+                <ContributorPartyReference>P_ARTIST_8313283</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Mixing Engineer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="7">
+                <ContributorPartyReference>P_ARTIST_28348</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Assistant Engineer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="8">
+                <ContributorPartyReference>P_ARTIST_3078</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Mastering Engineer">UserDefined</Role>
+            </Contributor>
+            <Duration>PT0H4M29S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A7</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>USSM10606879</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2006</Year>
+                    <PLineText>(P) 2006 SONY BMG MUSIC ENTERTAINMENT</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T7</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/a6e599a202/20122/6865801.20122.mp3?oauth_consumer_key=kuc&amp;tag=b10c771cd77c168008ea9da3d2d605ff&amp;oauth_timestamp=1738313675&amp;oauth_signature=5uXiD17OtTi7jPJKcL432mcYWJM%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>b10c771cd77c168008ea9da3d2d605ff</HashSumValue>
+                            </HashSum>
+                            <FileSize>9213250</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T7P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>48000</StartPoint>
+                            <EndPoint>78000</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="en">Don't Know About That</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="en">
+                <TitleText>Don't Know About That</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>Bow Wow feat. Young Capone &amp; Cocaine J</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2737763</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+            </DisplayArtist>
+            <DisplayArtist SequenceNumber="2">
+                <ArtistPartyReference>P_ARTIST_1380621</ArtistPartyReference>
+                <DisplayArtistRole>FeaturedArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+                <TitleDisplayInformation>
+                    <IsDisplayedInTitle>false</IsDisplayedInTitle>
+                    <Prefix> feat. </Prefix>
+                </TitleDisplayInformation>
+            </DisplayArtist>
+            <DisplayArtist SequenceNumber="3">
+                <ArtistPartyReference>P_ARTIST_1380622</ArtistPartyReference>
+                <DisplayArtistRole>FeaturedArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+                <TitleDisplayInformation>
+                    <IsDisplayedInTitle>false</IsDisplayedInTitle>
+                    <Prefix> feat. </Prefix>
+                </TitleDisplayInformation>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_2333949</ContributorPartyReference>
+                <Role>AssociatedPerformer</Role>
+            </Contributor>
+            <Contributor SequenceNumber="2">
+                <ContributorPartyReference>P_ARTIST_28346</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Mixing Engineer">UserDefined</Role>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Producer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="3">
+                <ContributorPartyReference>P_ARTIST_87084</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Producer">UserDefined</Role>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Recording Engineer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="4">
+                <ContributorPartyReference>P_ARTIST_87085</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="5">
+                <ContributorPartyReference>P_ARTIST_87068</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Assistant Engineer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="6">
+                <ContributorPartyReference>P_ARTIST_87086</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="7">
+                <ContributorPartyReference>P_ARTIST_8313283</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Mixing Engineer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="8">
+                <ContributorPartyReference>P_ARTIST_87069</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Mixing Engineer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="9">
+                <ContributorPartyReference>P_ARTIST_3078</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Mastering Engineer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="10">
+                <ContributorPartyReference>P_ARTIST_70336</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Recording Engineer">UserDefined</Role>
+            </Contributor>
+            <Duration>PT0H3M50S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A8</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>USSM10606878</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2006</Year>
+                    <PLineText>(P) 2006 SONY BMG MUSIC ENTERTAINMENT</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T8</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/e9bf99a202/20122/6865803.20122.mp3?oauth_consumer_key=kuc&amp;tag=dab82136005ae50a7e204c9769872d9f&amp;oauth_timestamp=1738313675&amp;oauth_signature=RhaDsIxZskE87XDpqzxQTY0JhCU%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>dab82136005ae50a7e204c9769872d9f</HashSumValue>
+                            </HashSum>
+                            <FileSize>8593581</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T8P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>48000</StartPoint>
+                            <EndPoint>78000</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="en">Tell Me (Album Version)</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="en">
+                <TitleText>Tell Me</TitleText>
+                <SubTitle SubTitleType="Version">Album Version</SubTitle>
+            </DisplayTitle>
+            <DisplayArtistName>Bow Wow</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2737763</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_28346</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Mixing Engineer">UserDefined</Role>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Producer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="2">
+                <ContributorPartyReference>P_ARTIST_87077</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="3">
+                <ContributorPartyReference>P_ARTIST_87067</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Co-Producer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="4">
+                <ContributorPartyReference>P_ARTIST_87068</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Assistant Engineer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="5">
+                <ContributorPartyReference>P_ARTIST_87103</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="6">
+                <ContributorPartyReference>P_ARTIST_8313283</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Mixing Engineer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="7">
+                <ContributorPartyReference>P_ARTIST_87104</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="8">
+                <ContributorPartyReference>P_ARTIST_87105</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="9">
+                <ContributorPartyReference>P_ARTIST_87069</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Mixing Engineer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="10">
+                <ContributorPartyReference>P_ARTIST_3078</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Mastering Engineer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="11">
+                <ContributorPartyReference>P_ARTIST_70336</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Recording Engineer">UserDefined</Role>
+            </Contributor>
+            <Duration>PT0H3M35S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A9</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>USSM10606969</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2006</Year>
+                    <PLineText>(P) 2006 SONY BMG MUSIC ENTERTAINMENT</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T9</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/2d89a9a202/20122/6865805.20122.mp3?oauth_consumer_key=kuc&amp;tag=74bf3e72fad9ea3f29965f3f651ccfde&amp;oauth_timestamp=1738313675&amp;oauth_signature=Ou3UMChRMLyM%2F1xXFH%2B%2BYBZmi6I%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>74bf3e72fad9ea3f29965f3f651ccfde</HashSumValue>
+                            </HashSum>
+                            <FileSize>6539328</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T9P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>48000</StartPoint>
+                            <EndPoint>78000</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="en">Damn Thing (Album Version)</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="en">
+                <TitleText>Damn Thing</TitleText>
+                <SubTitle SubTitleType="Version">Album Version</SubTitle>
+            </DisplayTitle>
+            <DisplayArtistName>Bow Wow feat. Da Brat</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2737763</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+            </DisplayArtist>
+            <DisplayArtist SequenceNumber="2">
+                <ArtistPartyReference>P_ARTIST_87087</ArtistPartyReference>
+                <DisplayArtistRole>FeaturedArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+                <TitleDisplayInformation>
+                    <IsDisplayedInTitle>false</IsDisplayedInTitle>
+                    <Prefix> feat. </Prefix>
+                </TitleDisplayInformation>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_2333950</ContributorPartyReference>
+                <Role>AssociatedPerformer</Role>
+            </Contributor>
+            <Contributor SequenceNumber="2">
+                <ContributorPartyReference>P_ARTIST_28346</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Mixing Engineer">UserDefined</Role>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Producer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="3">
+                <ContributorPartyReference>P_ARTIST_87067</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Co-Producer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="4">
+                <ContributorPartyReference>P_ARTIST_87077</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="5">
+                <ContributorPartyReference>P_ARTIST_87068</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Assistant Engineer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="6">
+                <ContributorPartyReference>P_ARTIST_87099</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="7">
+                <ContributorPartyReference>P_ARTIST_8313283</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Mixing Engineer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="8">
+                <ContributorPartyReference>P_ARTIST_87069</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Mixing Engineer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="9">
+                <ContributorPartyReference>P_ARTIST_3078</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Mastering Engineer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="10">
+                <ContributorPartyReference>P_ARTIST_70336</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Recording Engineer">UserDefined</Role>
+            </Contributor>
+            <Duration>PT0H2M43S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A10</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>USSM10606970</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2006</Year>
+                    <PLineText>(P) 2006 SONY BMG MUSIC ENTERTAINMENT</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T10</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/6063b9a202/20122/6865807.20122.mp3?oauth_consumer_key=kuc&amp;tag=f224fb486b38227baedbb4cd25bbe1a6&amp;oauth_timestamp=1738313675&amp;oauth_signature=vb9ND4g1I%2Ba5E7lVqrvV0HYY2OM%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>f224fb486b38227baedbb4cd25bbe1a6</HashSumValue>
+                            </HashSum>
+                            <FileSize>9039754</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T10P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>48000</StartPoint>
+                            <EndPoint>78000</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="en">Bet That (Album Version)</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="en">
+                <TitleText>Bet That</TitleText>
+                <SubTitle SubTitleType="Version">Album Version</SubTitle>
+            </DisplayTitle>
+            <DisplayArtistName>Bow Wow</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2737763</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_28346</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Mixing Engineer">UserDefined</Role>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Producer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="2">
+                <ContributorPartyReference>P_ARTIST_87067</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Co-Producer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="3">
+                <ContributorPartyReference>P_ARTIST_87066</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="4">
+                <ContributorPartyReference>P_ARTIST_87068</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Assistant Engineer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="5">
+                <ContributorPartyReference>P_ARTIST_87077</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="6">
+                <ContributorPartyReference>P_ARTIST_8313283</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Mixing Engineer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="7">
+                <ContributorPartyReference>P_ARTIST_87069</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Mixing Engineer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="8">
+                <ContributorPartyReference>P_ARTIST_3078</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Mastering Engineer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="9">
+                <ContributorPartyReference>P_ARTIST_70336</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Recording Engineer">UserDefined</Role>
+            </Contributor>
+            <Duration>PT0H3M46S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A11</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>USSM10606971</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2006</Year>
+                    <PLineText>(P) 2006 SONY BMG MUSIC ENTERTAINMENT</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T11</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/a33db9a202/20122/6865809.20122.mp3?oauth_consumer_key=kuc&amp;tag=935d579badaa1baba3c4d3e42fa90948&amp;oauth_timestamp=1738313675&amp;oauth_signature=Xy8BAdWD%2FArT7YBZ7%2BF1iAehIks%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>935d579badaa1baba3c4d3e42fa90948</HashSumValue>
+                            </HashSum>
+                            <FileSize>9299933</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T11P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>48000</StartPoint>
+                            <EndPoint>78000</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="en">On Fiya (Album Version)</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="en">
+                <TitleText>On Fiya</TitleText>
+                <SubTitle SubTitleType="Version">Album Version</SubTitle>
+            </DisplayTitle>
+            <DisplayArtistName>Bow Wow</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2737763</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_87090</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Producer">UserDefined</Role>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Recording Engineer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="2">
+                <ContributorPartyReference>P_ARTIST_75178</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="3">
+                <ContributorPartyReference>P_ARTIST_8313283</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Mixing Engineer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="4">
+                <ContributorPartyReference>P_ARTIST_87091</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="5">
+                <ContributorPartyReference>P_ARTIST_28346</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Mixing Engineer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="6">
+                <ContributorPartyReference>P_ARTIST_87092</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="7">
+                <ContributorPartyReference>P_ARTIST_87069</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Mixing Engineer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="8">
+                <ContributorPartyReference>P_ARTIST_3078</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Mastering Engineer">UserDefined</Role>
+            </Contributor>
+            <Duration>PT0H3M52S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A12</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>USSM10606874</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2006</Year>
+                    <PLineText>(P) 2006 SONY BMG MUSIC ENTERTAINMENT</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T12</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/e607c9a202/20122/6865811.20122.mp3?oauth_consumer_key=kuc&amp;tag=621f1702bc8921d34e29d29e3900d33e&amp;oauth_timestamp=1738313675&amp;oauth_signature=rmG%2BnMTYC64gJsIjHPaadA%2FLF7Y%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>621f1702bc8921d34e29d29e3900d33e</HashSumValue>
+                            </HashSum>
+                            <FileSize>7616609</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T12P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>48000</StartPoint>
+                            <EndPoint>78000</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="en">Give It To You (Album Version)</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="en">
+                <TitleText>Give It To You</TitleText>
+                <SubTitle SubTitleType="Version">Album Version</SubTitle>
+            </DisplayTitle>
+            <DisplayArtistName>Bow Wow</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2737763</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+                <ArtisticRole Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Producer">UserDefined</ArtisticRole>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_87072</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Producer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="2">
+                <ContributorPartyReference>P_ARTIST_75178</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="3">
+                <ContributorPartyReference>P_ARTIST_20094</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="4">
+                <ContributorPartyReference>P_ARTIST_87073</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Assistant Engineer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="5">
+                <ContributorPartyReference>P_ARTIST_8313283</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Mixing Engineer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="6">
+                <ContributorPartyReference>P_ARTIST_28346</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Mixing Engineer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="7">
+                <ContributorPartyReference>P_ARTIST_87069</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Mixing Engineer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="8">
+                <ContributorPartyReference>P_ARTIST_3078</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Mastering Engineer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="9">
+                <ContributorPartyReference>P_ARTIST_87075</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Recording Engineer">UserDefined</Role>
+            </Contributor>
+            <Duration>PT0H3M11S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A13</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>USSM10607096</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2006</Year>
+                    <PLineText>(P) 2006 SONY BMG MUSIC ENTERTAINMENT</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T13</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/2ad0d9a202/20122/6865813.20122.mp3?oauth_consumer_key=kuc&amp;tag=99cece61adcbc26ed4a519228b812411&amp;oauth_timestamp=1738313675&amp;oauth_signature=XrzIoONeOWG%2Fxivk4lIcx9AcGeI%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>99cece61adcbc26ed4a519228b812411</HashSumValue>
+                            </HashSum>
+                            <FileSize>11073128</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T13P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>48000</StartPoint>
+                            <EndPoint>78000</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="en">I'm A Flirt</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="en">
+                <TitleText>I'm A Flirt</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>Bow Wow</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2737763</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_87072</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Producer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="2">
+                <ContributorPartyReference>P_ARTIST_75178</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="3">
+                <ContributorPartyReference>P_ARTIST_20094</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="4">
+                <ContributorPartyReference>P_ARTIST_87093</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Assistant Engineer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="5">
+                <ContributorPartyReference>P_ARTIST_7417381</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="6">
+                <ContributorPartyReference>P_ARTIST_87095</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Mixing Engineer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="7">
+                <ContributorPartyReference>P_ARTIST_87096</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Recording Engineer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="8">
+                <ContributorPartyReference>P_ARTIST_31360</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Recording Engineer">UserDefined</Role>
+            </Contributor>
+            <Contributor SequenceNumber="9">
+                <ContributorPartyReference>P_ARTIST_87097</ContributorPartyReference>
+                <Role Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="Recording Engineer">UserDefined</Role>
+            </Contributor>
+            <Duration>PT0H4M37S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+            <ContainsHiddenContent>true</ContainsHiddenContent>
+        </SoundRecording>
+        <Image>
+            <ResourceReference>A14</ResourceReference>
+            <Type>FrontCoverImage</Type>
+            <ResourceId>
+                <ProprietaryId Namespace="DPID:PADPIDA2007040502I">G0100007845431</ProprietaryId>
+            </ResourceId>
+            <FirstPublicationDate>
+                <FulfillmentDate>2024-10-23</FulfillmentDate>
+            </FirstPublicationDate>
+            <TechnicalDetails>
+                <TechnicalResourceDetailsReference>T14</TechnicalResourceDetailsReference>
+                <ImageCodecType>JPEG</ImageCodecType>
+                <ImageHeight>1391</ImageHeight>
+                <ImageWidth>1400</ImageWidth>
+                <ImageResolution>300</ImageResolution>
+                <File>
+                    <URI>https://mgsrv-aws.smecde.com/rd/000/006/870/965/20126/6870965.20126.jpg?oauth_consumer_key=kuc&amp;tag=b9ed1f57819e31e1a21c9fc61c1ddbb7&amp;oauth_timestamp=1738313675&amp;oauth_signature=uGp8179crluT3ostwmCaFaXrVaU%3D</URI>
+                    <HashSum>
+                        <Algorithm>MD5</Algorithm>
+                        <HashSumValue>b9ed1f57819e31e1a21c9fc61c1ddbb7</HashSumValue>
+                    </HashSum>
+                    <FileSize>1531645</FileSize>
+                </File>
+                <IsProvidedInDelivery>false</IsProvidedInDelivery>
+            </TechnicalDetails>
+        </Image>
+    </ResourceList>
+    <ReleaseList>
+        <Release>
+            <ReleaseReference>R0</ReleaseReference>
+            <ReleaseType>Album</ReleaseType>
+            <ReleaseId>
+                <GRid>A10301A00007845431</GRid>
+                <ICPN>888880127693</ICPN>
+                <CatalogNumber Namespace="DPID:PADPIDA2007040502I">G0100007845431</CatalogNumber>
+            </ReleaseId>
+            <DisplayTitleText LanguageAndScriptCode="en">The Price Of Fame</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="en">
+                <TitleText>The Price Of Fame</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>Bow Wow</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2737763</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+            </DisplayArtist>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_SONY_URBAN_MUSICCOLUMBIA</ReleaseLabelReference>
+            <PLine>
+                <Year>2006</Year>
+                <PLineText>(P) 2005, 2006 SONY BMG MUSIC ENTERTAINMENT</PLineText>
+            </PLine>
+            <Duration>PT0H46M23S</Duration>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Pop</GenreText>
+            </Genre>
+            <OriginalReleaseDate>2024-10-23</OriginalReleaseDate>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+            <ResourceGroup>
+                <AdditionalTitle TitleType="GroupingTitle">
+                    <TitleText>Disc 1</TitleText>
+                </AdditionalTitle>
+                <SequenceNumber>1</SequenceNumber>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>1</SequenceNumber>
+                    <ReleaseResourceReference>A1</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>2</SequenceNumber>
+                    <ReleaseResourceReference>A2</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>3</SequenceNumber>
+                    <ReleaseResourceReference>A3</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>4</SequenceNumber>
+                    <ReleaseResourceReference>A4</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>5</SequenceNumber>
+                    <ReleaseResourceReference>A5</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>6</SequenceNumber>
+                    <ReleaseResourceReference>A6</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>7</SequenceNumber>
+                    <ReleaseResourceReference>A7</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>8</SequenceNumber>
+                    <ReleaseResourceReference>A8</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>9</SequenceNumber>
+                    <ReleaseResourceReference>A9</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>10</SequenceNumber>
+                    <ReleaseResourceReference>A10</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>11</SequenceNumber>
+                    <ReleaseResourceReference>A11</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>12</SequenceNumber>
+                    <ReleaseResourceReference>A12</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>13</SequenceNumber>
+                    <ReleaseResourceReference>A13</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <LinkedReleaseResourceReference LinkDescription="CoverArt">A14</LinkedReleaseResourceReference>
+            </ResourceGroup>
+        </Release>
+        <TrackRelease>
+            <ReleaseReference>R1</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E0001689187A</GRid>
+                <ProprietaryId Namespace="ISRC">USSM10606965</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A1</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_SONY_URBAN_MUSICCOLUMBIA</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Pop</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R2</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E00016891888</GRid>
+                <ProprietaryId Namespace="ISRC">USSM10606873</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A2</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_SONY_URBAN_MUSICCOLUMBIA</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Pop</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R3</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E00016891896</GRid>
+                <ProprietaryId Namespace="ISRC">USSM10606875</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A3</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_SONY_URBAN_MUSICCOLUMBIA</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Pop</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R4</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E0001689190K</GRid>
+                <ProprietaryId Namespace="ISRC">USSM10606876</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A4</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_SONY_URBAN_MUSICCOLUMBIA</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Pop</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R5</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E0001689191I</GRid>
+                <ProprietaryId Namespace="ISRC">USSM10606877</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A5</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_SONY_URBAN_MUSICCOLUMBIA</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Pop</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R6</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E0001689192G</GRid>
+                <ProprietaryId Namespace="ISRC">USSM10600952</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A6</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_SONY_URBAN_MUSICCOLUMBIA</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Pop</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R7</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E0001689193E</GRid>
+                <ProprietaryId Namespace="ISRC">USSM10606879</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A7</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_SONY_URBAN_MUSICCOLUMBIA</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Pop</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R8</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E0001689194C</GRid>
+                <ProprietaryId Namespace="ISRC">USSM10606878</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A8</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_SONY_URBAN_MUSICCOLUMBIA</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Pop</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R9</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E0001689195A</GRid>
+                <ProprietaryId Namespace="ISRC">USSM10606969</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A9</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_SONY_URBAN_MUSICCOLUMBIA</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Pop</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R10</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E00016891968</GRid>
+                <ProprietaryId Namespace="ISRC">USSM10606970</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A10</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_SONY_URBAN_MUSICCOLUMBIA</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Pop</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R11</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E00016891976</GRid>
+                <ProprietaryId Namespace="ISRC">USSM10606971</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A11</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_SONY_URBAN_MUSICCOLUMBIA</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Pop</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R12</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E00016891984</GRid>
+                <ProprietaryId Namespace="ISRC">USSM10606874</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A12</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_SONY_URBAN_MUSICCOLUMBIA</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Pop</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R13</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E00016891992</GRid>
+                <ProprietaryId Namespace="ISRC">USSM10607096</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A13</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_SONY_URBAN_MUSICCOLUMBIA</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>Pop</GenreText>
+            </Genre>
+        </TrackRelease>
+    </ReleaseList>
+    <DealList>
+        <ReleaseDeal>
+            <DealReleaseReference>R1</DealReleaseReference>
+            <DealReleaseReference>R2</DealReleaseReference>
+            <DealReleaseReference>R3</DealReleaseReference>
+            <DealReleaseReference>R4</DealReleaseReference>
+            <DealReleaseReference>R5</DealReleaseReference>
+            <DealReleaseReference>R6</DealReleaseReference>
+            <DealReleaseReference>R7</DealReleaseReference>
+            <DealReleaseReference>R8</DealReleaseReference>
+            <DealReleaseReference>R9</DealReleaseReference>
+            <DealReleaseReference>R10</DealReleaseReference>
+            <DealReleaseReference>R11</DealReleaseReference>
+            <DealReleaseReference>R12</DealReleaseReference>
+            <DealReleaseReference>R13</DealReleaseReference>
+            <Deal>
+                <DealTerms>
+                    <TerritoryCode>AG</TerritoryCode>
+                    <TerritoryCode>AI</TerritoryCode>
+                    <TerritoryCode>AW</TerritoryCode>
+                    <TerritoryCode>BB</TerritoryCode>
+                    <TerritoryCode>BM</TerritoryCode>
+                    <TerritoryCode>BO</TerritoryCode>
+                    <TerritoryCode>BQ</TerritoryCode>
+                    <TerritoryCode>BR</TerritoryCode>
+                    <TerritoryCode>BZ</TerritoryCode>
+                    <TerritoryCode>CL</TerritoryCode>
+                    <TerritoryCode>CO</TerritoryCode>
+                    <TerritoryCode>CR</TerritoryCode>
+                    <TerritoryCode>CW</TerritoryCode>
+                    <TerritoryCode>DM</TerritoryCode>
+                    <TerritoryCode>DO</TerritoryCode>
+                    <TerritoryCode>EC</TerritoryCode>
+                    <TerritoryCode>ES</TerritoryCode>
+                    <TerritoryCode>GD</TerritoryCode>
+                    <TerritoryCode>GF</TerritoryCode>
+                    <TerritoryCode>GP</TerritoryCode>
+                    <TerritoryCode>GY</TerritoryCode>
+                    <TerritoryCode>HT</TerritoryCode>
+                    <TerritoryCode>JM</TerritoryCode>
+                    <TerritoryCode>KN</TerritoryCode>
+                    <TerritoryCode>KY</TerritoryCode>
+                    <TerritoryCode>LC</TerritoryCode>
+                    <TerritoryCode>MQ</TerritoryCode>
+                    <TerritoryCode>MS</TerritoryCode>
+                    <TerritoryCode>PA</TerritoryCode>
+                    <TerritoryCode>PE</TerritoryCode>
+                    <TerritoryCode>SR</TerritoryCode>
+                    <TerritoryCode>SV</TerritoryCode>
+                    <TerritoryCode>TC</TerritoryCode>
+                    <TerritoryCode>TT</TerritoryCode>
+                    <TerritoryCode>VC</TerritoryCode>
+                    <TerritoryCode>VG</TerritoryCode>
+                    <TerritoryCode>VU</TerritoryCode>
+                    <TerritoryCode>ZM</TerritoryCode>
+                    <ValidityPeriod>
+                        <StartDateTime>2024-11-06T00:00:00</StartDateTime>
+                    </ValidityPeriod>
+                    <CommercialModelType>SubscriptionModel</CommercialModelType>
+                    <UseType>ConditionalDownload</UseType>
+                    <UseType>NonInteractiveStream</UseType>
+                    <UseType>OnDemandStream</UseType>
+                </DealTerms>
+            </Deal>
+            <Deal>
+                <DealTerms>
+                    <TerritoryCode>AG</TerritoryCode>
+                    <TerritoryCode>AI</TerritoryCode>
+                    <TerritoryCode>AW</TerritoryCode>
+                    <TerritoryCode>BB</TerritoryCode>
+                    <TerritoryCode>BM</TerritoryCode>
+                    <TerritoryCode>BO</TerritoryCode>
+                    <TerritoryCode>BQ</TerritoryCode>
+                    <TerritoryCode>BR</TerritoryCode>
+                    <TerritoryCode>BZ</TerritoryCode>
+                    <TerritoryCode>CL</TerritoryCode>
+                    <TerritoryCode>CO</TerritoryCode>
+                    <TerritoryCode>CR</TerritoryCode>
+                    <TerritoryCode>CW</TerritoryCode>
+                    <TerritoryCode>DM</TerritoryCode>
+                    <TerritoryCode>DO</TerritoryCode>
+                    <TerritoryCode>EC</TerritoryCode>
+                    <TerritoryCode>ES</TerritoryCode>
+                    <TerritoryCode>GD</TerritoryCode>
+                    <TerritoryCode>GF</TerritoryCode>
+                    <TerritoryCode>GP</TerritoryCode>
+                    <TerritoryCode>GY</TerritoryCode>
+                    <TerritoryCode>HT</TerritoryCode>
+                    <TerritoryCode>JM</TerritoryCode>
+                    <TerritoryCode>KN</TerritoryCode>
+                    <TerritoryCode>KY</TerritoryCode>
+                    <TerritoryCode>LC</TerritoryCode>
+                    <TerritoryCode>MQ</TerritoryCode>
+                    <TerritoryCode>MS</TerritoryCode>
+                    <TerritoryCode>PA</TerritoryCode>
+                    <TerritoryCode>PE</TerritoryCode>
+                    <TerritoryCode>SR</TerritoryCode>
+                    <TerritoryCode>SV</TerritoryCode>
+                    <TerritoryCode>TC</TerritoryCode>
+                    <TerritoryCode>TT</TerritoryCode>
+                    <TerritoryCode>VC</TerritoryCode>
+                    <TerritoryCode>VG</TerritoryCode>
+                    <TerritoryCode>VU</TerritoryCode>
+                    <TerritoryCode>ZM</TerritoryCode>
+                    <ValidityPeriod>
+                        <StartDateTime>2024-11-06T00:00:00</StartDateTime>
+                    </ValidityPeriod>
+                    <CommercialModelType>AdvertisementSupportedModel</CommercialModelType>
+                    <UseType>NonInteractiveStream</UseType>
+                    <UseType>OnDemandStream</UseType>
+                </DealTerms>
+            </Deal>
+        </ReleaseDeal>
+    </DealList>
+</ernm:NewReleaseMessage>

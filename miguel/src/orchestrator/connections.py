@@ -25,15 +25,15 @@ def get_credentials(db_name='feed_mysql'):
         credentials = {
             'db_host': 'localhost',
             'db_port': '3306',
-            'db_user': 'user',
-            'db_password': 'pass',
+            'db_user': 'root',
+            'db_password': 'password',
             'db_name':  'feed'
         }
     elif conn_name_lower == 'catalog_mysql':
         credentials = {
             'db_host': 'localhost',
             'db_port': '3306',
-            'db_user': 'user',
+            'db_user': 'root',
             'db_password': 'pass',
             'db_name':  'catalog'
         }

@@ -1,0 +1,2219 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ernm:NewReleaseMessage AvsVersionId="5" LanguageAndScriptCode="en" xsi:schemaLocation="http://ddex.net/xml/ern/43 http://ddex.net/xml/ern/43/release-notification.xsd" xmlns:ernm="http://ddex.net/xml/ern/43" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <MessageHeader>
+        <MessageThreadId>BVCL00415B00Z_KUC</MessageThreadId>
+        <MessageId>332932450</MessageId>
+        <MessageSender>
+            <PartyId>PADPIDA2007040502I</PartyId>
+            <PartyName>
+                <FullName>Sony Music Entertainment</FullName>
+            </PartyName>
+        </MessageSender>
+        <MessageRecipient>
+            <PartyId>PADPIDA2012073006T</PartyId>
+            <PartyName>
+                <FullName>KuackMedia 4.3 SD</FullName>
+            </PartyName>
+        </MessageRecipient>
+        <MessageCreatedDateTime>2024-10-23T08:55:54.578Z</MessageCreatedDateTime>
+        <MessageControlType>TestMessage</MessageControlType>
+    </MessageHeader>
+    <PartyList>
+        <Party>
+            <PartyReference>P_SME_SENDER</PartyReference>
+            <PartyName>
+                <FullName>Sony Music Entertainment</FullName>
+            </PartyName>
+            <PartyId>
+                <DPID>PADPIDA2007040502I</DPID>
+            </PartyId>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_2735354</PartyReference>
+            <PartyName>
+                <FullName>Kousuke Asa</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_2735356</PartyReference>
+            <PartyName>
+                <FullName>Kasarinchu</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="ja-Jpan">
+                <FullName>カサリンチュ</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="ja-Kana">
+                <FullName>カサリンチュ</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_2735358</PartyReference>
+            <PartyName>
+                <FullName>Toshiyuki Mori</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="ja-Jpan">
+                <FullName>森俊之</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="ja-Kana">
+                <FullName>モリトシユキ</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_2735360</PartyReference>
+            <PartyName>
+                <FullName>Yoshito Tanaka</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="ja-Jpan">
+                <FullName>田中義人</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="ja-Kana">
+                <FullName>タナカヨシト</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_2735362</PartyReference>
+            <PartyName>
+                <FullName>Masanori Shimada</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="ja-Jpan">
+                <FullName>島田昌典</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="ja-Kana">
+                <FullName>シマダマサノリ</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_2758410</PartyReference>
+            <PartyName>
+                <FullName>Yusuke Tanaka</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="ja-Jpan">
+                <FullName>田中ユウスケ</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_2764940</PartyReference>
+            <PartyName>
+                <FullName>Tatsuhiro Murayama</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="ja-Jpan">
+                <FullName>村山辰浩</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_2764941</PartyReference>
+            <PartyName>
+                <FullName>Kosuke Asa</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="ja-Jpan">
+                <FullName>朝光介</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_2765700</PartyReference>
+            <PartyName>
+                <FullName>Noboru Kinshicho</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="ja-Jpan">
+                <FullName>錦糸町昇</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_2765704</PartyReference>
+            <PartyName>
+                <FullName>Atsushi Suemitsu</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="ja-Jpan">
+                <FullName>末光　篤</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="ja-Kana">
+                <FullName>スエミツアツシ</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_2881850</PartyReference>
+            <PartyName>
+                <FullName>Kazusa</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="ja-Jpan">
+                <FullName>和紗</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="ja-Kana">
+                <FullName>カズサ</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_2884839</PartyReference>
+            <PartyName>
+                <FullName>Kasarinchu Feat. Kazusa</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="ja-Jpan">
+                <FullName>カサリンチュ feat. 和紗</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="ja-Kana">
+                <FullName>カサリンチュフィーチャリングカズサ</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_3327447</PartyReference>
+            <PartyName>
+                <FullName>Kotaro Oshio</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="ja-Jpan">
+                <FullName>押尾コータロー</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="ja-Kana">
+                <FullName>オシオコータロー</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_3327448</PartyReference>
+            <PartyName>
+                <FullName>Kasarinchu feat. Kotaro Oshio</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="ja-Jpan">
+                <FullName>カサリンチュ feat. 押尾コータロー</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="ja-Kana">
+                <FullName>カサリンチュフィーチャリングオシオコータロー</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_ARTIST_8378515</PartyReference>
+            <PartyName>
+                <FullName>KUREI</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="ja-Jpan">
+                <FullName>KUREI</FullName>
+            </PartyName>
+            <PartyName LanguageAndScriptCode="ja-Kana">
+                <FullName>クレイ</FullName>
+            </PartyName>
+        </Party>
+        <Party>
+            <PartyReference>P_LABEL_SONY_MUSIC_LABELS_INC</PartyReference>
+            <PartyName>
+                <FullName>Sony Music Labels Inc.</FullName>
+            </PartyName>
+        </Party>
+    </PartyList>
+    <ResourceList>
+        <SoundRecording>
+            <ResourceReference>A1</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>JPBV01221381</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2012</Year>
+                    <PLineText>(P)2012 Sony Music Entertainment (Japan) Inc.</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T1</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/ccbfba2c321/20122/62275198.20122.mp3?oauth_consumer_key=kuc&amp;tag=42dc46e023aef8445327ed85d742a81a&amp;oauth_timestamp=1738313754&amp;oauth_signature=i4Es8SJXJG1u6Bhg5Tmz9Y%2ByB%2F4%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>42dc46e023aef8445327ed85d742a81a</HashSumValue>
+                            </HashSum>
+                            <FileSize>10078386</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T1P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>172387</StartPoint>
+                            <EndPoint>202387</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="en">Love Rival</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="en">
+                <TitleText>Love Rival</TitleText>
+            </DisplayTitle>
+            <DisplayTitle LanguageAndScriptCode="ja-Jpan">
+                <TitleText>ラブライバル</TitleText>
+            </DisplayTitle>
+            <DisplayTitle LanguageAndScriptCode="ja-Kana">
+                <TitleText>ラブライバル</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>Kasarinchu</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2735356</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+                <ArtisticRole>Arranger</ArtisticRole>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_2764941</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="2">
+                <ContributorPartyReference>P_ARTIST_2764940</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="3">
+                <ContributorPartyReference>P_ARTIST_2765700</ContributorPartyReference>
+                <Role>Arranger</Role>
+            </Contributor>
+            <Duration>PT0H4M11S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+            <LanguageOfPerformance>ja</LanguageOfPerformance>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A2</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>JPBV01221382</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2012</Year>
+                    <PLineText>(P)2012 Sony Music Entertainment (Japan) Inc.</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T2</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/a97eca2c321/20122/62275201.20122.mp3?oauth_consumer_key=kuc&amp;tag=11b084011817f146e65d8e253fd7041b&amp;oauth_timestamp=1738313754&amp;oauth_signature=0rHBRoVlndk9cph6alcidBZQK2A%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>11b084011817f146e65d8e253fd7041b</HashSumValue>
+                            </HashSum>
+                            <FileSize>3879003</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T2P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>49320</StartPoint>
+                            <EndPoint>79320</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="ja-Latn">Kasarism</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="ja-Latn">
+                <TitleText>Kasarism</TitleText>
+            </DisplayTitle>
+            <DisplayTitle LanguageAndScriptCode="ja-Jpan">
+                <TitleText>カサリズム</TitleText>
+            </DisplayTitle>
+            <DisplayTitle LanguageAndScriptCode="ja-Kana">
+                <TitleText>カサリズム</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>Kasarinchu</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2735356</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+                <ArtisticRole>Arranger</ArtisticRole>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_2764941</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="2">
+                <ContributorPartyReference>P_ARTIST_2764940</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="3">
+                <ContributorPartyReference>P_ARTIST_2765700</ContributorPartyReference>
+                <Role>Arranger</Role>
+            </Contributor>
+            <Duration>PT0H1M36S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+            <LanguageOfPerformance>ja</LanguageOfPerformance>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A3</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>JPES01101281</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2011</Year>
+                    <PLineText>(P)2011 Sony Music Entertainment (Japan) Inc.</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T3</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/863dda2c321/20122/62275204.20122.mp3?oauth_consumer_key=kuc&amp;tag=244f203888e6844ff14288ad2658df86&amp;oauth_timestamp=1738313754&amp;oauth_signature=AyY9RvVz%2FglOegm3EEjIJGgwK5E%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>244f203888e6844ff14288ad2658df86</HashSumValue>
+                            </HashSum>
+                            <FileSize>10426348</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T3P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>48000</StartPoint>
+                            <EndPoint>78000</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="ja-Latn">Yamerarenai Tomarenai</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="ja-Latn">
+                <TitleText>Yamerarenai Tomarenai</TitleText>
+            </DisplayTitle>
+            <DisplayTitle LanguageAndScriptCode="ja-Jpan">
+                <TitleText>やめられない　とまれない</TitleText>
+            </DisplayTitle>
+            <DisplayTitle LanguageAndScriptCode="ja-Kana">
+                <TitleText>ヤメラレナイトマレナイ</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>Kasarinchu</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2735356</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+                <ArtisticRole>Composer</ArtisticRole>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_2764940</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="2">
+                <ContributorPartyReference>P_ARTIST_2764941</ContributorPartyReference>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="3">
+                <ContributorPartyReference>P_ARTIST_2735360</ContributorPartyReference>
+                <Role>Arranger</Role>
+            </Contributor>
+            <Duration>PT0H4M20S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+            <LanguageOfPerformance>ja</LanguageOfPerformance>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A4</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>JPES01001961</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2010</Year>
+                    <PLineText>(P)2010 Sony Music Entertainment (Japan) Inc.</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T4</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/63fbea2c321/20122/62275207.20122.mp3?oauth_consumer_key=kuc&amp;tag=ecc73ba0780e5d87edd2b4fccabdc062&amp;oauth_timestamp=1738313754&amp;oauth_signature=M60psIJWwBmWsljKMMipyLB4AZo%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>ecc73ba0780e5d87edd2b4fccabdc062</HashSumValue>
+                            </HashSum>
+                            <FileSize>9767002</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T4P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>48000</StartPoint>
+                            <EndPoint>78000</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="ja-Latn">Kansya</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="ja-Latn">
+                <TitleText>Kansya</TitleText>
+            </DisplayTitle>
+            <DisplayTitle LanguageAndScriptCode="ja-Jpan">
+                <TitleText>感謝</TitleText>
+            </DisplayTitle>
+            <DisplayTitle LanguageAndScriptCode="ja-Kana">
+                <TitleText>カンシャ</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>Kasarinchu</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2735356</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_2764940</ContributorPartyReference>
+                <Role>Arranger</Role>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="2">
+                <ContributorPartyReference>P_ARTIST_2764941</ContributorPartyReference>
+                <Role>Arranger</Role>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Duration>PT0H4M4S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+            <LanguageOfPerformance>ja</LanguageOfPerformance>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A5</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>JPBV01221383</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2012</Year>
+                    <PLineText>(P)2012 Sony Music Entertainment (Japan) Inc.</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T5</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/40bafa2c321/20122/62275210.20122.mp3?oauth_consumer_key=kuc&amp;tag=4a0f0ffa801b9a6d3534cd5c39c29018&amp;oauth_timestamp=1738313754&amp;oauth_signature=8OFdGiqstPa9zIzm5cWa5hb0fKU%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>4a0f0ffa801b9a6d3534cd5c39c29018</HashSumValue>
+                            </HashSum>
+                            <FileSize>12017725</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T5P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>231467</StartPoint>
+                            <EndPoint>261467</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="ja-Latn">Asuheno Michisirube</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="ja-Latn">
+                <TitleText>Asuheno Michisirube</TitleText>
+            </DisplayTitle>
+            <DisplayTitle LanguageAndScriptCode="ja-Jpan">
+                <TitleText>明日への道しるべ</TitleText>
+            </DisplayTitle>
+            <DisplayTitle LanguageAndScriptCode="ja-Kana">
+                <TitleText>アスヘノミチシルベ</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>Kasarinchu</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2735356</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+                <ArtisticRole>Arranger</ArtisticRole>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_2764940</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="2">
+                <ContributorPartyReference>P_ARTIST_2765700</ContributorPartyReference>
+                <Role>Arranger</Role>
+            </Contributor>
+            <Duration>PT0H5M0S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+            <LanguageOfPerformance>ja</LanguageOfPerformance>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A6</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>JPBV01221321</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2012</Year>
+                    <PLineText>(P)2012 Sony Music Entertainment (Japan) Inc.</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T6</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/2d690b2c321/20122/62275213.20122.mp3?oauth_consumer_key=kuc&amp;tag=e80ee7538fa4f4d99194fc4224c6b78f&amp;oauth_timestamp=1738313754&amp;oauth_signature=vdw2VnaKIgkQLuuVs3cEPzNFbAk%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>e80ee7538fa4f4d99194fc4224c6b78f</HashSumValue>
+                            </HashSum>
+                            <FileSize>13706302</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T6P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>48000</StartPoint>
+                            <EndPoint>78000</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="ja-Latn">Kono Machini Umarete (Kasarinchu Version)</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="ja-Latn">
+                <TitleText>Kono Machini Umarete (Kasarinchu Version)</TitleText>
+            </DisplayTitle>
+            <DisplayTitle LanguageAndScriptCode="ja-Jpan">
+                <TitleText>この街に生まれて（カサリンチュver.）</TitleText>
+            </DisplayTitle>
+            <DisplayTitle LanguageAndScriptCode="ja-Kana">
+                <TitleText>コノマチニウマレテカサリンチュバージョン</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>Kasarinchu</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2735356</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_2764940</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="2">
+                <ContributorPartyReference>P_ARTIST_2764941</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="3">
+                <ContributorPartyReference>P_ARTIST_8378515</ContributorPartyReference>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="4">
+                <ContributorPartyReference>P_ARTIST_2758410</ContributorPartyReference>
+                <Role>Arranger</Role>
+            </Contributor>
+            <Duration>PT0H5M42S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+            <LanguageOfPerformance>ja</LanguageOfPerformance>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A7</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>JPBV01221384</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2012</Year>
+                    <PLineText>(P)2012 Sony Music Entertainment (Japan) Inc.</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T7</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/0a281b2c321/20122/62275216.20122.mp3?oauth_consumer_key=kuc&amp;tag=9e5d6c0c6c1756688e3f96ba98df8aee&amp;oauth_timestamp=1738313754&amp;oauth_signature=O0QTA30CT%2BL3FZp37ePVVplA7aE%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>9e5d6c0c6c1756688e3f96ba98df8aee</HashSumValue>
+                            </HashSum>
+                            <FileSize>2708757</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T7P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>187</StartPoint>
+                            <EndPoint>30187</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="ja-Latn">Interlude - Bagyo Tsuagyo Kagyo Pishippusuppushi</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="ja-Latn">
+                <TitleText>Interlude - Bagyo Tsuagyo Kagyo Pishippusuppushi</TitleText>
+            </DisplayTitle>
+            <DisplayTitle LanguageAndScriptCode="ja-Jpan">
+                <TitleText>Interlude-ば行つぁ行か行ぴしっぷすっぴし-</TitleText>
+            </DisplayTitle>
+            <DisplayTitle LanguageAndScriptCode="ja-Kana">
+                <TitleText>インタールードバギョウツァギョウカギョウピシップスッピシ</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>Kasarinchu</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2735356</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_2764941</ContributorPartyReference>
+                <Role>Arranger</Role>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Duration>PT0H1M7S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+            <LanguageOfPerformance>ja</LanguageOfPerformance>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A8</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>JPBV01221385</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2012</Year>
+                    <PLineText>(P)2012 Sony Music Entertainment (Japan) Inc.</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T8</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/e6e62b2c321/20122/62275219.20122.mp3?oauth_consumer_key=kuc&amp;tag=8c026675665c37a871265e4ac6989922&amp;oauth_timestamp=1738313754&amp;oauth_signature=GCk6VkWPy%2FU3Y0KaYlgpwb0O4xc%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>8c026675665c37a871265e4ac6989922</HashSumValue>
+                            </HashSum>
+                            <FileSize>9613405</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T8P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>100360</StartPoint>
+                            <EndPoint>130360</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="ja-Latn">Marco Men</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="ja-Latn">
+                <TitleText>Marco Men</TitleText>
+            </DisplayTitle>
+            <DisplayTitle LanguageAndScriptCode="ja-Jpan">
+                <TitleText>マルコMEN</TitleText>
+            </DisplayTitle>
+            <DisplayTitle LanguageAndScriptCode="ja-Kana">
+                <TitleText>マルコメン</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>Kasarinchu</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2735356</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+                <ArtisticRole>Arranger</ArtisticRole>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_2764940</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="2">
+                <ContributorPartyReference>P_ARTIST_2765700</ContributorPartyReference>
+                <Role>Arranger</Role>
+            </Contributor>
+            <Duration>PT0H4M0S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+            <LanguageOfPerformance>ja</LanguageOfPerformance>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A9</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>JPBV01221386</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2012</Year>
+                    <PLineText>(P)2012 Sony Music Entertainment (Japan) Inc.</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T9</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/c3a53b2c321/20122/62275222.20122.mp3?oauth_consumer_key=kuc&amp;tag=83242288150958a0b880c2c10fb81c90&amp;oauth_timestamp=1738313754&amp;oauth_signature=Z07llBUZH9sQQ1Byrdk%2BuOdzbqY%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>83242288150958a0b880c2c10fb81c90</HashSumValue>
+                            </HashSum>
+                            <FileSize>9555941</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T9P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>122147</StartPoint>
+                            <EndPoint>152147</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="ja-Latn">Janken Fighter</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="ja-Latn">
+                <TitleText>Janken Fighter</TitleText>
+            </DisplayTitle>
+            <DisplayTitle LanguageAndScriptCode="ja-Jpan">
+                <TitleText>ジャンケンファイター</TitleText>
+            </DisplayTitle>
+            <DisplayTitle LanguageAndScriptCode="ja-Kana">
+                <TitleText>ジャンケンファイター</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>Kasarinchu</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2735356</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+                <ArtisticRole>Arranger</ArtisticRole>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_2764940</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="2">
+                <ContributorPartyReference>P_ARTIST_2765700</ContributorPartyReference>
+                <Role>Arranger</Role>
+            </Contributor>
+            <Duration>PT0H3M58S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+            <LanguageOfPerformance>ja</LanguageOfPerformance>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A10</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>JPBV01221387</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2012</Year>
+                    <PLineText>(P)2012 Sony Music Entertainment (Japan) Inc.</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T10</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/a0644b2c321/20122/62275225.20122.mp3?oauth_consumer_key=kuc&amp;tag=aab39d09049b4c52f18ead2c6ce4bafe&amp;oauth_timestamp=1738313754&amp;oauth_signature=HEp%2BGyGm7wiWp9Awc75ZaXkrsLk%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>aab39d09049b4c52f18ead2c6ce4bafe</HashSumValue>
+                            </HashSum>
+                            <FileSize>2019100</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T10P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>160</StartPoint>
+                            <EndPoint>30160</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="en">Interlude - Free Style</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="en">
+                <TitleText>Interlude - Free Style</TitleText>
+            </DisplayTitle>
+            <DisplayTitle LanguageAndScriptCode="ja-Jpan">
+                <TitleText>Interlude-Free Style-</TitleText>
+            </DisplayTitle>
+            <DisplayTitle LanguageAndScriptCode="ja-Kana">
+                <TitleText>インタールードフリースタイル</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>Kasarinchu</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2735356</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_2764941</ContributorPartyReference>
+                <Role>Arranger</Role>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Duration>PT0H0M50S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+            <LanguageOfPerformance>ja</LanguageOfPerformance>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A11</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>JPBV01221121</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2012</Year>
+                    <PLineText>(P) 2012 Ariola Japan Inc.</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T11</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/8d135b2c321/20122/62275228.20122.mp3?oauth_consumer_key=kuc&amp;tag=5a371690188e8e0a5beb0fd0213ef683&amp;oauth_timestamp=1738313754&amp;oauth_signature=lzOXrGun8eMrwfsnSDBP%2BOnSdlY%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>5a371690188e8e0a5beb0fd0213ef683</HashSumValue>
+                            </HashSum>
+                            <FileSize>12242358</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T11P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>48000</StartPoint>
+                            <EndPoint>78000</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="ja-Latn">Hitomio Tojiereba</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="ja-Latn">
+                <TitleText>Hitomio Tojiereba</TitleText>
+            </DisplayTitle>
+            <DisplayTitle LanguageAndScriptCode="ja-Jpan">
+                <TitleText>瞳をとじれば</TitleText>
+            </DisplayTitle>
+            <DisplayTitle LanguageAndScriptCode="ja-Kana">
+                <TitleText>ヒトミヲトジレバ</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>Kasarinchu</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2735356</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+                <ArtisticRole>Arranger</ArtisticRole>
+            </DisplayArtist>
+            <DisplayArtist SequenceNumber="2">
+                <ArtistPartyReference>P_ARTIST_3327447</ArtistPartyReference>
+                <DisplayArtistRole>Composer</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+                <ArtisticRole Namespace="DPID:PADPIDA2007040502I" UserDefinedValue="FeaturedArtist">UserDefined</ArtisticRole>
+                <ArtisticRole>Arranger</ArtisticRole>
+                <TitleDisplayInformation>
+                    <IsDisplayedInTitle>false</IsDisplayedInTitle>
+                    <Prefix> feat. </Prefix>
+                </TitleDisplayInformation>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_3327448</ContributorPartyReference>
+                <Role>AssociatedPerformer</Role>
+            </Contributor>
+            <Contributor SequenceNumber="2">
+                <ContributorPartyReference>P_ARTIST_2764940</ContributorPartyReference>
+                <Role>Composer</Role>
+            </Contributor>
+            <Contributor SequenceNumber="3">
+                <ContributorPartyReference>P_ARTIST_2735354</ContributorPartyReference>
+                <Role>Composer</Role>
+            </Contributor>
+            <Duration>PT0H5M4S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+            <LanguageOfPerformance>ja</LanguageOfPerformance>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A12</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>JPBV01221388</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2012</Year>
+                    <PLineText>(P)2012 Sony Music Entertainment (Japan) Inc.</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T12</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/6ad16b2c321/20122/62275231.20122.mp3?oauth_consumer_key=kuc&amp;tag=f6cf0b0f8e991fef2d3ae5e2d25d66cf&amp;oauth_timestamp=1738313754&amp;oauth_signature=ky48iJLkzpuSJ6%2BvW5sFBoM%2F1Pg%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>f6cf0b0f8e991fef2d3ae5e2d25d66cf</HashSumValue>
+                            </HashSum>
+                            <FileSize>7628101</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T12P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>57680</StartPoint>
+                            <EndPoint>87680</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="ja-Latn">Tottsuburu</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="ja-Latn">
+                <TitleText>Tottsuburu</TitleText>
+            </DisplayTitle>
+            <DisplayTitle LanguageAndScriptCode="ja-Jpan">
+                <TitleText>とっつぶる</TitleText>
+            </DisplayTitle>
+            <DisplayTitle LanguageAndScriptCode="ja-Kana">
+                <TitleText>トッツブル</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>Kasarinchu</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2735356</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_2764941</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="2">
+                <ContributorPartyReference>P_ARTIST_2735358</ContributorPartyReference>
+                <Role>Arranger</Role>
+            </Contributor>
+            <Duration>PT0H3M10S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+            <LanguageOfPerformance>ja</LanguageOfPerformance>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A13</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>JPBV01221389</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2012</Year>
+                    <PLineText>(P)2012 Sony Music Entertainment (Japan) Inc.</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T13</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/47907b2c321/20122/62275234.20122.mp3?oauth_consumer_key=kuc&amp;tag=1896c6c2a30a82df6b89fa87a824aedd&amp;oauth_timestamp=1738313754&amp;oauth_signature=MZN3Ln2WPhpxT%2BguPmqbSanJ%2B1A%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>1896c6c2a30a82df6b89fa87a824aedd</HashSumValue>
+                            </HashSum>
+                            <FileSize>11382421</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T13P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>56627</StartPoint>
+                            <EndPoint>86627</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="ja-Latn">Peperonchino</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="ja-Latn">
+                <TitleText>Peperonchino</TitleText>
+            </DisplayTitle>
+            <DisplayTitle LanguageAndScriptCode="ja-Jpan">
+                <TitleText>ペペロンチーノ</TitleText>
+            </DisplayTitle>
+            <DisplayTitle LanguageAndScriptCode="ja-Kana">
+                <TitleText>ペペロンチーノ</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>Kasarinchu</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2735356</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+                <ArtisticRole>Arranger</ArtisticRole>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_2764940</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="2">
+                <ContributorPartyReference>P_ARTIST_2765700</ContributorPartyReference>
+                <Role>Arranger</Role>
+            </Contributor>
+            <Duration>PT0H4M44S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+            <LanguageOfPerformance>ja</LanguageOfPerformance>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A14</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>JPBV01221390</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2012</Year>
+                    <PLineText>(P)2012 Sony Music Entertainment (Japan) Inc.</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T14</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/245f7b2c321/20122/62275237.20122.mp3?oauth_consumer_key=kuc&amp;tag=1dc91ca46032bda65735b64e76fd3feb&amp;oauth_timestamp=1738313754&amp;oauth_signature=Kx%2FYaldFuJlhJ2CD7hiH39%2BRPgs%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>1dc91ca46032bda65735b64e76fd3feb</HashSumValue>
+                            </HashSum>
+                            <FileSize>1338866</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T14P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>133</StartPoint>
+                            <EndPoint>30133</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="en">Interlude - Chaos</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="en">
+                <TitleText>Interlude - Chaos</TitleText>
+            </DisplayTitle>
+            <DisplayTitle LanguageAndScriptCode="ja-Jpan">
+                <TitleText>Interlude-Chaos-</TitleText>
+            </DisplayTitle>
+            <DisplayTitle LanguageAndScriptCode="ja-Kana">
+                <TitleText>インタールードカオス</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>Kasarinchu</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2735356</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_2764941</ContributorPartyReference>
+                <Role>Arranger</Role>
+                <Role>Composer</Role>
+            </Contributor>
+            <Duration>PT0H0M33S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A15</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>JPBV01221391</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2012</Year>
+                    <PLineText>(P)2012 Sony Music Entertainment (Japan) Inc.</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T15</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/011e8b2c321/20122/62275240.20122.mp3?oauth_consumer_key=kuc&amp;tag=47433b557fd49f8dedc041106793d0d6&amp;oauth_timestamp=1738313754&amp;oauth_signature=Y%2FjoWkO6SEvP8ZW2ZbsuvHrKocE%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>47433b557fd49f8dedc041106793d0d6</HashSumValue>
+                            </HashSum>
+                            <FileSize>10692783</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T15P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>106240</StartPoint>
+                            <EndPoint>136240</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="ja-Latn">Mousou</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="ja-Latn">
+                <TitleText>Mousou</TitleText>
+            </DisplayTitle>
+            <DisplayTitle LanguageAndScriptCode="ja-Jpan">
+                <TitleText>妄想</TitleText>
+            </DisplayTitle>
+            <DisplayTitle LanguageAndScriptCode="ja-Kana">
+                <TitleText>モウソウ</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>Kasarinchu</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2735356</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+                <ArtisticRole>Arranger</ArtisticRole>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_2764940</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="2">
+                <ContributorPartyReference>P_ARTIST_2765700</ContributorPartyReference>
+                <Role>Arranger</Role>
+            </Contributor>
+            <Duration>PT0H4M27S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+            <LanguageOfPerformance>ja</LanguageOfPerformance>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A16</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>JPES01101282</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2011</Year>
+                    <PLineText>(P)2011 Sony Music Entertainment (Japan) Inc.</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T16</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/edcc9b2c321/20122/62275243.20122.mp3?oauth_consumer_key=kuc&amp;tag=dd653d1fd6de1e88fbff0d02c79ac19d&amp;oauth_timestamp=1738313754&amp;oauth_signature=qWnp7jdpNYwvHj0kyJQ69Fo8vNw%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>dd653d1fd6de1e88fbff0d02c79ac19d</HashSumValue>
+                            </HashSum>
+                            <FileSize>11223599</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T16P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>48000</StartPoint>
+                            <EndPoint>78000</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="ja-Latn">High High High</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="ja-Latn">
+                <TitleText>High High High</TitleText>
+            </DisplayTitle>
+            <DisplayTitle LanguageAndScriptCode="ja-Jpan">
+                <TitleText>High High High</TitleText>
+            </DisplayTitle>
+            <DisplayTitle LanguageAndScriptCode="ja-Kana">
+                <TitleText>ハイハイハイ</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>Kasarinchu</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2735356</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+                <ArtisticRole>Arranger</ArtisticRole>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_2764940</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="2">
+                <ContributorPartyReference>P_ARTIST_2765700</ContributorPartyReference>
+                <Role>Arranger</Role>
+            </Contributor>
+            <Duration>PT0H4M40S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+            <LanguageOfPerformance>ja</LanguageOfPerformance>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A17</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>JPBV01221392</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2012</Year>
+                    <PLineText>(P)2012 Sony Music Entertainment (Japan) Inc.</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T17</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/ca8bab2c321/20122/62275246.20122.mp3?oauth_consumer_key=kuc&amp;tag=8b10157332054b4c056742b793f5da37&amp;oauth_timestamp=1738313754&amp;oauth_signature=pIKQ6m1ZHQA27X5bEdlCcCQWxiA%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>8b10157332054b4c056742b793f5da37</HashSumValue>
+                            </HashSum>
+                            <FileSize>1832070</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T17P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>280</StartPoint>
+                            <EndPoint>30280</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="ja-Latn">Interlude - Kawakami Natsu 23</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="ja-Latn">
+                <TitleText>Interlude - Kawakami Natsu 23</TitleText>
+            </DisplayTitle>
+            <DisplayTitle LanguageAndScriptCode="ja-Jpan">
+                <TitleText>Interlude-川上 夏 23-</TitleText>
+            </DisplayTitle>
+            <DisplayTitle LanguageAndScriptCode="ja-Kana">
+                <TitleText>インタールードカワカミナツニジュウサン</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>Kasarinchu</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2735356</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_2764940</ContributorPartyReference>
+                <Role>Arranger</Role>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Duration>PT0H0M45S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+            <LanguageOfPerformance>ja</LanguageOfPerformance>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A18</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>JPBV01221393</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2012</Year>
+                    <PLineText>(P)2012 Sony Music Entertainment (Japan) Inc.</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T18</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/a74abb2c321/20122/62275249.20122.mp3?oauth_consumer_key=kuc&amp;tag=7de4965d95cb02bba0cd65f9620470dc&amp;oauth_timestamp=1738313754&amp;oauth_signature=bEwZCt%2FR5JIS4xulblmOXXQQ%2B9g%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>7de4965d95cb02bba0cd65f9620470dc</HashSumValue>
+                            </HashSum>
+                            <FileSize>13854667</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T18P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>217027</StartPoint>
+                            <EndPoint>247027</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="ja-Latn">Miraino Hanataba</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="ja-Latn">
+                <TitleText>Miraino Hanataba</TitleText>
+            </DisplayTitle>
+            <DisplayTitle LanguageAndScriptCode="ja-Jpan">
+                <TitleText>未来の花束（カサリンチュver.）</TitleText>
+            </DisplayTitle>
+            <DisplayTitle LanguageAndScriptCode="ja-Kana">
+                <TitleText>ミライノハナタバカサリンチュバージョン</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>Kasarinchu Feat. Kazusa</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2735356</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+            </DisplayArtist>
+            <DisplayArtist SequenceNumber="2">
+                <ArtistPartyReference>P_ARTIST_2881850</ArtistPartyReference>
+                <DisplayArtistRole>FeaturedArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+                <TitleDisplayInformation>
+                    <IsDisplayedInTitle>false</IsDisplayedInTitle>
+                    <Prefix> feat. </Prefix>
+                </TitleDisplayInformation>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_2884839</ContributorPartyReference>
+                <Role>AssociatedPerformer</Role>
+            </Contributor>
+            <Contributor SequenceNumber="2">
+                <ContributorPartyReference>P_ARTIST_2764940</ContributorPartyReference>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="3">
+                <ContributorPartyReference>P_ARTIST_2765704</ContributorPartyReference>
+                <Role>Arranger</Role>
+                <Role>Composer</Role>
+            </Contributor>
+            <Duration>PT0H5M46S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+            <LanguageOfPerformance>ja</LanguageOfPerformance>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A19</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>JPES01003261</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2010</Year>
+                    <PLineText>(P)2010 Sony Music Entertainment (Japan) Inc.</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T19</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/8409cb2c321/20122/62275252.20122.mp3?oauth_consumer_key=kuc&amp;tag=f0932d28eec9f0f9c43485de4e2dd573&amp;oauth_timestamp=1738313754&amp;oauth_signature=6%2FKbqu0eaczqtPk7%2FCq3foNQbbo%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>f0932d28eec9f0f9c43485de4e2dd573</HashSumValue>
+                            </HashSum>
+                            <FileSize>13307123</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T19P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>48000</StartPoint>
+                            <EndPoint>78000</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="ja-Latn">Anatano Egao</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="ja-Latn">
+                <TitleText>Anatano Egao</TitleText>
+            </DisplayTitle>
+            <DisplayTitle LanguageAndScriptCode="ja-Jpan">
+                <TitleText>あなたの笑顔</TitleText>
+            </DisplayTitle>
+            <DisplayTitle LanguageAndScriptCode="ja-Kana">
+                <TitleText>アナタノエガオ</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>Kasarinchu</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2735356</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_2764940</ContributorPartyReference>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Contributor SequenceNumber="2">
+                <ContributorPartyReference>P_ARTIST_2735362</ContributorPartyReference>
+                <Role>Arranger</Role>
+            </Contributor>
+            <Duration>PT0H5M32S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+            <LanguageOfPerformance>ja</LanguageOfPerformance>
+        </SoundRecording>
+        <SoundRecording>
+            <ResourceReference>A20</ResourceReference>
+            <Type>MusicalWorkSoundRecording</Type>
+            <SoundRecordingEdition>
+                <Type>NonImmersiveEdition</Type>
+                <ResourceId>
+                    <ISRC>JPBV01221394</ISRC>
+                </ResourceId>
+                <PLine>
+                    <Year>2012</Year>
+                    <PLineText>(P)2012 Sony Music Entertainment (Japan) Inc.</PLineText>
+                </PLine>
+                <TechnicalDetails>
+                    <TechnicalResourceDetailsReference>T20</TechnicalResourceDetailsReference>
+                    <DeliveryFile>
+                        <Type>AudioFile</Type>
+                        <AudioCodecType>MP3</AudioCodecType>
+                        <BitRate UnitOfMeasure="kbps">320</BitRate>
+                        <NumberOfChannels>2</NumberOfChannels>
+                        <SamplingRate UnitOfMeasure="kHz">44.1</SamplingRate>
+                        <BitsPerSample>16</BitsPerSample>
+                        <File>
+                            <URI>https://mgsrv-aws.smecde.com/rd/61c7db2c321/20122/62275255.20122.mp3?oauth_consumer_key=kuc&amp;tag=3cbe546d708f6db143f8df0fe055dab1&amp;oauth_timestamp=1738313754&amp;oauth_signature=0zxuz%2BCpf4OqjBjIPWNEwRe%2F7jM%3D</URI>
+                            <HashSum>
+                                <Algorithm>MD5</Algorithm>
+                                <HashSumValue>3cbe546d708f6db143f8df0fe055dab1</HashSumValue>
+                            </HashSum>
+                            <FileSize>12225653</FileSize>
+                        </File>
+                        <IsProvidedInDelivery>false</IsProvidedInDelivery>
+                    </DeliveryFile>
+                    <IsClip>false</IsClip>
+                    <ClipDetails>
+                        <TechnicalResourceDetailsReference>T20P</TechnicalResourceDetailsReference>
+                        <ClipType>Preview</ClipType>
+                        <Timing>
+                            <StartPoint>24520</StartPoint>
+                            <EndPoint>54520</EndPoint>
+                            <DurationUsed>P0DT0H0M30.000S</DurationUsed>
+                        </Timing>
+                        <ExpressionType>Instructive</ExpressionType>
+                    </ClipDetails>
+                </TechnicalDetails>
+            </SoundRecordingEdition>
+            <DisplayTitleText LanguageAndScriptCode="ja-Latn">Hinatabokko</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="ja-Latn">
+                <TitleText>Hinatabokko</TitleText>
+            </DisplayTitle>
+            <DisplayTitle LanguageAndScriptCode="ja-Jpan">
+                <TitleText>ひなたぼっこ</TitleText>
+            </DisplayTitle>
+            <DisplayTitle LanguageAndScriptCode="ja-Kana">
+                <TitleText>ヒナタボッコ</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>Kasarinchu</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2735356</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+                <ArtisticRole>AssociatedPerformer</ArtisticRole>
+            </DisplayArtist>
+            <Contributor SequenceNumber="1">
+                <ContributorPartyReference>P_ARTIST_2764941</ContributorPartyReference>
+                <Role>Arranger</Role>
+                <Role>Composer</Role>
+                <Role>Lyricist</Role>
+            </Contributor>
+            <Duration>PT0H5M5S</Duration>
+            <ParentalWarningType>ExplicitContentEdited</ParentalWarningType>
+            <LanguageOfPerformance>ja</LanguageOfPerformance>
+        </SoundRecording>
+        <Image>
+            <ResourceReference>A21</ResourceReference>
+            <Type>FrontCoverImage</Type>
+            <ResourceId>
+                <ProprietaryId Namespace="DPID:PADPIDA2007040502I">BVCL00415B00Z</ProprietaryId>
+            </ResourceId>
+            <FirstPublicationDate>
+                <FulfillmentDate>2024-10-23</FulfillmentDate>
+            </FirstPublicationDate>
+            <TechnicalDetails>
+                <TechnicalResourceDetailsReference>T21</TechnicalResourceDetailsReference>
+                <ImageCodecType>JPEG</ImageCodecType>
+                <ImageHeight>1400</ImageHeight>
+                <ImageWidth>1400</ImageWidth>
+                <ImageResolution>300</ImageResolution>
+                <File>
+                    <URI>https://mgsrv-aws.smecde.com/rd/627a481d321/20126/62275197.20126.jpg?oauth_consumer_key=kuc&amp;tag=bc68627198b1e0ee90c82aba2884308f&amp;oauth_timestamp=1738313754&amp;oauth_signature=uv3OiDoJvfZIO9CqOMgJ796XvvM%3D</URI>
+                    <HashSum>
+                        <Algorithm>MD5</Algorithm>
+                        <HashSumValue>bc68627198b1e0ee90c82aba2884308f</HashSumValue>
+                    </HashSum>
+                    <FileSize>911712</FileSize>
+                </File>
+                <IsProvidedInDelivery>false</IsProvidedInDelivery>
+            </TechnicalDetails>
+        </Image>
+    </ResourceList>
+    <ReleaseList>
+        <Release>
+            <ReleaseReference>R0</ReleaseReference>
+            <ReleaseType>Album</ReleaseType>
+            <ReleaseId>
+                <GRid>A10301A0004249390S</GRid>
+                <ICPN>4988017679517</ICPN>
+                <CatalogNumber Namespace="DPID:PADPIDA2007040502I">BVCL00415B00Z</CatalogNumber>
+            </ReleaseId>
+            <DisplayTitleText LanguageAndScriptCode="en">Kasarism</DisplayTitleText>
+            <DisplayTitle LanguageAndScriptCode="en">
+                <TitleText>Kasarism</TitleText>
+            </DisplayTitle>
+            <DisplayTitle LanguageAndScriptCode="ja-Jpan">
+                <TitleText>カサリズム</TitleText>
+            </DisplayTitle>
+            <DisplayTitle LanguageAndScriptCode="ja-Kana">
+                <TitleText>カサリズム</TitleText>
+            </DisplayTitle>
+            <DisplayArtistName>Kasarinchu</DisplayArtistName>
+            <DisplayArtist SequenceNumber="1">
+                <ArtistPartyReference>P_ARTIST_2735356</ArtistPartyReference>
+                <DisplayArtistRole>MainArtist</DisplayArtistRole>
+            </DisplayArtist>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_SONY_MUSIC_LABELS_INC</ReleaseLabelReference>
+            <PLine>
+                <Year>2012</Year>
+                <PLineText>(P)2012 Sony Music Entertainment (Japan) Inc.</PLineText>
+            </PLine>
+            <Duration>PT1H14M34S</Duration>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>J-Pop</GenreText>
+            </Genre>
+            <OriginalReleaseDate>2024-10-23</OriginalReleaseDate>
+            <ParentalWarningType>NotExplicit</ParentalWarningType>
+            <ResourceGroup>
+                <AdditionalTitle TitleType="GroupingTitle">
+                    <TitleText>Disc 1</TitleText>
+                </AdditionalTitle>
+                <SequenceNumber>1</SequenceNumber>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>1</SequenceNumber>
+                    <ReleaseResourceReference>A1</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>2</SequenceNumber>
+                    <ReleaseResourceReference>A2</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>3</SequenceNumber>
+                    <ReleaseResourceReference>A3</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>4</SequenceNumber>
+                    <ReleaseResourceReference>A4</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>5</SequenceNumber>
+                    <ReleaseResourceReference>A5</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>6</SequenceNumber>
+                    <ReleaseResourceReference>A6</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>7</SequenceNumber>
+                    <ReleaseResourceReference>A7</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>8</SequenceNumber>
+                    <ReleaseResourceReference>A8</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>9</SequenceNumber>
+                    <ReleaseResourceReference>A9</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>10</SequenceNumber>
+                    <ReleaseResourceReference>A10</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>11</SequenceNumber>
+                    <ReleaseResourceReference>A11</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>12</SequenceNumber>
+                    <ReleaseResourceReference>A12</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>13</SequenceNumber>
+                    <ReleaseResourceReference>A13</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>14</SequenceNumber>
+                    <ReleaseResourceReference>A14</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>15</SequenceNumber>
+                    <ReleaseResourceReference>A15</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>16</SequenceNumber>
+                    <ReleaseResourceReference>A16</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>17</SequenceNumber>
+                    <ReleaseResourceReference>A17</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>18</SequenceNumber>
+                    <ReleaseResourceReference>A18</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>19</SequenceNumber>
+                    <ReleaseResourceReference>A19</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <ResourceGroupContentItem>
+                    <SequenceNumber>20</SequenceNumber>
+                    <ReleaseResourceReference>A20</ReleaseResourceReference>
+                </ResourceGroupContentItem>
+                <LinkedReleaseResourceReference LinkDescription="CoverArt">A21</LinkedReleaseResourceReference>
+            </ResourceGroup>
+        </Release>
+        <TrackRelease>
+            <ReleaseReference>R1</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E00092902115</GRid>
+                <ProprietaryId Namespace="ISRC">JPBV01221381</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A1</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_SONY_MUSIC_LABELS_INC</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>J-Pop</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R2</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E00092902123</GRid>
+                <ProprietaryId Namespace="ISRC">JPBV01221382</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A2</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_SONY_MUSIC_LABELS_INC</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>J-Pop</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R3</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E00092902131</GRid>
+                <ProprietaryId Namespace="ISRC">JPES01101281</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A3</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_SONY_MUSIC_LABELS_INC</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>J-Pop</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R4</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E00092902140</GRid>
+                <ProprietaryId Namespace="ISRC">JPES01001961</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A4</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_SONY_MUSIC_LABELS_INC</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>J-Pop</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R5</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E0009290215Y</GRid>
+                <ProprietaryId Namespace="ISRC">JPBV01221383</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A5</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_SONY_MUSIC_LABELS_INC</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>J-Pop</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R6</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E0009290216W</GRid>
+                <ProprietaryId Namespace="ISRC">JPBV01221321</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A6</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_SONY_MUSIC_LABELS_INC</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>J-Pop</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R7</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E0009290217U</GRid>
+                <ProprietaryId Namespace="ISRC">JPBV01221384</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A7</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_SONY_MUSIC_LABELS_INC</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>J-Pop</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R8</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E0009290218S</GRid>
+                <ProprietaryId Namespace="ISRC">JPBV01221385</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A8</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_SONY_MUSIC_LABELS_INC</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>J-Pop</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R9</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E0009290219Q</GRid>
+                <ProprietaryId Namespace="ISRC">JPBV01221386</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A9</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_SONY_MUSIC_LABELS_INC</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>J-Pop</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R10</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E00092902203</GRid>
+                <ProprietaryId Namespace="ISRC">JPBV01221387</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A10</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_SONY_MUSIC_LABELS_INC</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>J-Pop</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R11</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E00092902211</GRid>
+                <ProprietaryId Namespace="ISRC">JPBV01221121</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A11</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_SONY_MUSIC_LABELS_INC</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>J-Pop</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R12</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E00092902220</GRid>
+                <ProprietaryId Namespace="ISRC">JPBV01221388</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A12</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_SONY_MUSIC_LABELS_INC</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>J-Pop</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R13</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E0009290223Y</GRid>
+                <ProprietaryId Namespace="ISRC">JPBV01221389</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A13</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_SONY_MUSIC_LABELS_INC</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>J-Pop</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R14</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E0009290224W</GRid>
+                <ProprietaryId Namespace="ISRC">JPBV01221390</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A14</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_SONY_MUSIC_LABELS_INC</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>J-Pop</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R15</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E0009290225U</GRid>
+                <ProprietaryId Namespace="ISRC">JPBV01221391</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A15</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_SONY_MUSIC_LABELS_INC</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>J-Pop</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R16</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E0009290226S</GRid>
+                <ProprietaryId Namespace="ISRC">JPES01101282</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A16</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_SONY_MUSIC_LABELS_INC</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>J-Pop</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R17</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E0009290227Q</GRid>
+                <ProprietaryId Namespace="ISRC">JPBV01221392</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A17</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_SONY_MUSIC_LABELS_INC</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>J-Pop</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R18</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E0009290228O</GRid>
+                <ProprietaryId Namespace="ISRC">JPBV01221393</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A18</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_SONY_MUSIC_LABELS_INC</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>J-Pop</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R19</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E0009290229M</GRid>
+                <ProprietaryId Namespace="ISRC">JPES01003261</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A19</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_SONY_MUSIC_LABELS_INC</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>J-Pop</GenreText>
+            </Genre>
+        </TrackRelease>
+        <TrackRelease>
+            <ReleaseReference>R20</ReleaseReference>
+            <ReleaseId>
+                <GRid>A10328E00092902300</GRid>
+                <ProprietaryId Namespace="ISRC">JPBV01221394</ProprietaryId>
+            </ReleaseId>
+            <ReleaseResourceReference>A20</ReleaseResourceReference>
+            <ReleaseLabelReference LabelType="DisplayLabel">P_LABEL_SONY_MUSIC_LABELS_INC</ReleaseLabelReference>
+            <Genre ApplicableTerritoryCode="Worldwide">
+                <GenreText>J-Pop</GenreText>
+            </Genre>
+        </TrackRelease>
+    </ReleaseList>
+    <DealList>
+        <ReleaseDeal>
+            <DealReleaseReference>R1</DealReleaseReference>
+            <DealReleaseReference>R2</DealReleaseReference>
+            <DealReleaseReference>R3</DealReleaseReference>
+            <DealReleaseReference>R4</DealReleaseReference>
+            <DealReleaseReference>R5</DealReleaseReference>
+            <DealReleaseReference>R6</DealReleaseReference>
+            <DealReleaseReference>R7</DealReleaseReference>
+            <DealReleaseReference>R8</DealReleaseReference>
+            <DealReleaseReference>R9</DealReleaseReference>
+            <DealReleaseReference>R10</DealReleaseReference>
+            <DealReleaseReference>R11</DealReleaseReference>
+            <DealReleaseReference>R12</DealReleaseReference>
+            <DealReleaseReference>R13</DealReleaseReference>
+            <DealReleaseReference>R14</DealReleaseReference>
+            <DealReleaseReference>R15</DealReleaseReference>
+            <DealReleaseReference>R16</DealReleaseReference>
+            <DealReleaseReference>R17</DealReleaseReference>
+            <DealReleaseReference>R18</DealReleaseReference>
+            <DealReleaseReference>R19</DealReleaseReference>
+            <DealReleaseReference>R20</DealReleaseReference>
+            <Deal>
+                <DealTerms>
+                    <TerritoryCode>AG</TerritoryCode>
+                    <TerritoryCode>AI</TerritoryCode>
+                    <TerritoryCode>AW</TerritoryCode>
+                    <TerritoryCode>BB</TerritoryCode>
+                    <TerritoryCode>BM</TerritoryCode>
+                    <TerritoryCode>BO</TerritoryCode>
+                    <TerritoryCode>BQ</TerritoryCode>
+                    <TerritoryCode>BR</TerritoryCode>
+                    <TerritoryCode>BZ</TerritoryCode>
+                    <TerritoryCode>CL</TerritoryCode>
+                    <TerritoryCode>CO</TerritoryCode>
+                    <TerritoryCode>CR</TerritoryCode>
+                    <TerritoryCode>CW</TerritoryCode>
+                    <TerritoryCode>DM</TerritoryCode>
+                    <TerritoryCode>DO</TerritoryCode>
+                    <TerritoryCode>EC</TerritoryCode>
+                    <TerritoryCode>ES</TerritoryCode>
+                    <TerritoryCode>GD</TerritoryCode>
+                    <TerritoryCode>GF</TerritoryCode>
+                    <TerritoryCode>GP</TerritoryCode>
+                    <TerritoryCode>GY</TerritoryCode>
+                    <TerritoryCode>HT</TerritoryCode>
+                    <TerritoryCode>JM</TerritoryCode>
+                    <TerritoryCode>KN</TerritoryCode>
+                    <TerritoryCode>KY</TerritoryCode>
+                    <TerritoryCode>LC</TerritoryCode>
+                    <TerritoryCode>MQ</TerritoryCode>
+                    <TerritoryCode>MS</TerritoryCode>
+                    <TerritoryCode>PA</TerritoryCode>
+                    <TerritoryCode>PE</TerritoryCode>
+                    <TerritoryCode>SR</TerritoryCode>
+                    <TerritoryCode>SV</TerritoryCode>
+                    <TerritoryCode>TC</TerritoryCode>
+                    <TerritoryCode>TT</TerritoryCode>
+                    <TerritoryCode>VC</TerritoryCode>
+                    <TerritoryCode>VG</TerritoryCode>
+                    <TerritoryCode>VU</TerritoryCode>
+                    <TerritoryCode>ZM</TerritoryCode>
+                    <ValidityPeriod>
+                        <StartDateTime>2024-11-06T00:00:00</StartDateTime>
+                    </ValidityPeriod>
+                    <CommercialModelType>SubscriptionModel</CommercialModelType>
+                    <UseType>ConditionalDownload</UseType>
+                    <UseType>NonInteractiveStream</UseType>
+                    <UseType>OnDemandStream</UseType>
+                </DealTerms>
+            </Deal>
+            <Deal>
+                <DealTerms>
+                    <TerritoryCode>AG</TerritoryCode>
+                    <TerritoryCode>AI</TerritoryCode>
+                    <TerritoryCode>AW</TerritoryCode>
+                    <TerritoryCode>BB</TerritoryCode>
+                    <TerritoryCode>BM</TerritoryCode>
+                    <TerritoryCode>BO</TerritoryCode>
+                    <TerritoryCode>BQ</TerritoryCode>
+                    <TerritoryCode>BR</TerritoryCode>
+                    <TerritoryCode>BZ</TerritoryCode>
+                    <TerritoryCode>CL</TerritoryCode>
+                    <TerritoryCode>CO</TerritoryCode>
+                    <TerritoryCode>CR</TerritoryCode>
+                    <TerritoryCode>CW</TerritoryCode>
+                    <TerritoryCode>DM</TerritoryCode>
+                    <TerritoryCode>DO</TerritoryCode>
+                    <TerritoryCode>EC</TerritoryCode>
+                    <TerritoryCode>ES</TerritoryCode>
+                    <TerritoryCode>GD</TerritoryCode>
+                    <TerritoryCode>GF</TerritoryCode>
+                    <TerritoryCode>GP</TerritoryCode>
+                    <TerritoryCode>GY</TerritoryCode>
+                    <TerritoryCode>HT</TerritoryCode>
+                    <TerritoryCode>JM</TerritoryCode>
+                    <TerritoryCode>KN</TerritoryCode>
+                    <TerritoryCode>KY</TerritoryCode>
+                    <TerritoryCode>LC</TerritoryCode>
+                    <TerritoryCode>MQ</TerritoryCode>
+                    <TerritoryCode>MS</TerritoryCode>
+                    <TerritoryCode>PA</TerritoryCode>
+                    <TerritoryCode>PE</TerritoryCode>
+                    <TerritoryCode>SR</TerritoryCode>
+                    <TerritoryCode>SV</TerritoryCode>
+                    <TerritoryCode>TC</TerritoryCode>
+                    <TerritoryCode>TT</TerritoryCode>
+                    <TerritoryCode>VC</TerritoryCode>
+                    <TerritoryCode>VG</TerritoryCode>
+                    <TerritoryCode>VU</TerritoryCode>
+                    <TerritoryCode>ZM</TerritoryCode>
+                    <ValidityPeriod>
+                        <StartDateTime>2024-11-06T00:00:00</StartDateTime>
+                    </ValidityPeriod>
+                    <CommercialModelType>AdvertisementSupportedModel</CommercialModelType>
+                    <UseType>NonInteractiveStream</UseType>
+                    <UseType>OnDemandStream</UseType>
+                </DealTerms>
+            </Deal>
+        </ReleaseDeal>
+    </DealList>
+</ernm:NewReleaseMessage>

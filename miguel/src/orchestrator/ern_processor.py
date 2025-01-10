@@ -17,7 +17,7 @@ db_pool = connections.get_db_connection_pool('feed_mysql')
 
 
 # Ruta del archivo en el disco
-file_path = "/Users/manuelrodriguez/Documents/Workspace/kuack/feed_refactor_miguel/xml/A10301A0002913028M.xml"  # Cambia esto por la ruta real del archivo
+file_path = "/home/miguel/PycharmProjects/feed_refactor/miguel/src/xml/A10301A0002913028M.xml"  # Cambia esto por la ruta real del archivo
 
     
 # Verificar si el archivo existe
@@ -41,7 +41,7 @@ else:
         # Aquí puedes procesar el `json_dict` según tus necesidades
 
 # Cargar el archivo de configuración para la versión DDEX 4.3
-with open('/Users/manuelrodriguez/Documents/Workspace/kuack/feed_refactor/settings/ddex_43.yaml', 'r') as config_file:
+with open('/home/miguel/PycharmProjects/feed_refactor/miguel/src/settings/ddex_43.yaml', 'r') as config_file:
     ddex_map = yaml.safe_load(config_file)
 
 
@@ -55,12 +55,12 @@ with open('/Users/manuelrodriguez/Documents/Workspace/kuack/feed_refactor/settin
 upserted_album = xml_album_mapper.upsert_album(db_mongo, db_pool, json_dict, ddex_map)
 logging.info(f"Álbum actualizado o insertado: {upserted_album}")
 
-# Insertar o actualizar el artista en la base de datos
-upserted_artists = xml_artist_mapper.upsert_artist(db_mongo, db_pool, json_dict, ddex_map, upserted_album)
-logging.info(f"Artistas actualizados o insertados: {upserted_artists}")
-
-# Insertar o actualizar el track en la base de datos    
-upserted_tracks = xml_track_mapper.upsert_tracks(db_mongo, db_pool, json_dict, ddex_map, upserted_album)
-logging.info(f"Tracks actualizados o insertados: {upserted_tracks}")
+# # Insertar o actualizar el artista en la base de datos
+# upserted_artists = xml_artist_mapper.upsert_artist(db_mongo, db_pool, json_dict, ddex_map, upserted_album)
+# logging.info(f"Artistas actualizados o insertados: {upserted_artists}")
+#
+# # Insertar o actualizar el track en la base de datos
+# upserted_tracks = xml_track_mapper.upsert_tracks(db_mongo, db_pool, json_dict, ddex_map, upserted_album)
+# logging.info(f"Tracks actualizados o insertados: {upserted_tracks}")
 
 

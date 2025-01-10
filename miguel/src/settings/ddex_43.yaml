@@ -9,3 +9,4 @@ DisplayArtist: "ernm:NewReleaseMessage/ReleaseList/Release/DisplayArtist"
 
 Contributor: "ernm:NewReleaseMessage/ResourceList/SoundRecording/Contributor"
 
+DealTerms: "ernm:DealList/ReleaseDeal/Deal/DealTerms"
