@@ -44,7 +44,6 @@ def upsert_genre_in_db(db_mongo, db_pool, json_dict, ddex_map):
         sql  = text(
             """INSERT INTO feed.genres (name_genre, active_genre) VALUES """ + ",".join(values) +
             """ON DUPLICATE KEY UPDATE active_genre = 1, audi_edited_genre = CURRENT_TIMESTAMP""")
-        print(sql)
         logging.info("Se creo la consulta upsert en mysql: {}".format(sql))
 
         query_values = {}

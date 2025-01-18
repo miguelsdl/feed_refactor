@@ -520,7 +520,6 @@ def upsert_tracks_in_db(db_pool, tracks_from_xml, id_album):
 
                         if inserted_tracks.get(isrc).get('id_track') is None:
                             logging.error("El campo 'id_track' es obligatorio y no puede ser None.")
-                            print(isrc_tracks)
                             return False  # O alguna otra acción adecuada
 
                         

@@ -49,7 +49,7 @@ def filter_fullname_by_release_reference_label(fullname_list, release_label_refe
     labels = list()
     for fullname in fullname_list:
         if fullname in release_label_reference_list:
-            labels.append(fullname_list['P_LABEL_BMG_RIGHTS_MANAGEMENT']['name'][0])
+            labels.append(fullname_list[fullname]['name'][0])
     return labels
 
 def get_label_and_release_from_xml(json_dict, ddex_map):
@@ -85,7 +85,6 @@ def upsert_label(db_mongo, db_pool, json_dict, ddex_map):
         sql  = text(
             """INSERT INTO feed.labels (name_label, active_label) VALUES """ + ",".join(values) +
             """ON DUPLICATE KEY UPDATE active_label = 1, audi_edited_label = CURRENT_TIMESTAMP""")
-        print(sql)
         logging.info("Se creo la consulta upsert en mysql: {}".format(sql))
 
         query_values = {}

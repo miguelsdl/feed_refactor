@@ -3,6 +3,7 @@ import logging
 from sqlalchemy import text
 import connections
 import xml_mapper
+import re
 
 # consulta sql para agrega una constrain para que funcione ON DUPLICATE
 # ALTER TABLE feed.tracks ADD CONSTRAINT constr_isrc_track  UNIQUE (isrc_track);
@@ -58,7 +59,7 @@ def get_track_data_joined_by_ref(track_list_by_ref, resource_list_by_ref):
         resource_data = resource_list_by_ref[track_data]
 
         track_data_for_insert.append({
-            "name_track": resource_data['DisplayTitle']['TitleText'],
+            "name_track": xml_mapper.get_dict_by_language_code_in_list(resource_data['DisplayTitle'])['TitleText'],
             "isrc_track": resource_data['SoundRecordingEdition']['ResourceId']['ISRC'],
             "version_track": "no hay en el xml un subtitulo",
             "length_track": parse_time_string(resource_data['Duration']),
@@ -68,11 +69,10 @@ def get_track_data_joined_by_ref(track_list_by_ref, resource_list_by_ref):
 
         })
 
-    print(track_data_for_insert)
-
     return track_data_for_insert
 
 def upsert_track_in_db(db_mongo, db_pool, json_dict, ddex_map):
+    import pymysql
     release_list = xml_mapper.get_value_from_path(json_dict, ddex_map['ReleaseList'])
     track_list = get_track_list(release_list)
 
@@ -88,7 +88,7 @@ def upsert_track_in_db(db_mongo, db_pool, json_dict, ddex_map):
         values.append(
             '("{name_track}", "{isrc_track}", "{version_track}",'
             '"{length_track}", "{explicit_track}", "{active_track}", {specific_data_track})'.format(
-                name_track=track_data['name_track'],
+                name_track=track_data['name_track'].replace('"', '\\"'),
                 isrc_track=track_data['isrc_track'],
                 version_track=track_data['version_track'],
                 length_track=track_data['length_track'],
@@ -101,13 +101,12 @@ def upsert_track_in_db(db_mongo, db_pool, json_dict, ddex_map):
 
     logging.info("Se crearon las tuplas para insertar en la bbdd")
     #
-    sql  = text(
-        """INSERT INTO feed.tracks ({}) VALUES """.format(",".join(keys))
-        + ",".join(values)
-        + """ ON DUPLICATE KEY UPDATE name_track = name_track, version_track = version_track,
-             length_track = length_track, explicit_track = explicit_track, active_track = 1,
-             specific_data_track = specific_data_track, audi_edited_track = CURRENT_TIMESTAMP"""
-    )
+    sql  = ("INSERT INTO feed.tracks ({}) VALUES {}  "
+            "ON DUPLICATE KEY UPDATE "
+            "name_track = name_track, version_track = version_track, length_track = length_track, "
+            "explicit_track = explicit_track, active_track = 1, specific_data_track = specific_data_track, "
+            "audi_edited_track = CURRENT_TIMESTAMP").format(",".join(keys), ",".join(values))
+
 
     logging.info("Se creo la consulta upsert en mysql: {}".format(sql))
 

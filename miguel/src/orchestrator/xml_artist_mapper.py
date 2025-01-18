@@ -310,7 +310,8 @@ def upsert_artist(db_mongo, db_pool, json_dict, ddex_map, album):
     # Iterar sobre los artistas y realizar el upsert en MySQL y MongoDB
     for artist in artists_from_xml:
         artist_upserted = upsert_artist_in_db(db_pool, artist, album)  # Inserta o actualiza en MySQL
-        if artist_upserted:
-            upsert_artist_in_mongo(db_mongo, artist_upserted)  # Inserta o actualiza en MongoDB
+        # TODO - descomentar esto MIGUEL
+        # if artist_upserted:
+        #     upsert_artist_in_mongo(db_mongo, artist_upserted)  # Inserta o actualiza en MongoDB
     
     return artists_from_xml

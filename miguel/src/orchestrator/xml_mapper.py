@@ -1,5 +1,7 @@
+import logging
 import re
 from datetime import datetime, timedelta
+import connections
 
 
 # Funciones Auxiliares
@@ -121,3 +123,56 @@ def convert_timedelta_to_seconds(td):
     if isinstance(td, timedelta):
         return int(td.total_seconds())
     return td
+
+def get_album_data(release_list):
+    album_data = dict()
+
+    try:
+        album_data['artist'] = dict()
+
+        artist = release_list['Release']['DisplayArtist']
+        if isinstance(artist, dict):
+            artist = [artist, ]
+
+        for o in artist:
+            album_data['artist'][o['ArtistPartyReference']] = o
+
+        album_data['upc'] = release_list['Release']['ReleaseId']['ICPN']
+        album_data['genre'] = release_list['Release']['Genre']
+    except Exception as e:
+        logging.error("Error al procesar los datos del album: " + str(e))
+        print(e)
+
+    return album_data
+
+def get_party_list(party_list):
+    party_name_list = dict()
+    for o in party_list:
+        if isinstance(o['PartyName'], dict):
+            party_name_list[o['PartyReference']] = o['PartyName']['FullName']
+        else:
+            party_name_list[o['PartyReference']] = o['PartyName'][0]['FullName']
+
+    return party_name_list
+
+def get_album_id_from_db(conn, album_upc):
+    sql = "SELECT id_album, upc_album FROM feed.albums WHERE upc_album = '{}';".format(album_upc)
+    rows = connections.execute_query(conn, sql, {})
+    album_data = {"album_id": rows[0][0], "album_upc": rows[0][1]}
+
+    return album_data
+
+def get_dict_by_language_code_in_list(vals, lang_code_order=('es', 'en'), key_name='@LanguageAndScriptCode'):
+    if isinstance(vals, list):
+        for v in vals:
+            if v[key_name] == lang_code_order[0]:
+                return v
+            elif v[key_name] == lang_code_order[1]:
+                return v
+            else:
+                return v
+    else:
+        return vals
+
+def list_to_sql_in_str(data):
+    return "('" + "', '".join(data) + "')"

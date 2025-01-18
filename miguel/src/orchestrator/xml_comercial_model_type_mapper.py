@@ -31,7 +31,6 @@ def test_methods(db_mongo, db_pool, json_dict, ddex_map):
     upsert_commercial_use_type_in_db(db_mongo, db_pool, json_dict, ddex_map)
     # deal_term_list = xml_mapper.get_value_from_path(json_dict, ddex_map['DealTerms'])
     # a = get_deal_term_list(deal_term_list)
-    # print()
 
 def upsert_commercial_use_type_in_db(db_mongo, db_pool, json_dict, ddex_map):
     try:
@@ -47,7 +46,6 @@ def upsert_commercial_use_type_in_db(db_mongo, db_pool, json_dict, ddex_map):
         sql = text(
             """INSERT INTO feed.comercial_model_types (name_cmt, description_cmt) VALUES """ + ",".join(values) +
             """ON DUPLICATE KEY UPDATE audi_edited_cmt = CURRENT_TIMESTAMP""")
-        print(sql)
         logging.info("Se creo la consulta upsert en mysql: {}".format(sql))
 
         query_values = {}

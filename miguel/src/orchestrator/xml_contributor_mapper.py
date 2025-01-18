@@ -16,7 +16,7 @@ def get_contributor_list(resource_list):
         sound_rec_list = [sound_rec_list, ]
 
     for record in sound_rec_list:
-        contributor_list = record['Contributor']
+        contributor_list = record['Contributor'] if 'Contributor' in record else []
         if not isinstance(contributor_list, list):
             contributor_list = [contributor_list, ]
         for o in contributor_list:
@@ -52,41 +52,44 @@ def get_party_and_contributors_data_joined(contributor_list_by_ref, artist_list_
     return contributor_data_for_insert
 
 def upsert_contributors_in_db(db_mongo, db_pool, json_dict, ddex_map):
-    rows = list()
     resource_list = xml_mapper.get_value_from_path(json_dict, ddex_map['ResourceList'])
     contributor_list_by_ref = get_contributor_list(resource_list)
 
-    party_list = xml_mapper.get_value_from_path(json_dict, ddex_map['PartyList'])
-    artist_list_by_ref = get_party_list(party_list)
+    if len(contributor_list_by_ref):
 
-    contri_data_for_insert = get_party_and_contributors_data_joined(contributor_list_by_ref, artist_list_by_ref)
-    logging.info("Se cargaron los datos del xml")
+        party_list = xml_mapper.get_value_from_path(json_dict, ddex_map['PartyList'])
+        artist_list_by_ref = get_party_list(party_list)
 
-    keys = contri_data_for_insert[0].keys()
-    values = list()
-    for contri_data in contri_data_for_insert:
-        values.append(
-            '("{name_contri}", "{active_contri}")'.format(
-                name_contri=contri_data['name_contri'],
-                active_contri=contri_data['active_contri'],
+        contri_data_for_insert = get_party_and_contributors_data_joined(contributor_list_by_ref, artist_list_by_ref)
+        logging.info("Se cargaron los datos del xml")
+
+        keys = contri_data_for_insert[0].keys()
+        values = list()
+        for contri_data in contri_data_for_insert:
+            values.append(
+                '("{name_contri}", "{active_contri}")'.format(
+                    name_contri=contri_data['name_contri'].replace('"', '\\"'),
+                    active_contri=contri_data['active_contri'],
+                )
             )
+
+        logging.info("Se crearon las tuplas para insertar en la bbdd")
+        #
+        sql  = text(
+            """INSERT INTO feed.contributors ({}) VALUES """.format(",".join(keys))
+            + ",".join(values)
+            + """ ON DUPLICATE KEY UPDATE name_contri = name_contri, active_contri = 1,
+                    audi_edited_contri = CURRENT_TIMESTAMP"""
         )
 
-    logging.info("Se crearon las tuplas para insertar en la bbdd")
-    #
-    sql  = text(
-        """INSERT INTO feed.contributors ({}) VALUES """.format(",".join(keys))
-        + ",".join(values)
-        + """ ON DUPLICATE KEY UPDATE name_contri = name_contri, active_contri = 1,
-                audi_edited_contri = CURRENT_TIMESTAMP"""
-    )
+        logging.info("Se creo la consulta upsert en mysql: {}".format(sql))
 
-    logging.info("Se creo la consulta upsert en mysql: {}".format(sql))
-
-    query_values = {}
-    rows = connections.execute_query(db_pool, sql, query_values)
-    logging.info("Se ejecutó la consulta upsert en mysql")
-    return rows
+        query_values = {}
+        rows = connections.execute_query(db_pool, sql, query_values)
+        logging.info("Se ejecutó la consulta upsert en mysql")
+        return rows
+    else:
+        return None
 
 def upsert_contributors(db_mongo, db_pool, json_dict, ddex_map):
     upsert_contributors_in_db(db_mongo, db_pool, json_dict, ddex_map)
