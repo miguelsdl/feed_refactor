@@ -176,3 +176,18 @@ def get_dict_by_language_code_in_list(vals, lang_code_order=('es', 'en'), key_na
 
 def list_to_sql_in_str(data):
     return "('" + "', '".join(data) + "')"
+
+def get_resource_list_data_by_resource_reference(resource_list):
+    resource_data = dict()
+
+    recording_ref_list = resource_list['SoundRecording']
+    if not isinstance(recording_ref_list, list):
+        recording_ref_list = list(resource_list['SoundRecording'])
+
+    for sound_recording in recording_ref_list:
+        resource_data[sound_recording['ResourceReference']] = sound_recording
+
+    return resource_data
+
+def get_dict_to_list_dict(dict_or_list):
+    return [dict_or_list, ] if isinstance(dict_or_list, dict) else dict_or_list

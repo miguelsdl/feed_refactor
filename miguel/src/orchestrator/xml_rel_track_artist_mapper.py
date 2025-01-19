@@ -11,6 +11,12 @@ def get_tack_data(track_release):
 
     return track_data
 
+def get_resource_list_data(resource_list):
+    return xml_mapper.get_resource_list_data_by_resource_reference(resource_list)
+
+def get_artist_list_from_recording_list_by_reference(resource_data, reference):
+    return 0
+
 # def get_release_data(track_list):
 #     track_list_data = dict()
 #

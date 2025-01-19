@@ -18,6 +18,7 @@ import xml_rel_album_artist_mapper
 import xml_rel_album_genre_mapper
 import xml_rel_album_track_mapper
 import xml_rel_track_artist_mapper
+import xml_rel_albums_rights_mapper
 
 # Conectar a MySQL
 db_pool = connections.get_db_connection_pool('feed_mysql')
@@ -27,6 +28,7 @@ db_mongo = None
 file_path = "/home/miguel/PycharmProjects/feed_refactor/miguel/src/xml/A10301A0002913028M.xml"
 file_path = "/home/miguel/PycharmProjects/feed_refactor/miguel/src/xml/N_A10301A0003480299Y_20241023105415497/A10301A0003480299Y.xml"
 
+all_files = [file_path, ]
 all_files = ['/home/miguel/PycharmProjects/feed_refactor/miguel/src/xml/N_A10301A00006698146_20241023105524511/A10301A00006698146.xml',
 '/home/miguel/PycharmProjects/feed_refactor/miguel/src/xml/N_A10301A00006698154_20241023105524501/A10301A00006698154.xml',
 '/home/miguel/PycharmProjects/feed_refactor/miguel/src/xml/N_A10301A00007845431_20241023105433727/A10301A00007845431.xml',
@@ -107,7 +109,9 @@ for f in all_files:
         #
         # xml_rel_album_track_mapper.upsert_rel_album_track(db_mongo, db_pool, json_dict, ddex_map)
 
-        xml_rel_track_artist_mapper.upsert_rel_track_artist_in_db(db_mongo, db_pool, json_dict, ddex_map)
+        # xml_rel_track_artist_mapper.upsert_rel_track_artist_in_db(db_mongo, db_pool, json_dict, ddex_map)
+
+        xml_rel_albums_rights_mapper.upsert_rel_album_right(db_mongo, db_pool, json_dict, ddex_map)
     except Exception as error:
         print(file_path)
         raise error
