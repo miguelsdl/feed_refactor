@@ -3,39 +3,6 @@ import logging
 import connections
 import xml_mapper
 
-
-def get_resource_list_data_by_resource_reference(resource_list):
-    resource_data = dict()
-
-    recording_ref_list = resource_list['SoundRecording']
-    if not isinstance(recording_ref_list, list):
-        recording_ref_list = list(recording_ref_list)
-
-    for sound_recording in recording_ref_list:
-        resource_data[sound_recording['ResourceReference']] = sound_recording
-
-    return resource_data
-
-def get_release_list_sort_by_release_reference(release_list):
-    release_data = dict()
-
-    release_list = xml_mapper.get_dict_to_list_dict(release_list['Release'])
-    for rel in release_list:
-        release_data[rel['ReleaseReference']] = rel
-
-    return release_data
-
-def get_deal_list_sort_by_release_reference(deal_list):
-    deals_data = dict()
-
-    release_deal_list = xml_mapper.get_dict_to_list_dict(deal_list['ReleaseDeal'])
-    for d in release_deal_list:
-        for ref in d['DealReleaseReference']:
-            deals_data[ref] = d['Deal'][0]
-        deals_data['R0'] = d['Deal'][1]
-
-    return deals_data
-
 def get_tack_data_from_db(conn, track_data_list):
     db_track_data = dict()
     sql_in = "('" + "','".join(track_data_list.keys()) + "')"
@@ -46,41 +13,11 @@ def get_tack_data_from_db(conn, track_data_list):
 
     return db_track_data
 
-def get_album_upc(release_data):
-    return release_data['R0']['ReleaseId']['ICPN']
-
-def get_album_dist(release_data):
-    pass
-
-def get_album_label(release_data):
-    return release_data['R0']['ReleaseLabelReference']['#text']
-
-def get_album_cmt(deal_data):
-    return deal_data['R0']['DealTerms']['CommercialModelType']
-
-def get_album_use_type(deal_data):
-    return deal_data['R0']['DealTerms']['UseType']
-
-def get_album_territory_code(deal_data):
-    return deal_data['R0']['DealTerms']['TerritoryCode']
-
-def get_album_start_date(deal_data):
-    return deal_data['R0']['DealTerms']['ValidityPeriod']['StartDateTime']
-
-def get_album_end_date(deal_data):
-    try:
-        return deal_data['R0']['DealTerms']['ValidityPeriod']['EndDateTime']
-    except Exception as e:
-        logging.error("Error, no se encontro edn date: " + str(e))
-        return None
-
 def get_data_from_db(db_pool, name_fields, talbe_name, where_field, in_values):
     sql_tpl = "SELECT {name_fields} FROM feed.{talbe_name} WHERE {where_field} IN ({in_values});"
     sql = sql_tpl.format(name_fields=name_fields, talbe_name=talbe_name, where_field=where_field, in_values=in_values)
     query_values = {}
     res = connections.execute_query(db_pool, sql, query_values)
-    if res is None:
-        print(2)
 
     data_return = []
     field_list = name_fields.split(',')
@@ -96,21 +33,21 @@ def get_data_from_db(db_pool, name_fields, talbe_name, where_field, in_values):
 def upsert_rel_track_artist_in_db(db_mongo, db_pool, json_dict, ddex_map):
     rows = list()
     release_list = xml_mapper.get_value_from_path(json_dict, ddex_map['ReleaseList'])
-    release_data = get_release_list_sort_by_release_reference(release_list)
+    release_data = xml_mapper.get_release_list_sort_by_release_reference(release_list)
 
     deal_list = xml_mapper.get_value_from_path(json_dict, ddex_map['DealList'])
-    deal_data = get_deal_list_sort_by_release_reference(deal_list)
+    deal_data = xml_mapper.get_deal_list_sort_by_release_reference(deal_list)
 
     party_list = xml_mapper.get_value_from_path(json_dict, ddex_map['PartyList'])
     party_data = xml_mapper.get_party_list(party_list)
 
-    album_upc = get_album_upc(release_data)
-    album_label = get_album_label(release_data)
-    album_cmt = get_album_cmt(deal_data)
-    album_use_type = get_album_use_type(deal_data)
-    territory_code = get_album_territory_code(deal_data)
-    start_date = get_album_start_date(deal_data)
-    end_date = get_album_end_date(deal_data)
+    album_upc = xml_mapper.get_album_upc(release_data)
+    album_label = xml_mapper.get_album_label(release_data)
+    album_cmt = xml_mapper.get_album_cmt(deal_data)
+    album_use_type = xml_mapper.get_album_use_type(deal_data)
+    territory_code = xml_mapper.get_album_territory_code(deal_data)
+    start_date = xml_mapper.get_album_start_date(deal_data)
+    end_date = xml_mapper.get_album_end_date(deal_data)
 
     album_data = get_data_from_db(
         db_pool, 'id_album, upc_album',"albums", "upc_album", album_upc
@@ -131,11 +68,6 @@ def upsert_rel_track_artist_in_db(db_mongo, db_pool, json_dict, ddex_map):
         db_pool, 'id_use_type, name_use_type',"use_types", "name_use_type", sql_in
     )
 
-    # [{' upc_album': '886443370340', 'id_album': 3}]
-    # [{' name_label': 'Epic/Legacy', 'id_label': 84}]
-    # [{' name_cmt': 'AdvertisementSupportedModel', 'id_cmt': 2}]
-    #[{' name_use_type': 'NonInteractiveStream', 'id_use_type': 2}, {' name_use_type': 'OnDemandStream', 'id_use_type': 3}]
-
     sql_in = []
     for lb in album_label_data:
         id_label = lb['id_label']
@@ -150,11 +82,6 @@ def upsert_rel_track_artist_in_db(db_mongo, db_pool, json_dict, ddex_map):
                 ]
                 sql_in.append("(" + ",".join([ "{}".format(x) for x in sql_tmp]) + ")")
 
-    print(0)
-
-    # sql = "insert into albums_tracks (id_album, id_track) values {} ON DUPLICATE KEY UPDATE " \
-    #        "audi_edited_album_track = CURRENT_TIMESTAMP;".format(",".join(sql_values))
-    #
     sql = " insert into albums_rights " \
            " (id_album, id_dist, id_label, id_cmt, id_use_type, cnty_ids_albright, start_date_albright, " \
            " end_date_albright) " \
@@ -162,11 +89,9 @@ def upsert_rel_track_artist_in_db(db_mongo, db_pool, json_dict, ddex_map):
            " ON DUPLICATE KEY UPDATE " \
            "audi_created_albright = CURRENT_TIMESTAMP;".format(','.join(sql_in))
 
+    connections.execute_query(db_pool, sql, {})
 
-
-    rows = connections.execute_query(db_pool, sql, {})
-
-    return rows
+    return True
 
 def upsert_rel_album_right(db_mongo, db_pool, json_dict, ddex_map):
     upsert_rel_track_artist_in_db(db_mongo, db_pool, json_dict, ddex_map)

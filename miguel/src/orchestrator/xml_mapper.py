@@ -191,3 +191,122 @@ def get_resource_list_data_by_resource_reference(resource_list):
 
 def get_dict_to_list_dict(dict_or_list):
     return [dict_or_list, ] if isinstance(dict_or_list, dict) else dict_or_list
+
+def get_album_upc(release_data):
+    return release_data['R0']['ReleaseId']['ICPN']
+
+def get_album_dist(release_data):
+    pass
+
+def get_album_label(release_data):
+    return release_data['R0']['ReleaseLabelReference']['#text']
+
+def get_album_cmt(deal_data):
+    return deal_data['R0']['DealTerms']['CommercialModelType']
+
+def get_album_use_type(deal_data):
+    return deal_data['R0']['DealTerms']['UseType']
+
+def get_album_territory_code(deal_data):
+    return deal_data['R0']['DealTerms']['TerritoryCode']
+
+def get_album_start_date(deal_data):
+    return deal_data['R0']['DealTerms']['ValidityPeriod']['StartDateTime']
+
+def get_album_end_date(deal_data):
+    try:
+        return deal_data['R0']['DealTerms']['ValidityPeriod']['EndDateTime']
+    except Exception as e:
+        #logging.error("Error, no se encontro edn date: " + str(e))
+        return None
+
+def get_data_from_db(db_pool, name_fields, talbe_name, where_field, in_values, execute=True):
+    sql_tpl = "SELECT {name_fields} FROM feed.{talbe_name} WHERE {where_field} IN ({in_values});"
+    sql = sql_tpl.format(name_fields=name_fields, talbe_name=talbe_name, where_field=where_field, in_values=in_values)
+    if execute:
+        query_values = {}
+        res = connections.execute_query(db_pool, sql, query_values)
+
+        data_return = []
+        field_list = name_fields.split(',')
+        if res:
+            for i in range(0, len(res)):
+                data_dict = dict()
+                for k in range(0, len(field_list)):
+                    data_dict[field_list[k]] = res[i][k]
+                data_return.append(data_dict)
+
+        return data_return
+    else:
+        return sql
+
+def get_release_list_sort_by_release_reference(release_list, key='Release'):
+    release_data = dict()
+
+    release_list = get_dict_to_list_dict(release_list[key])
+    for rel in release_list:
+        release_data[rel['ReleaseReference']] = rel
+
+    return release_data
+
+def get_deal_list_sort_by_release_reference(deal_list):
+    deals_data = dict()
+    # deal_list: {'ReleaseDeal': {'Deal': [{'DealTerms': {'CommercialModelType': 'SubscriptionModel',
+    #                                          'TerritoryCode': ['AG', 'AI', 'AW', 'BB', 'BM', 'BO', 'BQ', 'BR', 'BZ',
+    #                                                            'CL', 'CO', 'CR', 'CW', 'DM', 'DO', 'EC', 'ES', 'GD',
+    #                                                            'GF', 'GP', 'GY', 'HT', 'JM', 'KN', 'KY', 'LC', 'MQ',
+    #                                                            'MS', 'PA', 'PE', 'SR', 'SV', 'TC', 'TT', 'VC', 'VG',
+    #                                                            'VU', 'ZM'],
+    #                                          'UseType': ['ConditionalDownload', 'NonInteractiveStream',
+    #                                                      'OnDemandStream'],
+    #                                          'ValidityPeriod': {'StartDateTime': '2024-11-06T00:00:00'}}}, {
+    #                               'DealTerms': {'CommercialModelType': 'AdvertisementSupportedModel',
+    #                                             'TerritoryCode': ['AG', 'AI', 'AW', 'BB', 'BM', 'BO', 'BQ', 'BR', 'BZ',
+    #                                                               'CL', 'CO', 'CR', 'CW', 'DM', 'DO', 'EC', 'ES', 'GD',
+    #                                                               'GF', 'GP', 'GY', 'HT', 'JM', 'KN', 'KY', 'LC', 'MQ',
+    #                                                               'MS', 'PA', 'PE', 'SR', 'SV', 'TC', 'TT', 'VC', 'VG',
+    #                                                               'VU', 'ZM'],
+    #                                             'UseType': ['NonInteractiveStream', 'OnDemandStream'],
+    #                                             'ValidityPeriod': {'StartDateTime': '2024-11-06T00:00:00'}}}],
+    #                  'DealReleaseReference': 'R1'}}
+    release_deal_list = get_dict_to_list_dict(deal_list['ReleaseDeal'])
+    # selease_deal_list: [{'Deal': [{'DealTerms': {'CommercialModelType': 'SubscriptionModel',
+    #                           'TerritoryCode': ['AG', 'AI', 'AW', 'BB', 'BM', 'BO', 'BQ', 'BR', 'BZ', 'CL', 'CO', 'CR',
+    #                                             'CW', 'DM', 'DO', 'EC', 'ES', 'GD', 'GF', 'GP', 'GY', 'HT', 'JM', 'KN',
+    #                                             'KY', 'LC', 'MQ', 'MS', 'PA', 'PE', 'SR', 'SV', 'TC', 'TT', 'VC', 'VG',
+    #                                             'VU', 'ZM'],
+    #                           'UseType': ['ConditionalDownload', 'NonInteractiveStream', 'OnDemandStream'],
+    #                           'ValidityPeriod': {'StartDateTime': '2024-11-06T00:00:00'}}}, {
+    #                'DealTerms': {'CommercialModelType': 'AdvertisementSupportedModel',
+    #                              'TerritoryCode': ['AG', 'AI', 'AW', 'BB', 'BM', 'BO', 'BQ', 'BR', 'BZ', 'CL', 'CO',
+    #                                                'CR', 'CW', 'DM', 'DO', 'EC', 'ES', 'GD', 'GF', 'GP', 'GY', 'HT',
+    #                                                'JM', 'KN', 'KY', 'LC', 'MQ', 'MS', 'PA', 'PE', 'SR', 'SV', 'TC',
+    #                                                'TT', 'VC', 'VG', 'VU', 'ZM'],
+    #                              'UseType': ['NonInteractiveStream', 'OnDemandStream'],
+    #                              'ValidityPeriod': {'StartDateTime': '2024-11-06T00:00:00'}}}],
+    #   'DealReleaseReference': 'R1'}]
+    for d in release_deal_list:
+        data = d['DealReleaseReference']
+        if not isinstance(d['DealReleaseReference'], list):
+            data = [d['DealReleaseReference'], ]
+        for ref in data:
+            deals_data[ref] = d['Deal'][0]
+        deals_data['R0'] = d['Deal'][1]
+
+    return deals_data
+
+def get_value_by_key_from_dict_inverted(data, key):
+    return {v:k for k, v in data.items()}.get(key)
+
+def get_party_liat_for_ref(party_list):
+    names = dict()
+    value = None
+    for party in party_list:
+        key = party['PartyReference']
+        if isinstance(party['PartyName'], list):
+            value = party['PartyName'][0]['FullName']
+
+        else:
+            value = party['PartyName']['FullName']
+        names[key] = value
+    return names
