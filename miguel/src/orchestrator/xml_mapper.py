@@ -315,8 +315,27 @@ def get_party_liat_for_ref(party_list):
     return names
 
 
-def safe_parse(s):
-    return json.loads(s.replace("(", "[").replace(")", "]").replace("'", '\"'))
+def     safe_parse(s):
+    final = []
+    try:
+        step1 = s.replace('true', 'True')
+        step2 = list(eval(step1)) # s.replace("(", '').replace(')', '')
+
+        for st in step2:
+            final.append(st)
+            # if isinstance(st, str):
+            #     if st == '1':
+            #         final.append(True)
+            #     else:
+            #         final.append(st)
+            # else:
+            #     final.append(st)
+
+    except Exception as e:
+        logging.error("Error en safe_parse(), string origial: {} Exception: {}".format(s, e))
+        final = []
+
+    return final
 
 
 def merge_fields_name_with_values_tuple(fields, where_conditions):
@@ -327,14 +346,14 @@ def merge_fields_name_with_values_tuple(fields, where_conditions):
             field = fields[i]
             value = tup[i]
             if isinstance(value, str):
-                val = "{}='{}'".format(field, value)
+                val = "{}='{}'".format(field, value.replace('"', '').replace("'", ""))
             else:
                 val = "{}={}".format(field, value)
 
             if val not in where:
                 where.append(val)
-
-    return list(set(where))
+    where = list(set(where))
+    return where
 
 
 def get_select_of_last_updated_insert_fields(fields, table_name, where_conditions):
@@ -344,7 +363,7 @@ def get_select_of_last_updated_insert_fields(fields, table_name, where_condition
     )
 
     sql = " SELECT {} FROM feed.{} WHERE {};" \
-        .format("*", "labels", " and ".join(sql_where))
+        .format("*", table_name, " and ".join(sql_where))
     # .format(",".join(("name_label", "active_label")), "labels", " and ".join(sql_where))
 
     return sql
