@@ -1,3 +1,4 @@
+import json
 import logging
 from sqlalchemy import text
 import connections
@@ -72,7 +73,6 @@ def test_methods(db_mongo, db_pool, json_dict, ddex_map):
     upsert_label(db_mongo, db_pool, json_dict, ddex_map)
 
 def upsert_label(db_mongo, db_pool, json_dict, ddex_map):
-
     try:
         label_from_xml = get_label_and_release_from_xml(json_dict, ddex_map)
         logging.info("Se cargaron los datos del xml")
@@ -82,14 +82,23 @@ def upsert_label(db_mongo, db_pool, json_dict, ddex_map):
             values.append("('{name}', true)". format(name=label))
         logging.info("Se crearon las tuplas para insertar en la bbdd")
 
-        sql  = text(
-            """INSERT INTO feed.labels (name_label, active_label) VALUES """ + ",".join(values) +
-            """ON DUPLICATE KEY UPDATE active_label = 1, audi_edited_label = CURRENT_TIMESTAMP""")
+        sql  = """INSERT INTO feed.labels (name_label, active_label) VALUES """ + ",".join(values) + \
+               """ON DUPLICATE KEY UPDATE active_label = 1, audi_edited_label = CURRENT_TIMESTAMP"""
         logging.info("Se creo la consulta upsert en mysql: {}".format(sql))
 
         query_values = {}
         connections.execute_query(db_pool, sql, query_values)
         logging.info("Se ejecutó la consulta upsert en mysql")
+
+        # upsert en mongo
+        sql_select = xml_mapper.get_select_of_last_updated_insert_fields(
+            ("name_label", "active_label"), "labels", values
+        )
+        query_values = {}
+        rows = connections.execute_query(db_pool, sql_select, query_values)
+        result = xml_mapper.update_in_mongo_db2(db_mongo, rows, 'labels',)
+
+
         return True
     except KeyError as e:
         logging.info(f"Error al insertar los datos (labels) en mysql: {e}")

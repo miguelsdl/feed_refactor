@@ -284,18 +284,21 @@ def get_mongo_client(database_name, retry_attempts=3, retry_delay=5):
             password = credenciales_bd['db_password']
             
             # Formatear la URL de conexión
-            uri = f'mongodb://{user}:{password}@{host}'
+            uri = f'mongodb://{user}:{password}@{host}/'
         
-            # Crear el cliente de MongoDB con configuración de pool y certificado TLS
-            client = pymongo.MongoClient(
-                uri,
-                retryWrites=False,  # Deshabilita los reintentos de escritura
-                tlsCAFile=certifi.where(),  # Verificación de certificado TLS
-                maxPoolSize=200,   # Tamaño máximo del pool de conexiones
-                minPoolSize=10,    # Tamaño mínimo del pool de conexiones
-                maxIdleTimeMS=30000  # Tiempo máximo de inactividad
-            )
 
+            client = pymongo.MongoClient(uri)
+
+            # Crear el cliente de MongoDB con configuración de pool y certificado TLS
+            # client = pymongo.MongoClient(
+            #     uri,
+            #     retryWrites=False,  # Deshabilita los reintentos de escritura
+            #     tlsCAFile=certifi.where(),  # Verificación de certificado TLS
+            #     maxPoolSize=200,   # Tamaño máximo del pool de conexiones
+            #     minPoolSize=10,    # Tamaño mínimo del pool de conexiones
+            #     maxIdleTimeMS=30000  # Tiempo máximo de inactividad
+            # )
+            #
             # Obtener la base de datos
             db = client[database]
             

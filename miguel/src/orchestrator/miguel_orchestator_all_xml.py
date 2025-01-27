@@ -27,8 +27,7 @@ import xml_rel_track_contributor
 
 # Conectar a MySQL
 db_pool = connections.get_db_connection_pool('feed_mysql')
-db_mongo = None
-
+db_mongo = connections.get_mongo_client('deliveries')
 # Leer el contenido del archivo
 file_path = '/home/miguel/PycharmProjects/feed_refactor/miguel/src/xml/N_A10301A0004825862V_20241023105315486/A10301A0004825862V.xml'
 all_files = [file_path, ]
@@ -133,8 +132,8 @@ for f in all_files:
 
         # print(datetime.datetime.now())
         xml_rel_track_contributor.upsert_track_contributor(db_mongo, db_pool, json_dict, ddex_map)
-        # print(" Archivo: ", i, " procesado, path: ", file_path)
-        # i += 1
+        print(" Archivo: ", i, " procesado, path: ", file_path)
+        i += 1
     except Exception as error:
         print(file_path)
         raise error

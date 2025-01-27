@@ -49,8 +49,12 @@ def upsert_commercial_use_type_in_db(db_mongo, db_pool, json_dict, ddex_map):
         logging.info("Se creo la consulta upsert en mysql: {}".format(sql))
 
         query_values = {}
-        connections.execute_query(db_pool, sql, query_values)
+        rows = connections.execute_query(db_pool, sql, query_values)
         logging.info("Se ejecutó la consulta upsert en mysql")
+
+        search_filter = {'': ""}
+        result = xml_mapper.update_in_mongo_db2(db_mongo, rows, 'labels')
+
         return True
     except KeyError as e:
         logging.info(f"Error al insertar los datos (genres) en mysql: {e}")

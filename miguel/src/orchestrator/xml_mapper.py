@@ -1,7 +1,10 @@
+from bson import json_util
+import json
 import logging
 import re
 from datetime import datetime, timedelta
 import connections
+from pymongo import UpdateOne, ReplaceOne
 
 
 # Funciones Auxiliares
@@ -310,3 +313,64 @@ def get_party_liat_for_ref(party_list):
             value = party['PartyName']['FullName']
         names[key] = value
     return names
+
+
+def safe_parse(s):
+    return json.loads(s.replace("(", "[").replace(")", "]").replace("'", '\"'))
+
+
+def merge_fields_name_with_values_tuple(fields, where_conditions):
+    where = []
+    for k in where_conditions:
+        tup = safe_parse(k)
+        for i in range(0, len(tup)):
+            field = fields[i]
+            value = tup[i]
+            if isinstance(value, str):
+                val = "{}='{}'".format(field, value)
+            else:
+                val = "{}={}".format(field, value)
+
+            if val not in where:
+                where.append(val)
+
+    return list(set(where))
+
+
+def get_select_of_last_updated_insert_fields(fields, table_name, where_conditions):
+    sql_where = merge_fields_name_with_values_tuple(
+        fields,
+        where_conditions
+    )
+
+    sql = " SELECT {} FROM feed.{} WHERE {};" \
+        .format("*", "labels", " and ".join(sql_where))
+    # .format(",".join(("name_label", "active_label")), "labels", " and ".join(sql_where))
+
+    return sql
+
+def update_in_mongo_db2(db_mongo, rows, table_name):
+
+    if rows:
+        upsert_list = []
+        for row in rows:
+            legacy_rows_to_list = dict()
+            r = list(row)
+            legacy_rows_to_list["_id"] = r[0]
+            legacy_rows_to_list["values"] = json.dumps(r, default=json_util.default)
+            search_filter = {'_id': r[0]}
+
+            # Ejecutar la operación upsert (actualiza si existe, inserta si no)
+            result = db_mongo[table_name].replace_one(
+                search_filter,  # Filtro: busca el documento con el mismo id_artist
+                legacy_rows_to_list,  # Reemplaza todo el documento
+                upsert=True  # Si no existe el documento, lo inserta
+            )
+        #     upsert_list.append(ReplaceOne(
+        #         search_filter,
+        #         {"values": r}
+        #         ))
+        # result = db_mongo['{}'.format(table_name)].bulk_write(upsert_list)
+        logging.error("upsert en mongo")
+
+    return True

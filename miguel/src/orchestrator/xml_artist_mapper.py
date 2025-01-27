@@ -245,9 +245,16 @@ def upsert_artist_in_db(db_pool, artist_from_xml, album):
             'update_id_message': 0
         }
 
-        connections.execute_query(db_pool, upsert_query, query_values)
+        rows = connections.execute_query(db_pool, upsert_query, query_values)
         ##########################################################################################################################################################
-
+        # sql_select = xml_mapper.get_select_of_last_updated_insert_fields(
+        #     ("id_album", "id_artist"), "artists", query_values
+        # )
+        # query_values = {}
+        # rows = connections.execute_query(db_pool, sql_select, query_values)
+        #
+        # search_filter = {'': ""}
+        # result = xml_mapper.update_in_mongo_db2(rows, 'labels', search_filter)
 
         return artist_upserted
 
