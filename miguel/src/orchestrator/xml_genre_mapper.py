@@ -64,14 +64,14 @@ def upsert_genre_in_db(db_mongo, db_pool, json_dict, ddex_map, update_id_message
         ]
         result = xml_mapper.update_in_mongo_db2(db_mongo, rows, 'genres', structure=structure)
 
-        # # upsert en mongo
-        # sql_select = xml_mapper.get_select_of_last_updated_insert_fields(
-        #     ("name_genre", "active_genre"), "genres", values
-        # )
-        # query_values = {}
-        # rows = connections.execute_query(db_pool, sql_select, query_values)
-        # result = xml_mapper.update_in_mongo_db2(db_mongo, rows, 'genres',)
-        # return rows
+        # upsert en mongo
+        sql_select = xml_mapper.get_select_of_last_updated_insert_fields(
+            ("name_genre", "active_genre"), "genres", values
+        )
+        query_values = {}
+        rows = connections.execute_query(db_pool, sql_select, query_values)
+        result = xml_mapper.update_in_mongo_db2(db_mongo, rows, 'genres',)
+        return rows
 
     except KeyError as e:
         logging.info(f"Error al insertar los datos (genres) en mysql: {e}")

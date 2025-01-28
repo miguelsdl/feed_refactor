@@ -43,7 +43,7 @@ def upsert_rel_album_track_in_db(db_mongo, db_pool, json_dict, ddex_map, update_
             )
         )
 
-    sql = "insert into albums_artists (id_album, id_artist, artist_role_album_artist, active_album_artist, insert_id_message) " \
+    sql = "insert into feed.albums_artists (id_album, id_artist, artist_role_album_artist, active_album_artist, insert_id_message) " \
           "values {} ON DUPLICATE KEY UPDATE active_album_artist = 1,"\
           "audi_edited_album_artist = CURRENT_TIMESTAMP, update_id_message={};"\
           .format(",".join(values), update_id_message)

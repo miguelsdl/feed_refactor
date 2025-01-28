@@ -53,10 +53,16 @@ def get_track_data_joined_by_ref(track_list_by_ref, resource_list_by_ref):
     for track_data in track_list_by_ref:
         resource_data = resource_list_by_ref[track_data]
 
+        try:
+            version_track = xml_mapper.get_dict_by_language_code_in_list(resource_data['DisplayTitle'])['SubTitle']["#text"]
+        except Exception as e:
+            version_track = ''
+            logging.error("Error, no hay subtitulo en el xml: " + str(e))
+
         track_data_for_insert.append({
             "name_track": xml_mapper.get_dict_by_language_code_in_list(resource_data['DisplayTitle'])['TitleText'],
             "isrc_track": resource_data['SoundRecordingEdition']['ResourceId']['ISRC'],
-            "version_track": "no hay en el xml un subtitulo",
+            "version_track": version_track,
             "length_track": parse_time_string(resource_data['Duration']),
             "explicit_track": 1 if 'explicit' in resource_data['ParentalWarningType'] else 0,
             "active_track": 1,

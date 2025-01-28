@@ -60,11 +60,18 @@ def upsert_use_track_contributor_db(db_mongo, db_pool, json_dict, ddex_map, upda
                         if isinstance(r, str):
                             roles[key][v['ContributorPartyReference']].add(r)
                         elif isinstance(r, dict):
-                            roles[key][v['ContributorPartyReference']].add(r['#text'])
+                            if r['#text'] == 'UserDefined':
+                                roles[key][v['ContributorPartyReference']].add(r['@UserDefinedValue'])
+                            else:
+                                roles[key][v['ContributorPartyReference']].add(r['#text'])
                         elif isinstance(r, list):
                             raise 1
                 if isinstance(rol, dict):
-                    roles[key][v['ContributorPartyReference']].add(rol['#text'])
+                    if rol['#text'] == 'UserDefined':
+                        roles[key][v['ContributorPartyReference']].add(rol['@UserDefinedValue'])
+                    else:
+                        roles[key][v['ContributorPartyReference']].add(rol['#text'])
+
                 roles[key][v['ContributorPartyReference']] = ",".join(roles[key][v['ContributorPartyReference']])
 
         if isinstance(val['contributors'], dict):

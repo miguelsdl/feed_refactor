@@ -89,6 +89,7 @@ for f in all_files:
             ddex_map = yaml.safe_load(config_file)
         update_id_message = random.randint(1, 9999)
         insert_id_message = random.randint(1, 9999)
+        id_dist = random.randint(1, 9999)
         # print(datetime.datetime.now())
         upserted_album = xml_album_mapper.upsert_album(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message)
 
@@ -126,7 +127,7 @@ for f in all_files:
         xml_rel_albums_rights_mapper.upsert_rel_album_right(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message)
 
         # print(datetime.datetime.now())
-        xml_rel_albums_tracks_rights_mapper.upsert_rel_album_track_right(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message)
+        xml_rel_albums_tracks_rights_mapper.upsert_rel_album_track_right(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message, id_dist)
 
         # print(datetime.datetime.now())
         xml_rel_track_artist_mapper.upsert_rel_track_artist_in_db(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message)
