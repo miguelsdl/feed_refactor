@@ -16,7 +16,7 @@ def get_artist_id_from_db(conn, artist_name):
 
     return artist_data
 
-def upsert_rel_album_track_in_db(db_mongo, db_pool, json_dict, ddex_map):
+def upsert_rel_album_track_in_db(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message):
     rows = list()
     release_list = xml_mapper.get_value_from_path(json_dict, ddex_map['ReleaseList'])
     album_data = xml_mapper.get_album_data(release_list)
@@ -35,22 +35,23 @@ def upsert_rel_album_track_in_db(db_mongo, db_pool, json_dict, ddex_map):
     for a in artist:
         rol = album_data["artist"][artist_name[a['name_artist']]]['DisplayArtistRole']
         values.append(
-            '("{id_album}", {id_artist}, "{artist_role_album_artist}", 1)'.format(
+            '("{id_album}", {id_artist}, "{artist_role_album_artist}", 1, {insert_id_message})'.format(
                 id_album=album['album_id'],
                 id_artist=a['artist_id'],
                 artist_role_album_artist=rol,
+                insert_id_message=insert_id_message
             )
         )
 
-    sql = "insert into albums_artists (id_album, id_artist, artist_role_album_artist, active_album_artist) " \
+    sql = "insert into albums_artists (id_album, id_artist, artist_role_album_artist, active_album_artist, insert_id_message) " \
           "values {} ON DUPLICATE KEY UPDATE active_album_artist = 1,"\
-          "audi_edited_album_artist = CURRENT_TIMESTAMP;"\
-          .format(",".join(values))
+          "audi_edited_album_artist = CURRENT_TIMESTAMP, update_id_message={};"\
+          .format(",".join(values), update_id_message)
     rows = connections.execute_query(db_pool, sql, {})
 
     return rows
 
-def upsert_rel_album_track(db_mongo, db_pool, json_dict, ddex_map):
-    upsert_rel_album_track_in_db(db_mongo, db_pool, json_dict, ddex_map)
+def upsert_rel_album_track(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message):
+    upsert_rel_album_track_in_db(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message)
 
 

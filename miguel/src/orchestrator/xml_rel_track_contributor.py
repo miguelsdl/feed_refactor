@@ -5,7 +5,7 @@ import xml_mapper
 
 
 
-def upsert_use_track_contributor_db(db_mongo, db_pool, json_dict, ddex_map):
+def upsert_use_track_contributor_db(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message):
     sound_recording_map = dict()
     sound_recording = xml_mapper.get_value_from_path(json_dict, ddex_map['SoundRecording'])
     if not isinstance(sound_recording, list):
@@ -95,20 +95,20 @@ def upsert_use_track_contributor_db(db_mongo, db_pool, json_dict, ddex_map):
         if key in ref_contr_name:
             cref = party_list_ref_inverted[ref_contr_name[key]]
             role_name = roles[key][cref] if cref in roles[key] else list(roles[key]).pop()
-            sql_tmp = [val['id_track'], ref_contr_id[key], "'{}'".format(role_name), ]
+            sql_tmp = [val['id_track'], ref_contr_id[key], "'{}'".format(role_name), insert_id_message]
             sql_in.append("(" + ",".join([ "{}".format(x) for x in sql_tmp]) + ")")
         else:
             logging.error("KeyError:{} no se encuentra en ref_contr_name".format(key))
     if len(sql_in) > 0:
-        sql = "insert into tracks_contributors (id_track, id_contri, contributor_role_track_contri) values {} " \
-               "ON DUPLICATE KEY UPDATE audi_edited_track_contri = CURRENT_TIMESTAMP;".format(','.join(sql_in))
+        sql = "insert into tracks_contributors (id_track, id_contri, contributor_role_track_contri, insert_id_message) values {} " \
+               "ON DUPLICATE KEY UPDATE audi_edited_track_contri = CURRENT_TIMESTAMP, update_id_message={};".format(','.join(sql_in), update_id_message)
         res = connections.execute_query(db_pool, sql, {})
     else:
         logging.error("ERROR, posiblemente porque no hay Contributors, no se ejecuto la cquery {}".format(sql))
 
 
 
-def upsert_track_contributor(db_mongo, db_pool, json_dict, ddex_map):
-    upsert_use_track_contributor_db(db_mongo, db_pool, json_dict, ddex_map)
+def upsert_track_contributor(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message):
+    upsert_use_track_contributor_db(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message)
 
 

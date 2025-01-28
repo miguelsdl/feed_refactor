@@ -40,18 +40,13 @@ def get_recording_list(recording_list):
     return resource_list_by_ref
 
 
-def parse_time_string(time_str):
-    # Parse the input string
-    time_str = time_str[2:]
-    parts = time_str.split('H')[0].split('M')[0].split('S')
-    hours = int(parts[0]) if len(parts) > 0 else 0
-    minutes = int(parts[1]) if len(parts) > 1 else 0
-    seconds = int(parts[2]) if len(parts) > 2 else 0
-
-    # Create a time object
-    dt = datetime.time(hours, minutes, seconds)
-
-    return dt
+def parse_time_string(s):
+    s = s.replace('PT','')
+    h = s.split("H")[0]
+    m = s.split("H")[1].split("M")[0]
+    s = s.split("H")[1].split("M")[1].split("S")[0]
+    s_time = datetime.time(hour=int(h), minute=int(m), second=int(s))
+    return s_time
 
 def get_track_data_joined_by_ref(track_list_by_ref, resource_list_by_ref):
     track_data_for_insert = list()
@@ -71,7 +66,7 @@ def get_track_data_joined_by_ref(track_list_by_ref, resource_list_by_ref):
 
     return track_data_for_insert
 
-def upsert_track_in_db(db_mongo, db_pool, json_dict, ddex_map):
+def upsert_track_in_db(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message):
     import pymysql
     release_list = xml_mapper.get_value_from_path(json_dict, ddex_map['ReleaseList'])
     track_list = get_track_list(release_list)
@@ -95,6 +90,8 @@ def upsert_track_in_db(db_mongo, db_pool, json_dict, ddex_map):
                 explicit_track=track_data['explicit_track'],
                 active_track=track_data['active_track'],
                 specific_data_track=track_data['specific_data_track'],
+                insert_id_message=insert_id_message,
+                update_id_message=update_id_message,
 
             )
         )
@@ -105,7 +102,7 @@ def upsert_track_in_db(db_mongo, db_pool, json_dict, ddex_map):
             "ON DUPLICATE KEY UPDATE "
             "name_track = name_track, version_track = version_track, length_track = length_track, "
             "explicit_track = explicit_track, active_track = 1, specific_data_track = specific_data_track, "
-            "audi_edited_track = CURRENT_TIMESTAMP").format(",".join(keys), ",".join(values))
+            "audi_edited_track = CURRENT_TIMESTAMP, update_id_message={}").format(",".join(keys), ",".join(values), update_id_message)
 
 
     logging.info("Se creo la consulta upsert en mysql: {}".format(sql))
@@ -113,9 +110,24 @@ def upsert_track_in_db(db_mongo, db_pool, json_dict, ddex_map):
     query_values = {}
     rows = connections.execute_query(db_pool, sql, query_values)
     logging.info("Se ejecutó la consulta upsert en mysql")
+
+    # upsert en mongo
+    # sql_select = xml_mapper.get_select_of_last_updated_insert_fields(
+    #     ("name_track",), "tracks", values
+    # )
+    # rows = connections.execute_query(db_pool, sql_select, {})
+    #
+    # # Estos son los nombres de los campos de la tabla label de la base
+    # # en mysql y hay que pasarlo al siquiente método.
+    # structure = [
+    #     "id_track", "isrc_track", "name_track", "version_track", "length_track", "explicit_track", "active_track",
+    #     "specific_data_track", "audi_edited_track", "audi_created_track", "update_id_message", "insert_id_message",
+    # ]
+    # result = xml_mapper.update_in_mongo_db2(db_mongo, rows, 'tracks', structure=structure)
+
     return rows
 
-def upsert_tracks(db_mongo, db_pool, json_dict, ddex_map):
-    upsert_track_in_db(db_mongo, db_pool, json_dict, ddex_map)
+def upsert_tracks(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message):
+    upsert_track_in_db(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message)
 
 

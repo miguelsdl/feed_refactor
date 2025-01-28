@@ -315,10 +315,10 @@ def get_party_liat_for_ref(party_list):
     return names
 
 
-def     safe_parse(s):
+def safe_parse(s):
     final = []
     try:
-        step1 = s.replace('true', 'True')
+        step1 = s.replace('true', 'True').replace('null', " 'IS NULL' ").replace('JSON_OBJECT', '')
         step2 = list(eval(step1)) # s.replace("(", '').replace(')', '')
 
         for st in step2:
@@ -341,8 +341,11 @@ def     safe_parse(s):
 def merge_fields_name_with_values_tuple(fields, where_conditions):
     where = []
     for k in where_conditions:
+        if "USSM19805796" in k:
+            print(2)
         tup = safe_parse(k)
-        for i in range(0, len(tup)):
+        condition_by_tup = list()
+        for i in range(0, len(fields)):
             field = fields[i]
             value = tup[i]
             if isinstance(value, str):
@@ -351,8 +354,11 @@ def merge_fields_name_with_values_tuple(fields, where_conditions):
                 val = "{}={}".format(field, value)
 
             if val not in where:
-                where.append(val)
-    where = list(set(where))
+                condition_by_tup.append(val)
+        condition = list(set(condition_by_tup))
+
+        if len(condition) > 0:
+            where.append(" AND ".join(condition))
     return where
 
 
@@ -363,12 +369,18 @@ def get_select_of_last_updated_insert_fields(fields, table_name, where_condition
     )
 
     sql = " SELECT {} FROM feed.{} WHERE {};" \
-        .format("*", table_name, " and ".join(sql_where))
+        .format("*", table_name, " OR ".join(sql_where))
+    is_or = sql[len(sql)-6:]
+    if is_or ==" OR ;":
+        sql = sql.replace(is_or, "")
+
+
+
     # .format(",".join(("name_label", "active_label")), "labels", " and ".join(sql_where))
 
     return sql
 
-def update_in_mongo_db2(db_mongo, rows, table_name):
+def update_in_mongo_db2(db_mongo, rows, table_name, structure):
 
     if rows:
         upsert_list = []
@@ -376,8 +388,12 @@ def update_in_mongo_db2(db_mongo, rows, table_name):
             legacy_rows_to_list = dict()
             r = list(row)
             legacy_rows_to_list["_id"] = r[0]
-            legacy_rows_to_list["values"] = json.dumps(r, default=json_util.default)
+            # legacy_rows_to_list["values"] = json.dumps(r, default=json_util.default)
             search_filter = {'_id': r[0]}
+            # "_id": r[0],
+
+            for i in range(0, len(structure)):
+                legacy_rows_to_list[structure[i]] = r[i]
 
             # Ejecutar la operación upsert (actualiza si existe, inserta si no)
             result = db_mongo[table_name].replace_one(
@@ -393,3 +409,13 @@ def update_in_mongo_db2(db_mongo, rows, table_name):
         logging.error("upsert en mongo")
 
     return True
+
+# label_mongodb_structure = {
+#     "id_label": None,
+#     "name_label": '',
+#     "active_label": False,
+#     "audi_edited_label": '',
+#     "audi_created_label": '',
+#     "update_id_message": '',
+#     "insert_id_message": ''
+# }

@@ -31,7 +31,7 @@ def get_tack_data_from_db(conn, track_data_list):
 
     return db_track_data
 
-def upsert_rel_album_track_in_db(db_mongo, db_pool, json_dict, ddex_map):
+def upsert_rel_album_track_in_db(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message):
     rows = list()
     track_release = xml_mapper.get_value_from_path(json_dict, ddex_map['TrackRelease'])
     track_data = get_tack_data(track_release)
@@ -43,15 +43,15 @@ def upsert_rel_album_track_in_db(db_mongo, db_pool, json_dict, ddex_map):
 
     sql_values = list()
     for t in tracks:
-        sql_values.append('({}, {})'.format(album['album_id'], tracks[t]))
+        sql_values.append('({}, {}, {})'.format(album['album_id'], tracks[t], insert_id_message))
 
-    sql = "insert into albums_tracks (id_album, id_track) values {} ON DUPLICATE KEY UPDATE " \
-           "audi_edited_album_track = CURRENT_TIMESTAMP;".format(",".join(sql_values))
+    sql = "insert into albums_tracks (id_album, id_track, insert_id_message) values {} ON DUPLICATE KEY UPDATE " \
+           "audi_edited_album_track = CURRENT_TIMESTAMP, update_id_message={};".format(",".join(sql_values), update_id_message)
     rows = connections.execute_query(db_pool, sql, {})
 
     return rows
 
-def upsert_rel_album_track(db_mongo, db_pool, json_dict, ddex_map):
-    upsert_rel_album_track_in_db(db_mongo, db_pool, json_dict, ddex_map)
+def upsert_rel_album_track(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message):
+    upsert_rel_album_track_in_db(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message)
 
 

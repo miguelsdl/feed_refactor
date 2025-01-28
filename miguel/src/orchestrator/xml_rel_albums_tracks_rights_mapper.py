@@ -99,7 +99,7 @@ def get_id_album_track(db_pool, id_album, id_track):
 def get_track_territory_code(deal_data):
     return deal_data['R0']['DealTerms']['TerritoryCode']
 
-def upsert_rel_album_track_right_in_db(db_mongo, db_pool, json_dict, ddex_map):
+def upsert_rel_album_track_right_in_db(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message):
     data_from_xml = get_data_from_xml(json_dict, ddex_map)
     album_upc = xml_mapper.get_album_upc( data_from_xml['album_data'])
     track_isrc = get_track_isrc( data_from_xml['track_list_data'])
@@ -172,14 +172,15 @@ def upsert_rel_album_track_right_in_db(db_mongo, db_pool, json_dict, ddex_map):
         sql_tmp = [
             id_album_track, 1, id_label, id_cmt, id_use_type,
             "'{}'".format(start_date) ,
-            "'{}'".format(end_date) if end_date is not None else "null"
+            "'{}'".format(end_date) if end_date is not None else "null",
+            insert_id_message
         ]
         sql_in.append("(" + ",".join([ "{}".format(x) for x in sql_tmp]) + ")")
     try:
         sql = "insert into albums_tracks_rights(id_album_track, id_dist, id_label, id_cmt, id_use_type, start_date_albtraright, end_date_albtraright)" \
                "values {}" \
                " ON DUPLICATE KEY UPDATE " \
-               "audi_edited_albtraright = CURRENT_TIMESTAMP;".format(','.join(sql_in))
+               "audi_edited_albtraright = CURRENT_TIMESTAMP, update_id_message={}};".format(','.join(sql_in), update_id_message)
 
 
         connections.execute_query(db_pool, sql, {})
@@ -187,8 +188,8 @@ def upsert_rel_album_track_right_in_db(db_mongo, db_pool, json_dict, ddex_map):
         print(1)
     return True
 
-def upsert_rel_album_track_right(db_mongo, db_pool, json_dict, ddex_map):
-    upsert_rel_album_track_right_in_db(db_mongo, db_pool, json_dict, ddex_map)
+def upsert_rel_album_track_right(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message):
+    upsert_rel_album_track_right_in_db(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message)
 
 
 a= '/home/miguel/PycharmProjects/feed_refactor/miguel/src/xml/N_A10301A0003140208H_20241023105318508/A10301A0003140208H.xml'

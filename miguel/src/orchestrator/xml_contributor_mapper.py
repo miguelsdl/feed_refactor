@@ -51,7 +51,7 @@ def get_party_and_contributors_data_joined(contributor_list_by_ref, artist_list_
 
     return contributor_data_for_insert
 
-def upsert_contributors_in_db(db_mongo, db_pool, json_dict, ddex_map):
+def upsert_contributors_in_db(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message):
     resource_list = xml_mapper.get_value_from_path(json_dict, ddex_map['ResourceList'])
     contributor_list_by_ref = get_contributor_list(resource_list)
 
@@ -63,13 +63,15 @@ def upsert_contributors_in_db(db_mongo, db_pool, json_dict, ddex_map):
         contri_data_for_insert = get_party_and_contributors_data_joined(contributor_list_by_ref, artist_list_by_ref)
         logging.info("Se cargaron los datos del xml")
 
-        keys = contri_data_for_insert[0].keys()
+        keys = list(contri_data_for_insert[0].keys())
+        keys.append('insert_id_message')
         values = list()
         for contri_data in contri_data_for_insert:
             values.append(
-                '("{name_contri}", "{active_contri}")'.format(
+                '("{name_contri}", "{active_contri}", {insert_id_message})'.format(
                     name_contri=contri_data['name_contri'].replace('"', '\\"'),
                     active_contri=contri_data['active_contri'],
+                    insert_id_message=insert_id_message
                 )
             )
 
@@ -79,7 +81,7 @@ def upsert_contributors_in_db(db_mongo, db_pool, json_dict, ddex_map):
             """INSERT INTO feed.contributors ({}) VALUES """.format(",".join(keys))
             + ",".join(values)
             + """ ON DUPLICATE KEY UPDATE name_contri = name_contri, active_contri = 1,
-                    audi_edited_contri = CURRENT_TIMESTAMP"""
+                    audi_edited_contri = CURRENT_TIMESTAMP, update_id_message={}""".format(update_id_message)
         )
 
         logging.info("Se creo la consulta upsert en mysql: {}".format(sql))
@@ -87,20 +89,32 @@ def upsert_contributors_in_db(db_mongo, db_pool, json_dict, ddex_map):
         query_values = {}
         rows = connections.execute_query(db_pool, sql, query_values)
         logging.info("Se ejecutó la consulta upsert en mysql")
-
-
         # upsert en mongo
         sql_select = xml_mapper.get_select_of_last_updated_insert_fields(
-            list(keys), "contributors", values
+            ("name_contri",), "contributors", values
         )
-        query_values = {}
-        rows = connections.execute_query(db_pool, sql_select, query_values)
-        result = xml_mapper.update_in_mongo_db2(db_mongo, rows, 'contributors',)
+        rows = connections.execute_query(db_pool, sql_select, {})
+
+        # Estos son los nombres de los campos de la tabla label de la base
+        # en mysql y hay que pasarlo al siquiente método.
+        structure = [
+            "id_contri", "name_contri", "active_contri", "audi_edited_contri", "audi_created_contri",
+            "update_id_message", "insert_id_message"
+        ]
+        result = xml_mapper.update_in_mongo_db2(db_mongo, rows, 'contributors', structure=structure)
+
+        # upsert en mongo
+        # sql_select = xml_mapper.get_select_of_last_updated_insert_fields(
+        #     list(keys), "contributors", values
+        # )
+        # query_values = {}
+        # rows = connections.execute_query(db_pool, sql_select, query_values)
+        # result = xml_mapper.update_in_mongo_db2(db_mongo, rows, 'contributors',)
         return rows
     else:
         return None
 
-def upsert_contributors(db_mongo, db_pool, json_dict, ddex_map):
-    upsert_contributors_in_db(db_mongo, db_pool, json_dict, ddex_map)
+def upsert_contributors(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message):
+    upsert_contributors_in_db(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message)
 
 

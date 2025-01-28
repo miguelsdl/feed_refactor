@@ -163,7 +163,7 @@ def get_album_artist_from_db(db_pool, id_album, id_artist, artist_role_album_art
 # Inserción y actualización en MySQL
 ########################################################################################################################
 
-def upsert_artist_in_db(db_pool, artist_from_xml, album):
+def upsert_artist_in_db(db_pool, artist_from_xml, album, update_id_message, insert_id_message):
     """
     Inserta o actualiza un artista en la base de datos MySQL usando ON DUPLICATE KEY UPDATE.
     
@@ -207,8 +207,8 @@ def upsert_artist_in_db(db_pool, artist_from_xml, album):
             'id_parent_artist': None,  # Se puede agregar lógica para definir esto, si aplica
             'active_artist': artist_from_xml.get('active_artist', 1),  # Se puede cambiar si hay una lógica para definir si el artista está activo o no
             'specific_data_artist': json.dumps(artist_from_xml.get('specific_data_artist', {"cms_image": False})),
-            'insert_id_message': artist_from_xml.get('insert_id_message', 0),
-            'update_id_message': artist_from_xml.get('update_id_message', 0)
+            'insert_id_message': insert_id_message,
+            'update_id_message': update_id_message
         }
 
         # Ejecutar la consulta con la función connections.execute_query
@@ -298,7 +298,7 @@ def upsert_artist_in_mongo(db_mongo, artist_upserted):
 # Función principal para insertar o actualizar artistas
 ########################################################################################################################
 
-def upsert_artist(db_mongo, db_pool, json_dict, ddex_map, album):
+def upsert_artist(db_mongo, db_pool, json_dict, ddex_map, album, update_id_message, insert_id_message):
     """
     Extrae los artistas del XML y los inserta o actualiza en MySQL y MongoDB.
     
@@ -316,7 +316,7 @@ def upsert_artist(db_mongo, db_pool, json_dict, ddex_map, album):
     
     # Iterar sobre los artistas y realizar el upsert en MySQL y MongoDB
     for artist in artists_from_xml:
-        artist_upserted = upsert_artist_in_db(db_pool, artist, album)  # Inserta o actualiza en MySQL
+        artist_upserted = upsert_artist_in_db(db_pool, artist, album, update_id_message, insert_id_message)  # Inserta o actualiza en MySQL
         # TODO - descomentar esto MIGUEL
         # if artist_upserted:
         #     upsert_artist_in_mongo(db_mongo, artist_upserted)  # Inserta o actualiza en MongoDB

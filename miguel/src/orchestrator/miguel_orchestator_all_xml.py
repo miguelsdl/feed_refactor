@@ -7,7 +7,7 @@ from sqlalchemy import text
 import os
 
 from sqlalchemy.sql.functions import now
-
+import random
 import connections
 import xml_album_mapper
 import xml_artist_mapper
@@ -87,51 +87,52 @@ for f in all_files:
         # Cargar el archivo de configuración para la versión DDEX 4.3
         with open('/home/miguel/PycharmProjects/feed_refactor/miguel/src/settings/ddex_43.yaml', 'r') as config_file:
             ddex_map = yaml.safe_load(config_file)
+        update_id_message = random.randint(1, 9999)
+        insert_id_message = random.randint(1, 9999)
+        # print(datetime.datetime.now())
+        upserted_album = xml_album_mapper.upsert_album(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message)
 
         # print(datetime.datetime.now())
-        upserted_album = xml_album_mapper.upsert_album(db_mongo, db_pool, json_dict, ddex_map)
+        upserted_artist = xml_artist_mapper.upsert_artist(db_mongo, db_pool, json_dict, ddex_map, upserted_album, update_id_message, insert_id_message)
 
         # print(datetime.datetime.now())
-        upserted_artist = xml_artist_mapper.upsert_artist(db_mongo, db_pool, json_dict, ddex_map, upserted_album)
+        upserted_track = xml_track_mapper2.upsert_tracks(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message)
 
         # print(datetime.datetime.now())
-        upserted_track = xml_track_mapper2.upsert_tracks(db_mongo, db_pool, json_dict, ddex_map)
+        upserted_label = xml_label_mapper.upsert_label(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message)
 
         # print(datetime.datetime.now())
-        upserted_label = xml_label_mapper.upsert_label(db_mongo, db_pool, json_dict, ddex_map)
+        upserted_genre = xml_genre_mapper.upsert_genre(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message)
 
         # print(datetime.datetime.now())
-        upserted_genre = xml_genre_mapper.upsert_genre(db_mongo, db_pool, json_dict, ddex_map)
-
-        # print(datetime.datetime.now())
-        upserted_use_type = xml_use_type_mapper.upsert_use_type(db_mongo, db_pool, json_dict, ddex_map)
+        upserted_use_type = xml_use_type_mapper.upsert_use_type(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message)
         #
         # # print(datetime.datetime.now())
-        upserted_comercial_model_type = xml_comercial_model_type_mapper.upsert_commercial_use_type(db_mongo, db_pool, json_dict, ddex_map)
+        upserted_comercial_model_type = xml_comercial_model_type_mapper.upsert_commercial_use_type(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message)
 
         # print(datetime.datetime.now())
-        xml_contributor_mapper.upsert_contributors(db_mongo, db_pool, json_dict, ddex_map)
+        xml_contributor_mapper.upsert_contributors(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message)
 
         # print(datetime.datetime.now())
-        xml_rel_album_artist_mapper.upsert_rel_album_track(db_mongo, db_pool, json_dict, ddex_map)
+        xml_rel_album_artist_mapper.upsert_rel_album_track(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message)
 
         # print(datetime.datetime.now())
-        xml_rel_album_genre_mapper.upsert_rel_album_genre(db_mongo, db_pool, json_dict, ddex_map)
+        xml_rel_album_genre_mapper.upsert_rel_album_genre(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message)
 
         # print(datetime.datetime.now())
-        xml_rel_album_track_mapper.upsert_rel_album_track(db_mongo, db_pool, json_dict, ddex_map)
+        xml_rel_album_track_mapper.upsert_rel_album_track(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message)
 
         # print(datetime.datetime.now())
-        xml_rel_albums_rights_mapper.upsert_rel_album_right(db_mongo, db_pool, json_dict, ddex_map)
+        xml_rel_albums_rights_mapper.upsert_rel_album_right(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message)
 
         # print(datetime.datetime.now())
-        xml_rel_albums_tracks_rights_mapper.upsert_rel_album_track_right(db_mongo, db_pool, json_dict, ddex_map)
+        xml_rel_albums_tracks_rights_mapper.upsert_rel_album_track_right(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message)
 
         # print(datetime.datetime.now())
-        xml_rel_track_artist_mapper.upsert_rel_track_artist_in_db(db_mongo, db_pool, json_dict, ddex_map)
+        xml_rel_track_artist_mapper.upsert_rel_track_artist_in_db(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message)
 
         # print(datetime.datetime.now())
-        xml_rel_track_contributor.upsert_track_contributor(db_mongo, db_pool, json_dict, ddex_map)
+        xml_rel_track_contributor.upsert_track_contributor(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message)
         print(" Archivo: ", i, " procesado, path: ", file_path)
         i += 1
     except Exception as error:

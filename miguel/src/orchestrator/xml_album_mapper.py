@@ -193,7 +193,7 @@ def escape_or_null(value):
     return f"""{str(value).replace("'", "''")}"""
 
 
-def upsert_album_in_db(db_pool, album_from_xml):
+def upsert_album_in_db(db_pool, album_from_xml, update_id_message, insert_id_message):
     """
     Inserta o actualiza un álbum en la base de datos MySQL usando ON DUPLICATE KEY UPDATE.
     """
@@ -233,8 +233,8 @@ def upsert_album_in_db(db_pool, album_from_xml):
         'release_date_album': album_from_xml.get('release_date_album', None),
         'active_album': album_from_xml.get('active_album', 0),
         'specific_data_album': json.dumps(album_from_xml.get('specific_data_album', {})),  # Convertir a JSON string
-        'insert_id_message': album_from_xml.get('insert_id_message', 0),
-        'update_id_message': album_from_xml.get('update_id_message', 0)
+        'insert_id_message': insert_id_message,
+        'update_id_message': update_id_message,
     }
 
 
@@ -268,7 +268,7 @@ def upsert_album_in_mongo(db_mongo, album_upserted, ICPN):
 
 
 
-def upsert_album(db_mongo, db_pool, json_dict, ddex_map):
+def upsert_album(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message):
 
     album_from_xml, ICPN = get_album_from_xml(json_dict, ddex_map)
 
@@ -283,7 +283,7 @@ def upsert_album(db_mongo, db_pool, json_dict, ddex_map):
         if album_db_dict and album_db_dict.get('upc_album') == album_from_xml.get('upc_album'):
             album_from_xml['id_album'] = album_db_dict.get('id_album')
  
-    album_upserted = upsert_album_in_db(db_pool, album_from_xml)
+    album_upserted = upsert_album_in_db(db_pool, album_from_xml, update_id_message, insert_id_message)
 
     if album_upserted:
         upsert_album_in_mongo(db_mongo, album_upserted, ICPN)

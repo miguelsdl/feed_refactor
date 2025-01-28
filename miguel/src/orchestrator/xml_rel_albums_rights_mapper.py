@@ -30,7 +30,7 @@ def get_data_from_db(db_pool, name_fields, talbe_name, where_field, in_values):
     return data_return
 
 
-def upsert_rel_track_artist_in_db(db_mongo, db_pool, json_dict, ddex_map):
+def upsert_rel_track_artist_in_db(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message):
     rows = list()
     release_list = xml_mapper.get_value_from_path(json_dict, ddex_map['ReleaseList'])
     release_data = xml_mapper.get_release_list_sort_by_release_reference(release_list)
@@ -78,22 +78,22 @@ def upsert_rel_track_artist_in_db(db_mongo, db_pool, json_dict, ddex_map):
                 countries = json.dumps(territory_code)
                 sql_tmp = [
                     album_data[0]['id_album'], 1, id_label, id_cmt, id_use_type,
-                    "'" + countries + "'", "'" + start_date + "'", "null"
+                    "'" + countries + "'", "'" + start_date + "'", "null", insert_id_message
                 ]
                 sql_in.append("(" + ",".join([ "{}".format(x) for x in sql_tmp]) + ")")
 
     sql = " insert into albums_rights " \
            " (id_album, id_dist, id_label, id_cmt, id_use_type, cnty_ids_albright, start_date_albright, " \
-           " end_date_albright) " \
+           " end_date_albright, insert_id_message) " \
            " values {} " \
            " ON DUPLICATE KEY UPDATE " \
-           "audi_created_albright = CURRENT_TIMESTAMP;".format(','.join(sql_in))
+           "audi_created_albright = CURRENT_TIMESTAMP, update_id_message={};".format(','.join(sql_in), update_id_message)
 
     connections.execute_query(db_pool, sql, {})
 
     return True
 
-def upsert_rel_album_right(db_mongo, db_pool, json_dict, ddex_map):
-    upsert_rel_track_artist_in_db(db_mongo, db_pool, json_dict, ddex_map)
+def upsert_rel_album_right(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message):
+    upsert_rel_track_artist_in_db(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message)
 
 
