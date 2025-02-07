@@ -77,16 +77,12 @@ def upsert_label(db_mongo, db_pool, json_dict, ddex_map, update_id_message, inse
             values.append("('{name}', true, {insert_id_message})". format(name=label, insert_id_message=insert_id_message))
         logging.info("Se crearon las tuplas para insertar en la bbdd")
 
-        sql  = """INSERT INTO feed.labels (name_label, active_label, insert_id_message) VALUES """ + ",".join(values) + \
-               """ON DUPLICATE KEY UPDATE active_label = 1, audi_edited_label = CURRENT_TIMESTAMP, update_id_message={}""".format(update_id_message)
-        logging.info("Se creo la consulta upsert en mysql: {}".format(sql))
-
         upsert_query = text("""
         INSERT INTO feed.labels (
-            name_label, active_label, insert_id_message
+            name_label, active_label, insert_id_message, audi_edited_label, update_id_message
         )
         VALUES (
-            :name_label, :active_label, :insert_id_message
+            :name_label, :active_label, :insert_id_message, CURRENT_TIMESTAMP, :update_id_message
         )
         ON DUPLICATE KEY UPDATE
             name_label = name_label,
@@ -97,18 +93,17 @@ def upsert_label(db_mongo, db_pool, json_dict, ddex_map, update_id_message, inse
 
         query_values = []
         for label in label_from_xml:
+            # if label in ("Easy Life", "Docks Music", "Södra Station", "EUROPA Logo!", "Filtr Kids",):
             query_values.append({
                 'name_label': label,
                 'active_label': True,
                 'insert_id_message': insert_id_message,
+                "update_id_message": update_id_message
             })
 
-        connections.execute_query(db_pool, upsert_query, query_values)
+
+        connections.execute_query(db_pool, upsert_query, query_values, list_map=True)
         logging.info("Se ejecutó la consulta upsert en mysql")
-
-
-
-
 
         # upsert en mongo
         sql_select = xml_mapper.get_select_of_last_updated_insert_fields(
@@ -124,8 +119,9 @@ def upsert_label(db_mongo, db_pool, json_dict, ddex_map, update_id_message, inse
         ]
         result = xml_mapper.update_in_mongo_db2(db_mongo, rows, 'labels', structure=structure)
 
-        return result
+        return True
     except Exception as e:
+        raise e
         logging.info(f"Error al insertar los datos (labels) en mysql: {e}")
         return None
 

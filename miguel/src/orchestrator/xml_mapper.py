@@ -254,16 +254,24 @@ def safe_parse(s):
 
 def merge_fields_name_with_values_tuple(fields, where_conditions):
     where = []
+    l = 1 # 24 y 52
     for k in where_conditions:
-        if "USSM19805796" in k:
-            print(2)
+        if l > 23:
+            print(1)
+            if l > 51:
+                print(1)
         tup = safe_parse(k)
         condition_by_tup = list()
         for i in range(0, len(fields)):
+            l = l + 1
             field = fields[i]
-            value = tup[i]
+            try:
+                value = tup[i]
+            except Exception as e:
+                r = 1
+                print(e)
             if isinstance(value, str):
-                val = "{}='{}'".format(field, value.replace('"', '').replace("'", ""))
+                val = "{}='{}'".format(field, value.replace('"', '').replace("'", "")) #
             else:
                 val = "{}={}".format(field, value)
 
@@ -302,10 +310,18 @@ def update_in_mongo_db2(db_mongo, rows, table_name, structure):
             # "_id": r[0],
 
             for i in range(0, len(structure)):
+                foo = r[i]
+                if isinstance(r[i], str) and "Kevin" in foo:
+                    print(2)
                 if isinstance(r[i], datetime):
                     legacy_rows_to_list[structure[i]] = str(r[i])
-                if isinstance(r[i], timedelta):
-                    legacy_rows_to_list[structure[i]] = str(r[i])
+                elif isinstance(r[i], timedelta):
+                    if len(str(r[i])) > 2 and str(r[i])[1] == ':':
+                        legacy_rows_to_list[structure[i]] = "0" + str(r[i])
+                    else:
+                        legacy_rows_to_list[structure[i]] = str(r[i])
+                elif isinstance(r[i], str):
+                    legacy_rows_to_list[structure[i]] = r[i].replace('"', 'XXXX')
                 else:
                     legacy_rows_to_list[structure[i]] = r[i]
 
@@ -315,7 +331,6 @@ def update_in_mongo_db2(db_mongo, rows, table_name, structure):
                 legacy_rows_to_list,  # Reemplaza todo el documento
                 upsert=True  # Si no existe el documento, lo inserta
             )
-        logging.error("upsert en mongo")
 
     return True
 
@@ -327,3 +342,23 @@ def get_release_list_release_reference_album(release_data):
     except Exception as e:
         logging.error("Error en get_release_list_release_reference_album" + str(e) )
         return False
+
+def get_countries_from_db(db_pool):
+    sql = "SELECT id_cnty, iso_code_2_cnty  FROM feed.countries;"
+    query_values = {}
+    res = connections.execute_query(db_pool, sql, query_values)
+    # [(4, 'AF'),..]
+    data_return = {}
+    for row in res:
+        data_return[row[1]] = row[0]
+
+    return data_return
+
+def get_countries_id_by_iso_code_list(iso_codes_list, countires=[]):
+    try:
+        if len(countires):
+            return [0]
+        else:
+            return [iso_codes_list[countire] for countire in countires]
+    except Exception as e:
+        raise e

@@ -318,7 +318,7 @@ call releases.load_albums_tracks_rights_by_id_message_4x(${id_message}, '${distr
 
 -- La siguiente query es la que se genera en el store procedure releases.load_albums_tracks_rights_by_id_message_4x
 
-IINSERT INTO catalog.albums_tracks_rights (id_albtraright, id_album_track, id_dist, id_label, id_cmt, id_use_type, cnty_ids_albtraright, start_date_albtraright, end_date_albtraright, 
+INSERT INTO catalog.albums_tracks_rights (id_albtraright, id_album_track, id_dist, id_label, id_cmt, id_use_type, cnty_ids_albtraright, start_date_albtraright, end_date_albtraright,
 												   pline_text_albtraright, pline_year_albtraright, update_id_message, insert_id_message) 
 	(	
 		select * from

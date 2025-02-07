@@ -88,6 +88,8 @@ def upsert_rel_track_artist_in_db(db_mongo, db_pool, json_dict, ddex_map, update
             # roles[key][val['artist']['ArtistPartyReference']].add()
 
     sql = []
+    query_values = []
+
     for key, val in cons.items():
         sql.append(
             xml_mapper.get_data_from_db(
@@ -107,18 +109,35 @@ def upsert_rel_track_artist_in_db(db_mongo, db_pool, json_dict, ddex_map, update
     for key, val in sound_recording_map.items():
         cref = party_list_ref_inverted[ref_contr_name[key]]
         if cref in roles[key]:
-            sql_tmp = [val['id_track'], ref_contr_id[key],"'{}'".format(roles[key][cref]), insert_id_message]
-            sql_in.append("(" + ",".join([ "{}".format(x) for x in sql_tmp]) + ")")
-        else:
-            print(1)
-    sql_values = ','.join(sql_in)
-    if not len(sql_values) > 0:
-        print(3)
+            # sql_tmp = [val['id_track'], ref_contr_id[key],"'{}'".format(roles[key][cref]), insert_id_message, update_id_message]
+            query_values.append({
+                "id_track": val['id_track'],
+                "id_artist": ref_contr_id[key],
+                "artist_role_track_artist": "'{}'".format(roles[key][cref]),
+                "insert_id_message": insert_id_message,
+                "update_id_message": update_id_message
+            })
 
-    sql = "insert into tracks_artists (id_track, id_artist, artist_role_track_artist,insert_id_message) values {}"\
-          "ON DUPLICATE KEY UPDATE audi_edited_track_artist = CURRENT_TIMESTAMP, update_id_message={};".format(sql_values, update_id_message)
-    res = connections.execute_query(db_pool, sql, {})
+    # sql = "insert into tracks_artists (id_track, id_artist, artist_role_track_artist,insert_id_message, update_id_message) values {}"\
+    #       "ON DUPLICATE KEY UPDATE audi_edited_track_artist = CURRENT_TIMESTAMP, update_id_message={};".format(sql_values, update_id_message)
+    # res = connections.execute_query(db_pool, sql, {})
 
+
+    upsert_query = text("""
+    INSERT INTO feed.tracks_artists (
+        id_track, id_artist, artist_role_track_artist,insert_id_message, update_id_message, audi_edited_track_artist
+    )
+    VALUES (
+        :id_track, :id_artist, :artist_role_track_artist, :insert_id_message, :update_id_message, CURRENT_TIMESTAMP
+    )
+    ON DUPLICATE KEY UPDATE
+        id_track = id_track,
+        id_artist = id_artist,
+        artist_role_track_artist = artist_role_track_artist,
+        insert_id_message = insert_id_message,
+        audi_edited_track_artist = CURRENT_TIMESTAMP,
+        update_id_message={}
+    """.format(update_id_message))
 
 
 def upsert_rel_track_artist(db_mongo, db_pool, json_dict, ddex_map):

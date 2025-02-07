@@ -73,10 +73,12 @@ def get_data_from_xml(json_dict, ddex_map):
     deal_data = xml_mapper.get_deal_list_sort_by_release_reference(deal_list)
     party_list = xml_mapper.get_value_from_path(json_dict, ddex_map['PartyList'])
     party_data = xml_mapper.get_party_list(party_list)
+    resource_list = xml_mapper.get_value_from_path(json_dict, ddex_map['ResourceList'])
 
     return {
         "release_list": release_list, "album_data": album_data, "track_list_data": track_list_data,
         "deal_list": deal_list, "deal_data": deal_data, "party_list": party_list, "party_data": party_data,
+        "resource_list": resource_list,
     }
 
 def get_val_join_xml_and_db_data(xml_data, db_data, reference):
@@ -100,6 +102,21 @@ def get_id_album_track(db_pool, id_album, id_track):
 def get_track_territory_code(deal_data):
     return deal_data['R0']['DealTerms']['TerritoryCode']
 
+def get_resource_list(data):
+    data_return = {}
+    sr_list = data['SoundRecording'] if isinstance(data['SoundRecording'], list) else [data['SoundRecording'], ]
+    for sr in sr_list:
+        try:
+            data_return[sr['SoundRecordingEdition']['ResourceId']['ISRC']] = {
+                "pline_year": sr['SoundRecordingEdition']['PLine']['Year'],
+                "pline_text": sr['SoundRecordingEdition']['PLine']['PLineText'],
+            }
+        except Exception as e:
+            raise e
+
+
+    return data_return
+
 def upsert_rel_album_track_right_in_db(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message, id_dist):
     data_from_xml = get_data_from_xml(json_dict, ddex_map)
     ref_alb = xml_mapper.get_release_list_release_reference_album(data_from_xml['album_data'])
@@ -111,6 +128,8 @@ def upsert_rel_album_track_right_in_db(db_mongo, db_pool, json_dict, ddex_map, u
     territory_code = get_track_territory_code(data_from_xml['deal_data'])
     start_date = get_track_start_date(data_from_xml['deal_data'])
     end_date = get_track_end_date(data_from_xml['deal_data'])
+    resource_list = get_resource_list(data_from_xml['resource_list'])
+
 
     album_data = xml_mapper.get_data_from_db(
         db_pool, 'id_album,upc_album',"albums", "upc_album", album_upc
@@ -150,6 +169,7 @@ def upsert_rel_album_track_right_in_db(db_mongo, db_pool, json_dict, ddex_map, u
     )
 
     sql_in = []
+    coutries_list = xml_mapper.get_countries_from_db(db_pool)
     for track in track_ids_data:
         id_track = track["id_track"]
         track_reference = xml_mapper.get_value_by_key_from_dict_inverted(track_isrc, track["isrc_track"])
@@ -158,7 +178,8 @@ def upsert_rel_album_track_right_in_db(db_mongo, db_pool, json_dict, ddex_map, u
         id_use_type = get_val_join_xml_and_db_data(track_use_type, track_use_type_data, track_reference)
         id_album_track = get_id_album_track(db_pool, album_data[0]['id_album'], id_track)
         ref = track_id_by_ref[id_track]
-        cnty_ids_albtraright = json.dumps(territory_code)
+        # cnty_ids_albtraright = json.dumps(territory_code)
+        cnty_ids_albtraright = xml_mapper.get_countries_id_by_iso_code_list(coutries_list, territory_code)
         if isinstance(start_date, dict):
             if start_date[ref]:
                 start_date = start_date[ref]
@@ -171,14 +192,6 @@ def upsert_rel_album_track_right_in_db(db_mongo, db_pool, json_dict, ddex_map, u
             else:
                 end_date = None
 
-        # sql_tmp = [
-        #     id_album_track, id_dist, id_label, id_cmt, id_use_type,
-        #     "'{}'".format(cnty_ids_albtraright),
-        #     "'{}'".format(start_date) ,
-        #     "'{}'".format(end_date) if end_date is not None else "null",
-        #     insert_id_message
-        # ]
-        sql_tmp = dict()
         sql_tmp = {
             "id_album_track": id_album_track,
             "id_dist": id_dist,
@@ -188,29 +201,26 @@ def upsert_rel_album_track_right_in_db(db_mongo, db_pool, json_dict, ddex_map, u
             "cnty_ids_albtraright": "{}".format(cnty_ids_albtraright),
             "start_date_albtraright": "{}".format(start_date),
             "end_date_albtraright": "{}".format(end_date) if end_date is not None else None,
-            "insert_id_message": insert_id_message
+            "insert_id_message": insert_id_message,
+            "pline_text_albtraright": resource_list[track["isrc_track"]]['pline_text'],
+            "pline_year_albtraright": resource_list[track["isrc_track"]]['pline_year'],
+            "update_id_message": update_id_message
         }
 
-        # sql_in.append("(" + ",".join([ "{}".format(x) for x in sql_tmp]) + ")")
         sql_in.append(sql_tmp)
 
     query_values = sql_in
 
-
-    # sql = "insert into feed.albums_tracks_rights(id_album_track, id_dist, id_label, id_cmt, id_use_type, cnty_ids_albtraright, start_date_albtraright, end_date_albtraright, insert_id_message)" \
-    #        "values {}" \
-    #        " ON DUPLICATE KEY UPDATE " \
-    #        "audi_edited_albtraright = CURRENT_TIMESTAMP, update_id_message={};".format(','.join(sql_in), update_id_message)
-
-
-    # connections.execute_query(db_pool, sql, {})
-
     upsert_query = text("""
             INSERT INTO feed.albums_tracks_rights (
-                id_album_track, id_dist, id_label, id_cmt, id_use_type, cnty_ids_albtraright, start_date_albtraright, end_date_albtraright, insert_id_message
+                id_album_track, id_dist, id_label, id_cmt, id_use_type, cnty_ids_albtraright, start_date_albtraright, 
+                end_date_albtraright, insert_id_message, audi_edited_albtraright, pline_text_albtraright, 
+                pline_year_albtraright, update_id_message
             )
             VALUES (
-                :id_album_track, :id_dist, :id_label, :id_cmt, :id_use_type, :cnty_ids_albtraright, :start_date_albtraright, :end_date_albtraright, :insert_id_message
+                :id_album_track, :id_dist, :id_label, :id_cmt, :id_use_type, :cnty_ids_albtraright, 
+                :start_date_albtraright, :end_date_albtraright, :insert_id_message, CURRENT_TIMESTAMP, 
+                :pline_text_albtraright, :pline_year_albtraright, :update_id_message
             )
             ON DUPLICATE KEY UPDATE
                 id_album_track = id_album_track,
@@ -222,6 +232,8 @@ def upsert_rel_album_track_right_in_db(db_mongo, db_pool, json_dict, ddex_map, u
                 start_date_albtraright = start_date_albtraright,
                 end_date_albtraright = end_date_albtraright,
                 audi_edited_albtraright = CURRENT_TIMESTAMP,
+                pline_text_albtraright = pline_text_albtraright,
+                pline_year_albtraright = pline_year_albtraright,
                 update_id_message={}
             """.format(update_id_message)
         )

@@ -1,6 +1,6 @@
 import datetime
 import logging
-from sqlalchemy import text
+from sqlalchemy import text, bindparam
 import connections
 import xml_mapper
 
@@ -91,10 +91,10 @@ def upsert_contributors_in_db(db_mongo, db_pool, json_dict, ddex_map, update_id_
 
         upsert_query = text("""
         INSERT INTO feed.contributors (
-            name_contri, active_contri, insert_id_message
+            name_contri, active_contri, insert_id_message, update_id_message
         )
         VALUES (
-            :name_contri, :active_contri, :insert_id_message
+            :name_contri, :active_contri, :insert_id_message, :update_id_message
         )
         ON DUPLICATE KEY UPDATE
             name_contri = name_contri,
@@ -106,16 +106,17 @@ def upsert_contributors_in_db(db_mongo, db_pool, json_dict, ddex_map, update_id_
         query_values = []
         for contri_data in contri_data_for_insert:
             query_values.append({
-                'name_contri': contri_data['name_contri'].replace('"', '\\"'),
+                'name_contri': contri_data['name_contri'].replace('"', '\"'),
                 'active_contri': contri_data['active_contri'],
                 'insert_id_message': insert_id_message,
+                "update_id_message": update_id_message
             })
 
 
         for contri_data in contri_data_for_insert:
             values.append(
                 '("{name_contri}", "{active_contri}", {insert_id_message})'.format(
-                    name_contri=contri_data['name_contri'].replace('"', '\\"'),
+                    name_contri=contri_data['name_contri'].replace('"', '\"'),
                     active_contri=contri_data['active_contri'],
                     insert_id_message=insert_id_message
                 )
@@ -125,10 +126,28 @@ def upsert_contributors_in_db(db_mongo, db_pool, json_dict, ddex_map, update_id_
         logging.info("Se ejecutó la consulta upsert en mysql")
 
         # upsert en mongo
-        sql_select = xml_mapper.get_select_of_last_updated_insert_fields(
-            ("name_contri",), "contributors", values
+        # sql_select = xml_mapper.get_select_of_last_updated_insert_fields(
+        #     ("name_contri",), "contributors", values
+        # )
+
+
+        name_contris = []
+        for contri_data in contri_data_for_insert:
+            # name_contris.append({
+            #     'name_contri': contri_data['name_contri'],
+            # })
+
+            name_contris.append(contri_data['name_contri'])
+
+
+
+        # sql_in = '(\'' + "','".join(name_contris2) + '\')'
+        # sql_select = "SELECT * FROM feed.contributors WHERE name_contri IN {}".format(sql_in)
+        sql_select = text("""SELECT * FROM feed.contributors WHERE name_contri IN :name_contri""").bindparams(
+            bindparam("name_contri", value=name_contris, expanding=True)
         )
-        rows = connections.execute_query(db_pool, sql_select, {})
+
+        rows = connections.execute_query(db_pool, sql_select, name_contris, list_map=True)
 
         # Estos son los nombres de los campos de la tabla label de la base
         # en mysql y hay que pasarlo al siquiente método.
@@ -138,13 +157,6 @@ def upsert_contributors_in_db(db_mongo, db_pool, json_dict, ddex_map, update_id_
         ]
         result = xml_mapper.update_in_mongo_db2(db_mongo, rows, 'contributors', structure=structure)
 
-        # upsert en mongo
-        sql_select = xml_mapper.get_select_of_last_updated_insert_fields(
-            list(keys), "contributors", values
-        )
-        query_values = {}
-        rows = connections.execute_query(db_pool, sql_select, query_values)
-        result = xml_mapper.update_in_mongo_db2(db_mongo, rows, 'contributors', structure)
         return rows
     else:
         return None

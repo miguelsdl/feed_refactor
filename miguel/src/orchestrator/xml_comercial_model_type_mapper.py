@@ -32,10 +32,10 @@ def upsert_commercial_use_type_in_db(db_mongo, db_pool, json_dict, ddex_map, upd
 
         upsert_query = text("""
         INSERT INTO feed.comercial_model_types (
-            name_cmt, description_cmt, insert_id_message
+            name_cmt, description_cmt, insert_id_message, audi_edited_cmt, update_id_message
         )
         VALUES (
-            :name_cmt, :description_cmt, :insert_id_message
+            :name_cmt, :description_cmt, :insert_id_message, CURRENT_TIMESTAMP, :update_id_message
         )
         ON DUPLICATE KEY UPDATE
             name_cmt = name_cmt,
@@ -51,6 +51,7 @@ def upsert_commercial_use_type_in_db(db_mongo, db_pool, json_dict, ddex_map, upd
                 'active_genre': True,
                 'description_cmt': '',
                 'insert_id_message': insert_id_message,
+                "update_id_message": update_id_message
             })
 
 

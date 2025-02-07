@@ -12,10 +12,10 @@ def upsert_use_type_in_db(db_mongo, db_pool, json_dict, ddex_map, update_id_mess
 
         upsert_query = text("""
         INSERT INTO feed.use_types (
-            name_use_type, description_use_type, insert_id_message
+            name_use_type, description_use_type, insert_id_message, audi_edited_use_type, update_id_message
         )
         VALUES (
-            :name_use_type, :description_use_type, :insert_id_message
+            :name_use_type, :description_use_type, :insert_id_message, CURRENT_TIMESTAMP, :update_id_message
         )
         ON DUPLICATE KEY UPDATE
             name_use_type = name_use_type,
@@ -31,6 +31,7 @@ def upsert_use_type_in_db(db_mongo, db_pool, json_dict, ddex_map, update_id_mess
                     'name_use_type': u,
                     'description_use_type': '',
                     'insert_id_message': insert_id_message,
+                    "update_id_message": update_id_message,
                 })
 
 

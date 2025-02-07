@@ -24,10 +24,10 @@ def upsert_rel_album_genre_in_db(db_mongo, db_pool, json_dict, ddex_map, update_
 
     upsert_query = text("""
     INSERT INTO feed.albums_genres (
-        id_album, id_genre, insert_id_message
+        id_album, id_genre, insert_id_message, audi_edited_album_genre, update_id_message
     )
     VALUES (
-        :id_album, :id_genre, :insert_id_message
+        :id_album, :id_genre, :insert_id_message, CURRENT_TIMESTAMP, :update_id_message
     )
     ON DUPLICATE KEY UPDATE
         id_album = id_album,
@@ -36,7 +36,7 @@ def upsert_rel_album_genre_in_db(db_mongo, db_pool, json_dict, ddex_map, update_
         update_id_message={}
     """.format(update_id_message))
 
-    query_values = {"id_album": album['album_id'], "id_genre": genre['id_genre'], "insert_id_message": insert_id_message}
+    query_values = {"id_album": album['album_id'], "id_genre": genre['id_genre'], "insert_id_message": insert_id_message, "update_id_message": update_id_message}
 
     connections.execute_query(db_pool, upsert_query, query_values)
 

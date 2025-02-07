@@ -2255,6 +2255,7 @@
                     <TerritoryCode>ZM</TerritoryCode>
                     <ValidityPeriod>
                         <StartDateTime>1990-04-09T00:00:00</StartDateTime>
+                        <EndDateTime>2029-11-06T00:00:00</EndDateTime>
                     </ValidityPeriod>
                     <CommercialModelType>SubscriptionModel</CommercialModelType>
                     <UseType>ConditionalDownload</UseType>
@@ -2304,6 +2305,7 @@
                     <TerritoryCode>ZM</TerritoryCode>
                     <ValidityPeriod>
                         <StartDateTime>1990-04-09T00:00:00</StartDateTime>
+                        <EndDateTime>2029-11-06T00:00:00</EndDateTime>
                     </ValidityPeriod>
                     <CommercialModelType>AdvertisementSupportedModel</CommercialModelType>
                     <UseType>NonInteractiveStream</UseType>

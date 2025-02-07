@@ -30,34 +30,18 @@ def upsert_rel_album_track_in_db(db_mongo, db_pool, json_dict, ddex_map, update_
 
     artist = get_artist_id_from_db(db_pool, list(artist_name.keys()))
 
-    # values = list()
-    # for a in artist:
-    #     rol = album_data["artist"][artist_name[a['name_artist']]]['DisplayArtistRole']
-    #     values.append(
-    #         '("{id_album}", {id_artist}, "{artist_role_album_artist}", 1, {insert_id_message})'.format(
-    #             id_album=album['album_id'],
-    #             id_artist=a['artist_id'],
-    #             artist_role_album_artist=rol,
-    #             insert_id_message=insert_id_message
-    #         )
-    #     )
-    #
-    # sql = "insert into feed.albums_artists (id_album, id_artist, artist_role_album_artist, active_album_artist, insert_id_message) " \
-    #       "values {} ON DUPLICATE KEY UPDATE active_album_artist = 1,"\
-    #       "audi_edited_album_artist = CURRENT_TIMESTAMP, update_id_message={};"\
-    #       .format(",".join(values), update_id_message)
-    # rows = connections.execute_query(db_pool, sql, {})
 
-    upsert_query = text("""INSERT INTO feed.albums_artists(id_album, id_artist, artist_role_album_artist, active_album_artist, insert_id_message) 
-    VALUES (:id_album, :id_artist, :artist_role_album_artist, :active_album_artist, :insert_id_message)
+    upsert_query = text("""INSERT INTO feed.albums_artists(id_album, id_artist, artist_role_album_artist, active_album_artist, insert_id_message, audi_edited_album_artist, update_id_message) 
+    VALUES (:id_album, :id_artist, :artist_role_album_artist, :active_album_artist, :insert_id_message, CURRENT_TIMESTAMP, :update_id_message)
         ON DUPLICATE KEY UPDATE
             id_album = id_album,
             id_artist = id_artist,
             artist_role_album_artist = artist_role_album_artist,
             active_album_artist = active_album_artist,
-            audi_edited_album_artist = CURRENT_TIMESTAMP
+            audi_edited_album_artist = CURRENT_TIMESTAMP,
+            update_id_message={}
      
-    """)
+    """.format(update_id_message))
 
     query_values = []
     for a in artist:
@@ -67,7 +51,8 @@ def upsert_rel_album_track_in_db(db_mongo, db_pool, json_dict, ddex_map, update_
             "id_artist": a['artist_id'],
             "artist_role_album_artist": rol,
             "insert_id_message": insert_id_message_val,
-            "active_album_artist": True
+            "active_album_artist": True,
+            "update_id_message": update_id_message
         })
 
     connections.execute_query(db_pool, upsert_query, query_values, list_map=True)

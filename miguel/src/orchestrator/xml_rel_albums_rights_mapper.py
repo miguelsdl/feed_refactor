@@ -1,3 +1,4 @@
+from sqlalchemy import text
 import json
 import logging
 import connections
@@ -30,8 +31,6 @@ def get_data_from_db(db_pool, name_fields, talbe_name, where_field, in_values):
 
     return data_return
 
-
-
 def get_album_label(release_data, ref_id):
     return release_data[ref_id]['ReleaseLabelReference']['#text']
 
@@ -51,11 +50,11 @@ def get_album_end_date(deal_data, ref_id):
     try:
         return deal_data[ref_id]['DealTerms']['ValidityPeriod']['EndDateTime']
     except Exception as e:
-        #logging.error("Error, no se encontro edn date: " + str(e))
+        logging.error("Error, no se encontro end date: " + str(e))
         return None
 
 
-def upsert_rel_track_artist_in_db(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message):
+def upsert_rel_track_artist_in_db(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message, id_dist):
     rows = list()
 
 
@@ -97,29 +96,60 @@ def upsert_rel_track_artist_in_db(db_mongo, db_pool, json_dict, ddex_map, update
     )
 
     sql_in = []
+    query_values = []
+    coutries_list = xml_mapper.get_countries_from_db(db_pool)
     for lb in album_label_data:
         id_label = lb['id_label']
         for cmt in album_cmt_data:
             id_cmt = cmt['id_cmt']
             for u in album_use_type_data:
                 id_use_type = u['id_use_type']
-                countries = json.dumps(territory_code)
+                # countries = json.dumps(territory_code)
+                countries = json.dumps(xml_mapper.get_countries_id_by_iso_code_list(coutries_list, territory_code))
                 sql_tmp = [
                     album_data[0]['id_album'], 1, id_label, id_cmt, id_use_type,
-                    "'" + countries + "'", "'" + start_date + "'", "null", insert_id_message
+                    countries, "'" + start_date + "'", end_date if end_date else None, insert_id_message
                 ]
                 sql_in.append("(" + ",".join([ "{}".format(x) for x in sql_tmp]) + ")")
 
-    sql = " insert into albums_rights " \
-           " (id_album, id_dist, id_label, id_cmt, id_use_type, cnty_ids_albright, start_date_albright, " \
-           " end_date_albright, insert_id_message) " \
-           " values {} " \
-           " ON DUPLICATE KEY UPDATE " \
-           "audi_created_albright = CURRENT_TIMESTAMP, update_id_message={};".format(','.join(sql_in), update_id_message)
+                query_values.append({
+                    "id_album": album_data[0]['id_album'],
+                    "id_dist": id_dist,
+                    "id_label": id_label,
+                    "id_cmt": id_cmt,
+                    "id_use_type": id_use_type,
+                    "cnty_ids_albright": countries,
+                    "start_date_albright": start_date,
+                    "end_date_albright": end_date,
+                    'insert_id_message': insert_id_message,
+                    "update_id_message": update_id_message
+                })
 
-    connections.execute_query(db_pool, sql, {})
+    upsert_query = text("""
+    INSERT INTO feed.albums_rights (
+        id_album, id_dist, id_label, id_cmt, id_use_type, cnty_ids_albright, start_date_albright,
+        end_date_albright, insert_id_message, audi_edited_albright, update_id_message
+    )
+    VALUES (
+        :id_album, :id_dist, :id_label, :id_cmt, :id_use_type, :cnty_ids_albright, :start_date_albright,
+        :end_date_albright, :insert_id_message, CURRENT_TIMESTAMP, :update_id_message
+    )
+    ON DUPLICATE KEY UPDATE
+        id_album = id_album, 
+        id_dist = id_dist, 
+        id_label = id_label, 
+        id_cmt = id_cmt, 
+        id_use_type = id_use_type, 
+        cnty_ids_albright = cnty_ids_albright, 
+        start_date_albright = start_date_albright, 
+        end_date_albright = end_date_albright, 
+        audi_edited_albright = CURRENT_TIMESTAMP,
+        update_id_message = {} 
+    """.format(update_id_message))
 
+    connections.execute_query(db_pool, upsert_query, query_values, list_map=True)
+    logging.info("Se ejecutó la consulta upsert en mysql")
     return True
 
-def upsert_rel_album_right(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message):
-    upsert_rel_track_artist_in_db(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message)
+def upsert_rel_album_right(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message, id_dist):
+    upsert_rel_track_artist_in_db(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message, id_dist)

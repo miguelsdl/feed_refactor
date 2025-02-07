@@ -33,10 +33,10 @@ def upsert_genre_in_db(db_mongo, db_pool, json_dict, ddex_map, update_id_message
 
         upsert_query = text("""
         INSERT INTO feed.genres (
-            name_genre, active_genre, insert_id_message
+            name_genre, active_genre, insert_id_message, audi_edited_genre, update_id_message
         )
         VALUES (
-            :name_genre, :active_genre, :insert_id_message
+            :name_genre, :active_genre, :insert_id_message, CURRENT_TIMESTAMP, :update_id_message
         )
         ON DUPLICATE KEY UPDATE
             name_genre = name_genre,
@@ -51,6 +51,7 @@ def upsert_genre_in_db(db_mongo, db_pool, json_dict, ddex_map, update_id_message
                 'name_genre': genre,
                 'active_genre': True,
                 'insert_id_message': insert_id_message,
+                "update_id_message": update_id_message
             })
 
 

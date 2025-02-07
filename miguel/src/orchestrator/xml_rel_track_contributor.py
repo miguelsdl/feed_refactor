@@ -99,6 +99,7 @@ def upsert_use_track_contributor_db(db_mongo, db_pool, json_dict, ddex_map, upda
             ref_contr_name[row[0]] = row[2]
 
     sql_in = list()
+    query_values = []
     for key, val in sound_recording_map.items():
         if key in ref_contr_name:
             cref = party_list_ref_inverted[ref_contr_name[key]]
@@ -113,20 +114,40 @@ def upsert_use_track_contributor_db(db_mongo, db_pool, json_dict, ddex_map, upda
 
             role_name = role_name_list.split(',')
             for n in role_name:
-                if n == 'P_ARTIST_55732':
-                    print(356)
-                sql_tmp = [val['id_track'], ref_contr_id[key], "'{}'".format(n), insert_id_message]
-                sql_in.append("(" + ",".join([ "{}".format(x) for x in sql_tmp]) + ")")
+                # sql_tmp = [val['id_track'], ref_contr_id[key], "'{}'".format(n), insert_id_message]
+                query_values.append({
+                    "id_track": val['id_track'],
+                    "id_contri": ref_contr_id[key],
+                    "contributor_role_track_contri": "'{}'".format(n),
+                    "insert_id_message": insert_id_message,
+                    "update_id_message": update_id_message
+                })
         else:
             logging.error("KeyError:{} no se encuentra en ref_contr_name".format(key))
-    if len(sql_in) > 0:
-        sql = "insert into tracks_contributors (id_track, id_contri, contributor_role_track_contri, insert_id_message) values {} " \
-               "ON DUPLICATE KEY UPDATE audi_edited_track_contri = CURRENT_TIMESTAMP, update_id_message={};".format(','.join(sql_in), update_id_message)
-        res = connections.execute_query(db_pool, sql, {})
-    else:
-        logging.error("ERROR, posiblemente porque no hay Contributors, no se ejecuto la cquery {}".format(sql))
+    # if len(sql_in) > 0:
+    #     sql = "insert into tracks_contributors (id_track, id_contri, contributor_role_track_contri, insert_id_message) values {} " \
+    #            "ON DUPLICATE KEY UPDATE audi_edited_track_contri = CURRENT_TIMESTAMP, update_id_message={};".format(','.join(sql_in), update_id_message)
+    #     res = connections.execute_query(db_pool, sql, {})
+    # else:
+    #     logging.error("ERROR, posiblemente porque no hay Contributors, no se ejecuto la cquery {}".format(sql))
+    if len(query_values) > 0:
+        upsert_query = text("""
+        INSERT INTO feed.tracks_contributors (
+            id_track, id_contri, contributor_role_track_contri, insert_id_message, update_id_message, audi_edited_track_contri
+        )
+        VALUES (
+            :id_track, :id_contri, :contributor_role_track_contri, :insert_id_message, :update_id_message, CURRENT_TIMESTAMP
+        )
+        ON DUPLICATE KEY UPDATE
+            audi_edited_track_contri = CURRENT_TIMESTAMP,
+            id_track = id_track,
+            id_contri = id_contri,
+            contributor_role_track_contri = contributor_role_track_contri,
+            update_id_message={}
+        """.format(update_id_message))
 
-
+        connections.execute_query(db_pool, upsert_query, query_values, list_map=True)
+        logging.info("Se ejecutó la consulta upsert en mysql")
 
 def upsert_track_contributor(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message):
     upsert_use_track_contributor_db(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message)
