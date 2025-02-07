@@ -1,4 +1,4 @@
-import logging
+from sqlalchemy import text
 import connections
 import xml_mapper
 
@@ -18,11 +18,29 @@ def upsert_rel_album_genre_in_db(db_mongo, db_pool, json_dict, ddex_map, update_
     album = xml_mapper.get_album_id_from_db(db_pool, album_data['upc'])
     genre = get_genre_id_from_db(db_pool, album_data['genre'])
 
-    sql = "insert into albums_genres (id_album, id_genre, insert_id_message) values ({}, {}, {}) ON DUPLICATE KEY UPDATE " \
-           "audi_edited_album_genre = CURRENT_TIMESTAMP, update_id_message={};".format(album['album_id'], genre['id_genre'], insert_id_message, update_id_message)
-    rows = connections.execute_query(db_pool, sql, {})
+    # sql = "insert into albums_genres (id_album, id_genre, insert_id_message) values ({}, {}, {}) ON DUPLICATE KEY UPDATE " \
+    #        "audi_edited_album_genre = CURRENT_TIMESTAMP, update_id_message={};".format(album['album_id'], genre['id_genre'], insert_id_message, update_id_message)
+    # rows = connections.execute_query(db_pool, sql, {})
 
-    return rows
+    upsert_query = text("""
+    INSERT INTO feed.albums_genres (
+        id_album, id_genre, insert_id_message
+    )
+    VALUES (
+        :id_album, :id_genre, :insert_id_message
+    )
+    ON DUPLICATE KEY UPDATE
+        id_album = id_album,
+        id_genre = id_genre,
+        audi_edited_album_genre = CURRENT_TIMESTAMP,
+        update_id_message={}
+    """.format(update_id_message))
+
+    query_values = {"id_album": album['album_id'], "id_genre": genre['id_genre'], "insert_id_message": insert_id_message}
+
+    connections.execute_query(db_pool, upsert_query, query_values)
+
+    return True
 
 def upsert_rel_album_genre(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message):
     upsert_rel_album_genre_in_db(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message)

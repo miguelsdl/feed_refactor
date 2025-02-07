@@ -1,9 +1,7 @@
-import json
 import logging
-from sqlalchemy import text
 import connections
 import xml_mapper
-
+from sqlalchemy import text
 
 def get_party_list(party_list):
     party_reference = dict()
@@ -69,9 +67,6 @@ def get_label_and_release_from_xml(json_dict, ddex_map):
         logging.info(f"Error al leer PartyList del xml: {e}")
         return None
 
-def test_methods(db_mongo, db_pool, json_dict, ddex_map):
-    upsert_label(db_mongo, db_pool, json_dict, ddex_map)
-
 def upsert_label(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message):
     try:
         label_from_xml = get_label_and_release_from_xml(json_dict, ddex_map)
@@ -86,9 +81,34 @@ def upsert_label(db_mongo, db_pool, json_dict, ddex_map, update_id_message, inse
                """ON DUPLICATE KEY UPDATE active_label = 1, audi_edited_label = CURRENT_TIMESTAMP, update_id_message={}""".format(update_id_message)
         logging.info("Se creo la consulta upsert en mysql: {}".format(sql))
 
-        query_values = {}
-        connections.execute_query(db_pool, sql, query_values)
+        upsert_query = text("""
+        INSERT INTO feed.labels (
+            name_label, active_label, insert_id_message
+        )
+        VALUES (
+            :name_label, :active_label, :insert_id_message
+        )
+        ON DUPLICATE KEY UPDATE
+            name_label = name_label,
+            active_label = active_label,
+            audi_edited_label = CURRENT_TIMESTAMP,
+            update_id_message={}
+        """.format(update_id_message))
+
+        query_values = []
+        for label in label_from_xml:
+            query_values.append({
+                'name_label': label,
+                'active_label': True,
+                'insert_id_message': insert_id_message,
+            })
+
+        connections.execute_query(db_pool, upsert_query, query_values)
         logging.info("Se ejecutó la consulta upsert en mysql")
+
+
+
+
 
         # upsert en mongo
         sql_select = xml_mapper.get_select_of_last_updated_insert_fields(
@@ -106,7 +126,6 @@ def upsert_label(db_mongo, db_pool, json_dict, ddex_map, update_id_message, inse
 
         return result
     except Exception as e:
-        raise e
         logging.info(f"Error al insertar los datos (labels) en mysql: {e}")
         return None
 

@@ -4,8 +4,6 @@ from sqlalchemy import text
 import connections
 import xml_mapper
 
-# consulta sql para agrega una constrain para que funcione ON DUPLICATE
-# ALTER TABLE feed.contributors ADD CONSTRAINT constr_contributors  UNIQUE (name_contri(100));
 
 def get_contributor_list(resource_list):
     contributor_list_by_ref = dict()
@@ -89,6 +87,43 @@ def upsert_contributors_in_db(db_mongo, db_pool, json_dict, ddex_map, update_id_
         query_values = {}
         rows = connections.execute_query(db_pool, sql, query_values)
         logging.info("Se ejecutó la consulta upsert en mysql")
+
+
+        upsert_query = text("""
+        INSERT INTO feed.contributors (
+            name_contri, active_contri, insert_id_message
+        )
+        VALUES (
+            :name_contri, :active_contri, :insert_id_message
+        )
+        ON DUPLICATE KEY UPDATE
+            name_contri = name_contri,
+            active_contri = active_contri,
+            audi_edited_contri = CURRENT_TIMESTAMP,
+            update_id_message={}
+        """.format(update_id_message))
+
+        query_values = []
+        for contri_data in contri_data_for_insert:
+            query_values.append({
+                'name_contri': contri_data['name_contri'].replace('"', '\\"'),
+                'active_contri': contri_data['active_contri'],
+                'insert_id_message': insert_id_message,
+            })
+
+
+        for contri_data in contri_data_for_insert:
+            values.append(
+                '("{name_contri}", "{active_contri}", {insert_id_message})'.format(
+                    name_contri=contri_data['name_contri'].replace('"', '\\"'),
+                    active_contri=contri_data['active_contri'],
+                    insert_id_message=insert_id_message
+                )
+            )
+
+        connections.execute_query(db_pool, upsert_query, query_values, list_map=True)
+        logging.info("Se ejecutó la consulta upsert en mysql")
+
         # upsert en mongo
         sql_select = xml_mapper.get_select_of_last_updated_insert_fields(
             ("name_contri",), "contributors", values

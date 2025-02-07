@@ -1,10 +1,7 @@
-from bson import json_util
-import json
 import logging
 import re
 from datetime import datetime, timedelta
 import connections
-from pymongo import UpdateOne, ReplaceOne
 
 
 # Funciones Auxiliares
@@ -30,7 +27,6 @@ def duration_to_seconds(duration):
     total_seconds = hours * 3600 + minutes * 60 + seconds
     return total_seconds
 
-
 def seconds_to_hhmmss(seconds):
     """
     Convierte una cantidad de segundos a formato hh:mm:ss.
@@ -42,7 +38,6 @@ def seconds_to_hhmmss(seconds):
     minutes = (seconds % 3600) // 60
     seconds = seconds % 60
     return f"{hours:02}:{minutes:02}:{seconds:02}"
-
 
 def get_value_from_path(json_dict, path):
     """
@@ -72,7 +67,6 @@ def get_value_from_path(json_dict, path):
     
     return json_dict
 
-
 def timedelta_to_string(td):
     """
     Convierte un objeto timedelta en una cadena de texto en formato 'HH:MM:SS'.
@@ -85,7 +79,6 @@ def timedelta_to_string(td):
     minutes, seconds = divmod(remainder, 60)
     return f"{hours:02}:{minutes:02}:{seconds:02}"
 
-
 def datetime_to_string(dt):
     """
     Convierte un objeto datetime en una cadena de texto en formato ISO 8601.
@@ -94,7 +87,6 @@ def datetime_to_string(dt):
     :return: Cadena en formato ISO 8601.
     """
     return dt.isoformat()
-
 
 def serialize_with_custom_types(data):
     """
@@ -114,8 +106,6 @@ def serialize_with_custom_types(data):
     else:
         return data
     
-
-
 def convert_timedelta_to_seconds(td):
     """
     Convierte un objeto datetime.timedelta a segundos.
@@ -180,48 +170,14 @@ def get_dict_by_language_code_in_list(vals, lang_code_order=('es', 'en'), key_na
 def list_to_sql_in_str(data):
     return "('" + "', '".join(data) + "')"
 
-def get_resource_list_data_by_resource_reference(resource_list):
-    resource_data = dict()
-
-    recording_ref_list = resource_list['SoundRecording']
-    if not isinstance(recording_ref_list, list):
-        recording_ref_list = list(resource_list['SoundRecording'])
-
-    for sound_recording in recording_ref_list:
-        resource_data[sound_recording['ResourceReference']] = sound_recording
-
-    return resource_data
-
 def get_dict_to_list_dict(dict_or_list):
     return [dict_or_list, ] if isinstance(dict_or_list, dict) else dict_or_list
 
-def get_album_upc(release_data):
-    return release_data['R0']['ReleaseId']['ICPN']
+def get_album_upc(release_data, ref_alb):
+    return release_data[ref_alb]['ReleaseId']['ICPN']
 
 def get_album_dist(release_data):
     pass
-
-def get_album_label(release_data):
-    return release_data['R0']['ReleaseLabelReference']['#text']
-
-def get_album_cmt(deal_data):
-    return deal_data['R0']['DealTerms']['CommercialModelType']
-
-def get_album_use_type(deal_data):
-    return deal_data['R0']['DealTerms']['UseType']
-
-def get_album_territory_code(deal_data):
-    return deal_data['R0']['DealTerms']['TerritoryCode']
-
-def get_album_start_date(deal_data):
-    return deal_data['R0']['DealTerms']['ValidityPeriod']['StartDateTime']
-
-def get_album_end_date(deal_data):
-    try:
-        return deal_data['R0']['DealTerms']['ValidityPeriod']['EndDateTime']
-    except Exception as e:
-        #logging.error("Error, no se encontro edn date: " + str(e))
-        return None
 
 def get_data_from_db(db_pool, name_fields, talbe_name, where_field, in_values, execute=True):
     sql_tpl = "SELECT {name_fields} FROM feed.{talbe_name} WHERE {where_field} IN ({in_values});"
@@ -254,40 +210,7 @@ def get_release_list_sort_by_release_reference(release_list, key='Release'):
 
 def get_deal_list_sort_by_release_reference(deal_list):
     deals_data = dict()
-    # deal_list: {'ReleaseDeal': {'Deal': [{'DealTerms': {'CommercialModelType': 'SubscriptionModel',
-    #                                          'TerritoryCode': ['AG', 'AI', 'AW', 'BB', 'BM', 'BO', 'BQ', 'BR', 'BZ',
-    #                                                            'CL', 'CO', 'CR', 'CW', 'DM', 'DO', 'EC', 'ES', 'GD',
-    #                                                            'GF', 'GP', 'GY', 'HT', 'JM', 'KN', 'KY', 'LC', 'MQ',
-    #                                                            'MS', 'PA', 'PE', 'SR', 'SV', 'TC', 'TT', 'VC', 'VG',
-    #                                                            'VU', 'ZM'],
-    #                                          'UseType': ['ConditionalDownload', 'NonInteractiveStream',
-    #                                                      'OnDemandStream'],
-    #                                          'ValidityPeriod': {'StartDateTime': '2024-11-06T00:00:00'}}}, {
-    #                               'DealTerms': {'CommercialModelType': 'AdvertisementSupportedModel',
-    #                                             'TerritoryCode': ['AG', 'AI', 'AW', 'BB', 'BM', 'BO', 'BQ', 'BR', 'BZ',
-    #                                                               'CL', 'CO', 'CR', 'CW', 'DM', 'DO', 'EC', 'ES', 'GD',
-    #                                                               'GF', 'GP', 'GY', 'HT', 'JM', 'KN', 'KY', 'LC', 'MQ',
-    #                                                               'MS', 'PA', 'PE', 'SR', 'SV', 'TC', 'TT', 'VC', 'VG',
-    #                                                               'VU', 'ZM'],
-    #                                             'UseType': ['NonInteractiveStream', 'OnDemandStream'],
-    #                                             'ValidityPeriod': {'StartDateTime': '2024-11-06T00:00:00'}}}],
-    #                  'DealReleaseReference': 'R1'}}
     release_deal_list = get_dict_to_list_dict(deal_list['ReleaseDeal'])
-    # selease_deal_list: [{'Deal': [{'DealTerms': {'CommercialModelType': 'SubscriptionModel',
-    #                           'TerritoryCode': ['AG', 'AI', 'AW', 'BB', 'BM', 'BO', 'BQ', 'BR', 'BZ', 'CL', 'CO', 'CR',
-    #                                             'CW', 'DM', 'DO', 'EC', 'ES', 'GD', 'GF', 'GP', 'GY', 'HT', 'JM', 'KN',
-    #                                             'KY', 'LC', 'MQ', 'MS', 'PA', 'PE', 'SR', 'SV', 'TC', 'TT', 'VC', 'VG',
-    #                                             'VU', 'ZM'],
-    #                           'UseType': ['ConditionalDownload', 'NonInteractiveStream', 'OnDemandStream'],
-    #                           'ValidityPeriod': {'StartDateTime': '2024-11-06T00:00:00'}}}, {
-    #                'DealTerms': {'CommercialModelType': 'AdvertisementSupportedModel',
-    #                              'TerritoryCode': ['AG', 'AI', 'AW', 'BB', 'BM', 'BO', 'BQ', 'BR', 'BZ', 'CL', 'CO',
-    #                                                'CR', 'CW', 'DM', 'DO', 'EC', 'ES', 'GD', 'GF', 'GP', 'GY', 'HT',
-    #                                                'JM', 'KN', 'KY', 'LC', 'MQ', 'MS', 'PA', 'PE', 'SR', 'SV', 'TC',
-    #                                                'TT', 'VC', 'VG', 'VU', 'ZM'],
-    #                              'UseType': ['NonInteractiveStream', 'OnDemandStream'],
-    #                              'ValidityPeriod': {'StartDateTime': '2024-11-06T00:00:00'}}}],
-    #   'DealReleaseReference': 'R1'}]
     for d in release_deal_list:
         data = d['DealReleaseReference']
         if not isinstance(d['DealReleaseReference'], list):
@@ -314,7 +237,6 @@ def get_party_liat_for_ref(party_list):
         names[key] = value
     return names
 
-
 def safe_parse(s):
     final = []
     try:
@@ -323,20 +245,12 @@ def safe_parse(s):
 
         for st in step2:
             final.append(st)
-            # if isinstance(st, str):
-            #     if st == '1':
-            #         final.append(True)
-            #     else:
-            #         final.append(st)
-            # else:
-            #     final.append(st)
 
     except Exception as e:
         logging.error("Error en safe_parse(), string origial: {} Exception: {}".format(s, e))
         final = []
 
     return final
-
 
 def merge_fields_name_with_values_tuple(fields, where_conditions):
     where = []
@@ -361,7 +275,6 @@ def merge_fields_name_with_values_tuple(fields, where_conditions):
             where.append(" AND ".join(condition))
     return where
 
-
 def get_select_of_last_updated_insert_fields(fields, table_name, where_conditions):
     sql_where = merge_fields_name_with_values_tuple(
         fields,
@@ -373,10 +286,6 @@ def get_select_of_last_updated_insert_fields(fields, table_name, where_condition
     is_or = sql[len(sql)-6:]
     if is_or ==" OR ;":
         sql = sql.replace(is_or, "")
-
-
-
-    # .format(",".join(("name_label", "active_label")), "labels", " and ".join(sql_where))
 
     return sql
 
@@ -393,7 +302,12 @@ def update_in_mongo_db2(db_mongo, rows, table_name, structure):
             # "_id": r[0],
 
             for i in range(0, len(structure)):
-                legacy_rows_to_list[structure[i]] = r[i]
+                if isinstance(r[i], datetime):
+                    legacy_rows_to_list[structure[i]] = str(r[i])
+                if isinstance(r[i], timedelta):
+                    legacy_rows_to_list[structure[i]] = str(r[i])
+                else:
+                    legacy_rows_to_list[structure[i]] = r[i]
 
             # Ejecutar la operación upsert (actualiza si existe, inserta si no)
             result = db_mongo[table_name].replace_one(
@@ -401,21 +315,15 @@ def update_in_mongo_db2(db_mongo, rows, table_name, structure):
                 legacy_rows_to_list,  # Reemplaza todo el documento
                 upsert=True  # Si no existe el documento, lo inserta
             )
-        #     upsert_list.append(ReplaceOne(
-        #         search_filter,
-        #         {"values": r}
-        #         ))
-        # result = db_mongo['{}'.format(table_name)].bulk_write(upsert_list)
         logging.error("upsert en mongo")
 
     return True
 
-# label_mongodb_structure = {
-#     "id_label": None,
-#     "name_label": '',
-#     "active_label": False,
-#     "audi_edited_label": '',
-#     "audi_created_label": '',
-#     "update_id_message": '',
-#     "insert_id_message": ''
-# }
+def get_release_list_release_reference_album(release_data):
+    try:
+        release_list_release_reference_album = list(release_data.keys())[0]
+        return release_list_release_reference_album
+
+    except Exception as e:
+        logging.error("Error en get_release_list_release_reference_album" + str(e) )
+        return False

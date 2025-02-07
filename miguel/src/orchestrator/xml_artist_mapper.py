@@ -216,45 +216,6 @@ def upsert_artist_in_db(db_pool, artist_from_xml, album, update_id_message, inse
         
         # Recuperar el artista actualizado desde la base de datos
         artist_upserted = get_artist_from_db(db_pool, artist_from_xml.get('name_artist'))
-        #
-        # ####### Parte de albums_artists ###################################################################################################
-        #
-        # # Crear la consulta para hacer el upsert en la tabla feed.albums_artists
-        # upsert_query = text("""
-        #     INSERT INTO feed.albums_artists (
-        #         id_album, id_artist, artist_role_album_artist, active_album_artist, manually_edited_album_artist,
-        #         insert_id_message, update_id_message
-        #     )
-        #     VALUES (
-        #         :id_album, :id_artist, :artist_role_album_artist, :active_album_artist, :manually_edited_album_artist,
-        #         :insert_id_message, :update_id_message
-        #     )
-        #     ON DUPLICATE KEY UPDATE
-        #         update_id_message = VALUES(update_id_message),
-        #         audi_edited_album_artist = CURRENT_TIMESTAMP
-        # """)
-        #
-        # # Preparar los valores para la consulta
-        # query_values = {
-        #     'id_album': album.get('id_album'),  # Debes pasar el ID del álbum aquí
-        #     'id_artist': artist_upserted.get('id_artist'),  # Debes pasar el ID del artista aquí
-        #     'artist_role_album_artist': artist_from_xml.get('artist_role_album_artist', 'Unknown'),  # El rol del artista en el álbum
-        #     'active_album_artist': 1,  # Se puede cambiar si hay lógica para definir si el artista está activo
-        #     'manually_edited_album_artist': 0,  # Editado manualmente
-        #     'insert_id_message': 0,
-        #     'update_id_message': 0
-        # }
-        #
-        # rows = connections.execute_query(db_pool, upsert_query, query_values)
-        # ##########################################################################################################################################################
-        # # sql_select = xml_mapper.get_select_of_last_updated_insert_fields(
-        # #     ("id_album", "id_artist"), "artists", query_values
-        # # )
-        # # query_values = {}
-        # # rows = connections.execute_query(db_pool, sql_select, query_values)
-        # #
-        # # search_filter = {'': ""}
-        # # result = xml_mapper.update_in_mongo_db2(rows, 'labels', search_filter)
 
         return artist_upserted
 

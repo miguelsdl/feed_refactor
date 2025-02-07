@@ -94,7 +94,7 @@ def get_db_connection_pool(db_name='feed_mysql', pool_size=20, max_overflow=10):
         return None
 
 
-def execute_query(engine, query, query_values=None, retry_attempts=3, retry_delay=5):
+def execute_query(engine, query, query_values=None, retry_attempts=3, retry_delay=5, list_map=False):
     """
     Ejecuta una consulta SQL usando una conexión del pool proporcionado.
 
@@ -111,7 +111,13 @@ def execute_query(engine, query, query_values=None, retry_attempts=3, retry_dela
             # Obtener una conexión desde el pool
             with engine.connect() as connection:
                 # Ejecutar la consulta
-                result = connection.execute(query, **(query_values or {}))
+                if list_map:
+                    # este if lo necesito poner para tener compatibilidad con lo anterior,
+                    # que es el paso del else. Acá inserta datos desde una lista de diccionadio/s
+                    result = connection.execute(query, query_values)
+                else:
+                    # Acá inserta datos desde un diccionario
+                    result = connection.execute(query, **(query_values or {}))
 
                 # Si la consulta devuelve filas (como en un SELECT)
                 if result.returns_rows:
@@ -126,6 +132,7 @@ def execute_query(engine, query, query_values=None, retry_attempts=3, retry_dela
         except TimeoutError:
             logging.warning("Error: Tiempo de espera agotado al intentar obtener una conexión del pool. Reintentando...")
         except SQLAlchemyError as e:
+            raise e
             logging.error(f"Error al ejecutar la consulta: {e}")
             break
 

@@ -3,9 +3,6 @@ from sqlalchemy import text
 import connections
 import xml_mapper
 
-# consulta sql para agrega una constrain para que funcione ON DUPLICATE
-# ALTER TABLE feed.use_types ADD CONSTRAINT constr_name_use_type  UNIQUE (name_use_type(100));
-
 
 def upsert_use_type_in_db(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message):
 
@@ -13,22 +10,40 @@ def upsert_use_type_in_db(db_mongo, db_pool, json_dict, ddex_map, update_id_mess
         deal_term_list = xml_mapper.get_value_from_path(json_dict, ddex_map['DealList'])
         logging.info("Se cargaron los datos del xml")
 
+        upsert_query = text("""
+        INSERT INTO feed.use_types (
+            name_use_type, description_use_type, insert_id_message
+        )
+        VALUES (
+            :name_use_type, :description_use_type, :insert_id_message
+        )
+        ON DUPLICATE KEY UPDATE
+            name_use_type = name_use_type,
+            description_use_type = '',
+            audi_edited_use_type = CURRENT_TIMESTAMP,
+            update_id_message={}
+        """.format(update_id_message))
+
+        query_values = []
+        for d in deal_term_list['ReleaseDeal']['Deal']:
+            for u in d['DealTerms']['UseType']:
+                query_values.append({
+                    'name_use_type': u,
+                    'description_use_type': '',
+                    'insert_id_message': insert_id_message,
+                })
+
+
+        connections.execute_query(db_pool, upsert_query, query_values, list_map=True)
+
+        logging.info("Se ejecutó la consulta upsert en mysql")
+
+        # upsert en mongo
         values = list()
         for d in deal_term_list['ReleaseDeal']['Deal']:
             for u in d['DealTerms']['UseType']:
                 values.append("('{name}', null, {insert_id_message})".format(name=u, insert_id_message=insert_id_message))
 
-
-        sql  = """INSERT INTO feed.use_types (name_use_type, description_use_type, insert_id_message) VALUES """ + ",".join(values) + \
-               """ON DUPLICATE KEY UPDATE audi_edited_use_type = CURRENT_TIMESTAMP, update_id_message={}""".format(update_id_message)
-
-        logging.info("Se creo la consulta upsert en mysql: {}".format(sql))
-
-        query_values = {}
-        connections.execute_query(db_pool, sql, query_values)
-        logging.info("Se ejecutó la consulta upsert en mysql")
-
-        # upsert en mongo
         sql_select = xml_mapper.get_select_of_last_updated_insert_fields(
             ("name_use_type", ), "use_types", values
         )

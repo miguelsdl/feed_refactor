@@ -37,28 +37,28 @@ with open('/home/miguel/PycharmProjects/feed_refactor/miguel/src/settings/ddex_4
     ddex_map = yaml.safe_load(config_file)
 
 
-upserted_album = xml_album_mapper.upsert_album(db_mongo, db_pool, json_dict, ddex_map)
-
-upserted_artist = xml_artist_mapper.upsert_artist(db_mongo, db_pool, json_dict, ddex_map, upserted_album)
-
-upserted_track = xml_track_mapper2.upsert_tracks(db_mongo, db_pool, json_dict, ddex_map)
-
-upserted_label = xml_label_mapper.upsert_label(db_mongo, db_pool, json_dict, ddex_map)
+# upserted_album = xml_album_mapper.upsert_album(db_mongo, db_pool, json_dict, ddex_map)
+#
+# upserted_artist = xml_artist_mapper.upsert_artist(db_mongo, db_pool, json_dict, ddex_map, upserted_album)
+#
+# upserted_track = xml_track_mapper2.upsert_tracks(db_mongo, db_pool, json_dict, ddex_map)
+#
+# upserted_label = xml_label_mapper.upsert_label(db_mongo, db_pool, json_dict, ddex_map)
 
 upserted_genre = xml_genre_mapper.upsert_genre(db_mongo, db_pool, json_dict, ddex_map)
-
-upserted_use_type = xml_use_type_mapper.upsert_use_type(db_mongo, db_pool, json_dict, ddex_map)
-
-upserted_comercial_model_type = (
-    xml_comercial_model_type_mapper.upsert_commercial_use_type(db_mongo, db_pool, json_dict, ddex_map)
-)
-
-xml_contributor_mapper.upsert_contributors(db_mongo, db_pool, json_dict, ddex_map)
-
-xml_rel_album_artist_mapper.upsert_rel_album_track(db_mongo, db_pool, json_dict, ddex_map)
-
-xml_rel_album_genre_mapper.upsert_rel_album_genre(db_mongo, db_pool, json_dict, ddex_map)
-
-xml_rel_album_track_mapper.upsert_rel_album_track(db_mongo, db_pool, json_dict, ddex_map)
-
-# xml_rel_track_artist_mapper.upsert_rel_track_artist_in_db(db_mongo, db_pool, json_dict, ddex_map)
+#
+# upserted_use_type = xml_use_type_mapper.upsert_use_type(db_mongo, db_pool, json_dict, ddex_map)
+#
+# upserted_comercial_model_type = (
+#     xml_comercial_model_type_mapper.upsert_commercial_use_type(db_mongo, db_pool, json_dict, ddex_map)
+# )
+#
+# xml_contributor_mapper.upsert_contributors(db_mongo, db_pool, json_dict, ddex_map)
+#
+# xml_rel_album_artist_mapper.upsert_rel_album_track(db_mongo, db_pool, json_dict, ddex_map)
+#
+# xml_rel_album_genre_mapper.upsert_rel_album_genre(db_mongo, db_pool, json_dict, ddex_map)
+#
+# xml_rel_album_track_mapper.upsert_rel_album_track(db_mongo, db_pool, json_dict, ddex_map)
+#
+# # xml_rel_track_artist_mapper.upsert_rel_track_artist_in_db(db_mongo, db_pool, json_dict, ddex_map)

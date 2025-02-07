@@ -65,15 +65,16 @@ def upsert_use_track_contributor_db(db_mongo, db_pool, json_dict, ddex_map, upda
                             else:
                                 roles[key][v['ContributorPartyReference']].add(r['#text'])
                         elif isinstance(r, list):
-                            raise 1
+                            print(3)
                 if isinstance(rol, dict):
                     if rol['#text'] == 'UserDefined':
                         roles[key][v['ContributorPartyReference']].add(rol['@UserDefinedValue'])
                     else:
                         roles[key][v['ContributorPartyReference']].add(rol['#text'])
+                if isinstance(rol, str):
+                    roles[key][v['ContributorPartyReference']].add(rol)
 
                 roles[key][v['ContributorPartyReference']] = ",".join(roles[key][v['ContributorPartyReference']])
-
         if isinstance(val['contributors'], dict):
             o = party_list_ref[val['contributors']['ContributorPartyReference']].replace('"', '\\"').replace("'", "\\'")
             roles[key] = set()
@@ -101,9 +102,21 @@ def upsert_use_track_contributor_db(db_mongo, db_pool, json_dict, ddex_map, upda
     for key, val in sound_recording_map.items():
         if key in ref_contr_name:
             cref = party_list_ref_inverted[ref_contr_name[key]]
-            role_name = roles[key][cref] if cref in roles[key] else list(roles[key]).pop()
-            sql_tmp = [val['id_track'], ref_contr_id[key], "'{}'".format(role_name), insert_id_message]
-            sql_in.append("(" + ",".join([ "{}".format(x) for x in sql_tmp]) + ")")
+            # role_name_list = roles[key][cref] if cref in roles[key] else list(roles[key]).pop()
+            if cref in roles[key]:
+                role_name_list = roles[key][cref]
+            else:
+                if isinstance(roles[key], set):
+                    role_name_list = list(roles[key])[0]
+                else:
+                    role_name_list = list(roles[key].values()).pop()
+
+            role_name = role_name_list.split(',')
+            for n in role_name:
+                if n == 'P_ARTIST_55732':
+                    print(356)
+                sql_tmp = [val['id_track'], ref_contr_id[key], "'{}'".format(n), insert_id_message]
+                sql_in.append("(" + ",".join([ "{}".format(x) for x in sql_tmp]) + ")")
         else:
             logging.error("KeyError:{} no se encuentra en ref_contr_name".format(key))
     if len(sql_in) > 0:

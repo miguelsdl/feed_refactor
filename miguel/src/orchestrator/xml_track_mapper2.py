@@ -1,12 +1,11 @@
 import datetime
+import json
 import logging
 from sqlalchemy import text
 import connections
 import xml_mapper
 import re
 
-# consulta sql para agrega una constrain para que funcione ON DUPLICATE
-# ALTER TABLE feed.tracks ADD CONSTRAINT constr_isrc_track  UNIQUE (isrc_track);
 
 def get_track_list(release_list):
     #  TODO - ver si se puede optimizar este método
@@ -23,7 +22,6 @@ def get_track_list(release_list):
 
     return track_list_by_ref
 
-
 def get_recording_list(recording_list):
     #  TODO - ver si se puede optimizar este método
     resource_list_by_ref = dict()
@@ -38,7 +36,6 @@ def get_recording_list(recording_list):
         resource_list_by_ref[resource_data['ResourceReference']] = resource_data
 
     return resource_list_by_ref
-
 
 def parse_time_string(s):
     s = s.replace('PT','')
@@ -66,7 +63,7 @@ def get_track_data_joined_by_ref(track_list_by_ref, resource_list_by_ref):
             "length_track": parse_time_string(resource_data['Duration']),
             "explicit_track": 1 if 'explicit' in resource_data['ParentalWarningType'] else 0,
             "active_track": 1,
-            "specific_data_track": "JSON_OBJECT('available_128',true,'available_320',true,'available_preview',true)"
+            "specific_data_track": "'available_128',true,'available_320',true,'available_preview',true"
 
         })
 
@@ -83,7 +80,50 @@ def upsert_track_in_db(db_mongo, db_pool, json_dict, ddex_map, update_id_message
     track_data_for_insert = get_track_data_joined_by_ref(track_list, recording_list)
     logging.info("Se cargaron los datos del xml")
 
-    keys = track_data_for_insert[0].keys()
+
+
+    upsert_query = text("""
+    INSERT INTO feed.tracks (
+        name_track, isrc_track, version_track, length_track, explicit_track,
+        active_track, specific_data_track, insert_id_message 
+    )
+    VALUES (
+        :name_track, :isrc_track, :version_track, :length_track, :explicit_track, 
+        :active_track, :specific_data_track, :insert_id_message 
+    )
+    ON DUPLICATE KEY UPDATE
+        name_track = name_track, 
+        version_track = version_track, 
+        length_track = length_track, 
+        explicit_track = explicit_track, 
+        active_track = active_track, 
+        specific_data_track = specific_data_track, 
+        update_id_message = {},
+        audi_edited_track = CURRENT_TIMESTAMP
+
+    """.format(update_id_message))
+
+    query_values = []
+    for track_data in track_data_for_insert:
+        a = track_data['specific_data_track']
+        specific_data_track = {}
+        for i in range(0, len(a), 2):
+            key = a[i].replace("'", "")
+            val = a[i + 1].replace("'", "")
+            specific_data_track[key] = True if val == "true" else val
+
+        query_values.append({
+            "name_track": track_data['name_track'].replace('"', '\\"').replace("'", "\\'"),
+            "isrc_track": track_data['isrc_track'],
+            "version_track": track_data['version_track'],
+            "length_track": track_data['length_track'],
+            "explicit_track": track_data['explicit_track'],
+            "active_track": track_data['active_track'],
+            "specific_data_track": json.dumps(specific_data_track),
+            "insert_id_message": insert_id_message,
+        })
+
+
     values = list()
     for track_data in track_data_for_insert:
         values.append(
@@ -92,46 +132,36 @@ def upsert_track_in_db(db_mongo, db_pool, json_dict, ddex_map, update_id_message
                 name_track=track_data['name_track'].replace('"', '\\"'),
                 isrc_track=track_data['isrc_track'],
                 version_track=track_data['version_track'],
-                length_track=track_data['length_track'],
+                # length_track=track_data['length_track'],
+                length_track= '00:00:00', #if track_data['length_track'].second == 0 and track_data['length_track'].minute == 0 else track_data['length_track'],
                 explicit_track=track_data['explicit_track'],
                 active_track=track_data['active_track'],
                 specific_data_track=track_data['specific_data_track'],
-                insert_id_message=insert_id_message,
-                update_id_message=update_id_message,
 
             )
         )
 
-    logging.info("Se crearon las tuplas para insertar en la bbdd")
-    #
-    sql  = ("INSERT INTO feed.tracks ({}) VALUES {}  "
-            "ON DUPLICATE KEY UPDATE "
-            "name_track = name_track, version_track = version_track, length_track = length_track, "
-            "explicit_track = explicit_track, active_track = 1, specific_data_track = specific_data_track, "
-            "audi_edited_track = CURRENT_TIMESTAMP, update_id_message={}").format(",".join(keys), ",".join(values), update_id_message)
 
 
-    logging.info("Se creo la consulta upsert en mysql: {}".format(sql))
 
-    query_values = {}
-    rows = connections.execute_query(db_pool, sql, query_values)
+    connections.execute_query(db_pool, upsert_query, query_values, list_map=True)
     logging.info("Se ejecutó la consulta upsert en mysql")
 
     # upsert en mongo
-    # sql_select = xml_mapper.get_select_of_last_updated_insert_fields(
-    #     ("name_track",), "tracks", values
-    # )
-    # rows = connections.execute_query(db_pool, sql_select, {})
-    #
-    # # Estos son los nombres de los campos de la tabla label de la base
-    # # en mysql y hay que pasarlo al siquiente método.
-    # structure = [
-    #     "id_track", "isrc_track", "name_track", "version_track", "length_track", "explicit_track", "active_track",
-    #     "specific_data_track", "audi_edited_track", "audi_created_track", "update_id_message", "insert_id_message",
-    # ]
-    # result = xml_mapper.update_in_mongo_db2(db_mongo, rows, 'tracks', structure=structure)
+    sql_select = xml_mapper.get_select_of_last_updated_insert_fields(
+        ("name_track",), "tracks", values
+    )
+    rows = connections.execute_query(db_pool, sql_select, {})
 
-    return rows
+    # Estos son los nombres de los campos de la tabla label de la base
+    # en mysql y hay que pasarlo al siquiente método.
+    structure = [
+        "id_track", "isrc_track", "name_track", "version_track", "length_track", "explicit_track", "active_track",
+        "specific_data_track", "audi_edited_track", "audi_created_track", "update_id_message", "insert_id_message",
+    ]
+    result = xml_mapper.update_in_mongo_db2(db_mongo, rows, 'tracks', structure=structure)
+
+    return result
 
 def upsert_tracks(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message):
     upsert_track_in_db(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message)

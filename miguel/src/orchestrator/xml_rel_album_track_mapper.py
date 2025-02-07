@@ -1,7 +1,5 @@
+from sqlalchemy import text
 import logging
-
-from sqlalchemy.sql.coercions import expect
-
 import connections
 import xml_mapper
 
@@ -18,7 +16,6 @@ def get_tack_data(track_release):
             logging.info(e)
             raise e
 
-
     return track_data
 
 def get_tack_data_from_db(conn, track_data_list):
@@ -31,7 +28,23 @@ def get_tack_data_from_db(conn, track_data_list):
 
     return db_track_data
 
-def upsert_rel_album_track_in_db(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message):
+def get_resource_groups(release_list):
+    grs_rg = release_list['Release']['ResourceGroup']
+    if isinstance(grs_rg, list):
+        grs = grs_rg
+    else:
+        grs = [grs_rg, ]
+        if 'ResourceGroup' in grs_rg:
+            print(2)
+
+    for g in grs:
+        try:
+            val = g['ResourceGroupContentItem'][0]['SequenceNumber']
+            key = g['ResourceGroupContentItem'][0]['ReleaseResourceReference']
+            print(2)
+        except Exception as e:
+            print(e)
+def upsert_rel_album_track_in_db(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message, file_path):
     rows = list()
     track_release = xml_mapper.get_value_from_path(json_dict, ddex_map['TrackRelease'])
     track_data = get_tack_data(track_release)
@@ -40,18 +53,42 @@ def upsert_rel_album_track_in_db(db_mongo, db_pool, json_dict, ddex_map, update_
     release_list = xml_mapper.get_value_from_path(json_dict, ddex_map['ReleaseList'])
     album_data = xml_mapper.get_album_data(release_list)
     album = xml_mapper.get_album_id_from_db(db_pool, album_data['upc'])
+    resource_groups = get_resource_groups(release_list)
 
-    sql_values = list()
+
+    # sql = "insert into albums_tracks (id_album, id_track, insert_id_message) values {} ON DUPLICATE KEY UPDATE " \
+    #        "audi_edited_album_track = CURRENT_TIMESTAMP, update_id_message={};".format(",".join(sql_values), update_id_message)
+    # rows = connections.execute_query(db_pool, sql, {})
+
+    upsert_query = text(
+        "INSERT INTO feed.albums_tracks "
+        " (id_album, id_track, volume_album_track, number_album_track, insert_id_message)"
+        " VALUES ( :id_album, :id_track, :volume_album_track, :number_album_track, :insert_id_message ) " 
+        " ON DUPLICATE KEY UPDATE "
+        "id_album = id_album, id_track = id_track, "
+        "volume_album_track = volume_album_track, "
+        "number_album_track = number_album_track, "
+        "audi_edited_album_track = CURRENT_TIMESTAMP, "
+        "update_id_message={};".format(update_id_message)
+    )
+
+    query_values = []
+    i = 1
     for t in tracks:
-        sql_values.append('({}, {}, {})'.format(album['album_id'], tracks[t], insert_id_message))
+        query_values.append({
+            'id_album': album['album_id'],
+            'id_track': tracks[t],
+            'volume_album_track': 1,
+            'number_album_track': i,
+            'insert_id_message': insert_id_message,
+        })
+        i += 1
 
-    sql = "insert into albums_tracks (id_album, id_track, insert_id_message) values {} ON DUPLICATE KEY UPDATE " \
-           "audi_edited_album_track = CURRENT_TIMESTAMP, update_id_message={};".format(",".join(sql_values), update_id_message)
-    rows = connections.execute_query(db_pool, sql, {})
+    connections.execute_query(db_pool, upsert_query, query_values, list_map=True)
 
-    return rows
+    return True
 
-def upsert_rel_album_track(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message):
-    upsert_rel_album_track_in_db(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message)
+def upsert_rel_album_track(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message, file_path):
+    upsert_rel_album_track_in_db(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message, file_path)
 
 
