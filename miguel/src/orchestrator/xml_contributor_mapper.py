@@ -113,23 +113,23 @@ def upsert_contributors_in_db(db_mongo, db_pool, json_dict, ddex_map, update_id_
             })
 
 
-        for contri_data in contri_data_for_insert:
-            values.append(
-                '("{name_contri}", "{active_contri}", {insert_id_message})'.format(
-                    name_contri=contri_data['name_contri'].replace('"', '\"'),
-                    active_contri=contri_data['active_contri'],
-                    insert_id_message=insert_id_message
+        for contri_data in party_list:
+            if len(contri_data) == 2:
+                if isinstance(contri_data['PartyName'], list):
+                    name_contri = contri_data['PartyName'][0]['FullName']
+                else:
+                    name_contri = contri_data['PartyName']['FullName']
+
+                values.append(
+                    '("{name_contri}", "{active_contri}", {insert_id_message})'.format(
+                        name_contri=name_contri.replace('"', '\"'),
+                        active_contri=1,
+                        insert_id_message=insert_id_message
+                    )
                 )
-            )
 
         connections.execute_query(db_pool, upsert_query, query_values, list_map=True)
         logging.info("Se ejecutó la consulta upsert en mysql")
-
-        # upsert en mongo
-        # sql_select = xml_mapper.get_select_of_last_updated_insert_fields(
-        #     ("name_contri",), "contributors", values
-        # )
-
 
         name_contris = []
         for contri_data in contri_data_for_insert:
@@ -139,10 +139,6 @@ def upsert_contributors_in_db(db_mongo, db_pool, json_dict, ddex_map, update_id_
 
             name_contris.append(contri_data['name_contri'])
 
-
-
-        # sql_in = '(\'' + "','".join(name_contris2) + '\')'
-        # sql_select = "SELECT * FROM feed.contributors WHERE name_contri IN {}".format(sql_in)
         sql_select = text("""SELECT * FROM feed.contributors WHERE name_contri IN :name_contri""").bindparams(
             bindparam("name_contri", value=name_contris, expanding=True)
         )

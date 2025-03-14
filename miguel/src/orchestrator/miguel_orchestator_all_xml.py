@@ -23,7 +23,7 @@ import xml_rel_album_track_mapper
 import xml_rel_track_artist_mapper
 import xml_rel_albums_rights_mapper
 import xml_rel_albums_tracks_rights_mapper
-import xml_rel_track_contributor
+import xml_rel_track_contributor2
 
 # Conectar a MySQL
 db_pool = connections.get_db_connection_pool('feed_mysql')
@@ -99,59 +99,59 @@ for f in all_files:
         insert_id_message = random.randint(1, 999999)
         id_dist = 212321
         # print(datetime.datetime.now())
-        upserted_album = xml_album_mapper.upsert_album(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message)
-        #
-        # # print(datetime.datetime.now())
-        upserted_artist = xml_artist_mapper.upsert_artist(db_mongo, db_pool, json_dict, ddex_map, upserted_album, update_id_message, insert_id_message)
+        # upserted_album = xml_album_mapper.upsert_album(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message)
         # #
         # # # print(datetime.datetime.now())
-        # # # Hay diferencia entre mysql y mongo
-        upserted_track = xml_track_mapper2.upsert_tracks(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message)
+        # upserted_artist = xml_artist_mapper.upsert_artist(db_mongo, db_pool, json_dict, ddex_map, upserted_album, update_id_message, insert_id_message)
+        # # #
+        # # # # print(datetime.datetime.now())
+        # # # # Hay diferencia entre mysql y mongo
+        # upserted_track = xml_track_mapper2.upsert_tracks(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message)
+        # # #
+        # # # # print(datetime.datetime.now())
+        # # # # pronto
+        # upserted_label = xml_label_mapper.upsert_label(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message)
         # #
         # # # print(datetime.datetime.now())
         # # # pronto
-        upserted_label = xml_label_mapper.upsert_label(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message)
-        #
-        # # print(datetime.datetime.now())
-        # # pronto
-        upserted_genre = xml_genre_mapper.upsert_genre(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message)
-        #
-        # # print(datetime.datetime.now())
-        # # pronto
-        upserted_use_type = xml_use_type_mapper.upsert_use_type(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message)
+        # upserted_genre = xml_genre_mapper.upsert_genre(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message)
         # #
         # # # print(datetime.datetime.now())
+        # # # pronto
+        # upserted_use_type = xml_use_type_mapper.upsert_use_type(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message)
+        # # #
+        # # # # print(datetime.datetime.now())
+        # # # pronto
+        # upserted_comercial_model_type = xml_comercial_model_type_mapper.upsert_commercial_use_type(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message)
+        # #
+        # # print(datetime.datetime.now())
         # # pronto
-        upserted_comercial_model_type = xml_comercial_model_type_mapper.upsert_commercial_use_type(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message)
-        #
-        # print(datetime.datetime.now())
-        # pronto
-        xml_contributor_mapper.upsert_contributors(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message)
+        # xml_contributor_mapper.upsert_contributors(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message)
 
-        # # print(datetime.datetime.now())
-        # # Pronto
-        xml_rel_album_artist_mapper.upsert_rel_album_track(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message)
-        #
-        # # print(datetime.datetime.now())
-        # # pronto
-        xml_rel_album_genre_mapper.upsert_rel_album_genre(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message)
-        #
-        # # print(datetime.datetime.now())
-        # # PRONTO
-        xml_rel_album_track_mapper.upsert_rel_album_track(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message, file_path)
+        # # # print(datetime.datetime.now())
+        # # # Pronto
+        # xml_rel_album_artist_mapper.upsert_rel_album_track(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message)
         # #
         # # # print(datetime.datetime.now())
-        xml_rel_albums_rights_mapper.upsert_rel_album_right(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message,id_dist )
-        #
-        # # print(datetime.datetime.now())
-        # # Falta, hay que revisar unos null
-        xml_rel_albums_tracks_rights_mapper.upsert_rel_album_track_right(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message, id_dist)
-        #
-        # # print(datetime.datetime.now())
-        xml_rel_track_artist_mapper.upsert_rel_track_artist_in_db(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message)
+        # # # pronto
+        # xml_rel_album_genre_mapper.upsert_rel_album_genre(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message)
         # #
         # # # print(datetime.datetime.now())
-        xml_rel_track_contributor.upsert_track_contributor(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message)
+        # # # PRONTO
+        # xml_rel_album_track_mapper.upsert_rel_album_track(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message, file_path)
+        # # #
+        # # # # print(datetime.datetime.now())
+        # xml_rel_albums_rights_mapper.upsert_rel_album_right(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message,id_dist )
+        # #
+        # # # print(datetime.datetime.now())
+        # # # Falta, hay que revisar unos null
+        # xml_rel_albums_tracks_rights_mapper.upsert_rel_album_track_right(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message, id_dist)
+        # #
+        # # # print(datetime.datetime.now())
+        # xml_rel_track_artist_mapper.upsert_rel_track_artist_in_db(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message)
+        # # #
+        # # # # print(datetime.datetime.now())
+        xml_rel_track_contributor2.upsert_track_contributor(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message)
         print(" Archivo: ", i, " procesado, path: ", file_path)
         i += 1
     except Exception as error:

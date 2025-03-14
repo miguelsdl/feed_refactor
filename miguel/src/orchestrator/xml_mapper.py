@@ -1,8 +1,11 @@
+from bson import json_util
+import json
 import logging
 import re
 from datetime import datetime, timedelta
-import connections
+from pymongo import UpdateOne, ReplaceOne
 
+import connections
 
 # Funciones Auxiliares
 
@@ -10,11 +13,11 @@ def duration_to_seconds(duration):
     """
     Convierte una cadena de duración en formato ISO 8601 a segundos.
     
-    :param duration: Cadena de duración en formato ISO 8601 (e.g., 'PT1H30M45S').
+    :param duration: Cadena de duración en formato ISO 8601 (e.g., 'P0DT0H0M30.000S').
     :return: Duración total en segundos.
     :raises ValueError: Si el formato de la duración es inválido.
     """
-    pattern = re.compile(r'PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?')
+    pattern = re.compile(r'P(?:\d+D)?T(?:(\d+)H)?(?:(\d+)M)?(?:(\d+(?:\.\d+)?)S)?')
     match = pattern.match(duration)
     
     if not match:
@@ -22,10 +25,11 @@ def duration_to_seconds(duration):
 
     hours = int(match.group(1)) if match.group(1) else 0
     minutes = int(match.group(2)) if match.group(2) else 0
-    seconds = int(match.group(3)) if match.group(3) else 0
+    seconds = float(match.group(3)) if match.group(3) else 0
 
-    total_seconds = hours * 3600 + minutes * 60 + seconds
+    total_seconds = int(hours * 3600 + minutes * 60 + seconds)
     return total_seconds
+
 
 def seconds_to_hhmmss(seconds):
     """
@@ -38,6 +42,7 @@ def seconds_to_hhmmss(seconds):
     minutes = (seconds % 3600) // 60
     seconds = seconds % 60
     return f"{hours:02}:{minutes:02}:{seconds:02}"
+
 
 def get_value_from_path(json_dict, path):
     """
@@ -67,6 +72,7 @@ def get_value_from_path(json_dict, path):
     
     return json_dict
 
+
 def timedelta_to_string(td):
     """
     Convierte un objeto timedelta en una cadena de texto en formato 'HH:MM:SS'.
@@ -79,6 +85,7 @@ def timedelta_to_string(td):
     minutes, seconds = divmod(remainder, 60)
     return f"{hours:02}:{minutes:02}:{seconds:02}"
 
+
 def datetime_to_string(dt):
     """
     Convierte un objeto datetime en una cadena de texto en formato ISO 8601.
@@ -87,6 +94,7 @@ def datetime_to_string(dt):
     :return: Cadena en formato ISO 8601.
     """
     return dt.isoformat()
+
 
 def serialize_with_custom_types(data):
     """
@@ -106,6 +114,8 @@ def serialize_with_custom_types(data):
     else:
         return data
     
+
+
 def convert_timedelta_to_seconds(td):
     """
     Convierte un objeto datetime.timedelta a segundos.
@@ -170,6 +180,18 @@ def get_dict_by_language_code_in_list(vals, lang_code_order=('es', 'en'), key_na
 def list_to_sql_in_str(data):
     return "('" + "', '".join(data) + "')"
 
+def get_resource_list_data_by_resource_reference(resource_list):
+    resource_data = dict()
+
+    recording_ref_list = resource_list['SoundRecording']
+    if not isinstance(recording_ref_list, list):
+        recording_ref_list = list(resource_list['SoundRecording'])
+
+    for sound_recording in recording_ref_list:
+        resource_data[sound_recording['ResourceReference']] = sound_recording
+
+    return resource_data
+
 def get_dict_to_list_dict(dict_or_list):
     return [dict_or_list, ] if isinstance(dict_or_list, dict) else dict_or_list
 
@@ -178,6 +200,28 @@ def get_album_upc(release_data, ref_alb):
 
 def get_album_dist(release_data):
     pass
+
+def get_album_label(release_data):
+    return release_data['R0']['ReleaseLabelReference']['#text']
+
+def get_album_cmt(deal_data):
+    return deal_data['R0']['DealTerms']['CommercialModelType']
+
+def get_album_use_type(deal_data):
+    return deal_data['R0']['DealTerms']['UseType']
+
+def get_album_territory_code(deal_data):
+    return deal_data['R0']['DealTerms']['TerritoryCode']
+
+def get_album_start_date(deal_data):
+    return deal_data['R0']['DealTerms']['ValidityPeriod']['StartDateTime']
+
+def get_album_end_date(deal_data):
+    try:
+        return deal_data['R0']['DealTerms']['ValidityPeriod']['EndDateTime']
+    except Exception as e:
+        #logging.error("Error, no se encontro edn date: " + str(e))
+        return None
 
 def get_data_from_db(db_pool, name_fields, talbe_name, where_field, in_values, execute=True):
     sql_tpl = "SELECT {name_fields} FROM feed.{talbe_name} WHERE {where_field} IN ({in_values});"
@@ -237,6 +281,7 @@ def get_party_liat_for_ref(party_list):
         names[key] = value
     return names
 
+
 def safe_parse(s):
     final = []
     try:
@@ -251,6 +296,7 @@ def safe_parse(s):
         final = []
 
     return final
+
 
 def merge_fields_name_with_values_tuple(fields, where_conditions):
     where = []
@@ -282,6 +328,7 @@ def merge_fields_name_with_values_tuple(fields, where_conditions):
         if len(condition) > 0:
             where.append(" AND ".join(condition))
     return where
+
 
 def get_select_of_last_updated_insert_fields(fields, table_name, where_conditions):
     sql_where = merge_fields_name_with_values_tuple(
@@ -357,8 +404,10 @@ def get_countries_from_db(db_pool):
 def get_countries_id_by_iso_code_list(iso_codes_list, countires=[]):
     try:
         if len(countires):
-            return [0]
-        else:
+            #return [0]
             return [iso_codes_list[countire] for countire in countires]
+        else:
+            #return [iso_codes_list[countire] for countire in countires]
+            return [0]
     except Exception as e:
         raise e
