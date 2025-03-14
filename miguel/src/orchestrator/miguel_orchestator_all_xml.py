@@ -23,7 +23,7 @@ import xml_rel_album_track_mapper
 import xml_rel_track_artist_mapper
 import xml_rel_albums_rights_mapper
 import xml_rel_albums_tracks_rights_mapper
-import xml_rel_track_contributor2
+import xml_rel_track_contributor
 
 # Conectar a MySQL
 db_pool = connections.get_db_connection_pool('feed_mysql')
@@ -151,7 +151,7 @@ for f in all_files:
         # xml_rel_track_artist_mapper.upsert_rel_track_artist_in_db(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message)
         # # #
         # # # # print(datetime.datetime.now())
-        xml_rel_track_contributor2.upsert_track_contributor(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message)
+        xml_rel_track_contributor.upsert_track_contributor(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message)
         print(" Archivo: ", i, " procesado, path: ", file_path)
         i += 1
     except Exception as error:
