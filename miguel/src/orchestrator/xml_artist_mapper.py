@@ -38,7 +38,7 @@ def get_artist_name(party):
         return 'Desconocido'
     
 
-def get_DisplayArtist(release, party_list):
+def get_DisplayArtist(release, resources, party_list):
     """
     Obtiene la información de los artistas desde el campo 'DisplayArtist' y mapea su nombre desde 'PartyList'.
     
@@ -52,7 +52,16 @@ def get_DisplayArtist(release, party_list):
 
         # Si DisplayArtist no es una lista, lo convertimos en una lista
         if isinstance(display_artist_list, dict):
-            display_artist_list = [display_artist_list]
+            display_artist_list = [display_artist_list, ]
+
+        # agrego los artist que vienen en resources list
+        for sr in resources:
+            artist_list = sr['DisplayArtist']
+            if not isinstance(artist_list, list):
+                artist_list = [artist_list, ]
+            for a in artist_list:
+                if a not in display_artist_list:
+                    display_artist_list.append(a)
 
         artists = []
 
@@ -95,13 +104,18 @@ def get_artist_from_xml(json_dict, ddex_map):
         # Obtener la lista de artistas desde el PartyList
         party_list = xml_mapper.get_value_from_path(json_dict, ddex_map['PartyList'])
         release = xml_mapper.get_value_from_path(json_dict, ddex_map['Release'])
+        resources = xml_mapper.get_value_from_path(json_dict, ddex_map['SoundRecording'])
 
         # Comprobar si party_list es una lista, si no lo es, convertirlo en una lista para manejar múltiples artistas
         if isinstance(party_list, dict):
-            party_list = [party_list]  # Si solo hay un artista, lo convertimos en una lista de un elemento
-        
+            party_list = [party_list, ]  # Si solo hay un artista, lo convertimos en una lista de un elemento
+
+        if isinstance(resources, dict):
+            resources = [resources, ]  # Si solo hay un artista, lo convertimos en una lista de un elemento
+
+
         # Obtener la información de DisplayArtist y mapear a PartyList
-        artists = get_DisplayArtist(release, party_list)
+        artists = get_DisplayArtist(release, resources, party_list)
         
         return artists
     
