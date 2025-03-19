@@ -91,7 +91,7 @@ def get_val_join_xml_and_db_data(xml_data, db_data, reference):
         except Exception as e:
             logging.error("error en get_val_join_xml_and_db_data(): " + str(e))
 
-    return id[0] if len(id) == 1 else id
+    return id
 
 def get_id_album_track(db_pool, id_album, id_track):
     sql = "select id_album_track from feed.albums_tracks where id_album = {} and id_track = {};"\
@@ -151,7 +151,15 @@ def upsert_rel_album_track_right_in_db(db_mongo, db_pool, json_dict, ddex_map, u
         db_pool, 'id_label,name_label',"labels", "name_label", sql_in
     )
 
-    sql_in = "'" + "','".join(set(track_cmt.values())) + "'"
+    cmt_set = set()
+    for cmt in track_cmt.values():
+        if isinstance(cmt, list):
+            for c in cmt:
+                cmt_set.add(c)
+        else:
+            cmt_set.add(cmt)
+
+    sql_in = "'" + "','".join(cmt_set) + "'"
     track_cmt_data = xml_mapper.get_data_from_db(
         db_pool, 'id_cmt,name_cmt',"comercial_model_types", "name_cmt", sql_in
     )
@@ -191,24 +199,23 @@ def upsert_rel_album_track_right_in_db(db_mongo, db_pool, json_dict, ddex_map, u
                 end_date = end_date[ref]
             else:
                 end_date = None
-
-        for utype in id_use_type:
-            sql_tmp = {
-                "id_album_track": id_album_track,
-                "id_dist": id_dist,
-                "id_label": id_label,
-                "id_cmt": id_cmt,
-                "id_use_type": utype,
-                "cnty_ids_albtraright": "{}".format(cnty_ids_albtraright),
-                "start_date_albtraright": "{}".format(start_date),
-                "end_date_albtraright": "{}".format(end_date) if end_date is not None else None,
-                "insert_id_message": insert_id_message,
-                "pline_text_albtraright": resource_list[track["isrc_track"]]['pline_text'],
-                "pline_year_albtraright": resource_list[track["isrc_track"]]['pline_year'],
-                "update_id_message": update_id_message
-            }
-
-            sql_in.append(sql_tmp)
+        for cmt in id_cmt:
+            for utype in id_use_type:
+                sql_tmp = {
+                    "id_album_track": id_album_track,
+                    "id_dist": id_dist,
+                    "id_label": id_label[0],
+                    "id_cmt": cmt,
+                    "id_use_type": utype,
+                    "cnty_ids_albtraright": "{}".format(cnty_ids_albtraright),
+                    "start_date_albtraright": "{}".format(start_date),
+                    "end_date_albtraright": "{}".format(end_date) if end_date is not None else None,
+                    "insert_id_message": insert_id_message,
+                    "pline_text_albtraright": resource_list[track["isrc_track"]]['pline_text'],
+                    "pline_year_albtraright": resource_list[track["isrc_track"]]['pline_year'],
+                    "update_id_message": update_id_message
+                }
+                sql_in.append(sql_tmp)
 
     query_values = sql_in
 

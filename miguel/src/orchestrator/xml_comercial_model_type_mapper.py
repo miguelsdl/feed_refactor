@@ -16,7 +16,11 @@ def get_deal_term_list(deal_term_list):
             elif isinstance(deal_term_list, list):
                 for dt in deal_term_list:
                     for ut in dt:
-                        commercial_model_type_list.add(dt[ut]['CommercialModelType'])
+                        if isinstance(dt[ut]['CommercialModelType'], list):
+                            for cmt in dt[ut]['CommercialModelType']:
+                                commercial_model_type_list.add(cmt)
+                        else:
+                            commercial_model_type_list.add(dt[ut]['CommercialModelType'])
 
         logging.info("Se leyeron los generos correctamente.")
         return commercial_model_type_list
