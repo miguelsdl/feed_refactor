@@ -21,7 +21,6 @@ import xml_rel_album_artist_mapper
 import xml_rel_album_genre_mapper
 import xml_rel_album_track_mapper
 import xml_rel_track_artist_mapper
-import xml_rel_track_artist_mapper2
 import xml_rel_albums_rights_mapper
 import xml_rel_albums_tracks_rights_mapper
 import xml_rel_track_contributor
