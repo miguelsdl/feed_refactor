@@ -4,6 +4,7 @@ Release: "ernm:NewReleaseMessage/ReleaseList/Release"
 ReleaseList: "ernm:NewReleaseMessage/ReleaseList"
 TrackRelease: "ernm:NewReleaseMessage/ReleaseList/TrackRelease"
 SoundRecording: "ernm:NewReleaseMessage/ResourceList/SoundRecording"
+DisplayArtist2: "ernm:NewReleaseMessage/ResourceList/SoundRecording/DisplayArtist"
 
 PartyList: "ernm:NewReleaseMessage/PartyList/Party"
 ResourceList: "ernm:NewReleaseMessage/ResourceList"

@@ -270,7 +270,6 @@ def get_value_by_key_from_dict_inverted(data, key):
 
 def get_party_liat_for_ref(party_list):
     names = dict()
-    value = None
     for party in party_list:
         key = party['PartyReference']
         if isinstance(party['PartyName'], list):

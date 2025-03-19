@@ -82,16 +82,16 @@ def get_data_from_xml(json_dict, ddex_map):
     }
 
 def get_val_join_xml_and_db_data(xml_data, db_data, reference):
-    id = 'null'
+    id = []
     for row in db_data:
         vals = list(row.values())
         try:
             if vals[1] in xml_data[reference]:
-                id = vals[0]
-        except:
-            logging.error("error en get_val_join_xml_and_db_data()"  )
+                id.append(vals[0])
+        except Exception as e:
+            logging.error("error en get_val_join_xml_and_db_data(): " + str(e))
 
-    return id
+    return id[0] if len(id) == 1 else id
 
 def get_id_album_track(db_pool, id_album, id_track):
     sql = "select id_album_track from feed.albums_tracks where id_album = {} and id_track = {};"\
@@ -192,22 +192,23 @@ def upsert_rel_album_track_right_in_db(db_mongo, db_pool, json_dict, ddex_map, u
             else:
                 end_date = None
 
-        sql_tmp = {
-            "id_album_track": id_album_track,
-            "id_dist": id_dist,
-            "id_label": id_label,
-            "id_cmt": id_cmt,
-            "id_use_type": id_use_type,
-            "cnty_ids_albtraright": "{}".format(cnty_ids_albtraright),
-            "start_date_albtraright": "{}".format(start_date),
-            "end_date_albtraright": "{}".format(end_date) if end_date is not None else None,
-            "insert_id_message": insert_id_message,
-            "pline_text_albtraright": resource_list[track["isrc_track"]]['pline_text'],
-            "pline_year_albtraright": resource_list[track["isrc_track"]]['pline_year'],
-            "update_id_message": update_id_message
-        }
+        for utype in id_use_type:
+            sql_tmp = {
+                "id_album_track": id_album_track,
+                "id_dist": id_dist,
+                "id_label": id_label,
+                "id_cmt": id_cmt,
+                "id_use_type": utype,
+                "cnty_ids_albtraright": "{}".format(cnty_ids_albtraright),
+                "start_date_albtraright": "{}".format(start_date),
+                "end_date_albtraright": "{}".format(end_date) if end_date is not None else None,
+                "insert_id_message": insert_id_message,
+                "pline_text_albtraright": resource_list[track["isrc_track"]]['pline_text'],
+                "pline_year_albtraright": resource_list[track["isrc_track"]]['pline_year'],
+                "update_id_message": update_id_message
+            }
 
-        sql_in.append(sql_tmp)
+            sql_in.append(sql_tmp)
 
     query_values = sql_in
 
