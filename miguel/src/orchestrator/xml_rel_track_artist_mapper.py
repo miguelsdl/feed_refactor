@@ -10,6 +10,7 @@ def upsert_rel_track_artist_in_db(db_mongo, db_pool, json_dict, ddex_map, update
     sound_recording = xml_mapper.get_value_from_path(json_dict, ddex_map['SoundRecording'])
     if not isinstance(sound_recording, list):
         sound_recording = [sound_recording, ]
+
     # P_LABEL_SDRA_STATION
     party_list = xml_mapper.get_value_from_path(json_dict, ddex_map['PartyList'])
     party_list_ref = xml_mapper.get_party_liat_for_ref(party_list)
@@ -36,7 +37,10 @@ def upsert_rel_track_artist_in_db(db_mongo, db_pool, json_dict, ddex_map, update
             ).format(key, val['track_isrc']['ResourceId']['ISRC'])
         )
     sql = " UNION ".join(sql).replace(";", " \n ")
+    # Acá ya tengo una lista de los tracks de esta forma [('A1', 1, 'USSM19805796'),...]
     rows1 = connections.execute_query(db_pool, sql, {})
+
+
 
     for r in rows1:
         sound_recording_map[r[0]]['id_track'] = r[1]
@@ -113,7 +117,7 @@ def upsert_rel_track_artist_in_db(db_mongo, db_pool, json_dict, ddex_map, update
             query_values.append({
                 "id_track": val['id_track'],
                 "id_artist": ref_contr_id[key],
-                "artist_role_track_artist": "'{}'".format(roles[key][cref]),
+                "artist_role_track_artist": "{}".format(roles[key][cref]),
                 "insert_id_message": insert_id_message,
                 "update_id_message": update_id_message
             })
@@ -138,6 +142,8 @@ def upsert_rel_track_artist_in_db(db_mongo, db_pool, json_dict, ddex_map, update
         audi_edited_track_artist = CURRENT_TIMESTAMP,
         update_id_message={}
     """.format(update_id_message))
+    connections.execute_query(db_pool, upsert_query, query_values, list_map=True)
+    logging.info("Se ejecutó la consulta upsert en mysql")
 
 
 def upsert_rel_track_artist(db_mongo, db_pool, json_dict, ddex_map):
