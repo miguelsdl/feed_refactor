@@ -3,129 +3,111 @@ from sqlalchemy import text
 import connections
 import xml_mapper
 
-
-
-def upsert_rel_track_artist_in_db(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message):
-    sound_recording_map = dict()
-    sound_recording = xml_mapper.get_value_from_path(json_dict, ddex_map['SoundRecording'])
-    if not isinstance(sound_recording, list):
-        sound_recording = [sound_recording, ]
-
-    # P_LABEL_SDRA_STATION
+def get_party_list_map(json_dict, ddex_map):
     party_list = xml_mapper.get_value_from_path(json_dict, ddex_map['PartyList'])
     party_list_ref = xml_mapper.get_party_liat_for_ref(party_list)
-    to_del = []
-    for k, v in party_list_ref.items():
-        if "LABEL" in k:
-            to_del.append(k)
-    for e in to_del:
-        del party_list_ref[e]
-
     party_list_ref_inverted = {v:k for k,v in party_list_ref.items()}
 
-    for sr in sound_recording:
-            sound_recording_map[sr['ResourceReference']] = {
-                "artist": sr['DisplayArtist'] if 'DisplayArtist' in sr else None,
-                "track_isrc": sr['SoundRecordingEdition'] if 'SoundRecordingEdition' in sr else None,
-            }
+    return {"party_list_ref": party_list_ref, "party_list_ref_inverted": party_list_ref_inverted}
 
+def get_artist_list_from_sound_recording(ref, display_artist, party_list_maps):
+    artist = []
+    artist_name = list()
+
+    if isinstance(display_artist, dict):
+        display_artist = [display_artist, ]
+
+    party_reference = party_list_maps.get('party_list_ref', dict())
+
+
+    for da in display_artist:
+        artist.append({
+            "artist_name": party_reference.get(da['ArtistPartyReference']),
+            "role": da['DisplayArtistRole'],
+            "party_ref": da['ArtistPartyReference'],
+        })
+        artist_name.append(party_reference.get(da['ArtistPartyReference']), )
+
+    return {"artist": artist, "artist_name": {ref: artist_name}}
+
+def get_track_data(db_pool, isrc_map):
     sql = []
-    for key, val in sound_recording_map.items():
+    for key, val in isrc_map.items():
         sql.append(
             xml_mapper.get_data_from_db(
-                db_pool, "'{}',id_track,isrc_track", "tracks", "isrc_track", "'{}'", execute=False
-            ).format(key, val['track_isrc']['ResourceId']['ISRC'])
+                db_pool, "'{}',id_track,isrc_track","tracks", "isrc_track",
+                "'{}'", execute=False
+            ).format(key, val)
         )
     sql = " UNION ".join(sql).replace(";", " \n ")
     # Acá ya tengo una lista de los tracks de esta forma [('A1', 1, 'USSM19805796'),...]
-    rows1 = connections.execute_query(db_pool, sql, {})
+    rows = connections.execute_query(db_pool, sql, {})
 
+    return rows
 
-
-    for r in rows1:
-        sound_recording_map[r[0]]['id_track'] = r[1]
-        sound_recording_map[r[0]]['isrc_track'] = r[2]
-
-    cons = dict()
-    for key, val in sound_recording_map.items():
-        if key not in cons:
-            cons[key] = set()
-        if isinstance(val['artist'], list):
-            for v in val['artist']:
-               cons[key].add(party_list_ref[v['ArtistPartyReference']].replace('"', '\\"').replace("'", "\\'"))
-                             #.replace('"', '\\"')
-        if isinstance(val['artist'], dict):
-            cons[key].add(party_list_ref[val['artist']['ArtistPartyReference']].replace('"', '\\"').replace("'", "\\'"))
-                          #.replace('"', '\\"'))
-
-    roles = dict()
-    "{'A1': {'P_ARTIST_1286795': 'UserDefined', 'P_ARTIST_17349': 'UserDefined', 'P_ARTIST_22436': 'UserDefined,Composer,Lyricist', 'P_ARTIST_295': 'UserDefined', 'P_ARTIST_4788': 'UserDefined', 'P_ARTIST_4908': 'UserDefined', 'P_ARTIST_64118': 'UserDefined', 'P_ARTIST_64119': 'UserDefined', 'P_ARTIST_64122': 'UserDefined', 'P_ARTIST_64123': 'UserDefined', 'P_ARTIST_64125': 'UserDefined', 'P_ARTIST_64126': 'UserDefined', 'P_ARTIST_64127': 'UserDefined', 'P_ARTIST_64128': 'UserDefined', 'P_ARTIST_64129': 'UserDefined', 'P_ARTIST_64130': 'UserDefined', 'P_ARTIST_64131': 'UserDefined'}, 'A10': {'P_ARTIST_1286795': 'UserDefined', 'P_ARTIST_17349': 'UserDefined', 'P_ARTIST_22436': 'UserDefined,Composer,Lyricist', 'P_ARTIST_4788': 'UserDefined', 'P_ARTIST_64118': 'UserDefined', 'P_ARTIST_64119': 'UserDefined', 'P_ARTIST_64123': 'AssociatedPerformer,UserDefined', 'P_ARTIST_64125': 'UserDefined', 'P_ARTIST_64127': 'UserDefined', 'P_ARTIST_64129': 'UserDefined', 'P_ARTIST_64130': 'UserDefined'}, 'A11': {'P_ARTIST_1286795': 'UserDefined', 'P_ARTIST_17349': 'UserDefined', 'P_ARTIST_43733': '', 'P_ARTIST_64118': 'UserDefined', 'P_ARTIST_64119': 'UserDefined', 'P_ARTIST_64122': 'UserDefined', 'P_ARTIST_64123': 'UserDefined', 'P_ARTIST_64125': 'UserDefined', 'P_ARTIST_64127': 'UserDefined', 'P_ARTIST_64129': 'UserDefined', 'P_ARTIST_64130': 'UserDefined', 'P_ARTIST_64131': 'UserDefined'}, 'A12': {'P_ARTIST_1286795': 'UserDefined', 'P_ARTIST_17349': 'UserDefined', 'P_ARTIST_22436': 'UserDefined', 'P_ARTIST_64118': 'UserDefined', 'P_ARTIST_64119': 'UserDefined', 'P_ARTIST_64122': 'UserDefined', 'P_ARTIST_64123': 'UserDefined', 'P_ARTIST_64125': 'UserDefined', 'P_ARTIST_64127': 'UserDefined', 'P_ARTIST_64129': 'UserDefined', 'P_ARTIST_64130': 'UserDefined', 'P_ARTIST_64151': 'Composer,Lyricist'}, 'A13': {'P_ARTIST_1286795': 'UserDefined', 'P_ARTIST_17349': 'UserDefined', 'P_ARTIST_2756870': 'Composer,Lyricist', 'P_ARTIST_2756871': 'Composer,Lyricist', 'P_ARTIST_2756872': 'Composer,Lyricist', 'P_ARTIST_64118': 'UserDefined', 'P_ARTIST_64119': 'UserDefined', 'P_ARTIST_64122': 'UserDefined', 'P_ARTIST_64123': 'UserDefined', 'P_ARTIST_64125': 'UserDefined', 'P_ARTIST_64127': 'UserDefined', 'P_ARTIST_64129': 'UserDefined', 'P_ARTIST_64130': 'UserDefined', 'P_ARTIST_64131': 'UserDefined'}, 'A14': {'P_ARTIST_1286795': 'UserDefined', 'P_ARTIST_17349': 'UserDefined', 'P_ARTIST_64118': 'UserDefined', 'P_ARTIST_64119': 'UserDefined', 'P_ARTIST_64122': 'UserDefined', 'P_ARTIST_64123': 'UserDefined', 'P_ARTIST_64125': 'UserDefined', 'P_ARTIST_64127': 'UserDefined', 'P_ARTIST_64129': 'UserDefined', 'P_ARTIST_64130': 'UserDefined', 'P_ARTIST_64131': 'UserDefined', 'P_ARTIST_64137': 'Composer,Lyricist'}, 'A15': {'P_ARTIST_1286795': 'UserDefined', 'P_ARTIST_17349': 'UserDefined', 'P_ARTIST_64118': 'UserDefined', 'P_ARTIST_64119': 'UserDefined', 'P_ARTIST_64122': 'UserDefined', 'P_ARTIST_64123': 'UserDefined', 'P_ARTIST_64125': 'UserDefined', 'P_ARTIST_64127': 'UserDefined', 'P_ARTIST_64129': 'UserDefined', 'P_ARTIST_64130': 'UserDefined', 'P_ARTIST_64131': 'UserDefined', 'P_ARTIST_64139': 'Composer,Lyricist'}, 'A2': {'P_ARTIST_1286795': 'UserDefined', 'P_ARTIST_17349': 'UserDefined', 'P_ARTIST_22436': 'UserDefined,Composer,Lyricist', 'P_ARTIST_64118': 'UserDefined', 'P_ARTIST_64119': 'UserDefined', 'P_ARTIST_64123': 'UserDefined', 'P_ARTIST_64125': 'UserDefined'}, 'A3': {'P_ARTIST_1286795': 'UserDefined', 'P_ARTIST_1327278': 'UserDefined', 'P_ARTIST_17349': 'UserDefined', 'P_ARTIST_22436': 'UserDefined', 'P_ARTIST_64118': 'UserDefined', 'P_ARTIST_64123': 'UserDefined', 'P_ARTIST_64125': 'UserDefined', 'P_ARTIST_64160': 'Composer,Lyricist', 'P_ARTIST_64161': 'Composer,Lyricist'}, 'A4': {'P_ARTIST_1286795': 'UserDefined', 'P_ARTIST_17349': 'UserDefined', 'P_ARTIST_2782385': 'Composer,Lyricist', 'P_ARTIST_64118': 'UserDefined', 'P_ARTIST_64119': 'UserDefined', 'P_ARTIST_64122': 'UserDefined', 'P_ARTIST_64123': 'UserDefined', 'P_ARTIST_64125': 'UserDefined', 'P_ARTIST_64127': 'UserDefined', 'P_ARTIST_64129': 'UserDefined', 'P_ARTIST_64130': 'UserDefined', 'P_ARTIST_64131': 'UserDefined'}, 'A5': {'P_ARTIST_1286795': 'UserDefined', 'P_ARTIST_17349': 'UserDefined', 'P_ARTIST_22436': 'UserDefined', 'P_ARTIST_2756870': 'Composer,Lyricist', 'P_ARTIST_2756871': 'Composer,Lyricist', 'P_ARTIST_2756872': 'Composer,Lyricist', 'P_ARTIST_64118': 'UserDefined', 'P_ARTIST_64119': 'UserDefined', 'P_ARTIST_64123': 'AssociatedPerformer,UserDefined', 'P_ARTIST_64125': 'UserDefined', 'P_ARTIST_64127': 'UserDefined', 'P_ARTIST_64129': 'UserDefined', 'P_ARTIST_64130': 'UserDefined'}, 'A6': {'P_ARTIST_1286795': 'UserDefined', 'P_ARTIST_17349': 'UserDefined', 'P_ARTIST_22436': 'UserDefined,Composer,Lyricist', 'P_ARTIST_64118': 'UserDefined', 'P_ARTIST_64119': 'UserDefined', 'P_ARTIST_64123': 'AssociatedPerformer,UserDefined', 'P_ARTIST_64125': 'UserDefined', 'P_ARTIST_64127': 'UserDefined', 'P_ARTIST_64129': 'UserDefined', 'P_ARTIST_64130': 'UserDefined'}, 'A7': {'P_ARTIST_1286795': 'UserDefined', 'P_ARTIST_17349': 'UserDefined', 'P_ARTIST_22436': 'UserDefined', 'P_ARTIST_64118': 'UserDefined', 'P_ARTIST_64119': 'UserDefined', 'P_ARTIST_64123': 'UserDefined', 'P_ARTIST_64125': 'UserDefined', 'P_ARTIST_64127': 'UserDefined', 'P_ARTIST_64129': 'UserDefined', 'P_ARTIST_64130': 'UserDefined', 'P_ARTIST_64137': 'Composer,Lyricist'}, 'A8': {'P_ARTIST_1286795': 'UserDefined', 'P_ARTIST_17349': 'UserDefined', 'P_ARTIST_22436': 'UserDefined,Composer,Lyricist', 'P_ARTIST_269083': 'Composer,Lyricist', 'P_ARTIST_64118': 'UserDefined', 'P_ARTIST_64119': 'UserDefined', 'P_ARTIST_64123': 'AssociatedPerformer,UserDefined', 'P_ARTIST_64125': 'UserDefined', 'P_ARTIST_64127': 'UserDefined', 'P_ARTIST_64129': 'UserDefined', 'P_ARTIST_64130': 'UserDefined'}, 'A9': {'P_ARTIST_1286795': 'UserDefined', 'P_ARTIST_17349': 'UserDefined', 'P_ARTIST_22436': 'Composer,Lyricist', 'P_ARTIST_64118': 'UserDefined', 'P_ARTIST_64119': 'UserDefined', 'P_ARTIST_64122': 'UserDefined', 'P_ARTIST_64123': 'UserDefined', 'P_ARTIST_64125': 'UserDefined', 'P_ARTIST_64127': 'UserDefined', 'P_ARTIST_64129': 'UserDefined', 'P_ARTIST_64130': 'UserDefined', 'P_ARTIST_64131': 'UserDefined'}}"
-    for key, val in sound_recording_map.items():
-        if key not in roles:
-            roles[key] = dict()
-        if isinstance(val['artist'], list):
-            lv = val['artist']
-            for v in lv:
-                roles[key][v['ArtistPartyReference']] = set()
-                rol = v['DisplayArtistRole']
-                if isinstance(rol, list):
-                    for r in rol:
-                        if isinstance(r, str):
-                            roles[key][v['ArtistPartyReference']].add(r)
-                        elif isinstance(r, dict):
-                            roles[key][v['ArtistPartyReference']].add(r['#text'])
-                        elif isinstance(r, list):
-                            raise 1
-                if isinstance(rol, dict):
-                    roles[key][v['ArtistPartyReference']].add(rol['#text'])
-                if isinstance(rol, str):
-                    roles[key][v['ArtistPartyReference']].add(rol)
-
-                roles[key][v['ArtistPartyReference']] = ",".join(roles[key][v['ArtistPartyReference']])
-
-        if isinstance(val['artist'], dict):
-            # o = party_list_ref[val['artist']['ArtistPartyReference']].replace('"', '\\"').replace("'", "\\'")
-            # roles[key] [val['artist']['ArtistPartyReference']] = set()
-            # roles[key][val['artist']['ArtistPartyReference']].add(val['artist']['ArtisticRole'])
-            # o = party_list_ref[val['artist']['ArtistPartyReference']].replace('"', '\\"').replace("'", "\\'")
-            roles[key][val['artist']['ArtistPartyReference']] = val['artist']['DisplayArtistRole']
-            # roles[key][val['artist']['ArtistPartyReference']].add()
-
+def get_artist_data(db_pool, artist_data):
     sql = []
-    query_values = []
-
-    for key, val in cons.items():
+    for key, val in artist_data.items():
         sql.append(
             xml_mapper.get_data_from_db(
                 db_pool, "'{}',id_artist,name_artist", "artists", "name_artist", {}, execute=False
             ).format(key, "'" + "','".join(val) + "'")
         )
     sql = " UNION ".join(sql).replace(";", " \n ")
-    rows2 = connections.execute_query(db_pool, sql, {})
-    ref_contr_id = dict()
-    ref_contr_name = dict()
-    if  len(rows2) > 0:
-        for row in rows2:
-            ref_contr_id[row[0]] = row[1]
-            ref_contr_name[row[0]] = row[2]
+    rows = connections.execute_query(db_pool, sql, {})
 
-    sql_in = list()
-    for key, val in sound_recording_map.items():
-        cref = party_list_ref_inverted[ref_contr_name[key]]
-        if cref in roles[key]:
-            # sql_tmp = [val['id_track'], ref_contr_id[key],"'{}'".format(roles[key][cref]), insert_id_message, update_id_message]
-            query_values.append({
-                "id_track": val['id_track'],
-                "id_artist": ref_contr_id[key],
-                "artist_role_track_artist": "{}".format(roles[key][cref]),
+    return rows
+
+def upsert_rel_track_artist_in_db(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message):
+
+    sound_recording = xml_mapper.get_value_from_path(json_dict, ddex_map['SoundRecording'])
+    if not isinstance(sound_recording, list):
+        sound_recording = [sound_recording, ]
+
+    # esto devuelvel un diccionario de dos elementos
+    party_list_maps = get_party_list_map(json_dict, ddex_map)
+
+    data_track_artis_by_reference = dict()
+    isrc_map = {}
+    artist_names_once = set()
+    all_artist = dict()
+    artist_rol_by_ref = {}
+    for sr in sound_recording:
+        ref = sr['ResourceReference']
+        artist_rol_by_ref[ref] = {}
+        isrc = sr['SoundRecordingEdition']['ResourceId']['ISRC']
+        isrc_map.setdefault(ref, isrc)
+        artist_data = get_artist_list_from_sound_recording(ref, sr['DisplayArtist'], party_list_maps)
+        artist_list = artist_data.get('artist')
+        data_track_artis_by_reference[ref] = {"track_isrc": isrc,"artist_list": artist_list,}
+        for a in artist_list:
+            artist_rol_by_ref[ref].setdefault(a.get('artist_name'), a.get('role'))
+
+        all_artist.update(artist_data.get('artist_name'))
+
+    track_data = get_track_data(db_pool, isrc_map)
+    tracks_id_by_ref = {k[0]: k[1] for k in track_data}
+    artist = get_artist_data(db_pool, all_artist)
+    artist_id_by_ref = {k[0]: k[1] for k in artist }
+    artist_id_by_ref = {}
+    for a in artist:
+        artist_ref, artist_id, artist_name = a[0], a[1], a[2]
+        if artist_ref not in artist_id_by_ref:
+            artist_id_by_ref[artist_ref] = list()
+        artist_id_by_ref[artist_ref].append({"artist_id": artist_id, "artist_name": artist_name})
+
+    rows = list()
+    for key, val in tracks_id_by_ref.items():
+        artists_list = artist_id_by_ref[key]
+        roles = artist_rol_by_ref[key]
+        for a in artists_list:
+            rows.append({
+                'id_track': val,
+                'id_artist': a['artist_id'],
+                "artist_role_track_artist": roles[a['artist_name']],
                 "insert_id_message": insert_id_message,
                 "update_id_message": update_id_message
             })
-
-    # sql = "insert into tracks_artists (id_track, id_artist, artist_role_track_artist,insert_id_message, update_id_message) values {}"\
-    #       "ON DUPLICATE KEY UPDATE audi_edited_track_artist = CURRENT_TIMESTAMP, update_id_message={};".format(sql_values, update_id_message)
-    # res = connections.execute_query(db_pool, sql, {})
-
 
     upsert_query = text("""
     INSERT INTO feed.tracks_artists (
@@ -142,9 +124,8 @@ def upsert_rel_track_artist_in_db(db_mongo, db_pool, json_dict, ddex_map, update
         audi_edited_track_artist = CURRENT_TIMESTAMP,
         update_id_message={}
     """.format(update_id_message))
-    connections.execute_query(db_pool, upsert_query, query_values, list_map=True)
+    connections.execute_query(db_pool, upsert_query, rows, list_map=True)
     logging.info("Se ejecutó la consulta upsert en mysql")
-
 
 def upsert_rel_track_artist(db_mongo, db_pool, json_dict, ddex_map):
     upsert_rel_track_artist_in_db(db_mongo, db_pool, json_dict, ddex_map)
