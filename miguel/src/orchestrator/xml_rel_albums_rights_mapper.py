@@ -85,7 +85,7 @@ def upsert_rel_track_artist_in_db(db_mongo, db_pool, json_dict, ddex_map, update
         db_pool, 'id_label, name_label',"labels", "name_label", sql_in
     )
 
-    sql_in = "'" + album_cmt + "'"
+    sql_in = "'" + "','".join(album_cmt) + "'"
     album_cmt_data = get_data_from_db(
         db_pool, 'id_cmt, name_cmt',"comercial_model_types", "name_cmt", sql_in
     )
