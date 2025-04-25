@@ -31,6 +31,7 @@ db_mongo = connections.get_mongo_client('deliveries')
 
 
 all_files = [
+    '/home/miguel/PycharmProjects/feed_refactor/miguel/src/xml/A10301A00006698146_manuel.xml',
     '/home/miguel/PycharmProjects/feed_refactor/miguel/src/xml/N_A10301A00006698146_20241023105524511/A10301A00006698146.xml',
     '/home/miguel/PycharmProjects/feed_refactor/miguel/src/xml/N_A10301A00006698154_20241023105524501/A10301A00006698154.xml',
     '/home/miguel/PycharmProjects/feed_refactor/miguel/src/xml/N_A10301A00007845431_20241023105433727/A10301A00007845431.xml',
@@ -139,8 +140,8 @@ for f in all_files:
         # # print(datetime.datetime.now())
         # # PRONTO
         xml_rel_album_track_mapper.upsert_rel_album_track(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message, file_path)
-        # #
-        # # # print(datetime.datetime.now())
+        # # #
+        # # # # print(datetime.datetime.now())
         xml_rel_albums_rights_mapper.upsert_rel_album_right(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message,id_dist )
         #
         # print(datetime.datetime.now())

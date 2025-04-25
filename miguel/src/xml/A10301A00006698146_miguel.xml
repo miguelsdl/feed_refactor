@@ -2206,6 +2206,56 @@
             <DealReleaseReference>R6</DealReleaseReference>
             <DealReleaseReference>R7</DealReleaseReference>
             <DealReleaseReference>R8</DealReleaseReference>
+            <Deal>
+                <DealTerms>
+                    <TerritoryCode>AG</TerritoryCode>
+                    <TerritoryCode>AI</TerritoryCode>
+                    <TerritoryCode>AW</TerritoryCode>
+                    <TerritoryCode>BB</TerritoryCode>
+                    <TerritoryCode>BM</TerritoryCode>
+                    <TerritoryCode>BO</TerritoryCode>
+                    <TerritoryCode>BQ</TerritoryCode>
+                    <TerritoryCode>BR</TerritoryCode>
+                    <TerritoryCode>BZ</TerritoryCode>
+                    <TerritoryCode>CL</TerritoryCode>
+                    <TerritoryCode>CO</TerritoryCode>
+                    <TerritoryCode>CR</TerritoryCode>
+                    <TerritoryCode>CW</TerritoryCode>
+                    <TerritoryCode>DM</TerritoryCode>
+                    <TerritoryCode>DO</TerritoryCode>
+                    <TerritoryCode>EC</TerritoryCode>
+                    <TerritoryCode>ES</TerritoryCode>
+                    <TerritoryCode>GD</TerritoryCode>
+                    <TerritoryCode>GF</TerritoryCode>
+                    <TerritoryCode>GP</TerritoryCode>
+                    <TerritoryCode>GY</TerritoryCode>
+                    <TerritoryCode>HT</TerritoryCode>
+                    <TerritoryCode>JM</TerritoryCode>
+                    <TerritoryCode>KN</TerritoryCode>
+                    <TerritoryCode>KY</TerritoryCode>
+                    <TerritoryCode>LC</TerritoryCode>
+                    <TerritoryCode>MQ</TerritoryCode>
+                    <TerritoryCode>MS</TerritoryCode>
+                    <TerritoryCode>PA</TerritoryCode>
+                    <TerritoryCode>PE</TerritoryCode>
+                    <TerritoryCode>SR</TerritoryCode>
+                    <TerritoryCode>SV</TerritoryCode>
+                    <TerritoryCode>TC</TerritoryCode>
+                    <TerritoryCode>TT</TerritoryCode>
+                    <TerritoryCode>VC</TerritoryCode>
+                    <TerritoryCode>VG</TerritoryCode>
+                    <TerritoryCode>VU</TerritoryCode>
+                    <TerritoryCode>ZM</TerritoryCode>
+                    <ValidityPeriod>
+                        <StartDateTime>1990-04-09T00:00:00</StartDateTime>
+                        <EndDateTime>2029-11-06T00:00:00</EndDateTime>
+                    </ValidityPeriod>
+                    <CommercialModelType>SubscriptionModel</CommercialModelType>
+                    <UseType>ConditionalDownload</UseType>
+                    <UseType>NonInteractiveStream</UseType>
+                    <UseType>OnDemandStream</UseType>
+                </DealTerms>
+            </Deal>
             <DealReleaseReference>R9</DealReleaseReference>
             <DealReleaseReference>R10</DealReleaseReference>
             <DealReleaseReference>R11</DealReleaseReference>
@@ -2257,12 +2307,17 @@
                         <StartDateTime>1990-04-09T00:00:00</StartDateTime>
                         <EndDateTime>2029-11-06T00:00:00</EndDateTime>
                     </ValidityPeriod>
-                    <CommercialModelType>SubscriptionModel</CommercialModelType>
-                    <UseType>ConditionalDownload</UseType>
-                    <UseType>NonInteractiveStream</UseType>
-                    <UseType>OnDemandStream</UseType>
+                    <CommercialModelType>SubscriptionModel5</CommercialModelType>
+                    <UseType>ConditionalDownload2</UseType>
+                    <UseType>NonInteractiveStream3</UseType>
+                    <UseType>OnDemandStream4</UseType>
                 </DealTerms>
             </Deal>
+
+
+
+
+
             <Deal>
                 <DealTerms>
                     <TerritoryCode>AG</TerritoryCode>

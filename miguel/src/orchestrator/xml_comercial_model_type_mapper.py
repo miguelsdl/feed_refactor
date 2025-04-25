@@ -8,30 +8,34 @@ def get_deal_term_list(deal_term_list):
     #  TODO - ver si se puede optimizar este método
     commercial_model_type_list = set()
 
-    try:
-        for o in deal_term_list:
-            if isinstance(deal_term_list, dict):
-                pass
+    if isinstance(deal_term_list, dict):
+        deal_term_list = [deal_term_list, ]
+    for o in deal_term_list:
+        if isinstance(o, dict):
+            o = [o, ]
 
-            elif isinstance(deal_term_list, list):
-                for dt in deal_term_list:
-                    for ut in dt:
-                        if isinstance(dt[ut]['CommercialModelType'], list):
-                            for cmt in dt[ut]['CommercialModelType']:
-                                commercial_model_type_list.add(cmt)
+
+        for dt in o:
+            for ut in dt:
+                if isinstance(dt['Deal'], list):
+                    for cmt in dt['Deal']:
+                        if isinstance(cmt['DealTerms']['CommercialModelType'], list):
+                            for c in cmt['DealTerms']['CommercialModelType']:
+                                commercial_model_type_list.add(c)
                         else:
-                            commercial_model_type_list.add(dt[ut]['CommercialModelType'])
+                            commercial_model_type_list.add(cmt['DealTerms']['CommercialModelType'])
+                else:
+                    commercial_model_type_list.add(dt['Deal']['DealTerms']['CommercialModelType'])
 
-        logging.info("Se leyeron los generos correctamente.")
-        return commercial_model_type_list
-    except KeyError as e:
-        logging.info(f"Clave no encontrada: {e}")
-        return None
+    logging.info("Se leyeron los generos correctamente.")
+    return commercial_model_type_list
+
 
 def upsert_commercial_use_type_in_db(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message):
     try:
-        deal_term_list = xml_mapper.get_value_from_path(json_dict, ddex_map['DealTerms'])
-        commercial_model_type_list = get_deal_term_list(deal_term_list)
+        release_eal_list = xml_mapper.get_value_from_path(json_dict, ddex_map['ReleaseDeal'])
+        # deal_term_list = xml_mapper.get_value_from_path(json_dict, ddex_map['DealTerms'])
+        commercial_model_type_list = get_deal_term_list(release_eal_list)
         logging.info("Se cargaron los datos del xml")
 
         upsert_query = text("""

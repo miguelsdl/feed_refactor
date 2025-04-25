@@ -260,8 +260,10 @@ def get_deal_list_sort_by_release_reference(deal_list):
         if not isinstance(d['DealReleaseReference'], list):
             data = [d['DealReleaseReference'], ]
         for ref in data:
-            deals_data[ref] = d['Deal'][0]
-        deals_data['R0'] = d['Deal'][1]
+            deals = get_dict_to_list_dict(d['Deal'])
+            deals_data[ref] = deals[0]
+        if len(d['Deal']) == 2:
+            deals_data['R0'] = d['Deal'][1]
 
     return deals_data
 

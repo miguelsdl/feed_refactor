@@ -35,10 +35,26 @@ def get_album_label(release_data, ref_id):
     return release_data[ref_id]['ReleaseLabelReference']['#text']
 
 def get_album_cmt(deal_data, ref_id):
-    return deal_data[ref_id]['DealTerms']['CommercialModelType']
+    ret_set = set()
+
+    for dd in deal_data:
+        if isinstance(deal_data[dd]['DealTerms']['CommercialModelType'], list):
+            ret_set.update(deal_data[dd]['DealTerms']['CommercialModelType'])
+        else:
+            ret_set.add(deal_data[dd]['DealTerms']['CommercialModelType'])
+
+    return list(ret_set)
 
 def get_album_use_type(deal_data, ref_id):
-    return deal_data[ref_id]['DealTerms']['UseType']
+    ret_set = set()
+
+    for dd in deal_data:
+        if isinstance(deal_data[dd]['DealTerms']['UseType'], list):
+            ret_set.update(deal_data[dd]['DealTerms']['UseType'])
+        else:
+            ret_set.add(deal_data[dd]['DealTerms']['UseType'])
+
+    return list(ret_set)
 
 def get_album_territory_code(deal_data, ref_id):
     return deal_data[ref_id]['DealTerms']['TerritoryCode']
@@ -85,10 +101,16 @@ def upsert_rel_track_artist_in_db(db_mongo, db_pool, json_dict, ddex_map, update
         db_pool, 'id_label, name_label',"labels", "name_label", sql_in
     )
 
+    if not isinstance(album_cmt, list):
+        album_cmt = [album_cmt, ]
+
     sql_in = "'" + "','".join(album_cmt) + "'"
     album_cmt_data = get_data_from_db(
         db_pool, 'id_cmt, name_cmt',"comercial_model_types", "name_cmt", sql_in
     )
+
+    if not isinstance(album_use_type, list):
+        album_use_type = [album_use_type, ]
 
     sql_in = "'" + "','".join(album_use_type) + "'"
     album_use_type_data = get_data_from_db(

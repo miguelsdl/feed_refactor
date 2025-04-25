@@ -12,5 +12,5 @@ DisplayArtist: "ernm:NewReleaseMessage/ReleaseList/Release/DisplayArtist"
 
 Contributor: "ernm:NewReleaseMessage/ResourceList/SoundRecording/Contributor"
 
-DealTerms: "ernm:NewReleaseMessage/DealList/ReleaseDeal/Deal"
+ReleaseDeal: "ernm:NewReleaseMessage/DealList/ReleaseDeal"
 DealList: "ernm:NewReleaseMessage/DealList"
