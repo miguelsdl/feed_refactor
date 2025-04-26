@@ -38,10 +38,18 @@ def get_album_cmt(deal_data, ref_id):
     ret_set = set()
 
     for dd in deal_data:
-        if isinstance(deal_data[dd]['DealTerms']['CommercialModelType'], list):
-            ret_set.update(deal_data[dd]['DealTerms']['CommercialModelType'])
+        # esto deal_data[dd] puede ser una lista
+        if isinstance(deal_data[dd], list):
+            for each in deal_data[dd]:
+                if isinstance(each['DealTerms']['CommercialModelType'], list):
+                    ret_set.update(each['DealTerms']['CommercialModelType'])
+                else:
+                    ret_set.add(each['DealTerms']['CommercialModelType'])
         else:
-            ret_set.add(deal_data[dd]['DealTerms']['CommercialModelType'])
+            if isinstance(deal_data[dd]['DealTerms']['CommercialModelType'], list):
+                ret_set.update(deal_data[dd]['DealTerms']['CommercialModelType'])
+            else:
+                ret_set.add(deal_data[dd]['DealTerms']['CommercialModelType'])
 
     return list(ret_set)
 
@@ -49,10 +57,17 @@ def get_album_use_type(deal_data, ref_id):
     ret_set = set()
 
     for dd in deal_data:
-        if isinstance(deal_data[dd]['DealTerms']['UseType'], list):
-            ret_set.update(deal_data[dd]['DealTerms']['UseType'])
+        if isinstance(deal_data[dd], list):
+            for each in deal_data[dd]:
+                if isinstance(each['DealTerms']['UseType'], list):
+                    ret_set.update(each['DealTerms']['UseType'])
+                else:
+                    ret_set.add(each['DealTerms']['UseType'])
         else:
-            ret_set.add(deal_data[dd]['DealTerms']['UseType'])
+            if isinstance(deal_data[dd]['DealTerms']['UseType'], list):
+                ret_set.update(deal_data[dd]['DealTerms']['UseType'])
+            else:
+                ret_set.add(deal_data[dd]['DealTerms']['UseType'])
 
     return list(ret_set)
 

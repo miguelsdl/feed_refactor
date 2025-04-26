@@ -23,7 +23,11 @@ def get_track_label(track_list_data, party_data):
 def get_track_cmt(cmt_data):
     cmt = dict()
     for deal in cmt_data:
-        cmt[deal] = cmt_data[deal]['DealTerms']['CommercialModelType']
+        if isinstance(cmt_data[deal], list):
+            for each in cmt_data[deal]:
+                cmt[deal] = each['DealTerms']['CommercialModelType']
+        else:
+            cmt[deal] = cmt_data[deal]['DealTerms']['CommercialModelType']
 
     return cmt
 
@@ -31,11 +35,19 @@ def get_track_use_type(use_type_data):
     use_type_list = dict()
     for u in use_type_data:
         # ['ConditionalDownload', 'NonInteractiveStream', 'OnDemandStream']
-        uts = use_type_data[u]['DealTerms']['UseType']
-        if not isinstance(uts, list):
-            use_type_list[u] = [uts, ]
+        if isinstance(use_type_data[u], list):
+            for each in use_type_data[u]:
+                uts = each['DealTerms']['UseType']
+                if not isinstance(uts, list):
+                    use_type_list[u] = [uts, ]
+                else:
+                    use_type_list[u] = uts
         else:
-            use_type_list[u] = uts
+            uts = use_type_data[u]['DealTerms']['UseType']
+            if not isinstance(uts, list):
+                use_type_list[u] = [uts, ]
+            else:
+                use_type_list[u] = uts
 
     return use_type_list
 
@@ -49,18 +61,30 @@ def get_track_territory_code(deal_data):
 def get_track_start_date(deal_data):
     track_start_date = dict()
     for k in deal_data:
-        track_start_date[k] = deal_data[k]['DealTerms']['ValidityPeriod']['StartDateTime']
+        if isinstance(deal_data[k], list):
+            for each in deal_data[k]:
+                track_start_date[k] = each['DealTerms']['ValidityPeriod']['StartDateTime']
+        else:
+            track_start_date[k] = deal_data[k]['DealTerms']['ValidityPeriod']['StartDateTime']
 
     return track_start_date
 
 def get_track_end_date(deal_data):
     track_end_date = dict()
     for k in deal_data:
-        period = deal_data[k]['DealTerms']['ValidityPeriod']
-        if "EndDateTime" in period:
-            track_end_date[k] = deal_data[k]['DealTerms']['ValidityPeriod']['EndDateTime']
+        if isinstance(deal_data[k], list):
+            for each in deal_data[k]:
+                period = each['DealTerms']['ValidityPeriod']
+                if "EndDateTime" in period:
+                    track_end_date[k] = each['DealTerms']['ValidityPeriod']['EndDateTime']
+                else:
+                    track_end_date[k] = None
         else:
-            track_end_date[k] = None
+            period = deal_data[k]['DealTerms']['ValidityPeriod']
+            if "EndDateTime" in period:
+                track_end_date[k] = deal_data[k]['DealTerms']['ValidityPeriod']['EndDateTime']
+            else:
+                track_end_date[k] = None
 
     return track_end_date
 
