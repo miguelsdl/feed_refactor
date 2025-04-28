@@ -23,11 +23,13 @@ def get_track_label(track_list_data, party_data):
 def get_track_cmt(cmt_data):
     cmt = dict()
     for deal in cmt_data:
+        if deal not in cmt:
+            cmt[deal] = list()
         if isinstance(cmt_data[deal], list):
             for each in cmt_data[deal]:
-                cmt[deal] = each['DealTerms']['CommercialModelType']
+                cmt[deal].append(each['DealTerms']['CommercialModelType'])
         else:
-            cmt[deal] = cmt_data[deal]['DealTerms']['CommercialModelType']
+            cmt[deal].append(cmt_data[deal]['DealTerms']['CommercialModelType'])
 
     return cmt
 
@@ -35,19 +37,21 @@ def get_track_use_type(use_type_data):
     use_type_list = dict()
     for u in use_type_data:
         # ['ConditionalDownload', 'NonInteractiveStream', 'OnDemandStream']
+        if not u in use_type_list:
+            use_type_list[u] = list()
         if isinstance(use_type_data[u], list):
             for each in use_type_data[u]:
                 uts = each['DealTerms']['UseType']
                 if not isinstance(uts, list):
-                    use_type_list[u] = [uts, ]
+                    use_type_list[u].update([uts, ])
                 else:
-                    use_type_list[u] = uts
+                    use_type_list[u].append(uts)
         else:
             uts = use_type_data[u]['DealTerms']['UseType']
             if not isinstance(uts, list):
-                use_type_list[u] = [uts, ]
+                use_type_list[u].update([uts, ])
             else:
-                use_type_list[u] = uts
+                use_type_list[u].append(uts)
 
     return use_type_list
 
@@ -88,21 +92,43 @@ def get_track_end_date(deal_data):
 
     return track_end_date
 
+def get_deal_list_sort_by_release_reference(deal_list):
+    deals_data = dict()
+    release_deal_list = xml_mapper.get_dict_to_list_dict(deal_list['ReleaseDeal'])
+
+    for d in release_deal_list:
+        data = d['DealReleaseReference']
+        if not isinstance(d['DealReleaseReference'], list):
+            data = [d['DealReleaseReference'], ]
+
+        for ref in data:
+            deals = xml_mapper.get_dict_to_list_dict(d['Deal'])
+            for deal in deals:
+                if ref not in deals_data:
+                    deals_data[ref] = list()
+                deals_data[ref].append(deal)
+        if len(d['Deal']) == 2:
+            deals_data['R0'] = d['Deal'][1]
+
+    return deals_data
+
 def get_data_from_xml(json_dict, ddex_map):
 
     release_list = xml_mapper.get_value_from_path(json_dict, ddex_map['ReleaseList'])
     album_data = xml_mapper.get_release_list_sort_by_release_reference(release_list)
     track_list_data = xml_mapper.get_release_list_sort_by_release_reference(release_list, key="TrackRelease")
     deal_list = xml_mapper.get_value_from_path(json_dict, ddex_map['DealList'])
-    deal_data = xml_mapper.get_deal_list_sort_by_release_reference(deal_list)
+    deal_data = get_deal_list_sort_by_release_reference(deal_list)
     party_list = xml_mapper.get_value_from_path(json_dict, ddex_map['PartyList'])
     party_data = xml_mapper.get_party_list(party_list)
     resource_list = xml_mapper.get_value_from_path(json_dict, ddex_map['ResourceList'])
-
+    cmt_and_use_type_association = dict()
+    for deal in deal_list['ReleaseDeal']['Deal']:
+        cmt_and_use_type_association[deal['DealTerms']['CommercialModelType'].strip()] = deal['DealTerms']['UseType']
     return {
         "release_list": release_list, "album_data": album_data, "track_list_data": track_list_data,
         "deal_list": deal_list, "deal_data": deal_data, "party_list": party_list, "party_data": party_data,
-        "resource_list": resource_list,
+        "resource_list": resource_list, 'cmt_and_use_type_association': cmt_and_use_type_association,
     }
 
 def get_val_join_xml_and_db_data(xml_data, db_data, reference):
@@ -191,13 +217,14 @@ def upsert_rel_album_track_right_in_db(db_mongo, db_pool, json_dict, ddex_map, u
     tr_vals = list(track_use_type.values())
     uniq_vals = set()
     for tr in tr_vals:
-        for k in tr:
-            uniq_vals.add(k)
+        for t in tr:
+            for k in t:
+                uniq_vals.add(k)
 
-    sql_in = "'" + "','".join(uniq_vals) + "'"
+    sql_in_ = "'" + "','".join(uniq_vals) + "'"
 
     track_use_type_data = xml_mapper.get_data_from_db(
-        db_pool, 'id_use_type,name_use_type',"use_types", "name_use_type", sql_in
+        db_pool, 'id_use_type,name_use_type',"use_types", "name_use_type", sql_in_
     )
 
     sql_in = []
@@ -223,23 +250,25 @@ def upsert_rel_album_track_right_in_db(db_mongo, db_pool, json_dict, ddex_map, u
                 end_date = end_date[ref]
             else:
                 end_date = None
-        for cmt in id_cmt:
-            for utype in id_use_type:
-                sql_tmp = {
-                    "id_album_track": id_album_track,
-                    "id_dist": id_dist,
-                    "id_label": id_label[0],
-                    "id_cmt": cmt,
-                    "id_use_type": utype,
-                    "cnty_ids_albtraright": "{}".format(cnty_ids_albtraright),
-                    "start_date_albtraright": "{}".format(start_date),
-                    "end_date_albtraright": "{}".format(end_date) if end_date is not None else None,
-                    "insert_id_message": insert_id_message,
-                    "pline_text_albtraright": resource_list[track["isrc_track"]]['pline_text'],
-                    "pline_year_albtraright": resource_list[track["isrc_track"]]['pline_year'],
-                    "update_id_message": update_id_message
-                }
-                sql_in.append(sql_tmp)
+        for cmt_ in track_cmt_data:
+            for utype in track_use_type_data:
+                if utype['name_use_type'] in data_from_xml['cmt_and_use_type_association'][cmt_['name_cmt']]:
+
+                    sql_tmp = {
+                        "id_album_track": id_album_track,
+                        "id_dist": id_dist,
+                        "id_label": id_label[0],
+                        "id_cmt": cmt_["id_cmt"],
+                        "id_use_type": utype['id_use_type'],
+                        "cnty_ids_albtraright": "{}".format(cnty_ids_albtraright),
+                        "start_date_albtraright": "{}".format(start_date),
+                        "end_date_albtraright": "{}".format(end_date) if end_date is not None else None,
+                        "insert_id_message": insert_id_message,
+                        "pline_text_albtraright": resource_list[track["isrc_track"]]['pline_text'],
+                        "pline_year_albtraright": resource_list[track["isrc_track"]]['pline_year'],
+                        "update_id_message": update_id_message
+                    }
+                    sql_in.append(sql_tmp)
 
     query_values = sql_in
 
