@@ -26,7 +26,7 @@ def get_data_from_db(db_pool, name_fields, talbe_name, where_field, in_values):
     for i in range(0, len(res)):
         data_dict = dict()
         for k in range(0, len(field_list)):
-            data_dict[field_list[k]] = res[i][k]
+            data_dict[field_list[k].strip()] = res[i][k]
         data_return.append(data_dict)
 
     return data_return
@@ -107,6 +107,10 @@ def upsert_rel_track_artist_in_db(db_mongo, db_pool, json_dict, ddex_map, update
     start_date = get_album_start_date(deal_data, ref_alb)
     end_date = get_album_end_date(deal_data, ref_alb)
 
+    cmt_and_use_type_association = dict()
+    for deal in deal_list['ReleaseDeal']['Deal']:
+        cmt_and_use_type_association[deal['DealTerms']['CommercialModelType']] = deal['DealTerms']['UseType']
+
     album_data = get_data_from_db(
         db_pool, 'id_album, upc_album',"albums", "upc_album", album_upc
     )
@@ -140,27 +144,28 @@ def upsert_rel_track_artist_in_db(db_mongo, db_pool, json_dict, ddex_map, update
         for cmt in album_cmt_data:
             id_cmt = cmt['id_cmt']
             for u in album_use_type_data:
-                id_use_type = u['id_use_type']
-                # countries = json.dumps(territory_code)
-                countries = json.dumps(xml_mapper.get_countries_id_by_iso_code_list(coutries_list, territory_code))
-                sql_tmp = [
-                    album_data[0]['id_album'], 1, id_label, id_cmt, id_use_type,
-                    countries, "'" + start_date + "'", end_date if end_date else None, insert_id_message
-                ]
-                sql_in.append("(" + ",".join([ "{}".format(x) for x in sql_tmp]) + ")")
+                if u[' name_use_type'] in cmt_and_use_type_association[cmt[' name_cmt']]:
+                    id_use_type = u['id_use_type']
+                    # countries = json.dumps(territory_code)
+                    countries = json.dumps(xml_mapper.get_countries_id_by_iso_code_list(coutries_list, territory_code))
+                    sql_tmp = [
+                        album_data[0]['id_album'], 1, id_label, id_cmt, id_use_type,
+                        countries, "'" + start_date + "'", end_date if end_date else None, insert_id_message
+                    ]
+                    sql_in.append("(" + ",".join([ "{}".format(x) for x in sql_tmp]) + ")")
 
-                query_values.append({
-                    "id_album": album_data[0]['id_album'],
-                    "id_dist": id_dist,
-                    "id_label": id_label,
-                    "id_cmt": id_cmt,
-                    "id_use_type": id_use_type,
-                    "cnty_ids_albright": countries,
-                    "start_date_albright": start_date,
-                    "end_date_albright": end_date,
-                    'insert_id_message': insert_id_message,
-                    "update_id_message": update_id_message
-                })
+                    query_values.append({
+                        "id_album": album_data[0]['id_album'],
+                        "id_dist": id_dist,
+                        "id_label": id_label,
+                        "id_cmt": id_cmt,
+                        "id_use_type": id_use_type,
+                        "cnty_ids_albright": countries,
+                        "start_date_albright": start_date,
+                        "end_date_albright": end_date,
+                        'insert_id_message': insert_id_message,
+                        "update_id_message": update_id_message
+                    })
 
     upsert_query = text("""
     INSERT INTO feed.albums_rights (
