@@ -109,7 +109,7 @@ def upsert_rel_track_artist_in_db(db_mongo, db_pool, json_dict, ddex_map, update
 
     cmt_and_use_type_association = dict()
     for deal in deal_list['ReleaseDeal']['Deal']:
-        cmt_and_use_type_association[deal['DealTerms']['CommercialModelType']] = deal['DealTerms']['UseType']
+        cmt_and_use_type_association[deal['DealTerms']['CommercialModelType'].strip()] = deal['DealTerms']['UseType']
 
     album_data = get_data_from_db(
         db_pool, 'id_album, upc_album',"albums", "upc_album", album_upc
@@ -144,7 +144,7 @@ def upsert_rel_track_artist_in_db(db_mongo, db_pool, json_dict, ddex_map, update
         for cmt in album_cmt_data:
             id_cmt = cmt['id_cmt']
             for u in album_use_type_data:
-                if u[' name_use_type'] in cmt_and_use_type_association[cmt[' name_cmt']]:
+                if u['name_use_type'] in cmt_and_use_type_association[cmt['name_cmt']]:
                     id_use_type = u['id_use_type']
                     # countries = json.dumps(territory_code)
                     countries = json.dumps(xml_mapper.get_countries_id_by_iso_code_list(coutries_list, territory_code))
