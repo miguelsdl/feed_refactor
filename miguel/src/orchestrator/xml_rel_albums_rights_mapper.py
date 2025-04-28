@@ -108,8 +108,15 @@ def upsert_rel_track_artist_in_db(db_mongo, db_pool, json_dict, ddex_map, update
     end_date = get_album_end_date(deal_data, ref_alb)
 
     cmt_and_use_type_association = dict()
-    for deal in deal_list['ReleaseDeal']['Deal']:
-        cmt_and_use_type_association[deal['DealTerms']['CommercialModelType'].strip()] = deal['DealTerms']['UseType']
+    rd_list = xml_mapper.get_dict_to_list_dict(deal_list['ReleaseDeal'])
+    for deal in rd_list:
+        if not isinstance(deal['Deal'], list):
+            deal_list_ =  [deal['Deal'], ]
+        else:
+            deal_list_ = deal['Deal']
+
+        for d in deal_list_:
+            cmt_and_use_type_association[d['DealTerms']['CommercialModelType'].strip()] = d['DealTerms']['UseType']
 
     album_data = get_data_from_db(
         db_pool, 'id_album, upc_album',"albums", "upc_album", album_upc

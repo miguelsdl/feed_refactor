@@ -31,8 +31,8 @@ db_mongo = connections.get_mongo_client('deliveries')
 
 
 all_files = [
-    # '/home/miguel/PycharmProjects/feed_refactor/miguel/src/xml/<A10301A00006698146_manuel.xml',
-    '/home/miguel/PycharmProjects/feed_refactor/miguel/src/xml/N_A10301A00006698146_20241023105524511/A10301A00006698146.xml',
+    '/home/miguel/PycharmProjects/feed_refactor/miguel/src/xml/A10301A00006698146_manuel.xml',
+    # '/home/miguel/PycharmProjects/feed_refactor/miguel/src/xml/N_A10301A00006698146_20241023105524511/A10301A00006698146.xml',
     # '/home/miguel/PycharmProjects/feed_refactor/miguel/src/xml/N_A10301A00006698154_20241023105524501/A10301A00006698154.xml',
     # '/home/miguel/PycharmProjects/feed_refactor/miguel/src/xml/N_A10301A00007845431_20241023105433727/A10301A00007845431.xml',
     # '/home/miguel/PycharmProjects/feed_refactor/miguel/src/xml/N_A10301A0000935334X_20241023105519505/A10301A0000935334X.xml',
