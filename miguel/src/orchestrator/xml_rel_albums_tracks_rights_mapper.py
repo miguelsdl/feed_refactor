@@ -55,12 +55,12 @@ def get_track_use_type(use_type_data):
 
     return use_type_list
 
-def get_track_territory_code(deal_data):
-    codes = dict()
-    for deal in deal_data:
-        codes[deal] = deal_data[deal]['DealTerms']['TerritoryCode']
-
-    return codes
+# def get_track_territory_code(deal_data):
+#     codes = dict()
+#     for deal in deal_data:
+#         codes[deal] = deal_data[deal]['DealTerms']['TerritoryCode']
+#
+#     return codes
 
 def get_track_start_date(deal_data):
     track_start_date = dict()
@@ -160,9 +160,6 @@ def get_id_album_track(db_pool, id_album, id_track):
     rows = connections.execute_query(db_pool, sql, {})
     return rows[0][0] if rows else None
 
-def get_track_territory_code(deal_data):
-    return deal_data['R0']['DealTerms']['TerritoryCode']
-
 def get_resource_list(data):
     data_return = {}
     sr_list = data['SoundRecording'] if isinstance(data['SoundRecording'], list) else [data['SoundRecording'], ]
@@ -177,6 +174,65 @@ def get_resource_list(data):
 
 
     return data_return
+
+def get_territory_code_by_deal_term(dl):
+    if isinstance(dl['DealTerms']['TerritoryCode'], list):
+        ret = dl['DealTerms']['TerritoryCode']
+    else:
+        ret = [dl['DealTerms']['TerritoryCode'], ]
+    return ret
+
+def get_cmt_by_deal_term(dl):
+    try:
+        if isinstance(dl['DealTerms']['CommercialModelType'], list):
+            ret = dl['DealTerms']['CommercialModelType']
+        else:
+            ret = [dl['DealTerms']['CommercialModelType'], ]
+    except Exception as e:
+        print(e)
+    return ret
+
+def get_use_type_by_deal_term(dl):
+    if isinstance(dl['DealTerms']['UseType'], list):
+        ret = dl['DealTerms']['UseType']
+    else:
+        ret = [dl['DealTerms']['UseType'], ]
+    return ret
+
+def get_start_date_by_deal_term(dl):
+    return dl['DealTerms']['ValidityPeriod']['StartDateTime']
+
+def get_end_date_by_deal_term(dl):
+    try:
+        return dl['DealTerms']['ValidityPeriod']['EndDateTime']
+    except Exception as e:
+        return None
+
+def get_track_territory_code(deal_data):
+    dict_ret = dict()
+
+    for ref, deal_terms in deal_data.items():
+        for dl in deal_terms:
+            print(1)
+            for cmt in get_cmt_by_deal_term(dl):
+                for use in get_use_type_by_deal_term(dl):
+                    key = "{}:{}".format(cmt, use)
+                    value = {
+                        "start_date": get_start_date_by_deal_term(dl),
+                        "end_date": get_end_date_by_deal_term(dl),
+                        "codes": get_territory_code_by_deal_term(dl),
+                    }
+
+                    if key not in dict_ret:
+                        dict_ret[key] = []
+                    dict_ret[key].append(value)
+
+    return dict_ret
+
+
+# def get_track_territory_code(deal_data):
+#     return deal_data['R0']['DealTerms']['TerritoryCode']
+
 
 def upsert_rel_album_track_right_in_db(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message, id_dist):
     data_from_xml = get_data_from_xml(json_dict, ddex_map)
@@ -249,7 +305,7 @@ def upsert_rel_album_track_right_in_db(db_mongo, db_pool, json_dict, ddex_map, u
         id_album_track = get_id_album_track(db_pool, album_data[0]['id_album'], id_track)
         ref = track_id_by_ref[id_track]
         # cnty_ids_albtraright = json.dumps(territory_code)
-        cnty_ids_albtraright = xml_mapper.get_countries_id_by_iso_code_list(coutries_list, territory_code)
+
         if isinstance(start_date, dict):
             if start_date[ref]:
                 start_date = start_date[ref]
@@ -276,8 +332,27 @@ def upsert_rel_album_track_right_in_db(db_mongo, db_pool, json_dict, ddex_map, u
                 search_list = track_use_type[ref][0]
                 ut_name = utype['name_use_type']
                 if ut_name in search_list:
-                    sql_tmp = { "id_album_track": id_album_track, "id_dist": id_dist, "id_label": id_label[0], "id_cmt": cmt_is_assoc[cmt_], "id_use_type": utype['id_use_type'], "cnty_ids_albtraright": "{}".format(cnty_ids_albtraright), "start_date_albtraright": "{}".format(start_date), "end_date_albtraright": "{}".format(end_date) if end_date is not None else None, "insert_id_message": insert_id_message, "pline_text_albtraright": resource_list[track["isrc_track"]]['pline_text'], "pline_year_albtraright": resource_list[track["isrc_track"]]['pline_year'], "update_id_message": update_id_message }
-                    sql_in.append(sql_tmp)
+                    if "{}:{}".format(cmt_, ut_name) in territory_code:
+                        values = territory_code["{}:{}".format(cmt_, ut_name)].pop()
+                        countries_codes = values.get("codes")
+                        cnty_ids_albtraright = xml_mapper.get_countries_id_by_iso_code_list(coutries_list, countries_codes)
+                        start_date = values.get("start_date")
+                        end_date = values.get("end_date")
+                        sql_tmp = {
+                            "id_album_track": id_album_track,
+                            "id_dist": id_dist,
+                            "id_label": id_label[0],
+                            "id_cmt": cmt_is_assoc[cmt_],
+                            "id_use_type": utype['id_use_type'],
+                            "cnty_ids_albtraright": "{}".format(cnty_ids_albtraright),
+                            "start_date_albtraright": "{}".format(start_date),
+                            "end_date_albtraright": "{}".format(end_date) if end_date is not None else None,
+                            "insert_id_message": insert_id_message,
+                            "pline_text_albtraright": resource_list[track["isrc_track"]]['pline_text'],
+                            "pline_year_albtraright": resource_list[track["isrc_track"]]['pline_year'],
+                            "update_id_message": update_id_message
+                        }
+                        sql_in.append(sql_tmp)
 
     query_values = sql_in
 

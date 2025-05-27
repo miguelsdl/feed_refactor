@@ -2318,9 +2318,6 @@
                         <StartDateTime>2024-11-06T00:00:00</StartDateTime>
                     </ValidityPeriod>
                     <CommercialModelType>SubscriptionModel</CommercialModelType>
-                    <CommercialModelType>SubscriptionModel2</CommercialModelType>
-                    <CommercialModelType>SubscriptionModel4</CommercialModelType>
-                    <CommercialModelType>SubscriptionModel5</CommercialModelType>
                     <UseType>ConditionalDownload</UseType>
                     <UseType>NonInteractiveStream</UseType>
                     <UseType>OnDemandStream</UseType>
@@ -2369,7 +2366,6 @@
                     <ValidityPeriod>
                         <StartDateTime>2024-11-06T00:00:00</StartDateTime>
                     </ValidityPeriod>
-                    <CommercialModelType>AdvertisementSupportedModel2</CommercialModelType>
                     <CommercialModelType>AdvertisementSupportedModel3</CommercialModelType>
                     <UseType>NonInteractiveStream</UseType>
                     <UseType>OnDemandStream</UseType>

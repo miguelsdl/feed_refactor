@@ -31,6 +31,7 @@ db_mongo = connections.get_mongo_client('deliveries')
 
 
 all_files = [
+    # '/home/miguel/PycharmProjects/feed_refactor/miguel/src/xml/A10301A0003548149X.xml',
     '/home/miguel/PycharmProjects/feed_refactor/miguel/src/xml/A10301A00006698146_manuel.xml',
     # '/home/miguel/PycharmProjects/feed_refactor/miguel/src/xml/N_A10301A00006698146_20241023105524511/A10301A00006698146.xml',
     # '/home/miguel/PycharmProjects/feed_refactor/miguel/src/xml/N_A10301A00006698154_20241023105524501/A10301A00006698154.xml',
@@ -53,9 +54,12 @@ all_files = [
     # '/home/miguel/PycharmProjects/feed_refactor/miguel/src/xml/N_A10301A0003509244D_20241023105341522/A10301A0003509244D.xml',
     # '/home/miguel/PycharmProjects/feed_refactor/miguel/src/xml/N_A10301A0003542592J_20241023105318514/A10301A0003542592J.xml',
     # '/home/miguel/PycharmProjects/feed_refactor/miguel/src/xml/N_A10301A0003546589F_20241023105503494/A10301A0003546589F.xml',
-    #
     # '/home/miguel/PycharmProjects/feed_refactor/miguel/src/xml/N_A10301A00035480592_20241023105318517/A10301A00035480592.xml',
+
+
     # '/home/miguel/PycharmProjects/feed_refactor/miguel/src/xml/N_A10301A0003548149X_20241023105318511/A10301A0003548149X.xml',
+
+
     # '/home/miguel/PycharmProjects/feed_refactor/miguel/src/xml/N_A10301A00035487029_20241023105308520/A10301A00035487029.xml',
     # '/home/miguel/PycharmProjects/feed_refactor/miguel/src/xml/N_A10301A0003548934E_20241023105341517/A10301A0003548934E.xml',
     # '/home/miguel/PycharmProjects/feed_refactor/miguel/src/xml/N_A10301A0003549128R_20241023105506511/A10301A0003549128R.xml',
@@ -64,7 +68,7 @@ all_files = [
     # '/home/miguel/PycharmProjects/feed_refactor/miguel/src/xml/N_A10301A0003556612D_20241023105549520/A10301A0003556612D.xml',
     # '/home/miguel/PycharmProjects/feed_refactor/miguel/src/xml/N_A10301A0003556613B_20241023105534523/A10301A0003556613B.xml',
     # '/home/miguel/PycharmProjects/feed_refactor/miguel/src/xml/N_A10301A0003729265G_20241023105318511/A10301A0003729265G.xml',
-    #
+    # #
     # '/home/miguel/PycharmProjects/feed_refactor/miguel/src/xml/N_A10301A0003914291X_20241023105326495/A10301A0003914291X.xml',
     # '/home/miguel/PycharmProjects/feed_refactor/miguel/src/xml/N_A10301A0003989012I_20241023105527501/A10301A0003989012I.xml',
     # '/home/miguel/PycharmProjects/feed_refactor/miguel/src/xml/N_A10301A0004249390S_20241023105552530/A10301A0004249390S.xml',

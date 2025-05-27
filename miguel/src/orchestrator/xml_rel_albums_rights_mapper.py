@@ -40,7 +40,8 @@ def get_album_cmt(deal_data, ref_id):
     for dd in deal_data:
         # esto deal_data[dd] puede ser una lista
         if isinstance(deal_data[dd], list):
-            for each in deal_data[dd]:
+            deal_data_list = deal_data[dd]
+            for each in deal_data_list:
                 if isinstance(each['DealTerms']['CommercialModelType'], list):
                     ret_set.update(each['DealTerms']['CommercialModelType'])
                 else:
@@ -71,18 +72,91 @@ def get_album_use_type(deal_data, ref_id):
 
     return list(ret_set)
 
+def get_territory_code_by_deal_term(dl):
+    if isinstance(dl['DealTerms']['TerritoryCode'], list):
+        ret = dl['DealTerms']['TerritoryCode']
+    else:
+        ret = [dl['DealTerms']['TerritoryCode'], ]
+    return ret
+
+def get_cmt_by_deal_term(dl):
+    if isinstance(dl['DealTerms']['CommercialModelType'], list):
+        ret = dl['DealTerms']['CommercialModelType']
+    else:
+        ret = [dl['DealTerms']['CommercialModelType'], ]
+    return ret
+
+def get_use_type_by_deal_term(dl):
+    if isinstance(dl['DealTerms']['UseType'], list):
+        ret = dl['DealTerms']['UseType']
+    else:
+        ret = [dl['DealTerms']['UseType'], ]
+    return ret
+
+def get_start_date_by_deal_term(dl):
+    return dl['DealTerms']['ValidityPeriod']['StartDateTime']
+
+def get_end_date_by_deal_term(dl):
+    try:
+        return dl['DealTerms']['ValidityPeriod']['EndDateTime']
+    except Exception as e:
+        return None
+
+
 def get_album_territory_code(deal_data, ref_id):
-    return deal_data[ref_id]['DealTerms']['TerritoryCode']
+    dict_ret = dict()
+
+    for ref, deal_terms in deal_data.items():
+        for dl in deal_terms:
+            print(1)
+            for cmt in get_cmt_by_deal_term(dl):
+                for use in get_use_type_by_deal_term(dl):
+                    key = "{}:{}".format(cmt, use)
+                    value = {
+                        "start_date": get_start_date_by_deal_term(dl),
+                        "end_date": get_end_date_by_deal_term(dl),
+                        "codes": get_territory_code_by_deal_term(dl),
+                    }
+
+                    if key not in dict_ret:
+                        dict_ret[key] = []
+                    dict_ret[key].append(value)
+
+    return dict_ret
 
 def get_album_start_date(deal_data, ref_id):
-    return deal_data[ref_id]['DealTerms']['ValidityPeriod']['StartDateTime']
+    dict_ret = dict()
+
+    for ref, deal_terms in deal_data.items():
+        for dl in deal_terms:
+            print(1)
+            for cmt in get_cmt_by_deal_term(dl):
+                for use in get_use_type_by_deal_term(dl):
+                    key = "{}:{}:{}:{}".format(
+                        cmt, use, get_start_date_by_deal_term(dl), get_end_date_by_deal_term(dl)
+                    )
+                    if key not in dict_ret:
+                        dict_ret[key] = []
+                    dict_ret[key].append(get_start_date_by_deal_term(dl))
+
+    return dict_ret
+
+
 
 def get_album_end_date(deal_data, ref_id):
-    try:
-        return deal_data[ref_id]['DealTerms']['ValidityPeriod']['EndDateTime']
-    except Exception as e:
-        logging.error("Error, no se encontro end date: " + str(e))
-        return None
+    dict_ret = dict()
+
+    for ref, deal_terms in deal_data.items():
+        for dl in deal_terms:
+            print(1)
+            for cmt in get_cmt_by_deal_term(dl):
+                for use in get_use_type_by_deal_term(dl):
+                    key = "{}:{}:{}".format(cmt, use, get_start_date_by_deal_term(dl))
+                    if key not in dict_ret:
+                        dict_ret[key] = []
+                    dict_ret[key].append(get_end_date_by_deal_term(dl))
+
+    return dict_ret
 
 
 def upsert_rel_track_artist_in_db(db_mongo, db_pool, json_dict, ddex_map, update_id_message, insert_id_message, id_dist):
@@ -104,8 +178,6 @@ def upsert_rel_track_artist_in_db(db_mongo, db_pool, json_dict, ddex_map, update
     album_cmt = get_album_cmt(deal_data, ref_alb)
     album_use_type = get_album_use_type(deal_data, ref_alb)
     territory_code = get_album_territory_code(deal_data, ref_alb)
-    start_date = get_album_start_date(deal_data, ref_alb)
-    end_date = get_album_end_date(deal_data, ref_alb)
 
     cmt_and_use_type_association = dict()
     rd_list = xml_mapper.get_dict_to_list_dict(deal_list['ReleaseDeal'])
@@ -145,6 +217,7 @@ def upsert_rel_track_artist_in_db(db_mongo, db_pool, json_dict, ddex_map, update
 
     sql_in = []
     query_values = []
+    i = 1
     coutries_list = xml_mapper.get_countries_from_db(db_pool)
     for lb in album_label_data:
         id_label = lb['id_label']
@@ -153,26 +226,32 @@ def upsert_rel_track_artist_in_db(db_mongo, db_pool, json_dict, ddex_map, update
             for u in album_use_type_data:
                 if u['name_use_type'] in cmt_and_use_type_association[cmt['name_cmt']]:
                     id_use_type = u['id_use_type']
-                    # countries = json.dumps(territory_code)
-                    countries = json.dumps(xml_mapper.get_countries_id_by_iso_code_list(coutries_list, territory_code))
-                    sql_tmp = [
-                        album_data[0]['id_album'], 1, id_label, id_cmt, id_use_type,
-                        countries, "'" + start_date + "'", end_date if end_date else None, insert_id_message
-                    ]
-                    sql_in.append("(" + ",".join([ "{}".format(x) for x in sql_tmp]) + ")")
+                    values_list = territory_code["{}:{}".format(cmt['name_cmt'], u['name_use_type'])]
+                    for values in values_list:
+                        print("i:", i)
+                        i += 1
+                        countries_codes = values.get("codes")
+                        start_date = values.get("start_date")
+                        end_date = values.get("end_date")
+                        countries = json.dumps(xml_mapper.get_countries_id_by_iso_code_list(coutries_list, countries_codes))
+                        sql_tmp = [
+                            album_data[0]['id_album'], 1, id_label, id_cmt, id_use_type,
+                            countries, "'" + start_date + "'", end_date if end_date else None, insert_id_message
+                        ]
+                        sql_in.append("(" + ",".join([ "{}".format(x) for x in sql_tmp]) + ")")
 
-                    query_values.append({
-                        "id_album": album_data[0]['id_album'],
-                        "id_dist": id_dist,
-                        "id_label": id_label,
-                        "id_cmt": id_cmt,
-                        "id_use_type": id_use_type,
-                        "cnty_ids_albright": countries,
-                        "start_date_albright": start_date,
-                        "end_date_albright": end_date,
-                        'insert_id_message': insert_id_message,
-                        "update_id_message": update_id_message
-                    })
+                        query_values.append({
+                            "id_album": album_data[0]['id_album'],
+                            "id_dist": id_dist,
+                            "id_label": id_label,
+                            "id_cmt": id_cmt,
+                            "id_use_type": id_use_type,
+                            "cnty_ids_albright": countries,
+                            "start_date_albright": start_date,
+                            "end_date_albright": end_date,
+                            'insert_id_message': insert_id_message,
+                            "update_id_message": update_id_message
+                        })
 
     upsert_query = text("""
     INSERT INTO feed.albums_rights (

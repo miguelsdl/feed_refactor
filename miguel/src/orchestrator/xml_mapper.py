@@ -253,6 +253,7 @@ def get_release_list_sort_by_release_reference(release_list, key='Release'):
     return release_data
 
 def get_deal_list_sort_by_release_reference(deal_list):
+    # Acá tengo el error
     deals_data = dict()
     release_deal_list = get_dict_to_list_dict(deal_list['ReleaseDeal'])
     for d in release_deal_list:
@@ -262,8 +263,10 @@ def get_deal_list_sort_by_release_reference(deal_list):
         for ref in data:
             deals = get_dict_to_list_dict(d['Deal'])
             deals_data[ref] = deals
-        if len(d['Deal']) == 2:
-            deals_data['R0'] = d['Deal'][1]
+
+        # Aca pongo R0 a dedo Y está MAL
+        # if len(d['Deal']) == 2:
+        #     deals_data['R0'] = d['Deal'][1]
 
     return deals_data
 
