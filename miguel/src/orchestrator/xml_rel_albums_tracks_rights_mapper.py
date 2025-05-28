@@ -189,7 +189,7 @@ def get_cmt_by_deal_term(dl):
         else:
             ret = [dl['DealTerms']['CommercialModelType'], ]
     except Exception as e:
-        print(e)
+        raise e
     return ret
 
 def get_use_type_by_deal_term(dl):
@@ -211,22 +211,32 @@ def get_end_date_by_deal_term(dl):
 def get_track_territory_code(deal_data):
     dict_ret = dict()
 
-    for ref, deal_terms in deal_data.items():
-        for dl in deal_terms:
-            print(1)
-            for cmt in get_cmt_by_deal_term(dl):
-                for use in get_use_type_by_deal_term(dl):
-                    key = "{}:{}".format(cmt, use)
-                    value = {
-                        "start_date": get_start_date_by_deal_term(dl),
-                        "end_date": get_end_date_by_deal_term(dl),
-                        "codes": get_territory_code_by_deal_term(dl),
-                    }
 
-                    if key not in dict_ret:
-                        dict_ret[key] = []
-                    dict_ret[key].append(value)
+    # {'DealTerms': {'CommercialModelType': 'SubscriptionModel5', 'TerritoryCode': ['AG', 'AI',
+    # 'AW', 'BB', 'BM', 'BO', 'BQ', 'BR', 'BZ', 'CL', 'CO', 'CR', 'CW', 'DM', 'DO', 'EC', 'ES',
+    # 'GD', 'GF', 'GP', 'GY', 'HT', 'JM', 'KN', 'KY', 'LC', 'MQ', 'MS', 'PA', 'PE', 'SR', 'SV', 'TC', 'TT', 'VC',
+    # 'VG', 'VU', 'ZM'], 'UseType': ['ConditionalDownload2', 'NonInteractiveStream3', 'OnDemandStream4'],
+    # 'ValidityPeriod': {'EndDateTime': '2029-11-06T00:00:00', 'StartDateTime': '1990-04-09T00:00:00'}}}
+    try:
+        for ref, deal_terms in deal_data.items():
+            deal_terms_list = deal_terms if isinstance(deal_terms, list) else [deal_terms, ]
+            for dl in deal_terms_list:
+                print(1)
+                for cmt in get_cmt_by_deal_term(dl):
+                    for use in get_use_type_by_deal_term(dl):
+                        key = "{}:{}".format(cmt, use)
+                        value = {
+                            "start_date": get_start_date_by_deal_term(dl),
+                            "end_date": get_end_date_by_deal_term(dl),
+                            "codes": get_territory_code_by_deal_term(dl),
+                        }
 
+                        if key not in dict_ret:
+                            dict_ret[key] = []
+                        dict_ret[key].append(value)
+    except Exception as e:
+        raise e
+        print(e)
     return dict_ret
 
 
