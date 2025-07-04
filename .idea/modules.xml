@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/feed_refactor.iml" filepath="$PROJECT_DIR$/.idea/feed_refactor.iml" />
+      <module fileurl="file://$USER_HOME$/kuack_local_dev_mig/.idea/kuack_local_dev_mig.iml" filepath="$USER_HOME$/kuack_local_dev_mig/.idea/kuack_local_dev_mig.iml" />
     </modules>
   </component>
 </project>
